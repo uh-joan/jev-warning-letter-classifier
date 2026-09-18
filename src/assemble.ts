@@ -21,9 +21,15 @@ function findCandidate(list: Candidate[], id: string): Candidate | undefined {
   return list.find((c) => c.id === id);
 }
 
+/** True when `name` appears verbatim (case-insensitive) in the letter text. */
+function nameInText(text: string | undefined, name: string): boolean {
+  return text ? text.toLowerCase().includes(name.toLowerCase()) : false;
+}
+
 export function assemble(
   cands: ExtractedCandidates,
   jev: JevResult,
+  letterText?: string,
 ): WarningLetter {
   const a = jev.answers;
   const conf = jev.confidence ?? 0;
@@ -34,7 +40,10 @@ export function assemble(
   const chosen = chosenDrugId === "unknown" ? undefined : findCandidate(cands.drugs, chosenDrugId);
   const chosenName = (chosen?.payload?.name as string | undefined) ?? null;
   const rec = chosenName ? lookup(chosenName) : undefined;
-  const fromLetter = chosen?.payload?.source === "letter-text" || chosen?.payload?.source === "letter-quote";
+  // The name is "in the letter" when it is stated verbatim there — regardless of
+  // whether the candidate came from extraction or a cross-reference list. A
+  // cross-reference lead whose name also appears in the letter is not a redaction.
+  const fromLetter = chosenName != null && nameInText(letterText, chosenName);
 
   // --- Indication (Jev selects, we copy) ---
   const chosenIndId = a.indication_candidate.choice;

@@ -79,6 +79,11 @@ function extractOrganisms(text: string): string[] {
   return [...out];
 }
 
+// Words that signal a matched Title-case phrase is regulatory boilerplate, not a
+// product name. Used to reject false positives from the prose/quote heuristics.
+const NON_PRODUCT_WORDS =
+  /\b(Warning|Letter|Response|Act|Inspection|Inspectional|School|Form|Establishment|Registration|Division|Office|Guidance|Federal|Code|Regulation|Agency|Firm|Facility|Company|Investigator|President|Owner|Director|Compliance|Enforcement)\b/i;
+
 /** Product/brand candidates mentioned literally in the letter. */
 function extractDrugMentions(text: string): Candidate[] {
   const out = new Map<string, Candidate>();
@@ -98,12 +103,35 @@ function extractDrugMentions(text: string): Candidate[] {
     }
   }
 
-  // 2) Quoted product-like tokens: "NAME (ingredient)" or bare Title-case near "drug product".
+  // 2) Product names named in prose as a possessive: "your <Name> product(s)".
+  //    Catches brands that are neither in the KB nor quoted (common in
+  //    unapproved-drug / marketing letters). Bounded to 1..6 Title/number words.
+  const prose = text.matchAll(
+    /\byour\s+([A-Z][A-Za-z0-9][\w'-]*(?:\s+[A-Z0-9][\w'-]*){1,6})\s+products?\b/g,
+  );
+  for (const p of prose) {
+    const name = p[1]!.trim().replace(/\s+/g, " ");
+    const key = name.toLowerCase();
+    if (out.has(key) || NON_PRODUCT_WORDS.test(name)) continue;
+    out.set(key, {
+      id: `drug_p_${key.replace(/\W+/g, "_")}`,
+      text: `${name} — product named in the letter`,
+      payload: { source: "letter-text", name },
+    });
+  }
+
+  // 3) Quoted product-like tokens: "NAME (ingredient)" or bare Title-case near
+  //    "drug product". Reject ALL-CAPS spans (marketing slogans/headers) and
+  //    regulatory boilerplate.
   const quoted = text.matchAll(/["“]([A-Z][A-Za-z0-9 -]{2,40})["”]/g);
   for (const q of quoted) {
     const name = q[1]!.trim();
     const key = name.toLowerCase();
-    if (!out.has(key) && !/warning|letter|company|facility/i.test(name)) {
+    if (
+      !out.has(key) &&
+      /[a-z]/.test(name) && // has a lowercase letter → not an ALL-CAPS slogan
+      !NON_PRODUCT_WORDS.test(name)
+    ) {
       out.set(key, {
         id: `drug_q_${key.replace(/\W+/g, "_")}`,
         text: `${name} — quoted product name in the letter`,

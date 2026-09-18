@@ -136,9 +136,11 @@ export async function classifyWithJev(
         ],
       },
     },
-    providerOptions: {
-      gateway: { zeroDataRetention: true },
-    },
+    // ZDR (data not retained by the provider) requires a Vercel Pro/Enterprise
+    // plan. Opt in with JEV_ZERO_DATA_RETENTION=1; default off so hobby plans work.
+    ...(process.env.JEV_ZERO_DATA_RETENTION === "1"
+      ? { providerOptions: { gateway: { zeroDataRetention: true } } }
+      : {}),
   });
 
   const confidence = (

@@ -17,7 +17,7 @@ export async function classifyWarningLetter(
 ): Promise<WarningLetter> {
   const candidates = extractCandidates(text, opts);
   const jev = await classifyWithJev(text, candidates);
-  return assemble(candidates, jev);
+  return assemble(candidates, jev, text);
 }
 
 export { extractCandidates } from "./extract.js";
