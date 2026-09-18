@@ -1,0 +1,61 @@
+Department of Health and Human Services
+Food and Drug Administration
+
+WARNING LETTER
+
+September 4, 2026
+
+Mr. Robert T. Fulop
+Director of Site Operations
+Bausch & Lomb Inc.
+8500 Hidden River Parkway
+Tampa, FL 33637-1014
+
+FDA Establishment Identifier: 1000113778
+
+Dear Mr. Fulop:
+
+The U.S. Food and Drug Administration (FDA), Center for Drug Evaluation and Research (CDER),
+inspected your drug manufacturing facility, Bausch & Lomb Inc., located at 8500 Hidden River
+Parkway, Tampa, FL, from March 12 to March 20, 2026.
+
+This warning letter summarizes significant violations of Current Good Manufacturing Practice
+(CGMP) regulations for finished pharmaceuticals. Your firm manufactures sterile prescription
+and over-the-counter (OTC) drug products, including "(b)(4)", produced by aseptic processing.
+
+Because your methods, facilities, or controls for manufacturing, processing, packing, or holding
+do not conform to CGMP, your drug products are adulterated within the meaning of section 501(a)(2)(B)
+of the Federal Food, Drug, and Cosmetic Act.
+
+1. Your firm failed to establish an adequate system for monitoring environmental conditions in
+aseptic processing areas (21 CFR 211.42(c)(10)).
+
+Your environmental and personnel monitoring program did not sufficiently monitor significant
+locations (e.g., phones used in the aseptic processing area). From 2023 to 2025 you recovered
+gram-negative organisms, including Serratia marcescens and Stenotrophomonas maltophilia, from
+your ISO 5 areas. Dynamic smoke studies failed to demonstrate unidirectional airflow protection
+in your restricted access barrier system (RABS) lines.
+
+2. Your firm failed to establish and follow appropriate written procedures designed to prevent
+microbiological contamination of drug products purporting to be sterile (21 CFR 211.113(b)).
+
+Operators were observed reaching over exposed sterile containers during filling operations and
+failing to disinfect equipment between uses. Your July 2025 media fill failed, with recovery of
+Neovaginatispora magiferae and Geodermatophilus obscurus.
+
+Microorganisms recovered from your facility, including Pseudomonas aeruginosa and Aspergillus
+brasiliensis, were the same genus and species as those recovered from several consumer complaint
+samples for your "(b)(4)" ophthalmic products.
+
+Given the potential that distributed products may be contaminated, your firm should conduct a
+risk assessment of products currently within expiry and determine whether market action, including
+recall, is warranted.
+
+Within 15 business days of receipt of this letter, respond in writing describing the specific steps
+you have taken to correct these violations.
+
+Sincerely,
+/S/
+Director
+Office of Manufacturing Quality
+Center for Drug Evaluation and Research
