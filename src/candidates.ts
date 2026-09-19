@@ -47,6 +47,7 @@ export interface GatherTrace {
   proposer?:
     | { model: string; accepted: number; rejected: RejectedProposal[]; cached: boolean }
     | { error: string };
+  redaction_override?: boolean;
   openfda?: { labeler: string; seeded: number };
 }
 
@@ -84,6 +85,16 @@ const nameKey = (c: Candidate) =>
 
 const CITATION_NEAR =
   /\b(?:21\s*CFR|C\.?F\.?R\.?|U\.?S\.?C\.?|section\s+\d|§)\b/i;
+
+/**
+ * A finished-product-shaped name: carries a dosage form or a strength. Used to
+ * correct the redaction signal — redaction.ts flags product_name_redacted from
+ * (b)(4) context alone and can't see that a real product is ALSO named in clear
+ * (a (b)(4) on a strength/lot fooled it). "epinephrine injection USP 0.1 mg/mL"
+ * and "Ketoconazole 2%" match; the bare API "Naphazoline HCl" does not.
+ */
+const FINISHED_PRODUCT =
+  /\b(injection|injectable|solution|suspension|tablets?|capsules?|powder|concentrate|gel|cream|ointment|lotion|spray|drops|ophthalmic|syrup|patch|inhalation|nasal|topical|beverage|serum)\b|\d\s*(?:mg|mcg|mL|ml|%|IU)\b/i;
 
 /**
  * Deterministic evidence for one candidate, in the spirit of the Tetris agent
@@ -167,6 +178,33 @@ export async function gatherCandidates(
     } catch (e) {
       // Regex candidates are still valid on their own; record why the proposer did not run.
       trace.proposer = { error: e instanceof Error ? e.message : String(e) };
+    }
+  }
+
+  // Correct an over-firing redaction signal: if a finished-product-shaped name
+  // is stated verbatim in the letter (dosage form or strength), the product is
+  // not actually redacted — the (b)(4) that fooled redaction.ts was on a
+  // strength/lot. A clearly-named product should stay selectable as drug.name,
+  // while a letter naming only bare APIs ("Naphazoline HCl") stays redacted.
+  if (cands.redaction.product_name_redacted) {
+    const hay = text.toLowerCase();
+    const namedInClear = drugs.some((c) => {
+      const n = c.payload?.name;
+      if (typeof n !== "string" || !String(c.payload?.source).startsWith("letter")) return false;
+      if (!FINISHED_PRODUCT.test(n)) return false;
+      // The name must appear at least once AWAY from a (b)(4) marker — otherwise
+      // the finished-product-shaped token IS the redacted slot (e.g. Bausch's
+      // "(b)(4)" ophthalmic products), not a product named in clear.
+      const needle = n.toLowerCase();
+      for (let i = hay.indexOf(needle); i !== -1; i = hay.indexOf(needle, i + needle.length)) {
+        const around = text.slice(Math.max(0, i - 20), i + needle.length + 20);
+        if (!/\(b\)\s*\(\d\)/.test(around)) return true;
+      }
+      return false;
+    });
+    if (namedInClear) {
+      cands.redaction = { ...cands.redaction, product_name_redacted: false };
+      trace.redaction_override = true;
     }
   }
 
