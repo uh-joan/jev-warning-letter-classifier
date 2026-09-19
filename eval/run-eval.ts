@@ -263,6 +263,27 @@ function scoreJev(expected: GoldExpected, result: WarningLetter): FieldResult[] 
     });
   }
 
+  // Multi-product letters: score the set of products Jev flags as subjects
+  // (products[].is_subject) against the gold product list.
+  if (expected.products !== undefined && !expected.product_redacted) {
+    const subjects = result.products.filter((p) => p.is_subject).map((p) => p.name);
+    const matchedExp = (expected.products ?? []).filter((g) =>
+      subjects.some((s) => substrEitherWay(s, g)),
+    );
+    const matchedGot = subjects.filter((s) => (expected.products ?? []).some((g) => substrEitherWay(s, g)));
+    const recall = expected.products.length ? matchedExp.length / expected.products.length : 1;
+    const precision = subjects.length ? matchedGot.length / subjects.length : expected.products.length ? 0 : 1;
+    const f1 = precision + recall ? (2 * precision * recall) / (precision + recall) : 0;
+    results.push({
+      name: "subjects",
+      scored: true,
+      pass: f1 === 1,
+      f1,
+      expected: expected.products,
+      got: subjects,
+    });
+  }
+
   if (expected.is_sterile_product !== undefined) {
     results.push({
       name: "is_sterile_product",

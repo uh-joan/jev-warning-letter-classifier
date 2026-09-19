@@ -74,6 +74,43 @@ const nameKey = (c: Candidate) =>
     .replace(/\s+/g, " ")
     .replace(/s$/, "");
 
+const CITATION_NEAR =
+  /\b(?:21\s*CFR|C\.?F\.?R\.?|U\.?S\.?C\.?|section\s+\d|§)\b/i;
+
+/**
+ * Deterministic evidence for one candidate, in the spirit of the Tetris agent
+ * handing Jev pre-computed facts rather than a bare label. Attached to the
+ * candidate's `text`, which Jev sees as the choice criterion and the subject
+ * question's `evidence`. Nothing here is model-generated.
+ */
+function evidenceFor(text: string, name: string): string {
+  const hay = text.toLowerCase();
+  const needle = name.toLowerCase();
+  let count = 0;
+  let nearRedaction = false;
+  let nearCitation = false;
+  for (let i = hay.indexOf(needle); i !== -1; i = hay.indexOf(needle, i + needle.length)) {
+    count++;
+    const ctx = text.slice(Math.max(0, i - 60), i + needle.length + 60);
+    if (/\(b\)\s*\(\d\)/.test(ctx)) nearRedaction = true;
+    if (CITATION_NEAR.test(ctx)) nearCitation = true;
+  }
+  const facts = [`stated in the letter ${count}×`];
+  if (nearCitation) facts.push("appears next to a regulatory citation");
+  if (nearRedaction) facts.push("appears next to a (b)(4) redaction");
+  return facts.join("; ");
+}
+
+/** Append deterministic evidence to every candidate named verbatim in the letter. */
+function annotateEvidence(text: string, drugs: Candidate[]): Candidate[] {
+  const hay = text.toLowerCase();
+  return drugs.map((c) => {
+    const name = c.payload?.name;
+    if (typeof name !== "string" || !hay.includes(name.toLowerCase())) return c;
+    return { ...c, text: `${c.text} [${evidenceFor(text, name)}]` };
+  });
+}
+
 export async function gatherCandidates(
   text: string,
   opts: GatherOptions = {},
@@ -133,5 +170,5 @@ export async function gatherCandidates(
     trace.openfda = { labeler: cands.company, seeded };
   }
 
-  return { cands: { ...cands, drugs, indications }, trace };
+  return { cands: { ...cands, drugs: annotateEvidence(text, drugs), indications }, trace };
 }

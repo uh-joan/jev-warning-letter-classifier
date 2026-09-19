@@ -7,15 +7,19 @@
  */
 
 import { lookup } from "./drug-kb.js";
-import type { JevResult } from "./classify.js";
+import { subjectKey, crossReferenceLeads, type JevResult } from "./classify.js";
 import type {
   Candidate,
   ExtractedCandidates,
+  ProductMention,
   ViolationCategory,
   WarningLetter,
 } from "./types.js";
 
 const P = (p: number | undefined, t = 0.5) => (p ?? 0) >= t;
+
+/** Jev's `confidence` may be a number, an object (per-question), or undefined. */
+const asNumber = (v: unknown, fallback = 0): number => (typeof v === "number" ? v : fallback);
 
 function findCandidate(list: Candidate[], id: string): Candidate | undefined {
   return list.find((c) => c.id === id);
@@ -34,11 +38,41 @@ export function assemble(
   const a = jev.answers;
   const conf = jev.confidence ?? 0;
 
+  // --- Products (Jev answers one yes/no per candidate named in the letter) ---
+  // Warning letters routinely name several subject products; the single choice
+  // below collapses to `unknown` for them, so the per-candidate subject
+  // questions are the real signal.
+  const products: ProductMention[] = cands.drugs
+    .filter((c) => typeof c.payload?.name === "string" && nameInText(letterText, c.payload.name))
+    .map((c) => {
+      const p = a[subjectKey(c.id)]?.probability;
+      return {
+        name: c.payload!.name as string,
+        kind: (c.payload?.kind as string | undefined) ?? null,
+        is_subject: P(p),
+        subject_probability: p == null ? null : Number(p.toFixed(3)),
+      };
+    })
+    .sort((x, y) => (y.subject_probability ?? 0) - (x.subject_probability ?? 0));
+
   // --- Drug (Jev selects, we copy + enrich) ---
+  // Prefer the single choice; if it abstained (`unknown`) only because several
+  // products tie, fall back to the highest-scoring subject product. Never
+  // fabricate one when the product name is redacted.
   const chosenDrugId = a.drug_candidate.choice;
-  const drugProb = a.drug_candidate.probabilities?.[chosenDrugId] ?? conf;
-  const chosen = chosenDrugId === "unknown" ? undefined : findCandidate(cands.drugs, chosenDrugId);
+  const singleChoice = chosenDrugId === "unknown" ? undefined : findCandidate(cands.drugs, chosenDrugId);
+  const topSubject = products.find((p) => p.is_subject);
+  const fallback =
+    !singleChoice && !cands.redaction.product_name_redacted && topSubject
+      ? findCandidate(cands.drugs, cands.drugs.find((c) => c.payload?.name === topSubject.name)?.id ?? "")
+      : undefined;
+  const chosen = singleChoice ?? fallback;
   const chosenName = (chosen?.payload?.name as string | undefined) ?? null;
+  const drugProb = asNumber(
+    singleChoice
+      ? a.drug_candidate.probabilities?.[chosenDrugId] ?? conf
+      : topSubject?.subject_probability ?? conf,
+  );
   const rec = chosenName ? lookup(chosenName) : undefined;
   // The name is "in the letter" when it is stated verbatim there — regardless of
   // whether the candidate came from extraction or a cross-reference list. A
@@ -97,15 +131,10 @@ export function assemble(
           : fromLetter
             ? null
             : "selected from cross-reference candidates; not stated verbatim in the letter",
+      cross_reference_leads: crossReferenceLeads(cands.drugs),
     },
 
-    products: cands.drugs
-      .filter((c) => typeof c.payload?.name === "string" && nameInText(letterText, c.payload.name))
-      .map((c) => ({
-        name: c.payload!.name as string,
-        kind: (c.payload?.kind as string | undefined) ?? null,
-        role: (c.payload?.role as string | undefined) ?? null,
-      })),
+    products,
 
     is_sterile_product: P(a.is_sterile_product.probability),
     violation_categories: violations,

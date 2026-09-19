@@ -23,6 +23,22 @@ export interface DrugEntity extends Confidenced {
   dosage_form: string | null;
   /** Why name is null, when it is: e.g. "redacted (b)(4)" or "not identifiable". */
   redaction_note: string | null;
+  /**
+   * Possible product names from a cross-reference source (openFDA / facility KB)
+   * that are NOT stated in the letter — leads for a reviewer or Cortellis, never
+   * asserted as the confirmed name. Populated mainly when the name is redacted.
+   */
+  cross_reference_leads: string[];
+}
+
+export interface ProductMention {
+  name: string;
+  /** "brand_product" | "active_ingredient" | … when known (proposer-supplied). */
+  kind: string | null;
+  /** Jev: this product is a subject of the violations (P >= 0.5). */
+  is_subject: boolean;
+  /** Jev's P(subject); null when the question was not asked. */
+  subject_probability: number | null;
 }
 
 export type ViolationCategory =
@@ -96,9 +112,10 @@ export interface WarningLetter {
   drug: DrugEntity;
   /**
    * Every product/ingredient name found verbatim in the letter (regex, KB or
-   * LLM-proposed-then-verified). Cross-reference leads are not listed here.
+   * LLM-proposed-then-verified), each with Jev's judgment of whether it is a
+   * subject of the violations. Cross-reference leads are not listed here.
    */
-  products: { name: string; kind: string | null; role: string | null }[];
+  products: ProductMention[];
 
   is_sterile_product: boolean;
   violation_categories: ViolationCategory[];
