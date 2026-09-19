@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/hto-nevada-inc-dba-kirkman-719074-01272026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER nonsterile-manufacturing CGMP letter for an OTC contract drug manufacturer: inadequate QU oversight (a reformulated API released under the old API's label), no process validation, an unqualified/untested (b)(4) equipment system, and an incomplete/unsigned stability protocol. All drug products are referred to only as '(b)(4) drug products' -- no product name is given in clear -- so products is empty and product_redacted is true. recall_concern is true because FDA explicitly asks the firm to clarify 'whether the drug products will be removed from the market' following the firm's commitment to stop manufacturing, which raises a market-withdrawal question. location_contains uses the state (OR) from the recipient's mailing address since the inspection sentence itself omits the state, but the street address (6400 Rosewood Street, Lake Oswego) matches the facility.",
+  "expected": {
+    "company": "HTO Nevada, Inc. dba Kirkman",
+    "fei": "3004268965",
+    "date": "2026-01-27",
+    "issuing_office": "CDER",
+    "location_contains": "Lake Oswego, OR",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

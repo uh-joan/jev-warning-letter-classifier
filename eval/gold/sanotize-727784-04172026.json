@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/sanotize-727784-04172026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "CDER website-review letter (no facility inspection) charging 'NOWONDER\u2122 Nasal Cleanser' as an unapproved new drug based on antiviral/antimicrobial and disease-prevention claims on the firm's websites and product label. location_contains is null since only product labeling and websites were reviewed, no facility inspected. company is taken exactly as meta.json states ('SaNOtize'), though the letter's cc line names the recipient entity as 'NoWonder, Inc.'. No FEI is stated.",
+  "expected": {
+    "company": "SaNOtize",
+    "fei": null,
+    "date": "2026-04-17",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "NOWONDER\u2122 Nasal Cleanser"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

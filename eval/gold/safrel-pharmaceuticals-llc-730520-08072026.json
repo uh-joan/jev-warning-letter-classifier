@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/safrel-pharmaceuticals-llc-730520-08072026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER CGMP letter for an OTC drug labeler/repackager/distributor (Dayton, NJ): inadequate quality-unit oversight of suppliers and contract manufacturers, improper warehouse segregation of unlabeled and labeled product, lack of lot traceability, and an unexplained active packaging/labeling line using rejected/expired bulk tablets and bottles. All product and label identities are redacted as (b)(4) and none is named in clear, so product_redacted is true. recall_concern is true given the explicit references to facilitating recall, quarantine procedures, and assessing the impact on drug products already distributed. No sterile/aseptic claims are made.",
+  "expected": {
+    "company": "Safrel Pharmaceuticals LLC",
+    "fei": "3042030663",
+    "date": "2026-08-07",
+    "issuing_office": "CDER",
+    "location_contains": "Dayton, NJ",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/suretec-innovations-llc-730122-08132026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER letter following an on-site inspection of an OTC contract manufacturer, citing inadequate component identity/COA-reliability testing, unvalidated non-compendial microbiological release testing, failure to investigate out-of-limit water-system microbial results (product released despite OOL results), and an ineffective quality unit, plus a separate drug-listing/misbranding violation for failing to list 'KleenLine Alcohol-Free Sanitizing Wipes' under the private-label distributor's labeler code. The API and most components are redacted as (b)(4), but the two named consumer products (KleenLine Alcohol-Free Sanitizing Wipes; Hand Sanitizing Alcohol-Free Wipes) are stated in clear text, so product_redacted is false. No genus/species organism is identified.",
+  "expected": {
+    "company": "Suretec Innovations, LLC",
+    "fei": "3030456591",
+    "date": "2026-08-13",
+    "issuing_office": "CDER",
+    "location_contains": "Gilbert, Arizona",
+    "organisms": [],
+    "products": [
+      "KleenLine Alcohol-Free Sanitizing Wipes",
+      "Hand Sanitizing Alcohol-Free Wipes"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

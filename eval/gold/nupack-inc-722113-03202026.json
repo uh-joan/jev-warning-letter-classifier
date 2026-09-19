@@ -1,0 +1,37 @@
+{
+  "fixture": "fixtures/nupack-inc-722113-03202026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Human Foods Program letter combining unapproved-new-drug and misbranding charges (disease-treatment claims on the firm's website and product labels for Cardiag, Diabetech, Cleanse-CAMP, MACA, Kidney Cleanse, and Pure Pysyllium Husk) with on-site 21 CFR Part 111 dietary-supplement CGMP findings (missing product specifications, no master manufacturing records, no batch production records, no returned-product procedures) that adulterate Cardiag, Cleanse-camp, and MACA 1000 mg. Classified as food_supplement since the Part 111 CGMP/adulteration section covers a substantial share of the charges, though unapproved_new_drug and misbranding are also cited. No FEI is stated in the letter.",
+  "expected": {
+    "company": "Nupack Inc.",
+    "fei": null,
+    "date": "2026-03-20",
+    "issuing_office": "Human Foods Program",
+    "location_contains": "Elgin, IL",
+    "organisms": [],
+    "products": [
+      "Cardiag",
+      "Diabetech",
+      "Cleanse-CAMP",
+      "MACA",
+      "Kidney Cleanse",
+      "Pure Pysyllium Husk"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

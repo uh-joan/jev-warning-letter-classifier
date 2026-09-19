@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/ucsf-radiopharmaceutical-facility-719568-04132026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "CDER letter following an inspection of a radiopharmaceutical facility, citing inadequately supported sterility-test-failure investigations (invalidated results attributed to lab contamination without conclusive evidence, including a Bacillus species recovery and premature discarding of sterility samples before the USP <71> 14-day incubation period), failure to investigate adverse environmental-monitoring trends and to complete investigations timely, and inadequate equipment/EM procedures (contact plating performed right after disinfection, missing ISO 5 EM). All drug/CFR-part details are redacted as (b)(4), so products is empty. The recovered organism is identified only as 'Bacillus species' (genus plus the generic word 'species', not a specific species epithet), so organisms is empty. No recall or product withdrawal is raised in this letter.",
+  "expected": {
+    "company": "UCSF Radiopharmaceutical Facility",
+    "fei": "3005947301",
+    "date": "2026-04-13",
+    "issuing_office": "CDER",
+    "location_contains": "San Francisco",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

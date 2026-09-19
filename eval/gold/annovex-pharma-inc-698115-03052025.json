@@ -1,0 +1,38 @@
+{
+  "fixture": "fixtures/annovex-pharma-inc-698115-03052025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503B outsourcing facility letter: failure to meet section 503B reporting/adverse-event conditions plus separate, explicitly headed charges of adulteration (insanitary/aseptic failures), misbranding, and 'Unapproved New Drug Products' (loss of 503B exemption), so unapproved_new_drug is included alongside compounding since the letter gives it its own distinct heading and rationale. No FEI number is stated in the letter text. contamination_present is set false because the letter describes positive growth in a media-fill simulation and 'may have become contaminated' insanitary-conditions language, not confirmed contamination of actual distributed drug product.",
+  "expected": {
+    "company": "Annovex Pharma, Inc.",
+    "fei": null,
+    "date": "2025-03-05",
+    "issuing_office": "CDER",
+    "location_contains": "Lorton, VA",
+    "organisms": [],
+    "products": [
+      "Heparin 4 units/mL in 0.9% Sodium Chloride (b)(4) IV bag",
+      "Phenylephrine 100 mcg/ml in 0.9% Sodium Chloride Solution 10ml syringe",
+      "Phenylephrine HCl 25 mg in 0.9% Sodium Chloride 250 mL Bag"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "compounding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

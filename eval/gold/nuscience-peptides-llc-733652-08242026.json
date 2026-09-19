@@ -1,0 +1,37 @@
+{
+  "fixture": "fixtures/nuscience-peptides-llc-733652-08242026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "CDER website-review letter (no facility inspection) charging nine injectable research-peptide products marketed on nusciencepeptides.com as unapproved new drugs under 505(a), based on disease-treatment/structure-function claims despite 'for laboratory, research, and analytical use' labeling. location_contains is null since this is a website-review letter with no inspected facility mentioned. is_sterile_product is false following the peptide-marketing-letter precedent: no manufacturing/CGMP sterility issue is raised, only marketing claims. No FEI is stated.",
+  "expected": {
+    "company": "NuScience Peptides LLC",
+    "fei": null,
+    "date": "2026-08-24",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "GLP-2 Tirz Peptide",
+      "GLP-1 Sema Research Peptide",
+      "GLP-3 RT (Retatrutide) Research Peptide",
+      "Survodutide",
+      "Mazdutide",
+      "PT-141 Peptide (Bremelanotide)",
+      "Tesamorelin Research Peptide",
+      "Tesamorelin Ipamorelin Blend",
+      "Bacteriostatic water for Peptides (BAC Water)"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

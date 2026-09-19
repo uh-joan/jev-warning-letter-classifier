@@ -32,5 +32,5 @@
     "linked_to_complaints": false,
     "recall_concern": true
   },
-  "split": "test"
+  "split": "dev"
 }

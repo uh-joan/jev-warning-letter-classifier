@@ -1,0 +1,27 @@
+{
+  "fixture": "fixtures/mg-infusions-696890-03102025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "Website-review letter (no facility inspection, no FEI stated) finding that fecal microbiota transplant products sold as capsules/enema infusions are unapproved new drugs and unlicensed biological products under the PHS Act, marketed for uses beyond FDA's C. difficile enforcement-discretion policy; no specific branded product name is given, and C. difficile is discussed only as the treated indication, not as an organism found at a facility.",
+  "expected": {
+    "company": "MG Infusions",
+    "fei": null,
+    "date": "2025-03-10",
+    "issuing_office": "CBER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

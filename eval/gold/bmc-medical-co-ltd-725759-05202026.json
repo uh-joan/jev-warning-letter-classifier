@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/bmc-medical-co-ltd-725759-05202026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "BMC Medical is the specification developer/510(k) owner cited over undisclosed design changes (G3X APAP) to the cleared Luna device, plus an unreported firmware correction. The INSPECTED facility named in the inspection sentence is the importer, 3B Medical, Inc. (d.b.a. React Health, Inc.) in Dublin, OH -- not BMC Medical's own address -- so location_contains reflects that per the instructions. No FEI number is stated in the letter text. No QSR/CGMP violation is charged (only unapproved-device and corrections/removals). recall_concern is true given the unreported firmware correction (G3-2.00.76 to G3-2.00.77) for unexpected device shutdown.",
+  "expected": {
+    "company": "BMC Medical Co., Ltd.",
+    "fei": null,
+    "date": "2026-05-20",
+    "issuing_office": "CDRH",
+    "location_contains": "Dublin, OH",
+    "organisms": [],
+    "products": [
+      "G3X APAP (G4600)",
+      "Luna\u00ae CPAP and Auto CPAP System",
+      "Luna G3 APAP"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

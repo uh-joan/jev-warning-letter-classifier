@@ -1,0 +1,38 @@
+{
+  "fixture": "fixtures/staska-pharmaceuticals-inc-699291-05052025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503B outsourcing-facility letter (Office of Compounding Quality and Compliance) citing failure to meet section 503B conditions (unregistered bulk-drug supplier, missing label statements), insanitary sterile-compounding conditions (ISO 5 gowning/aseptic-technique and media-fill/smoke-study deficiencies), CGMP violations, and explicit Unapproved New Drug and Misbranded Drug Products sections (standard boilerplate for non-conforming 503B compounders, but included here as charged violations since the letter dedicates full sections to each). Firm voluntarily recalled one lot of Ascorbic Acid Solution for Injection due to glass particulates, and a separate uninvestigated incident found fiber contamination from non-cleanroom bags. No FEI is stated in the letter text. No genus/species organism is identified (only 'gram-negative bacteria and/or yeast' generically).",
+  "expected": {
+    "company": "Staska Pharmaceuticals, Inc.",
+    "fei": null,
+    "date": "2025-05-05",
+    "issuing_office": "CDER",
+    "location_contains": "Bennet, NE",
+    "organisms": [],
+    "products": [
+      "Ascorbic Acid Solution for Injection 25,000mg/50mL (500mg/mL)",
+      "Glutathione Solution 2000mg/10ml (200mg/ml)",
+      "Lidocaine HCl 2% Buffered Solution 1000mg/50ml (20mg/ml)"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/csl-behring-716297-09092025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "CBER Advertising and Promotional Labeling Branch letter concerning a DTC TV ad for HIZENTRA (an approved BLA product): the ad is charged with misbranding under 502(n) for overstating efficacy and minimizing risk presentation. This is not a facility-inspection or CGMP letter (no facility was inspected; location_contains is null), and because HIZENTRA is already approved, unapproved_new_drug does not apply. is_sterile_product is marked true because HIZENTRA is inherently a sterile subcutaneous injectable per its labeling, even though sterility/manufacturing is not the subject of this letter (a judgment call). recall_concern is marked false because the letter only asks for a corrective-communication/discontinuation-of-the-ad plan, not a product recall or withdrawal from the market.",
+  "expected": {
+    "company": "CSL Behring",
+    "fei": null,
+    "date": "2025-09-09",
+    "issuing_office": "CBER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "HIZENTRA"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

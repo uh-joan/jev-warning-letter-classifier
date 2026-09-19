@@ -1,0 +1,44 @@
+{
+  "fixture": "fixtures/unomedical-device-sa-de-cv-719428-01082026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "CDRH Quality System regulation (21 CFR 820) letter for an insulin-infusion-set manufacturer: unvalidated water-leak test method, complaint-handling failures (over 41,000 uninvestigated complaints, including a death), inadequate CAPAs, and Medical Device Reporting (21 CFR 803) failures for unreported serious-injury/malfunction events. Products include the Unomedical-branded infusion sets marketed under multiple distributor brand names plus the specific product families named in the CAPA/complaint narratives (Inset I/II, Varisoft, Extended Wear Infusion Set/EWIS, Inset Guard Ramp-Up, AutoSoft XC). No FEI is stated (only CMS case #719428). location_contains uses the Remote Regulatory Assessment facility location 'Reynosa, Tamaulipas' (Mexican state substituted for a US state abbreviation, per the Xinxiang/Henan precedent). violation_categories omits a distinct MDR/reporting tag since none exists in the allowed set; CGMP covers the Quality System Regulation violations.",
+  "expected": {
+    "company": "Unomedical Device S.A. de C.V.",
+    "fei": null,
+    "date": "2026-01-08",
+    "issuing_office": "CDRH",
+    "location_contains": "Reynosa, Tamaulipas",
+    "organisms": [],
+    "products": [
+      "MiniMed Mio",
+      "MiniMed Mio 30",
+      "MiniMed Silhouette",
+      "MiniMed Sure-T",
+      "MiniMed Quick-Set",
+      "MiniMed Mio Advance",
+      "Extended Wear Infusion Set",
+      "i-port ADVANCE",
+      "inset",
+      "contact detach",
+      "Inset I",
+      "Inset II",
+      "Varisoft",
+      "Inset Guard Ramp-Up",
+      "AutoSoft XC"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

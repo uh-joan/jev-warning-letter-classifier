@@ -1,0 +1,44 @@
+May 14, 2026
+WARNING LETTER
+To Lu’s Essentials:
+This warning letter advises you of significant violations observed during a U.S. Food and Drug Administration (FDA) review of your website. Promptly address the violations described herein without delay, including ensuring that appropriate resources are allocated to fully address the violations and prevent their recurrence. This is not intended to be an all-inclusive list of the violations that may exist in connection with your products or operations. It is your responsibility to ensure that your firm complies with all requirements of federal law, including FDA regulations. Failure to adequately address violations may result in regulatory or legal action without further notice including, without limitation, seizure and injunction.
+FDA has observed that you offer products marketed on your firm’s website as skin treatment and skin lightening products, including, but not limited to, “Dr. Yanhee Acne Treatment Set (Green)” and “Dr. Yanhee Cream Set (Pekas & Melasma Treatment) – Blue” (hereinafter “your products”) for sale in the United States. Additionally, FDA obtained a sample of these products and has serious safety concerns about them. FDA confirmed through laboratory analysis that these products contain high levels of mercury. Applying products that contain mercury to the skin repeatedly can allow mercury to be absorbed into the bloodstream, potentially causing serious and permanent health problems, including kidney damage and neurological damage. Children and pregnant individuals face heightened risks and should avoid exposure to these products.
+FDA Review
+Violations were identified and documented during a review of your website https://lusessentials.store in April 2026. Based on our review, your products are unapproved new drugs and misbranded drugs under sections 505(a) and 502(a) of the Federal Food, Drug, and Cosmetic Act (FD&C Act), 21 U.S.C. 355(a) and 352(a). As explained further below, introducing or delivering these products for introduction into interstate commerce violates sections 301(a), 301(d), and 505(a) of the FD&C Act, 21 U.S.C. 331(a), 331(d), and 355(a).
+This review was conducted under FDA’s public health responsibilities to protect the public from unsafe, ineffective, and poor-quality drugs.
+
+Violations of the Federal Food, Drug, and Cosmetic Act
+Unapproved New Drug Violations
+The following are violations identified during our review. As a reminder, this is not an allinclusive list of violations that may exist in connection with your products or operations.
+Based on a review of your website, your products are drugs under section 201(g)(1) of the FD&C Act, 21 U.S.C. 321(g)(1), because they are intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease, and/or intended to affect the structure or any function of the body. Examples from your product labeling, including on your website, that provide evidence of the intended use (as defined in 21 CFR 201.128) of these products as drugs include, but may not be limited to, the following:
+Dr. Yanhee Acne Treatment Set (Green)
+On the webpage https://lusessentials.store/products/dr-yanhee-acne-treatment-setgreen?variant=45027938828483:
+“Reduce acne, freckles, dark spots and tighten pores.”
+“Benefits: [t]reatment for [p]imples and [s]ever [sic] acne problems, [d]ark spots, reduce visible scars.”
+“Protects skin from the sun and skin whitening.”
+
+Dr. Yanhee Cream Set (Pekas & Melasma Treatment) - Blue
+On the webpage https://lusessentials.store/products/dr-yanhee-whitening-cream-set-reduceacne-dark-spot-freckles-result-in-7-day?variant=44387523657923:
+“Dr.Yanhee [sic] Whitening Cream Set Reduce Acne Dark Spot Freckles Result in 7 day original Formula.”
+“Helps to eliminate dead cells, tighten pores, reduce acne, freckles, dark spots, dark circles, make your face bounce.”
+“Doctor YanHee Set (Blue Box) Original Formula is a popular face cream to help treat acne, freckles, good grade, original formula.”
+
+Your products are “new drugs” under section 201(p) of the FD&C Act, 21 U.S.C. 321(p), because they are not generally recognized as safe and effective (GRASE) for use under the conditions prescribed, recommended, or suggested in their labeling. With certain exceptions not applicable here, a new drug may not be introduced or delivered for introduction into interstate commerce without an approved application from FDA in effect, as described in section 505(a) of the FD&C Act, 21 U.S.C. 355(a). No approved applications pursuant to section 505 of the FD&C Act, 21 U.S.C. 355, are in effect for these products. Accordingly, these products are unapproved new drugs. The introduction or delivery for introduction into interstate commerce of these unapproved new drug products violates sections 301(d) and 505(a) of the FD&C Act, 21 U.S.C. 331(d) and 355(a).
+Misbranded Drug Violations
+Your products are misbranded under section 502(a) of the FD&C Act, 21 U.S.C. 352(a). Under section 502(a) of the FD&C Act, 21 U.S.C. 352(a), a drug is misbranded if its labeling is false or misleading in any particular. Section 201(n) of the FD&C Act, 21 U.S.C. 321(n), provides that, in determining whether an article's labeling or advertising "is misleading there shall be taken into account . . . not only representations made or suggested . . . but also the extent to which the labeling or advertising fails to reveal facts material in light of such representations."
+The labeling for your products does not declare that they contain mercury. As previously mentioned, FDA confirmed through laboratory analysis that your products contain high levels of mercury. Consumers may purchase and use these products without knowing that they contain mercury, an ingredient that may cause serious harm, including kidney damage and neurological damage. The failure to disclose mercury in the product labeling renders your products misbranded under section 502(a) of the FD&C Act, 21 U.S.C. 352(a).
+The introduction or delivery for introduction into interstate commerce of these misbranded drug products is a prohibited act under section 301(a) of the FD&C Act, 21 U.S.C. 331(a).
+Conclusion
+As previously stated, you are responsible for investigating and determining the root causes of any violations and implementing corrective and preventative measures to ensure future compliance so that these violations and any others do not occur.
+Send your written response to FDAAdvisory@fda.hhs.gov within fifteen (15) business days of receipt of this letter. Include the specific steps you have taken to correct any violations, an explanation of each step being taken to prevent the recurrence of violations, as well as copies of related documentation. Identify your written response with reference number “728783” in the subject line of the email.
+If you have information that you believe demonstrates that your products are not in violation of the FD&C Act and FDA regulations, include that information for our consideration.
+Please note FDA posts warning letters on www.fda.gov.
+Sincerely,
+/S/
+Tina Smith, M.S.
+Captain, U.S. Public Health Service
+Director
+Office of Unapproved Drugs and Labeling Compliance
+Office of Compliance
+Center for Drug Evaluation and Research
+U.S. Food and Drug Administration

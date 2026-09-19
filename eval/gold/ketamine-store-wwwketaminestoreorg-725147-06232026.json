@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/ketamine-store-wwwketaminestoreorg-725147-06232026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Internet-pharmacy warning letter based on a website review (no on-site inspection) citing unapproved-new-drug and misbranding violations for ketamine products sold online without a prescription. FDA-approved KETALAR and SPRAVATO are cited only as regulatory comparators, not as products this seller offers, so they are excluded from products.",
+  "expected": {
+    "company": "Ketamine Store / www.ketaminestore.org",
+    "fei": "3043544014",
+    "date": "2026-06-23",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "KETAMINE LIQUID",
+      "Ketamine Troches",
+      "KETAMINE NASAL SPRAY"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

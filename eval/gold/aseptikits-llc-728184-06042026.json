@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/aseptikits-llc-728184-06042026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Unapproved-device (premarket notification) letter for pharmacy-compounding ancillary devices; no FEI number is stated in the letter text. is_sterile_product is true because each device is explicitly marketed for sterile preparation (serum, eye drop, solution). No QSR/CGMP or correction/removal violation is charged here, only adulteration/misbranding over the 510(k) exemption dispute.",
+  "expected": {
+    "company": "AseptiKits, LLC",
+    "fei": null,
+    "date": "2026-06-04",
+    "issuing_office": "CDRH",
+    "location_contains": "North Salt Lake, UT",
+    "organisms": [],
+    "products": [
+      "PALA YourTears",
+      "ALAdrop",
+      "SyrilKit",
+      "VitrALA"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

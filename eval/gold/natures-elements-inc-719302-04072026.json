@@ -1,0 +1,38 @@
+{
+  "fixture": "fixtures/natures-elements-inc-719302-04072026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Dietary-supplement CGMP letter (21 CFR Part 111: missing product specifications, master manufacturing records, and batch production records) plus unapproved-new-drug and misbranding findings for disease-treatment claims on several named products. No FEI or organism is stated anywhere in the letter.",
+  "expected": {
+    "company": "Nature\u2019s Elements, Inc.",
+    "fei": null,
+    "date": "2026-04-07",
+    "issuing_office": "Human Foods Program",
+    "location_contains": "Bohemia, NY",
+    "organisms": [],
+    "products": [
+      "He Shou Wu",
+      "Advanced He Shou Wu",
+      "Schizandra Berry extract",
+      "DHT Blocker",
+      "Cordyceps",
+      "Maitake Mushroom",
+      "D-Aspartic Acid (Monster T)"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

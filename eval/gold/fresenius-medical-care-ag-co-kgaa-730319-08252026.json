@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/fresenius-medical-care-ag-co-kgaa-730319-08252026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "CDER sterile-manufacturing CGMP letter for a large-volume-parenteral (peritoneal dialysis solution) manufacturer: inadequate complaint investigation/risk assessment of leaking Delflex bags leading to a recall for lack of assurance of sterility, plus an inadequate visual-inspection qualification program for particulates. No genus/species organism is ever named (only a generic reference to prior 'microbial contamination' in Field Alert Reports), so organisms is empty. linked_to_complaints is false because, although complaints and Field Alert Reports are discussed at length, no organism is ever identified or matched to a complaint sample.",
+  "expected": {
+    "company": "Fresenius Medical Care AG & Co. KGaA",
+    "fei": "1713747",
+    "date": "2026-08-25",
+    "issuing_office": "CDER",
+    "location_contains": "Ogden, UT",
+    "organisms": [],
+    "products": [
+      "Delflex Peritoneal Dialysis Solution",
+      "DELFLEX Dextrose Peritoneal Dialysis Solution"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

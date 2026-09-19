@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/respilon-production-sro-719705-04202026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER CGMP letter for an OTC finished-pharmaceutical manufacturer based entirely on a section 704(a)(4) records review (component identity/contamination testing, stability program, process validation, test-method validation, incomplete lab records) -- no on-site inspection occurred, so location_contains is null, comparable to the tianjin-kilo-pharmaceutical precedent. No specific product name is ever stated (all redacted as (b)(4) or referred to generically as 'OTC drug products'); since no name is even referenced as redacted, product_redacted is false rather than true. No sterile/aseptic claims are made.",
+  "expected": {
+    "company": "Respilon Production S.R.O.",
+    "fei": "3018892481",
+    "date": "2026-04-20",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

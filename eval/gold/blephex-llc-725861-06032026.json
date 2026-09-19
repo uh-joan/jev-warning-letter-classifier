@@ -1,0 +1,34 @@
+{
+  "fixture": "fixtures/blephex-llc-725861-06032026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Unapproved-device marketing plus extensive QSR (complaint handling, CAPA, design controls, supplier qualification, DHR, training, audits) and Corrections/Removals violations. No FEI number is stated in the letter text. recall_concern is true because of the unreported Type G charger correction/removal action (handpiece smoking/exploding) required to be reported under 21 CFR 806.10.",
+  "expected": {
+    "company": "BlephEx, LLC",
+    "fei": null,
+    "date": "2026-06-03",
+    "issuing_office": "CDRH",
+    "location_contains": "Brentwood, TN",
+    "organisms": [],
+    "products": [
+      "BlephEx Powered Eyelid Cleaning Sponge",
+      "OptiVize Ophthalmic Battery-Powered Electrolysis Unit",
+      "OptiVize Ophthalmic Forceps",
+      "BlephEx Lid Cleanser"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

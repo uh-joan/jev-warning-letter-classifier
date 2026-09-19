@@ -1,0 +1,35 @@
+{
+  "fixture": "fixtures/harbin-jixianglong-biotech-co-ltd-723330-05012026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER API-manufacturer CGMP letter for a peptide (GLP-1) API repackager/relabeler: inadequate QU oversight of unapproved suppliers, relabeling/repackaging without documentation and with altered manufacturing/retest dates, no process or cleaning validation, inadequate analytical method validation, inadequate water-system monitoring, and drug-listing/misbranding violations for mislabeling the true manufacturer of two semaglutide batches (both voluntarily recalled). Products named in clear are the drug substances 'semaglutide' and 'tirzepatide'; is_sterile_product is false because the letter explicitly frames these as non-sterile APIs intended for later use in sterile injectable drug products. organisms lists 'Pseudomonas aeruginosa' and 'Bacillus subtilis', which appear only in the context of inconsistent microbial-limit-test validation data (duplicated/missing results), not as confirmed contamination in distributed product -- flagged as a borderline reading of the organisms field. Did not add data_integrity or unapproved_new_drug to violation_categories: the letter does not cite a record-falsification/data-integrity regulation or a 505 unapproved-new-drug charge specifically; the closest issues (undocumented date changes, supplier mislabeling) are captured under misbranding/CGMP/adulteration instead -- judgment call.",
+  "expected": {
+    "company": "Harbin Jixianglong Biotech Co., Ltd.",
+    "fei": "3024038751",
+    "date": "2026-05-01",
+    "issuing_office": "CDER",
+    "location_contains": "Harbin, Heilongjiang",
+    "organisms": [
+      "Pseudomonas aeruginosa",
+      "Bacillus subtilis"
+    ],
+    "products": [
+      "semaglutide",
+      "tirzepatide"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

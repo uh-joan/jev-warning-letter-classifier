@@ -1,0 +1,34 @@
+{
+  "fixture": "fixtures/chara-biologics-inc-698004-01172025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "CBER letter for CharaExo (amniotic-fluid product), CharaCore, and CharaOmni (umbilical-cord-derived products): unapproved new drug/unlicensed biological product violations (products fail HCT/P minimal-manipulation and homologous-use criteria and are promoted for disease treatment), plus CGMP quality-unit failures (21 CFR 211.22) and a CGTP donor-eligibility documentation failure (21 CFR 1271.55(d)(1)(iii)), and a misbranding finding limited to CharaExo (expiration dates extended without supporting data, 502(a)). No FEI or organisms are stated in the letter.",
+  "expected": {
+    "company": "Chara Biologics, Inc.",
+    "fei": null,
+    "date": "2025-01-17",
+    "issuing_office": "CBER",
+    "location_contains": "Chatsworth, CA",
+    "organisms": [],
+    "products": [
+      "CharaExo",
+      "CharaCore",
+      "CharaOmni"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

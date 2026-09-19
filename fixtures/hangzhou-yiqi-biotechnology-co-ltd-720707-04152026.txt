@@ -1,0 +1,62 @@
+Warning Letter 320-26-66
+April 15, 2026
+Dear Mr. Chai:
+Your facility is registered with the United States Food and Drug Administration (FDA) as a manufacturer of active pharmaceutical ingredients (APIs). FDA has reviewed the records you submitted in response to our June 16, 2025, request and subsequent correspondence, for records and other information pursuant to section 704(a)(4) of the Federal Food, Drug, and Cosmetic Act (FD&C Act) for your facility, Hangzhou Yiqi Biotechnology Co., Ltd, FEI 3035145155, at Room 204, Building 3, No. 66 Xixiang Road, Puyan Street, Hangzhou, Zhejiang 310018, China.
+This Warning Letter summarizes significant deviations from Current Good Manufacturing Practice (CGMP) for APIs.
+Because your methods, facilities, or controls for manufacturing, processing, packing, or holding of drugs as described in your response to our 704(a)(4) request do not conform to CGMP, your APIs are adulterated within the meaning of section 501(a)(2)(B) of the FD&C Act, 21 U.S.C. 351(a)(2)(B).
+Following review of records and other information provided pursuant to section 704(a)(4) of the FD&C Act, significant deviations were observed including, but not limited to, the following:
+1. Failure to demonstrate that your manufacturing process can reproducibly manufacture an API meeting its predetermined quality attributes.
+Based on the records and information you provided, your firm failed to conduct process validation for the (b)(4) APIs manufactured at your facility. These APIs are for use in further processing to produce sterile drug products and for pharmaceutical compounding operations.
+Process validation evaluates the soundness of design and state of control of a process throughout its life cycle. Each significant stage of a manufacturing process must be designed appropriately and assure the quality of raw material inputs, in-process materials, and finished drugs. Process qualification studies determine whether an initial state of control has been established. Successful process qualification studies are necessary before commercial distribution. Thereafter, ongoing vigilant oversight of process performance and product quality is necessary to ensure you maintain a stable manufacturing operation throughout the product lifecycle.
+Without adequate process validation, your firm lacks basic assurance that you can reproducibly deliver products that meet specifications. See FDA’s guidance for industry Process Validation: General Principles and Practices for general principles and approaches that the FDA considers appropriate elements of process validation at https://www.fda.gov/media/71021/download.
+In response to this letter, provide:
+A detailed summary of your validation program for ensuring a state of control throughout the product lifecycle, along with associated procedures. Describe your program for process performance qualification, and ongoing monitoring of both intra-batch and inter-batch variation to ensure a continuing state of control.
+A timeline for performing appropriate process performance qualification for each of your marketed APIs.
+Also provide a risk assessment and any follow up actions to be taken for the distributed APIs produced without performing any process validation studies.
+Process performance protocol(s), and written procedures for qualification of equipment and facilities.
+A detailed program for designing, validating, maintaining, controlling and monitoring each of your manufacturing processes that includes vigilant monitoring of intra-batch and inter-batch variation to ensure an ongoing state of control. Also, include your program for qualification of your equipment and facility.
+
+2. Failure to validate and verify the suitability of analytical methods.
+Based on the records and information you provided, your firm failed to perform test method validation or verification for each test method used for drugs distributed to the United States.
+Test methods must be validated to show that they are suitable for their intended use or verified to show at least equivalence with United States Pharmacopeia (USP) compendial methods. Method validation and verification are necessary to support reliable determinations of identity, strength, quality, purity, and potency of drugs. Without evaluating the validity of methods, you lack the basic assurance that the data provided to customers were an accurate reflection of pharmaceutical product quality and safety.
+In response to this letter, provide:
+A comprehensive, independent assessment of your laboratory practices, procedures, methods, equipment, documentation, and analyst competencies. Based on this review, provide a detailed plan to remediate and evaluate the effectiveness of your laboratory system.
+A list of chemical and microbial test methods and specifications used to analyze each lot of your APIs before making a lot of disposition decisions, and the associated written procedures.
+
+3. Failure to design a documented, ongoing stability testing program to monitor the stability characteristics of API and to use the results to confirm appropriate storage conditions and retest or expiry dates.
+Based on the records and information you provided, your firm failed to perform routine stability testing to demonstrate that the quality attributes of your APIs remain acceptable throughout the labeled expiry period. For example, your firm did not provide sufficient stability test data for (b)(4), or other APIs manufactured at your facility.
+Without an appropriate stability program, you lack adequate scientific evidence to support that your APIs meet established specifications and retain their quality attributes throughout their labeled expiry.
+In response to this letter, provide:
+A retrospective risk assessment showing how you will ensure that marketed APIs meet stability specifications throughout their shelf life.
+A comprehensive, independent assessment and CAPA plan to ensure the adequacy of your stability program. Your remediated program should include but should not be limited to:
+o Stability indicating methods
+o Stability studies for each API in its marketed container/closure system before distribution is permitted
+o An ongoing program in which representative lots of each product are added each year to the program to determine if the shelf-life claim remains valid
+o A detailed definition of the specific attributes to be tested at each station (time point)
+o All procedures that describe these and other elements of your remediated stability program.
+
+4. Failure to demonstrate that water used in the manufacture of your API is suitable for its intended use.
+Based on the records and information you provided, you failed to demonstrate that your (b)(4) water system is adequately monitored to ensure that it consistently produces water suitable for use in the manufacture of APIs intended for further processing into sterile drug products.
+Your (b)(4) water system must be adequately designed and properly maintained to minimize and control the potential for contamination. It must be suitable for its intended use and routinely tested at an adequate frequency to ensure ongoing conformance with appropriate chemical and microbiological attributes.
+In response to this letter, provide:
+A procedure for monitoring your water system that specifies routine microbial testing of water to ensure its acceptability for use in each lot of APIs produced by your firm.
+The current action/alert levels for total counts and objectionable organisms used for your (b)(4) Water system.
+A procedure governing your program for ongoing control, maintenance, and monitoring to ensure that the remediated system consistently produces water that meets (b)(4) Water, USP monograph specifications and appropriate microbial limits.
+Test methods, water-analysis frequency, diagrams of the water system, and the location of all sampling points.
+
+Additional API CGMP Guidance
+FDA considers the expectations outlined in ICH Q7 when determining whether API are manufactured in conformance with CGMP. See FDA’s guidance document Q7 Good Manufacturing Practice Guidance for Active Pharmaceutical Ingredients for guidance regarding CGMP for the manufacture of API at https://www.fda.gov/media/71518/download.
+Conclusion
+The deviations cited in this letter are not intended to be an all-inclusive list of deviations that exist at your facility. You are responsible for investigating and determining the causes of any deviations and for preventing their recurrence or the occurrence of other deviations.
+FDA placed all drugs and drug products offered from your firm for import into the United States on Import Alert 66-40 on January 30, 2026.
+Correct any deviations promptly. FDA may withhold approval of new applications or supplements listing your firm as a drug manufacturer until any deviations are completely addressed and we confirm your compliance with CGMP. We may verify that you have completed corrective actions to any deviations.
+Failure to address any deviations may also result in the FDA’s continuing to refuse admission of articles manufactured at Hangzhou Yiqi Biotechnology Co., Ltd, No. 66 Xixiang Road, Puyan Street, Hangzhou, into the United States under section 801(a)(3) of the FD&C Act, 21 U.S.C. 381(a)(3). Articles under this authority that appear to be adulterated or misbranded may be detained or refused admission, in that the methods and controls used in their manufacture do not appear to conform to CGMP within the meaning of section 501(a)(2)(B) of the FD&C Act, 21 U.S.C. 351(a)(2)(B), and are misbranded under section 502 of the FD&C Act, respectively.
+This letter notifies you of our findings and provides you with an opportunity to address the above deficiencies. After you receive this letter, respond to this office in writing within 15 working days. Specify what you have done to address any deviations and to prevent their recurrence. In response to this letter, you may provide additional information for our consideration as we continue to assess your activities and practices. If you cannot complete corrective actions within 15 working days, state your reasons for delay and your schedule for completion.
+Send your electronic reply to CDER-OC-OMQ-Communications@fda.hhs.gov. Identify your response with FEI 3935145155 and ATTN: Chhaya Shetty.
+Sincerely,
+/S/
+Francis Godwin
+Director
+Office of Manufacturing Quality
+Office of Compliance
+Center for Drug Evaluation and Research

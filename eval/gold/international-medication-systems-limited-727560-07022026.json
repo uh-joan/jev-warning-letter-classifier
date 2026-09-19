@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/international-medication-systems-limited-727560-07022026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "Sterile injectable CGMP letter citing TNTC microbial/insect-larvae contamination in the ISO 5 aseptic filling area, RABS design flaws, and a source-water tank biofilm; epinephrine injection lot EA038A5 was voluntarily recalled for lack of sterility assurance. No genus-species organism was identified in the contamination findings, and no adjacent state/region follows the facility city in the inspection sentence.",
+  "expected": {
+    "company": "International Medication Systems Limited",
+    "fei": "2016148",
+    "date": "2026-07-02",
+    "issuing_office": "CDER",
+    "location_contains": "South El Monte",
+    "organisms": [],
+    "products": [
+      "epinephrine injection USP 0.1 mg/mL"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

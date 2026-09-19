@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/spa-de-soleil-inc-728508-07082026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER letter following an on-site inspection of an OTC topical drug manufacturer, citing failure to investigate water-system OOS/OOL microbial and chemical results, inadequate component identity testing (methanol/DEG/EG contamination risk), lack of process validation, unvalidated microbiological test methods, and an ineffective quality unit. Recovered microorganisms were explicitly not identified to genus/species ('Your investigations did not include identification of the recovered microorganisms'), so organisms is empty. Specific product/component names are redacted as (b)(4), so products is empty. Letter also notes some products may be regulated as cosmetics, but no drug product names are given in clear text.",
+  "expected": {
+    "company": "Spa De Soleil, Inc.",
+    "fei": "3003876848",
+    "date": "2026-07-08",
+    "issuing_office": "CDER",
+    "location_contains": "Sun Valley",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

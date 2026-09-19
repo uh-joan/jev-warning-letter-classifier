@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/auriga-research-pvt-ltd-730694-08122026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "Contract testing laboratory CGMP/data-integrity letter (incomplete raw microbial test data, inadequate OOS investigations, 'testing into compliance'); all tested drug/API identities are redacted as (b)(4), so no product is named in clear.",
+  "expected": {
+    "company": "Auriga Research Pvt. Ltd.",
+    "fei": "3019975128",
+    "date": "2026-08-12",
+    "issuing_office": "CDER",
+    "location_contains": "Bengaluru",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "data_integrity",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}
