@@ -125,6 +125,15 @@ And the headline result — the reason the project exists:
 > handed a list of plausible decoy products. That's the discipline a
 > text-writing model can't give you.
 
+### It also knows when a letter *isn't* about a drug
+
+FDA sends Warning Letters about food, produce, and sanitation too. The tool
+labels every letter with what it regulates — `drug`, `biologic`, `device`,
+`compounding`, `food_or_supplement`, `veterinary` — and when a letter is really
+about, say, a syrup maker's sanitation, it reports `regulated_product: "food"`
+and leaves the drug field empty instead of pretending a food is a drug. Knowing
+the limits of your own scope is part of being trustworthy.
+
 ---
 
 ## Try it
