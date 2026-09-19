@@ -30,7 +30,7 @@ const STOP =
  * codes, U.S.C., addresses). None is ever a product name.
  */
 const NON_PRODUCT =
-  /\b(FDA|CFR|C\.F\.R|FD&C|FDCA|U\.?S\.?C|USC|CGMP|GMP|QMS|SOP|SOPs|CAPA|HVAC|RABS|LAF|LAFH|LFH|WFI|HEPA|USP|CFU|FEI|MARCS|CMS|NDC|COA|CoA|EM|PM|QC|QA|QU|API|APIs|OTC|ISO|Stat|Attachment|Image|IMAGE|Dear|Regarding|Corrective|Actions|Establishment)\b/i;
+  /\b(FDA|CFR|C\.F\.R|FD&C|FDCA|U\.?S\.?C|USC|CGMP|GMP|QMS|SOP|SOPs|CAPA|HVAC|RABS|LAF|LAFH|LFH|WFI|HEPA|USP|CFU|FEI|MARCS|CMS|NDC|COA|CoA|EM|PM|QC|QA|QU|API|APIs|OTC|ISO|IPA|BZK|SPF|Stat|Attachment|Image|IMAGE|Dear|Regarding|Corrective|Actions|Establishment)\b/i;
 
 /** A citation-shaped span like "21 CFR 211.113", "127 Stat. 587", "§ 351". */
 const CITATION_SHAPE = /\d+\s*(?:CFR|U\.?S\.?C|Stat|§)|§|\bStat\.|\b\d{2,5}\s+Stat\b/i;
@@ -63,7 +63,11 @@ const clean = (s: string) => s.replace(/\s+/g, " ").replace(/[.,;:'"()]+$/, "").
  * acceptable loss for the precision gained.
  */
 const PROSE =
-  /\b(for|on|in|at|by|from|as|to|with|these|this|that|which|can|pose|sale|use[ds]?|their|your|our|has|have|are|is|be|been|will|not|any|all|other|such|including|namely|section|sections|studied|explored|investigated|introduc\w*|deliver\w*|violat\w*|market\w*|sell|sold|distribut\w*|potential|effects?|impact|influence|modulat\w*|stimulat\w*|reduc\w*|risks?|unapproved|new|adulterat\w*|misbrand\w*)\b/i;
+  /\b(for|on|in|at|by|from|as|to|with|these|this|that|which|can|pose|sale|use[ds]?|their|your|our|has|have|are|is|be|been|will|not|any|all|other|such|including|namely|section|sections|studied|explored|investigated|introduc\w*|deliver\w*|violat\w*|market\w*|sell|sold|distribut\w*|manufactur\w*|intended|expected|contain\w*|potential|effects?|impact|influence|modulat\w*|stimulat\w*|reduc\w*|risks?|unapproved|new|adulterat\w*|misbrand\w*|crumbly)\b/i;
+
+/** Bare excipients / solvents — components, not the finished drug product. */
+const EXCIPIENT =
+  /^(propylene glycol|isopropyl alcohol|isopropanol|ethanol|ethyl alcohol|denatured alcohol|benzalkonium(?: chloride)?|glycerin[e]?|purified water|water|sodium chloride|hand sanitizer|IV bags?)$/i;
 
 /** A phrase looks like a product name (not boilerplate, not a bare common word). */
 function plausible(name: string): boolean {
@@ -71,7 +75,7 @@ function plausible(name: string): boolean {
   if (STOP.test(name)) return false;
   if (PROSE.test(name)) return false; // reject running-prose fragments
   if (NON_PRODUCT.test(name) || CITATION_SHAPE.test(name)) return false; // acronyms / citations
-  if (CODE_SHAPE.test(name) || GENERIC.test(name)) return false; // lot/catalog codes, generic terms
+  if (CODE_SHAPE.test(name) || GENERIC.test(name) || EXCIPIENT.test(name)) return false; // codes, generic terms, excipients
   if (/\d{3,}\s+[A-Z]/.test(name)) return false; // street addresses ("3801 Mojave Court")
   // A capital / digit / internal-cap is the usual product signal. All-lowercase
   // names ("vancomycin", "flunixin meglumine injection") are plausible too:
