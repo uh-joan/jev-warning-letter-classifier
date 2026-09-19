@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/wise-womens-choice-658897-07202023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "CDER website/labeling-review letter (no facility inspection) citing unapproved-new-drug claims for a spermicidal 'natural birth control cream' marketed on the firm's website and Facebook page. Only the unapproved-new-drug provisions (505(a)/301(d)) are cited, not misbranding, so violation_categories is limited to unapproved_new_drug. No FEI or inspected facility is stated.",
+  "expected": {
+    "company": "Wise Women\u2019s Choice",
+    "fei": null,
+    "date": "2023-07-20",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Wise Women\u2019s Choice"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

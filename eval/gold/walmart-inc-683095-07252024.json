@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/walmart-inc-683095-07252024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "FDA purchased 'Skin Beauty Solutions lactic acid skin peel 90%' via walmart.com (Walmart Fulfillment Services); no facility was inspected. Only an unapproved-new-drug violation is charged, with no separate misbranding section in the letter.",
+  "expected": {
+    "company": "Walmart, Inc.",
+    "fei": null,
+    "date": "2024-07-25",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Skin Beauty Solutions lactic acid skin peel 90%"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

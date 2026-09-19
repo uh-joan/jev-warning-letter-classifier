@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/atlanta-supersource-inc-693399-01082025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "Inspection of a Kennesaw drug manufacturing facility (no state given in the inspection sentence itself) found CGMP violations \u2014 shared equipment with industrial chemical products, inadequate release/component testing, unmonitored water system \u2014 rendering hand sanitizer products adulterated, and misbranded due to a false/misleading 'FDA Registered Facility' claim styled like the FDA logo.",
+  "expected": {
+    "company": "Atlanta Supersource, Inc.",
+    "fei": "3016837288",
+    "date": "2025-01-08",
+    "issuing_office": "CDER",
+    "location_contains": "Kennesaw",
+    "organisms": [],
+    "products": [
+      "INSTANT HAND SANITIZER Rinse-Free Gel",
+      "INSTANT HAND SANITIZER Rinse-Free Foam"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

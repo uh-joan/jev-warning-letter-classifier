@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/simtra-biopharma-solutions-720436-03032026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "CDER letter following an unannounced inspection of Simtra Deutschland GmbH (formerly Baxter Oncology GmbH) in Germany, citing aseptic-processing/RABS deficiencies, repeated microbial recoveries at cleaning use points and in ISO 5 environmental monitoring, deficient filter-integrity testing, particle-shedding equipment materials, and inadequate decontamination-cycle validation (recurring positive biological indicators). All drug/system details are redacted as (b)(4), so products is empty. Organisms are reported only at the genus level (e.g., 'Sphingomonas ... species') with no species epithet given, so organisms is empty per the genus-species requirement.",
+  "expected": {
+    "company": "Simtra BioPharma Solutions",
+    "fei": "3002806419",
+    "date": "2026-03-03",
+    "issuing_office": "CDER",
+    "location_contains": "Halle/Westphalia, Germany",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

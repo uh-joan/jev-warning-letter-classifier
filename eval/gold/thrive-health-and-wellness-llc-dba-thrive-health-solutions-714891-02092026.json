@@ -1,0 +1,35 @@
+{
+  "fixture": "fixtures/thrive-health-and-wellness-llc-dba-thrive-health-solutions-714891-02092026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503A pharmacy cited for insanitary sterile-repackaging practices (aseptic work outside ISO 5, no media fills, carpeted flooring, non-sterile gloves) and, because repackaged drugs are ineligible for 503A/503B exemptions, for marketing NAD+ 50 mg/mL and MEGALean (Tirzepatide/Cyanocobalamin) Injections as unapproved, misbranded new drugs. No specific CFR 210/211 CGMP citations or organism findings appear, and the firm already initiated a voluntary recall for lack of sterility assurance.",
+  "expected": {
+    "company": "Thrive Health and Wellness, LLC dba Thrive Health Solutions",
+    "fei": null,
+    "date": "2026-02-09",
+    "issuing_office": "CDER",
+    "location_contains": "Englewood, CO",
+    "organisms": [],
+    "products": [
+      "NAD+ 50 mg/mL",
+      "MEGALean (Tirzepatide/Cyanocobalamin) Injections 10mg/20mg/mL"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "sterility",
+      "aseptic_processing",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "compounding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

@@ -1,0 +1,74 @@
+August 24, 2026
+WARNING LETTER
+Reference Number: 734884
+To Rocco Abate and Michael Fraunfelter:
+This warning letter advises you of significant violations observed during a U.S. Food and Drug Administration (FDA) review of your website. Promptly address the violations described herein without delay, including ensuring that appropriate resources are allocated to fully address the violations and prevent their recurrence. This is not intended to be an all-inclusive list of the violations that may exist in connection with your products or operations. It is your responsibility to ensure that your firm complies with all requirements of federal law, including FDA regulations. Failure to adequately address violations may result in regulatory or legal action without further notice including, without limitation, seizure and injunction.
+These products are especially concerning from a public health perspective because injectable drug products can pose risks of serious harm to users. Injectable products are delivered directly into the body, sometimes directly into the bloodstream, and therefore, bypass some of the body’s key defenses against toxins and microorganisms that can lead to serious and life-threatening conditions.
+FDA Review
+Violations were identified and documented during a review of your website royal-peptides.com in July 2026. Based on our review, “Tirzepatide,” “Semaglutide,” “Retatrutide,” “SS-31 (Elamipretide),” “PT-141,” “Tesamorelin,” and “BIMORELIN” are unapproved new drugs under section 505(a) of the Federal Food, Drug, and Cosmetic Act (FD&C Act), 21 U.S.C. 355(a). As explained further below, introducing or delivering these products for introduction into interstate commerce violates sections 301(d) and 505(a) of the FD&C Act, 21 U.S.C. 331(d) and 355(a).
+This review was conducted as part of FDA’s public health responsibility to protect the public from unsafe, ineffective, and poor-quality drugs.
+Violations of the Federal Food, Drug, and Cosmetic Act
+The following are violations identified during our review. As a reminder, this is not an all-inclusive list of violations that may exist in connection with your products or operations.
+Unapproved New Drug Violations
+Based on a review of your website, “Tirzepatide,” “Semaglutide,” “Retatrutide,” “SS-31 (Elamipretide),” “PT-141,” “Tesamorelin,” and “BIMORELIN” are drugs under section 201(g)(1) of the FD&C Act, 21 U.S.C. 321(g)(1), because they are intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease, and/or intended to affect the structure or any function of the body.1 Examples from your product labeling, including on your website, that provide evidence of the intended use (as defined in 21 CFR 201.128) of these products as drugs include, but may not be limited to, the following:
+Tirzepatide, Retatrutide, and Semaglutide
+On the webpage https://royal-peptides.com/shop/tirzepatide-vials/:
+“Tirzepatide has become a major focus of metabolic, endocrinology, obesity, and peptide science due to its unique activity at both the GLP-1 (Glucagon-Like Peptide-1) and GIP (Glucose-Dependent Insulinotropic Polypeptide) receptors.”
+“Tirzepatide is a synthetic peptide engineered to activate both the GIP receptor and GLP-1 receptor, making it the first widely researched dual incretin agonist. Unlike traditional GLP-1 receptor agonists that target only one metabolic pathway, Tirzepatide simultaneously stimulates two naturally occurring incretin systems involved in glucose regulation and metabolic signaling.”
+
+On the webpage http://royal-peptides.com/tirzepatide-vs-retatrutide-weight-loss-peptides/:
+“Benefits of Tirzepatide: Enhances insulin sensitivity and glucose control[,] Reduces appetite and cravings[,] Promotes sustainable weight loss[, and] Once-weekly injection for convenience
+Clinical Results for Weight Loss
+In studies, Tirzepatide has led to up to 22.5% body weight reduction in participants over 72 weeks—comparable to or even better than Semaglutide (Wegovy, Ozempic).”
+“Benefits of Retatrutide: Boosts metabolism by activating glucagon receptors[,] Enhances glucose control and insulin function[,] Leads to faster and more substantial weight loss than Tirzepatide[, and] Once-weekly dosing
+Clinical Results for Weight Loss
+Early trials suggest that Retatrutide may result in up to 24.2% body weight reduction in just 48 weeks, making it one of the most effective weight loss peptides currently being studied.”
+
+On the webpage https://royal-peptides.com/retatrutide-vs-tirzepatide/:
+“One of the main reasons Retatrutide is searched so heavily is its connection to body composition research. Tirzepatide already became a major comparison point in metabolic studies because of its dual GIP and GLP-1 receptor activity. Retatrutide builds on that research conversation by adding glucagon receptor activity.
+
+Retatrutide Research Interest
+Retatrutide is studied for how triple agonist activity may influence metabolic research models. The addition of glucagon receptor activity is especially important because glucagon is involved in energy balance and hepatic glucose output. This makes Retatrutide interesting in models where researchers are examining energy expenditure, body composition, and metabolic regulation.”
+On the webpage https://royal-peptides.com/shop/tirzepatide-retatrutide-10mg-mix-kit-55-pack/:
+“Unlock dual research potential with Royal Peptides’ Mix 10-Pack Kit, combining 5 vials of Tirzepatide 10mg and 5 vials of Retatrutide 10mg—two powerhouse GLP-1/GIP receptor agonists studied for their roles in metabolic and weight management research.”
+On the webpage https://royal-peptides.com/shop/retatrutide-vial/:
+“Researchers studying incretin biology have long investigated the effects of GLP-1 and GIP receptor activity. Retatrutide expands on this concept by incorporating glucagon receptor activity into the molecule’s design. This additional receptor interaction has created widespread interest among scientists studying metabolic regulation and energy balance.”
+On the webpage https://royal-peptides.com/shop/semaglutide/:
+“Semaglutide Single Vials is categorized under metabolic signaling research. It may be examined in research involving metabolic signaling, receptor selectivity and related biochemical pathways.”
+
+SS-31 (Elamipretide)
+On the webpage https://royal-peptides.com/shop/31pv/:
+“SS-31 (Elamipretide) is a breakthrough mitochondria-targeted tetrapeptide researched for its potential in reducing oxidative stress, enhancing cellular energy production, and supporting mitochondrial function.”
+“Advanced Research Use: Mitochondrial repair, anti-aging, neuroprotection”
+
+Tesamorelin and BIMORELIN
+On the webpage https://royal-peptides.com/shop/tesamorelin-10mg/:
+“Tesamorelin is categorized under growth-signaling research. It may be examined in research involving peptide signaling, endocrine pathways and growth-hormone-related mechanisms.”
+
+On the webpage https://royal-peptides.com/shop/tesamorelin-ipamorelin-blend/:
+“BIMORELIN is a cutting-edge dual peptide blend combining Tesamorelin (10mg) and Ipamorelin (3mg) for advanced research into hormone modulation, body composition, and cellular recovery.”
+“Tesamorelin and Ipamorelin are synthetic peptides frequently utilized in scientific research involving cellular communication, metabolic regulation, recovery pathways, tissue maintenance, and physiological performance studies. When combined, researchers can investigate potential complementary effects across multiple biological systems and signaling networks.”
+
+PT-141
+On the webpage https://royal-peptides.com/shop/pt-141-10mg-vial/:
+“PT-141, also called Bremelanotide (generic clinical name), is a heavily modified synthetic derivative of alpha-melanocyte-stimulating hormone. It has been tested in clinical trials as a treatment for hypoactive sexual desire disorder and acute hemorrhage.”
+“Double-blind, placebo-controlled evaluation of the safety, pharmacokinetic properties and pharmacodynamic effects of intranasal PT-141, a melanocortin receptor agonist, in healthy males and patients with mild-to-moderate erectile dysfunction”
+“PT-141: a melanocortin agonist for the treatment of sexual dysfunction”
+
+“Tirzepatide,” “Semaglutide,” “Retatrutide,” “SS-31 (Elamipretide),” “PT-141,” “Tesamorelin,” and “BIMORELIN” are “new drugs” under section 201(p) of the FD&C Act, 21 U.S.C. 321(p), because they are not generally recognized as safe and effective (GRASE) for use under the conditions prescribed, recommended, or suggested in their labeling. With certain exceptions not applicable here, a new drug may not be introduced or delivered for introduction into interstate commerce without an approved application from FDA in effect, as described in section 505(a) of the FD&C Act, 21 U.S.C. 355(a). No approved applications pursuant to section 505 of the FD&C Act, 21 U.S.C. 355, are in effect for these products. Accordingly, these products are unapproved new drugs. The introduction or delivery for introduction into interstate commerce of these unapproved new drug products violates sections 301(d) and 505(a) of the FD&C Act, 21 U.S.C. 331(d) and 355(a).
+Conclusion
+As previously stated, you are responsible for investigating and determining the root causes of any violations and implementing corrective and preventative measures to ensure future and sustained compliance so that these violations and any others do not occur.
+Send your written response to FDAAdvisory@fda.hhs.gov within fifteen (15) business days of receipt of this letter. Include the specific steps you have taken to correct any violations, an explanation of each step being taken to prevent the recurrence of violations, as well as copies of related documentation. Identify your response with reference number “734884” in the subject line of the email.
+If you have information that you believe demonstrates that your products are not in violation of the FD&C Act and FDA regulations, include that information for our consideration.
+Please note FDA posts warning letters on www.fda.gov.
+Sincerely,
+/S/
+Tina Smith, M.S.
+Captain, U.S. Public Health Service
+Director
+Office of Unapproved Drugs and Labeling Compliance
+Office of Compliance
+Center for Drug Evaluation and Research
+U.S. Food and Drug Administration
+________________________
+1 Despite statements on your product labeling marketing your products “for research use only” and “not for human or animal consumption,” evidence obtained from your website establishes that your products are intended to be drugs for human use. In addition to the cited drug claims, you market bacteriostatic water alongside a “peptide guide” and “peptide calculator,” resources that collectively provide the means to prepare an injectable drug for human administration.

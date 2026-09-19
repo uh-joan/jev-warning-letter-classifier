@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/wuxi-medical-instrument-factory-co-ltd-701044-04042025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "CDER sterile-manufacturing CGMP letter: insanitary conditions (dead insects, debris, hair in tubing/solution used for products labeled sterile), discontinued sterilization method without a validated replacement, no environmental monitoring procedure, improper gowning, and no sterility testing performed. All product/API identities are redacted as (b)(4), so products is empty and product_redacted is true. The firm issued a voluntary recall of sterile (b)(4) product on 2025-02-11 due to lack of sterility assurance, so recall_concern is true. location_contains is 'Wuxi' alone since the inspection sentence itself states no adjacent province.",
+  "expected": {
+    "company": "Wuxi Medical Instrument Factory Co., Ltd.",
+    "fei": "3006851654",
+    "date": "2025-04-04",
+    "issuing_office": "CDER",
+    "location_contains": "Wuxi",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

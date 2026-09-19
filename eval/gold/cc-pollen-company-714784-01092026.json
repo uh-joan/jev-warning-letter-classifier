@@ -1,0 +1,35 @@
+{
+  "fixture": "fixtures/cc-pollen-company-714784-01092026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Human Foods Program dietary-supplement CGMP letter (21 CFR Part 111) for Bee Pollen Granules and Royal Jelly capsules: missing finished-product and component specifications, unapproved/untested components used in manufacturing, no master manufacturing record, and a separate misbranded-labeling finding (incorrect serving size on Royal Jelly label). No FEI is stated in the letter. products includes both the general names used in the main adulteration paragraph and the more specific labeled sizes/variant name used later in the letter.",
+  "expected": {
+    "company": "CC Pollen Company",
+    "fei": null,
+    "date": "2026-01-09",
+    "issuing_office": "Human Foods Program",
+    "location_contains": "Glendale, AZ",
+    "organisms": [],
+    "products": [
+      "Bee Pollen Granules",
+      "Royal Jelly capsules",
+      "Bee Pollen Granules 16 oz",
+      "Royal Jelly 1000 mg 60ct capsules",
+      "CC Pollen Royal Jelly capsules"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

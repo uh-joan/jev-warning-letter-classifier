@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/cohance-lifesciences-limited-718812-01302026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER CGMP letter for an oral-dosage-form manufacturer in India: inadequate complaint/deviation investigations (crumbling/pitted tablets), and confirmed API cross-contamination residues on nondedicated equipment plus inadequate cleaning validation/procedures (21 CFR 211.192, 211.67(a)-(b)). No sterile/aseptic processing is discussed; contamination_present is true because analytical testing confirmed actual API residue cross-contamination on equipment, not merely a hypothetical risk. All specific drug names are redacted as (b)(4) throughout. location_contains uses 'Medchal-Malkajgiri', the last place-name segment in the inspection sentence, since no city/state pairing is given there (the corporate Hyderabad/Telangana address is a mailing address, not the inspected site). Firm voluntarily suspended manufacturing at the facility; no product recall is mentioned, so recall_concern is false.",
+  "expected": {
+    "company": "Cohance Lifesciences Limited",
+    "fei": "3008768274",
+    "date": "2026-01-30",
+    "issuing_office": "CDER",
+    "location_contains": "Medchal-Malkajgiri",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

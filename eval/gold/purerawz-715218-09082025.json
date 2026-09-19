@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/purerawz-715218-09082025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Website-review letter (no facility inspection) charging PureRawz's named Tianeptine products as unapproved new drugs based on antidepressant/disease-treatment claims and testimonials.",
+  "expected": {
+    "company": "PureRawz",
+    "fei": null,
+    "date": "2025-09-08",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Tianeptine Ethyl Ester Sulfate",
+      "Tianeptine Free-Acid",
+      "Tianeptine Sodium",
+      "Tianeptine Sulfate",
+      "Tianeptine Ultimate"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/visgeneer-inc-709010-06132025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Inspection of Visgeneer's Hsinchu City, Taiwan facility found QSR/820 CGMP violations (design validation, complaint handling, supplier controls) rendering the eBchek Blood Glucose Monitoring System adulterated, and a failure to report a correction/removal of the eBuricacid/Uritouch device rendering it misbranded.",
+  "expected": {
+    "company": "Visgeneer, Inc",
+    "fei": null,
+    "date": "2025-06-13",
+    "issuing_office": "CDRH",
+    "location_contains": "Hsinchu City, Taiwan",
+    "organisms": [],
+    "products": [
+      "eBchek Blood Glucose Monitoring System",
+      "eBuricacid/Uritouch Blood Uric acid Monitoring System"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

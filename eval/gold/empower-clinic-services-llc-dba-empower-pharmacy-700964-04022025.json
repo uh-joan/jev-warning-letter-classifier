@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/empower-clinic-services-llc-dba-empower-pharmacy-700964-04022025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503A compounding pharmacy CGMP letter: FDA cites insanitary conditions (inadequate environmental monitoring of the ISO 5 filling area, non-worst-case media fills, unsterilized stopper-handling equipment) causing adulteration under 501(a)(2)(A), framed around the 503A exemption scheme rather than a straight 21 CFR 211 CGMP citation. No product name (even redacted) is ever stated -- only generic 'injectable drug products' and an unnamed (b)(4) filling line -- so products is empty and product_redacted is false (no withheld (b)(4) product name; simply none given). No FEI is stated anywhere in the letter.",
+  "expected": {
+    "company": "Empower Clinic Services, LLC dba Empower Pharmacy",
+    "fei": null,
+    "date": "2025-04-02",
+    "issuing_office": "CDER",
+    "location_contains": "Houston, TX",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "compounding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

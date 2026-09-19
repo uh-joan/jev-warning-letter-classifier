@@ -1,0 +1,34 @@
+{
+  "fixture": "fixtures/happiest-baby-inc-718306-06152026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "CDRH device letter for the SNOO Smart Sleeper/SNOO Hospital Bundle infant bassinet: unapproved changes/modifications requiring new 510(k) submissions (X-Small/X-Large Sleep Sacks, hospital-use marketing), Quality System Regulation (21 CFR 820) complaint-handling, design-control, and CAPA failures, and unreported corrections/removals. contamination_present is true based on complaint reports of stained/soiled, unsanitary refurbished devices shipped to customers (not a microbial finding at a manufacturing facility). recall_concern is true because the letter's 'Corrections and Removals' section addresses an unreported device correction (replacement shipments) under 21 CFR Part 806. linked_to_complaints is left false since no genus-species organism is named. No FEI is stated (device letter; recipient address itself has a redacted line).",
+  "expected": {
+    "company": "Happiest Baby, Inc.",
+    "fei": null,
+    "date": "2026-06-15",
+    "issuing_office": "CDRH",
+    "location_contains": "Los Angeles, CA",
+    "organisms": [],
+    "products": [
+      "SNOO Smart Sleeper",
+      "SNOO Hospital Bundle",
+      "SNOO Sleep Sack",
+      "SNOO Leg Lifters"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

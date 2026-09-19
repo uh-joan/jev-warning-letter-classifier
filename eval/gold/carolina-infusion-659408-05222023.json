@@ -1,0 +1,37 @@
+{
+  "fixture": "fixtures/carolina-infusion-659408-05222023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "Compounding pharmacy letter: drug products (including named sterile injectable/topical formulations) failed section 503A conditions (no valid prescriptions for identified patients for some products), so they lose the 503A exemptions and are separately charged as unapproved new drugs and misbranded (inadequate directions for use), in addition to insanitary-conditions adulteration under 501(a)(2)(A) for sterile compounding: unverified endotoxin-safe materials, poor-quality air influx into a higher-classified area, non-challenging media fills, uncertified dynamic ISO-5 hoods, and actionable growth in February 2022 environmental sampling. No 21 CFR 210/211 CGMP citation is made (violations are charged under 501(a)(2)(A) insanitary conditions instead), so CGMP is omitted from violation_categories. recall_concern is true: firm voluntarily recalled all sterile products within expiry due to lack of sterility assurance.",
+  "expected": {
+    "company": "Carolina Infusion",
+    "fei": null,
+    "date": "2023-05-22",
+    "issuing_office": "Office of Pharmaceutical Quality Operations, Division II",
+    "location_contains": "Ridgeland, SC",
+    "organisms": [],
+    "products": [
+      "Tri-Mix 30/2/20 Injectable",
+      "Lidocaine/Tetracaine/Phenylephrine 21%/7%/2% Ointment",
+      "Lidocaine/Tetracaine 23%/7% Plasticized"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "compounding",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

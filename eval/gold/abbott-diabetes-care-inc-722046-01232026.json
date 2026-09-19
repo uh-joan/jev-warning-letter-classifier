@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/abbott-diabetes-care-inc-722046-01232026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Device QSR (21 CFR 820) warning letter over design transfer, finished-device acceptance, and statistical/validation failures for FreeStyle Libre iCGM sensors; only adulteration (501(h)) is charged, no misbranding or recall/correction section appears.",
+  "expected": {
+    "company": "Abbott Diabetes Care, Inc.",
+    "fei": "3002803444",
+    "date": "2026-01-23",
+    "issuing_office": "CDRH",
+    "location_contains": "Alameda, CA",
+    "organisms": [],
+    "products": [
+      "FreeStyle Libre 3",
+      "FreeStyle Libre 2"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

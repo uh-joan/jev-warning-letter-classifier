@@ -1,0 +1,38 @@
+{
+  "fixture": "fixtures/bausch-lomb-2026.txt",
+  "options": {
+    "seedFromFacility": true
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "Public Bausch & Lomb sterile-manufacturing CGMP letter; product name is redacted as (b)(4) throughout, so drug.name must resolve to null even with facility candidates seeded.",
+  "expected": {
+    "company": "Bausch & Lomb Inc.",
+    "fei": "1000113778",
+    "date": "2026-09-04",
+    "issuing_office": "CDER",
+    "location_contains": "Tampa, FL",
+    "organisms": [
+      "Serratia marcescens",
+      "Stenotrophomonas maltophilia",
+      "Neovaginatispora magiferae",
+      "Geodermatophilus obscurus",
+      "Pseudomonas aeruginosa",
+      "Aspergillus brasiliensis"
+    ],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": true,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

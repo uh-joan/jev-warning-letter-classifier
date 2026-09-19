@@ -1,0 +1,38 @@
+{
+  "fixture": "fixtures/biosensors-interventional-technologies-pte-ltd-662943-07212023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "CDRH device letter for the BioFreedom Drug Coated System (a drug-coated coronary stent): MDR reporting failures (untimely/missing reports for a serious-injury complaint and a malfunction complaint) causing misbranding, plus Quality System regulation (21 CFR 820) adulteration for inadequate CAPA investigations of two clean-room air-sampling microbial action-limit deviations and an inadequate sterilization-process deviation investigation, and inadequate process validation for the drug-coating spray process. The device name appears with several verbatim variants across the letter (System/Coronary Stent system/Coronary Stent/Stent System/proprietary name 'BioFreedom' alone); all are included. location_contains is 'Singapore' alone since the inspection sentence only says the firm is 'located in Tukang Singapore' with no separate city name.",
+  "expected": {
+    "company": "Biosensors Interventional Technologies Pte Ltd",
+    "fei": null,
+    "date": "2023-07-21",
+    "issuing_office": "CDRH",
+    "location_contains": "Singapore",
+    "organisms": [],
+    "products": [
+      "BioFreedom Drug Coated System",
+      "BioFreedom Drug Coated Coronary Stent system",
+      "BioFreedom Drug Coated Coronary Stent",
+      "BioFreedom Drug Coated Stent System",
+      "BioFreedom"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

@@ -1,0 +1,43 @@
+{
+  "fixture": "fixtures/central-admixture-pharmacy-services-inc-687936-07102024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503B outsourcing-facility warning letter framed around loss of the section 503B exemption (unlabeled established drug names, missed adverse-event reporting) plus extensive 21 CFR 211 CGMP citations for sterile drug production (aseptic-technique/disinfection failures, an ISO 5 microbial contamination finding, inadequate environmental monitoring, and a computer-systems access-control failure under 211.68(b), treated here as data_integrity). Classified as 'compounding' rather than cgmp_sterile because the letter's legal framing is built around the 503B outsourcing-facility conditions throughout. Because the products lost their 503B exemption, the letter explicitly charges unapproved_new_drug in a dedicated section (unlike most compounding letters). Voluntary recalls of sterile drug products were initiated due to lack of sterility assurance, so recall_concern is true and contamination_present is true (actual ISO 5 microbial contamination recovered). No FEI is stated; products list is the seven drug products named in the labeling-deficiency finding (section B.1).",
+  "expected": {
+    "company": "Central Admixture Pharmacy Services, Inc.",
+    "fei": null,
+    "date": "2024-07-10",
+    "issuing_office": "CDER",
+    "location_contains": "San Diego, CA",
+    "organisms": [],
+    "products": [
+      "Ephedrine Sulfate",
+      "Fentanyl Citrate",
+      "Hydromorphone Hydrochloride",
+      "Ketamine Hydrochloride",
+      "Succinylcholine Chloride",
+      "Vecuronium Bromide",
+      "Lidocaine Hydrochloride"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "data_integrity",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

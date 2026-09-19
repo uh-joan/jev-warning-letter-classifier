@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/infinant-health-inc-formerly-evolve-biosystems-inc-667715-09282023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "Website/marketing-materials review (no facility inspection) of a probiotic product, Evivo with MCT Oil, containing B. longum subsp. infantis EVC001; cited as an unapproved new drug and unlicensed biological product (no BLA), and as an adulterated food (unsafe food additive) when intended for preterm infants. organisms is left empty because B. longum subsp. infantis EVC001 is the product's own bacterial ingredient, not a contaminant found at a facility.",
+  "expected": {
+    "company": "Infinant Health, Inc formerly Evolve Biosystems Inc.",
+    "fei": null,
+    "date": "2023-09-28",
+    "issuing_office": "CBER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Evivo with MCT Oil"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

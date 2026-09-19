@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/revive-rx-llc-dba-revive-rx-pharmacy-709509-09222025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "503A sterile-compounding pharmacy letter for Houston, TX facility; insanitary-condition adulteration (microbial contamination recovered in ISO aseptic area, deficient smoke studies/media fills/EM) is charged, but no separate 21 CFR 211 CGMP-citation subsection appears, so CGMP category is omitted. Most product detail is (b)(4)-redacted except the named 'TriMix Gel' product, so product_redacted is false.",
+  "expected": {
+    "company": "Revive Rx LLC dba Revive Rx Pharmacy",
+    "fei": null,
+    "date": "2025-09-22",
+    "issuing_office": "CDER",
+    "location_contains": "Houston, TX",
+    "organisms": [],
+    "products": [
+      "TriMix Gel"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

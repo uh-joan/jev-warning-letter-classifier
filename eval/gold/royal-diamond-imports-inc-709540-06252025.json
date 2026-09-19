@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/royal-diamond-imports-inc-709540-06252025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Website/labeling-review letter (no facility inspection) jointly signed by Human Foods Program and CDER: charges the Roxy Instamix kratom drink mix as an adulterated food (unsafe food additive, kratom extract) and the ROXY 7-OH tablet line as unapproved new drugs based on extensive website marketing/testimonial claims. Classified unapproved_drug_marketing per the discover-health-llc and abbott-laboratories precedents for mixed food-adulteration + unapproved-new-drug letters, with issuing_office set to the drug-office signer (CDER) as in those precedents. location_contains is null since only product labeling and the firm's website were reviewed, not a physical facility.",
+  "expected": {
+    "company": "Royal Diamond Imports, Inc.",
+    "fei": null,
+    "date": "2025-06-25",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Roxy Instamix Complex Alkaloid Drink Mix",
+      "ROXY 7-OH tablets",
+      "ROXY+ 7-OH 20mg tablets",
+      "ROXY XL 7-OH 60mg tropical flavor tablets"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

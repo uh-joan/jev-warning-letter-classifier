@@ -1,0 +1,37 @@
+{
+  "fixture": "fixtures/jabil-inc-731037-08272026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "Sterile injectable contract-manufacturing letter (Pharmaceutics International, a Jabil company) citing an inadequately investigated sterility test failure (Ustilago spermophora) and repeated mold recoveries in ISO 5 filling suites, RABS/smoke-study deficiencies, inadequate EM technique, and facility maintenance issues. Subject drug names and strengths are redacted as (b)(4) throughout, so no product is named in clear; no recall or actual recall-raising language appears in the letter.",
+  "expected": {
+    "company": "Jabil Inc.",
+    "fei": "3006503102",
+    "date": "2026-08-27",
+    "issuing_office": "CDER",
+    "location_contains": "Cockeysville, MD",
+    "organisms": [
+      "Ustilago spermophora",
+      "Chaetomium globosum",
+      "Didymella glomerata",
+      "Mycosphaerella africana",
+      "Chaetomium cruentum/globosum"
+    ],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

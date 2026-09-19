@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/reliance-life-sciences-private-limited-730801-08182026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "Sterile-injectable CGMP letter citing falsified microbiology records, inadequate container-closure integrity testing, and poor aseptic behavior in an ISO 5 mock-fill; the firm recalled all sterile drug products and suspended U.S. production. No organism or product name is ever given in clear or as a redacted placeholder tied to a specific product, so products/organisms are empty rather than product_redacted=true.",
+  "expected": {
+    "company": "Reliance Life Sciences Private Limited",
+    "fei": "3009510975",
+    "date": "2026-08-18",
+    "issuing_office": "CDER",
+    "location_contains": "Navi Mumbai, Maharashtra",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "data_integrity",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

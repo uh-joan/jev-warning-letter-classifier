@@ -1,0 +1,64 @@
+Warning Letter 320-26-111
+August 7, 2026
+Dear Mr. Patel:
+The United States Food and Drug Administration (FDA) inspected your drug manufacturing facility, Safrel Pharmaceuticals LLC, FEI 3042030663, at 178 Ridge Road, Dayton, New Jersey, from January 13 to January 30, 2026.
+This Warning Letter summarizes significant violations of Current Good Manufacturing Practice (CGMP) regulations for finished pharmaceuticals. See Title 21, Code of Federal Regulations, parts 210 and 211 (21 CFR parts 210 and 211).
+Because your methods, facilities, or controls for manufacturing, processing, packing, or holding do not conform to CGMP, your drug products are adulterated within the meaning of section 501(a)(2)(B) of the Federal Food, Drug, and Cosmetic Act (FD&C Act), 21 U.S.C. 351(a)(2)(B).
+We reviewed your February 22, 2026, response to our Form FDA 483 in detail.
+During our inspection, our investigators observed specific violations, including but not limited to the following:
+1. Your firm failed to establish an adequate quality unit and the responsibilities and procedures applicable to the quality unit are not in writing and fully followed (21 CFR 211.22(a) and 21 CFR 211.22(d)).
+Your firm, which holds, labels1, releases, and distributes over the counter (OTC) drug products under your own label (b)(4), lacks adequate quality unit (QU) oversight and procedures for the drug products you distribute. During the inspection, you stated that no QU oversight is performed for your suppliers and contract manufacturers, including packagers. Specific failures observed during the inspection include but are not limited to the following:
+The absence of procedures describing how you ensure that the drug products you receive meet quality specifications, and the roles and responsibilities of each party for each of your suppliers (for example, quality agreements). Also, you do not request, receive, or maintain Certificates of Analysis (CoAs) for incoming bulk and finished OTC drug products. Notably, one of your contract manufacturers, (b)(4), has been considered noncompliant with CGMP across multiple FDA inspections.
+Improper segregation of drug products throughout your warehouse to prevent mix-ups. For example, boxes of finished drug products designated as “Unlabeled, No Lot, No Exp” were observed to contain unlabeled, filled product containers stored in the same general area as labeled drug products. Your firm has no written procedures describing how finished drug products are to be received, quarantined before release, stored under appropriate conditions, and approved for distribution. This is also a violation of 21 CFR 211.42.
+A lack of procedures by which the distribution of each lot of drug product can be readily determined, to facilitate its recall if necessary.
+
+In your response, you state that a QU was formally established, and that a quality manual and several SOPs have been created or revised.
+Your response is inadequate. You did not provide a comprehensive evaluation of the current state of your QU’s actual capabilities, nor did you include an assessment of the potential impact on the quality of drug products already distributed.
+Additionally, your response did not appear to address the systemic nature of your QU failures. While you indicate that a supplier qualification program is being implemented and that quality agreements will be executed with all suppliers, you did not provide adequate details to determine how you will ensure that incoming drug products meet appropriate quality specifications or how you will detect, monitor for, and identify CGMP noncompliance by your contract manufacturers.
+With respect to warehousing, your commitment to designate areas for quarantined, released, and rejected materials did not include a timeline for implementation, and you did not conduct a risk assessment for drug products currently held at or previously distributed from your facility under these conditions.
+Regarding traceability, while you commit to updating shipping records to include lot numbers and to creating a new distribution SOP, you did not provide sufficient detail to demonstrate that your proposed system will be capable of achieving adequate traceability (for example, lot-level).
+Your firm’s quality systems are inadequate. For help implementing quality systems and risk management approaches to meet the requirements of CGMP regulations 21 CFR, parts 210 and 211, see FDA’s guidance document Quality Systems Approach to Pharmaceutical CGMP Regulations at https://www.fda.gov/media/71023/download.
+In response to this letter, provide:
+A comprehensive assessment and remediation plan to ensure your QU is given the authority and resources to effectively function. The assessment should also include, but not be limited to:
+o A determination of whether procedures used by your firm are robust and appropriate.
+o Provisions for QU oversight throughout your operations to evaluate adherence to appropriate practices.
+o A complete and final review of each batch and its related information before the QU disposition decision.
+A comprehensive review of your suppliers and contract manufacturers, including but not limited to:
+o Evaluating all suppliers and contract manufacturers to determine if they are reliable and appropriately qualified.
+o An assessment of all drug products to determine whether they are consistently of acceptable quality.
+o A review to ensure assigned expiration dates are appropriate (supported by data).
+o Adequacy of the supplier and contract manufacturer qualification program, and its selection, qualification, and disqualification provisions.
+A comprehensive review of your warehousing of drug products, including but not limited to:
+o Procedures relating to the receipt of drug product, quarantine before release, storage under appropriate conditions, and approval for distribution.
+o A list of the different types of drug products and related materials you store in your warehouse (for example, finished drug products, unlabeled drug products, expired drug products, raw materials and components) and a current inventory, including manufacturer-assigned expiration dates and status (for example, released, quarantined, rejected).
+A comprehensive assessment of documentation systems used throughout your manufacturing operations to determine where documentation practices are insufficient, including lot traceability from receipt through distribution.
+
+Operations Observed During the Inspection
+During the inspection, your firm stated that packaging and labeling activities conducted at the Dayton, New Jersey facility were limited to equipment functionality trials using rejected and expired materials, and that these materials were not intended for distribution. Your firm, however, was unable to provide documentation to support the disposition of the materials used in these trials. Our investigators observed the following:
+Multiple boxes with labels stating, “(b)(4),” and a handwritten note affixed, stating, “Needs to Change Expiry”.
+Multiple boxes of bottled, unlabeled drug products observed throughout the facility (for example, boxes labeled “(b)(4)”).
+(b)(4) boxes, each with a label stating, “(b)(4),” containing bulk tablets imprinted with “(b)(4)” on one side and “(b)(4)” on the other side.
+An operational packaging and labeling line with a (b)(4) product-label roll loaded onto the labeling equipment, accompanied by approximately (b)(4) boxes of corresponding bulk (b)(4) Tablets (Batch No. (b)(4), manufactured in (b)(4)), and empty plastic bottles and caps positioned in the vicinity of the line.
+Numerous large rolls of (b)(4)-branded drug product labels for multiple OTC drug products stored within the office area of the facility.
+
+Your firm was unable to provide documentation of your packaging and labeling operations. As a result, FDA is unable to verify the nature, scope, and disposition of materials and activities conducted at this facility.
+Use of Contract Manufacturers
+Drugs must be manufactured in conformance with CGMP. FDA is aware that many drug manufacturers use independent contractors such as production facilities, testing laboratories, packagers, and labelers. FDA regards contractors as extensions of the manufacturer.
+You are responsible for the quality of your drugs regardless of agreements in place with your contract facilities. You are required to ensure that drugs are made in accordance with section 501(a)(2)(B) of the FD&C Act to ensure safety, identity, strength, quality, and purity. See FDA’s guidance document Contract Manufacturing Arrangements for Drugs: Quality Agreements at https://www.fda.gov/media/86193/download.
+CGMP Consultant Recommended
+Based upon the nature of the violations we identified at your firm, you should engage a consultant qualified as set forth in 21 CFR 211.34 to assist your firm in meeting CGMP requirements.
+Conclusion
+The violations cited in this letter are not intended to be an all-inclusive list of violations that exist at your facility. You are responsible for investigating and determining the causes of any violations and for preventing their recurrence or the occurrence of other violations.
+Correct any violations promptly. Failure to promptly and adequately address this matter may result in regulatory or legal action without further notice including, without limitation, seizure and injunction. Unresolved violations may also prevent other Federal agencies from awarding contracts.
+Failure to address violations may also cause FDA to withhold issuance of Export Certificates. FDA may withhold approval of new applications or supplements listing your firm as a drug manufacturer until any violations are completely addressed and we confirm your compliance with CGMP. We may re-inspect to verify that you have completed corrective actions to address any violations.
+This letter notifies you of our findings and provides you with an opportunity to address the above deficiencies. After you receive this letter, respond to this office in writing within 15 working days. Specify what you have done to address any violations and to prevent their recurrence. In response to this letter, you may provide additional information for our consideration as we continue to assess your activities and practices. If you cannot complete corrective actions within 15 working days, state your reasons for delay and your schedule for completion.
+Send your electronic reply to CDER-OC-OMQ-Communications@fda.hhs.gov. Identify your response with FEI 3042030663 and ATTN: Maria Pavco.
+Sincerely,
+/S/
+Francis Godwin
+Director
+Office of Manufacturing Quality
+Office of Compliance
+Center for Drug Evaluation and Research
+_____________________________
+1 See 21 CFR 211.42 (b) regarding adequate control of labels, regardless of whether drug product labelling is conducted at your facility or sent to a contract manufacturer.

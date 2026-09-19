@@ -1,0 +1,35 @@
+{
+  "fixture": "fixtures/kimera-labs-inc-649343-09012023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "Exosome (XoGlo/XoGlo Pro) and amniotic-fluid (Amnio2X) products marketed as unlicensed biological products (no BLA; distribution outside the IND for XoGlo Pro), combined with extensive sterile-drug CGMP deviations. Issuing office is 'Office of Biological Products Operations - Division 1'; the letter body never spells out the CBER acronym so the office name is used as published. No FEI is stated anywhere in the letter.",
+  "expected": {
+    "company": "Kimera Labs, Inc.",
+    "date": "2023-09-01",
+    "issuing_office": "Office of Biological Products Operations \u2013 Division 1",
+    "location_contains": "Miramar, FL",
+    "organisms": [],
+    "products": [
+      "XoGlo\u00ae",
+      "XoGlo\u00aePro",
+      "Amnio2X\u00ae"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

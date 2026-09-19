@@ -1,0 +1,35 @@
+{
+  "fixture": "fixtures/citra100mg-722606-03042026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Pure website-review letter (no facility inspection) to an internet seller of tramadol marketed under several brand names, without a prescription requirement, as unapproved and misbranded opioids. location_contains is null because only the website was reviewed. 'tramadol' itself is excluded from products as the generic active-ingredient name; the six quoted brand names are the verbatim product names cited.",
+  "expected": {
+    "company": "Citra100mg",
+    "fei": null,
+    "date": "2026-03-04",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Citra 100mg",
+      "Clovidol 100mg",
+      "Jpdol 100mg",
+      "Ol tram 100mg",
+      "OL-tram Loose Pills",
+      "Trakem 100 mg"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

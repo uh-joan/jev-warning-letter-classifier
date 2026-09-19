@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/medline-inc-724347-05282026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER CGMP letter for finished-pharmaceutical manufacturing: repeated Bacillus cereus recoveries from finished drug product and the manufacturing environment (including from a bulk component supplied by a sister Medline facility in Hartland, WI) with inadequate investigations/CAPA, poor aseptic behavior (gloves, cleaning) cited as a root cause, and a request that the firm assess transitioning these products to terminal sterilization or aseptic processing. Classified cgmp_nonsterile / is_sterile_product false because the letter's own recommendation to 'transition... to terminal sterilization, or implement aseptic processing' indicates the products are not currently manufactured as sterile, even though cleanroom/aseptic-behavior deficiencies are cited (aseptic_processing and environmental_monitoring included as judgment calls for that reason). All specific drug/product names are redacted as (b)(4). No recall, withdrawal, or distributed-batch assessment language is raised (only production suspension), so recall_concern is false.",
+  "expected": {
+    "company": "Medline Inc",
+    "fei": "3003983334",
+    "date": "2026-05-28",
+    "issuing_office": "CDER",
+    "location_contains": "Waukegan, IL",
+    "organisms": [
+      "Bacillus cereus"
+    ],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "environmental_monitoring",
+      "aseptic_processing"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

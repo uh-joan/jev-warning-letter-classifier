@@ -10,7 +10,8 @@
 
 import { readFileSync } from "node:fs";
 import { extractCandidates } from "./extract.js";
-import { classifyWarningLetter } from "./index.js";
+import { classifyWarningLetter, gatherCandidates } from "./index.js";
+import { loadLetter } from "./load.js";
 
 function loadDotEnv() {
   try {
@@ -36,18 +37,30 @@ async function main() {
     process.exit(1);
   }
 
-  const text = readFileSync(file, "utf8");
-  const opts = { seedFromFacility: seedFacility };
+  const { text, meta } = loadLetter(file);
+  const opts = {
+    seedFromFacility: seedFacility,
+    meta,
+    propose: args.includes("--propose"),
+    seedFromOpenFda: args.includes("--openfda"),
+    enrichFromOpenFda: args.includes("--openfda"),
+  };
 
   if (extractOnly) {
-    console.log(JSON.stringify(extractCandidates(text, opts), null, 2));
+    // Deterministic extraction only, unless a network candidate source was asked for.
+    const out =
+      opts.propose || opts.seedFromOpenFda
+        ? await gatherCandidates(text, opts)
+        : extractCandidates(text, opts);
+    console.log(JSON.stringify(out, null, 2));
     return;
   }
 
-  if (!process.env.AI_GATEWAY_API_KEY && !process.env.TYPESAFE_AI_API_KEY) {
+  if (!process.env.TYPESAFE_AI_API_KEY && !process.env.TYPESAFE_API_KEY) {
     console.error(
-      "No AI_GATEWAY_API_KEY set. Run with --extract-only to see deterministic extraction,\n" +
-        "or copy .env.example to .env and add your Vercel AI Gateway key.",
+      "No TYPESAFE_AI_API_KEY set (Jev runs through the TypeSafe SDK). Run with --extract-only\n" +
+        "to see deterministic extraction, or copy .env.example to .env and add your TypeSafe key.\n" +
+        "(--propose additionally needs AI_GATEWAY_API_KEY for the candidate proposer.)",
     );
     process.exit(2);
   }

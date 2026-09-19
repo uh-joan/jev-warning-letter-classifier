@@ -1,0 +1,25 @@
+{
+  "fixture": "fixtures/cellebration-llc-713252-09122025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "CBER letter based solely on a review of the firm's website (offering cord-blood-derived cellular products for treating diseases such as autism, MS, Parkinson's, etc., making them drugs/biological products) plus repeated failure to produce records FDA requested under section 704(a)(4) -- the only violation actually charged is refusal to permit access to records (301(e)), not adulteration/misbranding/unapproved-new-drug/CGMP/compounding, so violation_categories is empty. No facility inspection occurred (records-refusal + website review only), so location_contains is null per the 'website review with no facility inspection' rule, even though the firm's (redacted) address is mentioned in passing. No specific commercial product name or organisms are stated.",
+  "expected": {
+    "company": "Cellebration LLC",
+    "fei": null,
+    "date": "2025-09-12",
+    "issuing_office": "CBER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

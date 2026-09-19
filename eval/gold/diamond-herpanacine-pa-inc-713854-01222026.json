@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/diamond-herpanacine-pa-inc-713854-01222026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Pure website/social-media-review letter (no facility inspection) charging that disease-treatment/prevention claims for the dietary supplements Diamond Eye Health and Herpanacine Skin Support make them unapproved new drugs, and that they are also misbranded under 502(f)(1) because adequate directions for such uses cannot be written for lay use. location_contains is null since only the website and Facebook page were reviewed, not a physical facility.",
+  "expected": {
+    "company": "Diamond-Herpanacine of PA, Inc.",
+    "fei": null,
+    "date": "2026-01-22",
+    "issuing_office": "Human Foods Program",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Diamond Eye Health",
+      "Herpanacine Skin Support"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

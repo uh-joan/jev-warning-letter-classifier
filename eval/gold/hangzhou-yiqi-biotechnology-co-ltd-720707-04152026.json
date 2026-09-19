@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/hangzhou-yiqi-biotechnology-co-ltd-720707-04152026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER API-manufacturer CGMP letter (based on a 704(a)(4) records review, not an on-site inspection): failure to validate the manufacturing process and test methods, no stability program, and inadequate water-system qualification for (b)(4) APIs intended for further processing into sterile drug products. The letter never asserts the API itself is sterile, so is_sterile_product is false. All subject APIs are referred to only as '(b)(4) APIs' -- no product name is ever given in clear -- so products is empty and product_redacted is true. No organism is named. Note: the letter states two different FEI digit strings for the same facility -- 'FEI 3035145155' in the opening paragraph identifying the facility and 'FEI 3935145155' in the closing reply instructions -- an apparent digit-transposition typo in the source letter; I used the facility-identifying value as the canonical FEI.",
+  "expected": {
+    "company": "Hangzhou Yiqi Biotechnology Co., Ltd",
+    "fei": "3035145155",
+    "date": "2026-04-15",
+    "issuing_office": "CDER",
+    "location_contains": "Hangzhou, Zhejiang",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

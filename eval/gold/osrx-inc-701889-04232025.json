@@ -1,0 +1,39 @@
+{
+  "fixture": "fixtures/osrx-inc-701889-04232025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "CDER Office of Compounding Quality and Compliance letter for a 503B outsourcing facility (Missoula, MT): failure to meet 503B labeling conditions (missing ingredient list and adverse-event-reporting/directions statements on named ophthalmic solutions), insanitary sterile-compounding conditions and CGMP violations (inadequate smoke studies, unaddressed microbial contamination recovered in the ISO 5 aseptic area, environmental monitoring, process validation), misbranding, and loss of the 503B exemption resulting in unapproved-new-drug status. contamination_present is true given the explicit statement that microbial contamination was recovered within the ISO 5 aseptic processing area. No FEI is stated in the letter (only the WL number).",
+  "expected": {
+    "company": "OSRX, Inc.",
+    "fei": null,
+    "date": "2025-04-23",
+    "issuing_office": "CDER",
+    "location_contains": "Missoula, MT",
+    "organisms": [],
+    "products": [
+      "Prednisolone Phosphate 1% Moxifloxacin 0.5% 5ml Sterile Ophthalmic Solution",
+      "Atropine Sulfate 0.025% 3.5ml Sterile Ophthalmic Solution",
+      "Prednisolone Phosphate 1% Bromfenac 0.075% 5ml Sterile Ophthalmic Solution",
+      "Moxifloxacin 0.5% Bromfenac 0.075% 5ml Sterile Ophthalmic Solution"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

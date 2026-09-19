@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/pharmacy-plus-inc-dba-vital-care-compounder-659051-06062023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "Sterile drug compounding warning letter under FDCA 503A citing ISO 5 insanitary conditions, inadequate media fills/smoke studies, and out-of-specification environmental monitoring results; the firm had already initiated a sterility-related recall on Oct 7, 2022, which FDA acknowledges. No 21 CFR 210/211 CGMP citation is made.",
+  "expected": {
+    "company": "Pharmacy Plus, Inc., dba Vital Care Compounder",
+    "fei": null,
+    "date": "2023-06-06",
+    "issuing_office": "Office of Pharmaceutical Quality Operations, Division II",
+    "location_contains": "Hattiesburg, MS",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "adulteration",
+      "compounding",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

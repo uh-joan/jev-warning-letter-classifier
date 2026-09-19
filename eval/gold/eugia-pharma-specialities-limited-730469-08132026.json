@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/eugia-pharma-specialities-limited-730469-08132026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "CDER sterile-injectable CGMP letter for an aseptic processing facility (RABS/ISO 5 design flaws, poor aseptic technique, inadequate process simulation). All product names are redacted as (b)(4) throughout, so no product is named in clear. No specific organism is named; the letter discusses contamination hazards/risk, not a confirmed contamination finding, so contamination_present is false.",
+  "expected": {
+    "company": "Eugia Pharma Specialities Limited",
+    "fei": "3011960448",
+    "date": "2026-08-13",
+    "issuing_office": "CDER",
+    "location_contains": "Kolthur Village",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

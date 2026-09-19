@@ -1,0 +1,34 @@
+{
+  "fixture": "fixtures/beta-bionics-inc-717927-01282026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Device QSR letter (CAPA, risk analysis, complaint handling, nonconforming product) plus MDR reporting and Corrections/Removals violations for the iLet Bionic Pancreas System. No FEI number is stated in the letter text. recall_concern is true because the letter directly discusses the firm's Class III recall and FDA's authority over recall classification, plus unreported corrections/removals.",
+  "expected": {
+    "company": "Beta Bionics, Inc.",
+    "fei": null,
+    "date": "2026-01-28",
+    "issuing_office": "CDRH",
+    "location_contains": "Irvine, CA",
+    "organisms": [],
+    "products": [
+      "iLet Dosing Decision Software",
+      "iLet ACE Pump",
+      "iLet Bionic Pancreas System",
+      "iLet Bionic Pancreas Model TA000036"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

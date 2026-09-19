@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/healthy-male-716506-09092025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "CDER Office of Compounding Quality and Compliance website-review letter (no facility inspection) charging misbranding under 502(a)/502(bb) for false/misleading weight-loss efficacy claims about compounded tirzepatide; footnote 1 confirms semaglutide products are also offered on the site and covered by the same framework, so both are listed as products. Classified 'compounding' (matching the NativeMed precedent) since the charge is misbranding of compounded drugs under 502(bb), a compounding-specific provision, not a 505 unapproved-new-drug claim. is_sterile_product is set false to match the NativeMed precedent for this same letter template, since the letter itself never states a route of administration even though tirzepatide/semaglutide are typically injectable. No FEI or facility is stated (website review only), so fei and location_contains are null.",
+  "expected": {
+    "company": "Healthy Male",
+    "fei": null,
+    "date": "2025-09-09",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "tirzepatide",
+      "semaglutide"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "misbranding",
+      "compounding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

@@ -1,0 +1,59 @@
+September 18, 2025
+WARNING LETTER
+CMS #706900
+Dear Mr. Petermann:
+The U.S. Food and Drug Administration (FDA) conducted an inspection of your facility located at 3001 Joe Dimaggio Boulevard, Ste. 500, Round Rock, TX on December 18 – 19, 2024. We also conducted a review of your website, www.timechallengerlabs.com, in May 2025. Based on inspectional findings, our review of the product labeling collected during the inspection, and our review of your website, we have identified significant violations of the Federal Food, Drug, and Cosmetic Act (the Act) and applicable
+regulations. You can find the Act and FDA regulations through links on FDA's home page at www.fda.gov.
+At the conclusion of the inspection on December 19, 2024, our investigator provided you with a Form FDA 483, Inspectional Observations (FDA 483). We acknowledge receipt of your response dated January 8, 2025, and we address your response below.
+Unapproved New Drug[s]
+FDA reviewed your website at the Internet address www.timechallengerlabs.com in May 2025 and has determined that you take orders there for the products “Adrenal Boost,” “Chaga,” “Brain & Vein,” “Thyroid Support,” and “UTI” for sale in the United States. The claims on your website establish that the products are drugs under section 201(g)(1) of the Act [21 U.S.C. 321(g)(1)] because they are intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease, and/or intended to affect the structure or any function of the body. As explained further below, introducing or delivering these products for introduction into interstate commerce for such uses violates the Act.
+Examples of some of the claims that provide evidence that your products are intended for use as drugs include:
+On your “Adrenal Boost” product page https://timechallengerlabs.com/adrenal-boost-herbal-tincture/:
+􀁸 “Adrenal Boost is commonly used to increase energy and for hormonal balance.”
+􀁸 “[B]lood pressure lowering activity by relaxing of the blood vessels farther from the heart . . . lower cholesterol by increasing the excretion of bile, reducing the formation of cholesterol, and enhancing the receptors for LDLs.”
+􀁸 [U]sed for fatigue, anxiety, depression, psychiatric disorders, Alzheimer's disease, and improving memory and intelligence.”
+􀁸 “[T]reat inflammation, including arthritis & osteoarthritis . . . aid blood circulation.”
+On your “Chaga” product page https://timechallengerlabs.com/chaga-herbal-tincture/:
+􀁸 “Chaga is commonly used for the moderation of the signs of malignant and abnormal cell growth.”
+On your “Brain & Vein” product page https://timechallengerlabs.com/brain-vein-herbal-tincture/:
+􀁸 “It works by helping the blood pressure, the heart circulation and relaxing the heart . . . help strengthen a weak heart.”
+􀁸 “[P]owerful antioxidant . . . some blood pressure lowering activity . . . reducing the formation of cholesterol”
+􀁸 [U]sed for heart conditions, including heart failure, irregular heartbeat, and heart symptoms due to anxiety.”
+􀁸 “[U]sed for chest pain (angina), fluid retention . . . weak heart function (heart failure) . . . heart stimulant.”
+􀁸 “[U]sed for bladder infections and other urinary tract problems, bleeding, and shortness of breath.”
+On your “Thyroid Support” product page https://timechallengerlabs.com/thyroid-support-herbal-tincture/:
+􀁸 “[H]elp to support the health of the Thyroid whether you have issues with Hyper or Hypo Thyroid issues.”
+On your “UTI” product page https://timechallengerlabs.com/uti-herbal-tincture/:
+􀁸 “[P]owerful antibacterial and antifungal properties.”
+􀁸 “[S]timulates digestion and supports the liver.”
+􀁸 “[R]emedy used for signs of a urinary tract infection.”
+􀁸 “[S]upport the immune system’s ability to kill bacteria.”
+Your “Adrenal Boost,” “Chaga,” “Brain & Vein,” “Thyroid Support,” and “UTI” products are not generally recognized as safe and effective (GRASE) for the above referenced uses and, therefore, these products are “new drugs” under section 201(p) of the Act [21 U.S.C. 321(p)]. Subject to certain exceptions not applicable here, new drugs may not be legally introduced or delivered for introduction into interstate commerce without an approved application from FDA in effect, as described in section 505(a) of the Act [21 U.S.C. 355(a)]. There are no FDA-approved applications in effect for any of your “Adrenal Boost,” “Chaga,” “Brain & Vein,” “Thyroid Support,” and “UTI” products. Accordingly, these products are unapproved new drugs marketed in violation of sections 505(a) and 301(d) of the FD&C Act [21 U.S.C 355(a) and 331(d)].
+Adulterated Dietary Supplements
+The inspection of your facility on December 18-19, 2024 identified serious violations of the FDA’s regulations for Current Good Manufacturing Practice (CGMP) in Manufacturing, Packaging, Labeling, or Holding Operations for Dietary Supplements, under Title 21, Code of Federal Regulations (CFR), Part 111 (21 CFR Part 111). These violations cause the dietary supplements manufactured at your facility to be adulterated within the meaning of section 402(g)(1) of the Act [21 U.S.C. 342(g)(1)] because they have been prepared, packed, or held under conditions that do not meet CGMP requirements for dietary supplements.
+Your significant violations of the CGMP requirements are as follows:
+1. You failed to establish product specifications for identity, purity, strength, and composition of the finished batch of the dietary supplement, and for limits on those types of contaminants that may adulterate, or that may lead to adulteration of, the finished batch of the dietary supplement to ensure the quality of the dietary supplement, as required in 21 CFR 111.70(e). Specifically, you did not establish product specifications for identity, purity, strength, and composition of the dietary supplements that you manufacture.
+This is a repeat observation from the FDA-483 issued to you on November 17, 2021.
+In addition to establishing the required specifications, you must determine whether such specifications are met, in accordance with 21 CFR 111.73 and 111.75
+2. For each component that you use in the manufacture of a dietary supplement, you failed to establish an identity specification, and specifications that are necessary to ensure that specifications for the purity, strength and composition of dietary supplements manufactured using the component are met, in accordance with 21 CFR 111.70(b). Specifically, you did not establish component specifications for the dietary ingredients that you use in the manufacture of your dietary supplements.
+In addition to establishing the required specifications, you must determine whether such specifications are met, in accordance with 21 CFR 111.73 and 111.75.
+3. You failed to prepare a written master manufacturing record for each unique formulation of a dietary supplement that you manufacture and for each batch size of a dietary supplement that you manufacture, to ensure uniformity in the finished batch from batch to batch, as required by 21 CFR 111.205(a). Specifically, during the inspection you acknowledged that you have no master manufacturing records for dietary supplements.
+This is a repeat observation from the FDA-483 issued to you on November 17, 2021.
+4. You failed to prepare a batch production record (BPR) every time you manufactured a batch of dietary supplements, as required by 21 CFR 111.255(a). Specifically, you do not have BPRs for your dietary supplements.
+5. You failed to establish and follow written procedures for the responsibilities of the quality control operations, including written procedures for conducting a material review and making a disposition decision, and for approving or rejecting any reprocessing, as required 21 CFR 111.103. Specifically, you have not established written procedures for quality control operations for dietary supplements.
+This is a repeat observation from the FDA-483 issued to you on November 17, 2021. During the inspection, you provided a Standard Operating Procedure (SOP) for your quality assurance program that you stated has not been implemented. Even if this SOP had been implemented, it does not address the requirements of 21 CFR 111.103 and 21 CFR 111.105.
+We reviewed your January 8, 2025 response to the FDA 483 issued at the conclusion of the inspection on December 19, 2024. The response states you plan to implement GMP records and correct the violations for each product before resuming commercial activities and that you would respond no later than March 3, 2025. No documents or records were included with the response, and we have not received additional communications from you that demonstrate any corrective actions have been taken.
+Misbranded Dietary Supplements
+In addition, we reviewed your product labels collected during the inspection and have determined the Resveratrol product you manufacture is misbranded under section 403 of the Act [21 U.S.C. 343] because it does not comply with the labeling requirements for dietary supplements. Specifically, we identified the following:
+1. Your Resveratrol product is misbranded within the meaning of 403(s)(2)(B) of the Act [21 U.S.C. 343 (s)(2)(B)] because the product label fails to identify the product by using the term “dietary supplement” in accordance with section 21 CFR 101.3(g), which requires that a dietary supplement be identified by the term “dietary supplement” as part of the product’s statement of identity, except the word “dietary” may be deleted and replaced by the name of the dietary ingredient in the product or an appropriate descriptive term.
+2. Your Resveratrol product is misbranded within the meaning of 403(s)(2)(C) of the Act [21 U.S.C. 343 (s)(2)(C)] because the product label fails to identify the part of the plant (e.g., root, leaves) from which each botanical dietary ingredient in the product is derived, as required by 21 CFR 101.4(h)(1).
+This letter is not intended to be an all-inclusive statement of violations that may exist in connection with your products. You are responsible for investigating and determining the causes of any violations and for preventing their recurrence or the occurrence of other violations. It is your responsibility to ensure that your firm complies with all requirements of federal law, including FDA regulations.
+This letter notifies you of our concerns and provides you an opportunity to address them. Failure to adequately address this matter may result in legal action including, without limitation, seizure and injunction.
+Please notify FDA in writing, within 15 working days of receipt of this letter, of the specific steps you have taken to address any violations. Include an explanation of each step being taken to prevent the recurrence of violations, as well as copies of related documentation. If you cannot complete corrective actions within 15 working days, state the reason for the delay and the time within which you will do so. If you believe that your products are not in violation of the Act, include your reasoning and any supporting information for our consideration.
+Your written reply should be directed to Kimberly Dutzek, United States Food and Drug Administration, Human Foods Program, Office of Enforcement, 5001 Campus Drive, College Park, Maryland 20740- 3835 or via email at HFP-OCE-DietarySupplements@fda.hhs.gov. Please reference CMS #706900 on any submissions and within the subject line of any emails to us. If you have any questions, you may email at HFP-OCE DietarySupplements@fda.hhs.gov.
+Sincerely,
+/S/
+Maria Knirk, J. D., M. B. A.
+Acting Director, Office of Enforcement
+Office of Compliance and Enforcement
+Human Foods Program

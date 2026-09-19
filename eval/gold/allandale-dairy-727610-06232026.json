@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/allandale-dairy-727610-06232026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "other",
+  "notes": "CVM dairy-farm letter citing (1) adulteration of a food-producing animal sold for slaughter due to a sulfadimethoxine tissue-residue violation and inadequate treatment records, and (2) adulteration of new animal drugs via extralabel use of Sulfadimethoxine Injection 40% and flunixin meglumine injection outside veterinary-prescription/label directions (21 CFR 530). Classified 'other' per the dejong-family-dairy precedent: this is a farm-level residue/extralabel-use adulteration case, not CGMP/compounding/device/food_supplement/biologics/unapproved-marketing. Both drug names appear partly in clear text (formulation/generic name unredacted, only a trailing (b)(4) -- likely brand name or exact dose -- redacted), so product_redacted is false and both are listed as products, unlike dejong where the drug name was fully redacted.",
+  "expected": {
+    "company": "Allandale Dairy",
+    "fei": null,
+    "date": "2026-06-23",
+    "issuing_office": "CVM",
+    "location_contains": "Pierz, MN",
+    "organisms": [],
+    "products": [
+      "Sulfadimethoxine Injection 40%",
+      "flunixin meglumine injection"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

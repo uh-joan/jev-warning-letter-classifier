@@ -1,0 +1,60 @@
+August 24, 2026
+WARNING LETTER
+Reference Number: 735067
+To Felicia Romero:
+This warning letter advises you of significant violations observed during a U.S. Food and Drug Administration (FDA) review of your website. Promptly address the violations described herein without delay, including ensuring that appropriate resources are allocated to fully address the violations and prevent their recurrence. This is not intended to be an all-inclusive list of the violations that may exist in connection with your products or operations. It is your responsibility to ensure that your firm complies with all requirements of federal law, including FDA regulations. Failure to adequately address violations may result in regulatory or legal action without further notice including, without limitation, seizure and injunction.
+These products are especially concerning from a public health perspective because injectable drug products can pose risks of serious harm to users. Injectable products are delivered directly into the body, sometimes directly into the bloodstream, and therefore, bypass some of the body’s key defenses against toxins and microorganisms that can lead to serious and life-threatening conditions.
+FDA Review
+Violations were identified and documented during a review of your website texpeptide.com in July 2026. Based on our review, “Semaglutide (GLP-1 SEM),” “Tirzepatide (GLP-2 TRZ),” “Retatrutide (GLP-3 RT),” “SS-31 (Elamipretide),” “Tesamorelin,” “PT-141 (Bremelanotide),” and “Bacteriostatic Water 0.9% Benzyl Alcohol (10 ml)” are unapproved new drugs under section 505(a) of the Federal Food, Drug, and Cosmetic Act (FD&C Act), 21 U.S.C. 355(a). As explained further below, introducing or delivering these products for introduction into interstate commerce violates sections 301(d) and 505(a) of the FD&C Act, 21 U.S.C. 331(d) and 355(a).
+This review was conducted as part of FDA’s public health responsibility to protect the public from unsafe, ineffective, and poor-quality drugs.
+Violations of the Federal Food, Drug, and Cosmetic Act
+The following are violations identified during our review. As a reminder, this is not an all-inclusive list of violations that may exist in connection with your products or operations.
+Unapproved New Drug Violations
+Based on a review of your website,“Semaglutide (GLP-1 SEM),” “Tirzepatide (GLP-2 TRZ),” “Retatrutide (GLP-3 RT),” “SS-31 (Elamipretide),” “Tesamorelin,” “PT-141 (Bremelanotide),” and “Bacteriostatic Water 0.9% Benzyl Alcohol (10 ml)” are drugs under section 201(g)(1) of the FD&C Act, 21 U.S.C. 321(g)(1), because they are intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease, and/or intended to affect the structure or any function of the body.1 Examples from your product labeling, including on your website, that provide evidence of the intended use (as defined in 21 CFR 201.128) of these products as drugs include, but may not be limited to, the following:
+GLP-1 SEM (Semaglutide)
+On the webpage https://texpeptide.com/product/glp-1-sem/:
+“By binding to GLP-1 receptors, it enhances insulin secretion, suppresses glucagon release, and slows gastric emptying, ultimately helping to regulate blood glucose levels. This makes GLP-1 SEM a key area of interest in the management of type 2 diabetes, obesity, and metabolic disorders.”
+“In addition to its glucose-lowering effects, GLP-1 SEM has been shown to support weight loss by reducing appetite and promoting a feeling of fullness, making it a valuable therapeutic candidate in obesity management. Research also suggests potential benefits for cardiovascular health, liver function, and neuroprotection, expanding its relevance beyond diabetes care.”
+
+GLP-2 TRZ (Tirzepatide)
+On the webpage https://texpeptide.com/product/glp-2-trz/:
+“GLP-2 TRZ enhances insulin secretion, reduces glucagon levels, and promotes appetite regulation, offering a powerful approach to improving blood sugar control and weight management.”
+“Beyond its primary effects on glucose metabolism and weight loss, GLP-2 TRZ is being investigated for its potential in cardiovascular health, lipid regulation, and reducing systemic inflammation. Its role in insulin sensitivity, appetite suppression, and long-term metabolic improvements makes it a promising therapeutic option in endocrinology and obesity research.”
+
+GLP-3 RT (Retatrutide)
+On the webpage https://texpeptide.com/product/glp-3-rt/:
+“GLP-3 RT offers a unique and comprehensive approach to regulating glucose metabolism, energy balance, and weight management.”
+“Early research suggests that GLP-3 RT may provide superior outcomes compared to GLP-1 or dual agonists alone, including greater weight reduction, improved insulin sensitivity, enhanced lipid metabolism, and better long-term metabolic stability. Additionally, studies are investigating its potential in cardiovascular protection, liver health (NAFLD/NASH), and neuroendocrine regulation.”
+
+SS-31 (Elamipretide)
+On the webpage https://texpeptide.com/product/ss-31/:
+“SS-31 helps stabilize mitochondrial membranes, reduce oxidative stress, and improve electron transport chain efficiency, ultimately enhancing cellular energy production (ATP).”
+“This peptide has been widely studied for its antioxidant and cytoprotective properties, making it a promising therapeutic candidate for conditions linked to mitochondrial dysfunction.”
+
+Tesamorelin
+On the webpage https://texpeptide.com/product/tesamorelin/:
+“Tesamorelin is a synthetic peptide analog of Growth Hormone-Releasing Hormone (GHRH), a naturally occurring hormone that stimulates the pituitary gland to release growth hormone (GH). By mimicking the natural activity of GHRH, Tesamorelin effectively increases the production and secretion of growth hormone, which in turn elevates levels of insulin-like growth factor-1 (IGF-1) in the body.”
+
+PT-141 (Bremelanotide)
+On the webpage https://texpeptide.com/product/pt-141/:
+“PT-141, also known as bremelanotide . . . is specifically researched for its ability to increase arousal and desire. PT-141 targets the central nervous system directly to improve libido and pleasure. It’s an effective and powerful enhancer for both mood and your senses.”
+
+Bacteriostatic Water 0.9% Benzyl Alcohol (10 ml)
+Your firm offers “Bacteriostatic Water 0.9% Benzyl Alcohol (10 ml)” for sale to be used to reconstitute the peptide products sold on your website, which are drugs intended for injection, including the six above-mentioned products. The sale of these products together demonstrates that you intend your “Bacteriostatic Water 0.9% Benzyl Alcohol (10 ml)” to be used in combination for injection. Therefore, your “Bacteriostatic Water 0.9% Benzyl Alcohol (10 ml)” is a drug.
+Semaglutide (GLP-1 SEM),” “Tirzepatide (GLP-2 TRZ),” “Retatrutide (GLP-3 RT),” “SS-31 (Elamipretide),” “Tesamorelin,” “PT-141 (Bremelanotide),” and “Bacteriostatic Water 0.9% Benzyl Alcohol (10 ml)” are “new drugs” under section 201(p) of the FD&C Act, 21 U.S.C. 321(p), because they are not generally recognized as safe and effective (GRASE) for use under the conditions prescribed, recommended, or suggested in their labeling. With certain exceptions not applicable here, a new drug may not be introduced or delivered for introduction into interstate commerce without an approved application from FDA in effect, as described in section 505(a) of the FD&C Act, 21 U.S.C. 355(a). No approved applications pursuant to section 505 of the FD&C Act, 21 U.S.C. 355, are in effect for these products. Accordingly, these products are unapproved new drugs. The introduction or delivery for introduction into interstate commerce of these unapproved new drug products violates sections 301(d) and 505(a) of the FD&C Act, 21 U.S.C. 331(d) and 355(a).
+Conclusion
+As previously stated, you are responsible for investigating and determining the root causes of any violations and implementing corrective and preventative measures to ensure future and sustained compliance so that these violations and any others do not occur.
+Send your written response to FDAAdvisory@fda.hhs.gov within fifteen (15) business days of receipt of this letter. Include the specific steps you have taken to correct any violations, an explanation of each step being taken to prevent the recurrence of violations, as well as copies of related documentation. Identify your response with reference number “735067” in the subject line of the email.
+If you have information that you believe demonstrates that your products are not in violation of the FD&C Act and FDA regulations, include that information for our consideration.
+Please note FDA posts warning letters on www.fda.gov.
+Sincerely,
+/S/
+Tina Smith, M.S.
+Captain, U.S. Public Health Service
+Director
+Office of Unapproved Drugs and Labeling Compliance
+Office of Compliance
+Center for Drug Evaluation and Research
+U.S. Food and Drug Administration
+___________________
+1 Despite statements on your product labeling marketing your products “research use only”, “for research and laboratory use only”, and “not for human or veterinary use,” evidence obtained from your website establishes that your products are intended to be drugs for human use. In addition to the cited drug claims, you market bacteriostatic water as a solvent for reconstituting your products, thus, providing the means to prepare an injectable drug for human administration.

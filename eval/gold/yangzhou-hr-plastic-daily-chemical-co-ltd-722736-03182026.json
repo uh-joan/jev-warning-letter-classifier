@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/yangzhou-hr-plastic-daily-chemical-co-ltd-722736-03182026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER nonsterile-manufacturing CGMP letter for an OTC contract drug manufacturer: no release testing for active-ingredient identity/strength, no component identity testing or supplier qualification, no process validation, and an ineffective quality unit. The drug product is referred to only as '(b)(4) drug product' with no name given in clear, so products is empty and product_redacted is true. recall_concern is true because the letter requests retain-sample testing with a commitment to 'notifying customers and product recalls' if substandard quality is found, matching the recall-request boilerplate used elsewhere in this corpus. location_contains is 'Yangzhou, Jiangsu' since the inspection sentence states the province immediately adjacent to the city.",
+  "expected": {
+    "company": "Yangzhou H&R Plastic Daily Chemical Co., Ltd.",
+    "fei": "3014543859",
+    "date": "2026-03-18",
+    "issuing_office": "CDER",
+    "location_contains": "Yangzhou, Jiangsu",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

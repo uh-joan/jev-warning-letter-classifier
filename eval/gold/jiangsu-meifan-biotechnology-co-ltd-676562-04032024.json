@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/jiangsu-meifan-biotechnology-co-ltd-676562-04032024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "OTC hand-sanitizer/antimicrobial-wipe manufacturer cited via a 21 U.S.C. 704(a)(4) records request (no on-site inspection) for missing finished-product release testing and an ineffective quality control unit. No specific product name is stated in clear (only the generic descriptor 'antimicrobial hand wipes'), so products is empty. location_contains is a best-effort reading of the facility address given in the records-request letter, since there was no physical inspection sentence.",
+  "expected": {
+    "company": "Jiangsu Meifan Biotechnology Co. Ltd.",
+    "fei": "3017005720",
+    "date": "2024-04-03",
+    "issuing_office": "CDER",
+    "location_contains": "Haian, Jiangsu, China",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

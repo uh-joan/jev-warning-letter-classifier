@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/kc-pharmaceuticals-inc-729870-08122026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "CDER CGMP letter for a sterile/aseptic OTC drug manufacturer: recurring media fill failures, poor aseptic technique in ISO 5 areas, inadequate airflow visualization studies, and undefined EM worst-case locations, leading to a recall for 'lack of sterility assurance' (21 CFR 211.113(b) etc.). The finished-product names are redacted as (b)(4); 'Naphazoline HCl (NPZ)' is named once but only as an active ingredient inside a still-redacted formulation, not as the product name itself, so it is omitted from products.",
+  "expected": {
+    "company": "K.C. Pharmaceuticals, Inc.",
+    "fei": "2026940",
+    "date": "2026-08-12",
+    "issuing_office": "CDER",
+    "location_contains": "Pomona, CA",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/nihon-kohden-digital-health-solutions-llc-727803-06122026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "CDRH warning letter from a facility inspection in Irvine, CA of the Next Generation NetKonnect (NGNK) patient physiological monitor software device: adulterated for lacking required premarket approval (501(f)(1)(B)) and misbranded for failing to submit a new 510(k) for a control-mechanism change (Silence Alarms function) and an unauthorized 'device-agnostic' intended use (502(o)). No CGMP/QSR citation is made, so 'CGMP' is omitted from violation_categories.",
+  "expected": {
+    "company": "Nihon Kohden Digital Health Solutions, LLC",
+    "fei": null,
+    "date": "2026-06-12",
+    "issuing_office": "CDRH",
+    "location_contains": "Irvine, CA",
+    "organisms": [],
+    "products": [
+      "Next Generation NetKonnect"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/revolution-foods-pbc-690586-04072025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Human Foods Program letter for a Commerce, CA RTE-food packaging facility; violations are 21 CFR 117 preventive-controls failures (undeclared-allergen hazard, no environmental monitoring/handwashing procedures) and food misbranding (undeclared allergens, missing label elements) for two named products. 21 CFR 117 is a food preventive-controls rule, not one of the drug/device CGMP parts (210/211/111/820), so 'CGMP' is not applied here; no adulteration charge is made, only misbranding.",
+  "expected": {
+    "company": "Revolution Foods, PBC",
+    "fei": null,
+    "date": "2025-04-07",
+    "issuing_office": "Human Foods Program",
+    "location_contains": "Commerce, CA",
+    "organisms": [],
+    "products": [
+      "Double Cheese Torta sandwich",
+      "Cheese Pizza Kits"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

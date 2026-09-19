@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/gadget-island-inc-658733-07212023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "CDER Office of Unapproved Drugs and Labeling Compliance website-review letter (no facility inspection): FDA lab-confirmed undeclared tadalafil/sildenafil in three named sexual-enhancement products, charged as unapproved new drugs (505(a)) and misbranded (502(a),(f)(1),(f)(2)). Footnotes mention other product lines (Titanium 18K, Hard AF, Rhino, Royal Honey) only as unsampled/untested concerns, not charged violations, so they are excluded from products. Footnote 1's mention of the firm's own April 2023 voluntary recall is historical background, not an FDA-raised recall/withdrawal request, so recall_concern is false. No FEI/location_contains since this is a website review only.",
+  "expected": {
+    "company": "Gadget Island, Inc.",
+    "fei": null,
+    "date": "2023-07-21",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "NUX Male Enhancement",
+      "DYNAMITE Male Sexual Enhancement",
+      "ProPower Knight Plus 2550mg"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

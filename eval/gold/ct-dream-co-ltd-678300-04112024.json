@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/ct-dream-co-ltd-678300-04112024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "OTC topical drug (Dry Skin Healing Ointment) manufacturer CGMP letter: failure to test incoming components for DEG/EG contamination, inadequate process validation, and building/water-damage state-of-repair issues. No sterility or aseptic issues; no organisms identified; no recall (import alert only).",
+  "expected": {
+    "company": "C&T Dream Co., Ltd.",
+    "fei": "3012668529",
+    "date": "2024-04-11",
+    "issuing_office": "CDER",
+    "location_contains": "Cheonan-si, Chungcheongnam-do",
+    "organisms": [],
+    "products": [
+      "Dry Skin Healing Ointment"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

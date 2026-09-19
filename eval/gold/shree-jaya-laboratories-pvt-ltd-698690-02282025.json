@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/shree-jaya-laboratories-pvt-ltd-698690-02282025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER API/intermediate-manufacturer CGMP letter (equipment cleaning failures, an unresolved particulate complaint, torn/duplicated batch records, non-contemporaneous documentation) citing FDA's data-integrity guidance explicitly. All intermediate/API and equipment identities are redacted as (b)(4), so no product is named in clear. location_contains drops the intervening mandal/district administrative layers, keeping the smallest named locality plus the state as written in the inspection sentence, consistent with how other Indian-facility letters in this corpus are handled (e.g. 'Indrad, Gujarat' from 'Indrad, Dist. Mehsana, Gujarat'). contamination_present is true because an actual unresolved particulate complaint in an intermediate batch is described, not merely a risk.",
+  "expected": {
+    "company": "Shree Jaya Laboratories PVT. LTD.",
+    "fei": "3011845012",
+    "date": "2025-02-28",
+    "issuing_office": "CDER",
+    "location_contains": "Malkapur Village, Telangana",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "data_integrity"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

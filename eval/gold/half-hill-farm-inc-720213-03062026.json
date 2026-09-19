@@ -1,0 +1,36 @@
+{
+  "fixture": "fixtures/half-hill-farm-inc-720213-03062026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Human Foods Program letter (matching the diamond-herpanacine-pa-inc precedent) charging that disease-treatment citations on the firm's website (cancer-related research/news links) for three named mushroom-extract dietary supplements make them unapproved new drugs and misbranded (502(f)(1)) for lacking adequate directions for lay use. Unlike diamond-herpanacine, an on-site facility inspection did occur ('conducted an inspection of your facility located at 110 W. High St., Woodbury, TN 37190'), so location_contains is populated even though the charged violations are marketing-based rather than CGMP. Mushroom species names cited in the research headers (Trametes Versicolor, Inonotus obliquus, Ganoderma lucidum) are included in organisms per the abbott-laboratories/Similac-probiotic precedent, which lists genus-species names stated in the letter regardless of contamination context.",
+  "expected": {
+    "company": "Half Hill Farm Inc.",
+    "fei": null,
+    "date": "2026-03-06",
+    "issuing_office": "Human Foods Program",
+    "location_contains": "Woodbury, TN",
+    "organisms": [
+      "Trametes Versicolor",
+      "Inonotus obliquus",
+      "Ganoderma lucidum"
+    ],
+    "products": [
+      "Turkey Tail Mushroom Extract",
+      "Chaga Mushroom Extract",
+      "Red Reishi Mushroom Extract"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

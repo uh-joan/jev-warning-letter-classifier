@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/nwl-netherlands-services-bv-701206-04012025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "Drug CGMP warning letter to NWL Netherlands Services B.V. citing investigation failures for microbial OOL results in a redacted water/(b)(4) system, component identity-testing failures, and inadequate computer-system data controls; no sterile-product or aseptic-processing violations are charged.",
+  "expected": {
+    "company": "NWL Netherlands Services B.V.",
+    "fei": "3003696942",
+    "date": "2025-04-01",
+    "issuing_office": "CDER",
+    "location_contains": "Hillegom, Zuid-Holland",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "data_integrity",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

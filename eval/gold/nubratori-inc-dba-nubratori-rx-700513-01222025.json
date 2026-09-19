@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/nubratori-inc-dba-nubratori-rx-700513-01222025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "CDER Office of Compounding Quality and Compliance letter for a 503B outsourcing facility (Torrance, CA): insanitary sterile-compounding conditions (glove fingertip sampling performed after gloves were sanitized) plus CGMP violations (QC acceptance criteria, aseptic contamination-prevention procedures, environmental monitoring, equipment cleaning, component testing). No product name, redacted or otherwise, is ever stated -- the letter refers only generically to 'drug products' -- so products is empty and product_redacted is false rather than true. No FEI is stated in the letter (only the WL number).",
+  "expected": {
+    "company": "Nubratori, Inc. dba Nubratori Rx",
+    "fei": null,
+    "date": "2025-01-22",
+    "issuing_office": "CDER",
+    "location_contains": "Torrance, CA",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "compounding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

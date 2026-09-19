@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/northern-va-compounders-pllc-dba-akina-pharmacy-671700-04122024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503A sterile-compounding pharmacy letter for a Sterling, VA facility; only an insanitary-conditions adulteration charge (501(a)(2)(A)) is made (unsuitable sterilization/water quality, dirty ISO-classified aseptic areas, foreign matter, deficient dynamic smoke studies), with no numbered 21 CFR 211 CGMP citation and no misbranding/unapproved-new-drug sections, so CGMP, misbranding, and unapproved_new_drug are omitted. No specific drug product is named in clear text (the (b)(4) redactions are process/material details, not a product name), so products is [] and product_redacted is false. recall_concern is true: the firm's own December 2022 voluntary recall of all sterile-labeled lots (for lack of sterility assurance) is explicitly discussed.",
+  "expected": {
+    "company": "Northern VA Compounders PLLC, dba Akina Pharmacy",
+    "fei": "3012590153",
+    "date": "2024-04-12",
+    "issuing_office": "Office of Pharmaceutical Quality",
+    "location_contains": "Sterling, VA",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "sterility",
+      "aseptic_processing",
+      "adulteration",
+      "compounding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

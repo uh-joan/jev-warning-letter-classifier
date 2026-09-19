@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/abbott-laboratories-669353-10242023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "FDA reviewed Abbott's websites and marketing materials (not a facility inspection) for Similac Probiotic Tri-Blend, finding it an unapproved new drug/unlicensed biological product based on disease-prevention claims, and also an adulterated dietary supplement due to its probiotic ingredients.",
+  "expected": {
+    "company": "Abbott Laboratories",
+    "fei": null,
+    "date": "2023-10-24",
+    "issuing_office": "CBER",
+    "location_contains": null,
+    "organisms": [
+      "Bifidobacterium infantis",
+      "Streptococcus thermophilus"
+    ],
+    "products": [
+      "Similac\u00ae Probiotic Tri-Blend"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

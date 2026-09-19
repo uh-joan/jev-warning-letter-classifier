@@ -1,0 +1,51 @@
+Warning Letter 320-26-17
+November 12, 2025
+Dear Mr. Putnam:
+The United States Food and Drug Administration (FDA) inspected your contract testing laboratory, Rhyz Analytical Labs, FEI 3020181366 at 75 West Center Street, Provo, from June 2 to 5, 2025.
+This warning letter summarizes significant violations of Current Good Manufacturing Practice (CGMP) regulations for finished pharmaceuticals. See Title 21 Code of Federal Regulations (CFR), parts 210 and 211 (21 CFR parts 210 and 211).
+Because your methods, facilities, or controls for manufacturing, processing, packing, or holding do not conform to CGMP, the drug products you tested are adulterated within the meaning of section 501(a)(2)(B) of the Federal Food, Drug, and Cosmetic Act (FD&C Act), 21 U.S.C. 351(a)(2)(B).
+We reviewed your June 25, 2025, response to our Form FDA 483 in detail.
+During our inspection, our investigators observed specific violations including, but not limited to, the following.
+1. Your firm failed to thoroughly investigate any unexplained discrepancy or failure of a batch or any of its components to meet any of its specifications, whether or not the batch has already been distributed (21 CFR 211.192).
+Your facility is a contract testing laboratory that conducts chemical and microbiological testing of various over-the-counter drug products for your customers. Your firm lacked adequate investigations into multiple test results that failed the microbiological specifications for drug products. For example, your investigation into microbial excursions in a lot of (b)(4) indicated a root cause of “unknown laboratory error” and concluded “contamination of an unknown source.” You noted the corrective action and preventive action (CAPA) as investigating potential sources of contamination and retraining of analysts.
+You repeatedly accepted this conclusion and CAPA in at least five investigations without sufficient scientific justification to support your identified root cause. You incorrectly relied on the retest data without adequately investigating the potential contamination source prior to retesting. Furthermore, you did not assess the effectiveness of your proposed CAPA. Well-documented, thorough, and scientifically sound investigations are necessary to identify the root cause and implement the appropriate and effective CAPA.
+In your response, you acknowledge the gaps in your procedures and lack of a formal system for handling out-of-specification (OOS) test results. You commit to reviewing your investigation procedures and revising them.
+Your response is inadequate because it does not provide a review of your operational elements that may introduce microbial contamination into samples and the corrective actions implemented to prevent recurrence.
+In response to this letter, provide:
+A retrospective, independent review of all invalidated OOS results for U.S. products for the last three years from the initial date of inspection and a report summarizing the findings of the analysis, including the following for each OOS:
+o Determine whether the scientific justification and evidence relating to the invalidated OOS result conclusively or inconclusively demonstrates causative laboratory error.
+o For investigations that conclusively establish laboratory root cause, provide rationale and ensure that all other laboratory methods vulnerable to the same or similar root cause are identified for remediation.
+A comprehensive review and remediation plan for your OOS result investigation systems. The CAPA should include, but not be limited to, addressing the following:
+o Quality unit oversight of laboratory investigations
+o Identification of adverse laboratory control trends
+o Resolution of causes of laboratory variation
+o Adequately scoping of each investigation and its CAPA
+o Revised OOS investigation procedures with these and other remediations
+
+2. Your firm failed to establish adequate written responsibilities and procedures applicable to the quality control unit (21 CFR 211.22(d)).
+Your quality unit (QU) failed to exercise adequate oversight over your contract testing operations. For example, your QU failed to adequately:
+Establish procedures for critical operations including responsibilities and procedures applicable to a QU, handling of deviations, change control, and cleaning procedures.
+Implement and follow adequate procedures for laboratory investigations.
+
+In your response, you identify the lack of a quality management system as the root cause for this deficiency and commit to creating procedures for items noted above.
+Your response is inadequate because you fail to assess the impact of your quality system deficiencies on the test data reported to your customers. You also fail to provide a comprehensive assessment and remediation plan of your quality systems to ensure they function effectively.
+Your firm’s quality systems are inadequate. See FDA’s guidance document Quality Systems Approach to Pharmaceutical Current Good Manufacturing Practice Regulations for help implementing quality systems and risk management approaches to meet the requirements of CGMP regulations 21 CFR, parts 210 and 211 at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/quality-systems-approach-pharmaceutical-current-good-manufacturing-practice-regulations.
+In response to this letter, provide:
+A comprehensive assessment and remediation plan to ensure your QU is given the authority and resources to effectively function. The assessment should also include, but not be limited to:
+o A determination of whether procedures used by your firm are robust and appropriate
+o Provisions for QU oversight throughout your operations to evaluate adherence to appropriate practices
+o Oversight and approval of investigations and discharging of all other QU duties to ensure identity, strength, quality, and purity of all products
+
+Conclusion
+The violations cited in this letter are not intended to be an all-inclusive list of violations that exist at your facility. You are responsible for investigating and determining the causes of any violations and for preventing their recurrence or the occurrence of other violations.
+Correct any violations promptly. Failure to promptly and adequately address this matter may result in regulatory or legal action without further notice including, without limitation, seizure and injunction. Unresolved violations may also prevent other Federal agencies from awarding contracts.
+Failure to address violations may also cause FDA to withhold issuance of Export Certificates. FDA may withhold approval of new applications or supplements listing your firm as a drug manufacturer until any violations are completely addressed and we confirm your compliance with CGMP. We may re-inspect to verify that you have completed corrective actions to address any violations.
+This letter notifies you of our findings and provides you an opportunity to address the above deficiencies. After you receive this letter, respond to this office in writing within 15 working days. Specify what you have done to address any violations and to prevent their recurrence. In response to this letter, you may provide additional information for our consideration as we continue to assess your activities and practices. If you cannot complete corrective actions within 15 working days, state your reasons for delay and your schedule for completion.
+Send your electronic reply to CDER-OC-OMQ-Communications@fda.hhs.gov. Identify your response with FEI 3020181366 and ATTN: Marisa Heayn.
+Sincerely,
+/S/
+Francis Godwin
+Director
+Office of Manufacturing Quality
+Office of Compliance
+Center for Drug Evaluation and Research

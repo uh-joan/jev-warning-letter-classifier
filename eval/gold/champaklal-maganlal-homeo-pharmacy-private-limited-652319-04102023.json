@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/champaklal-maganlal-homeo-pharmacy-private-limited-652319-04102023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER CGMP letter based entirely on a section 704(a)(4) records review (no on-site inspection occurred) of an OTC/homeopathic manufacturer: failure to identity-test each shipment of the high-risk component glycerin for DEG/EG impurities (a known cause of lethal poisonings), and an unvalidated retest method. location_contains is null, consistent with the records-review precedent (tianjin-kilo, sante-manufacturing, respilon). Specific drug names are redacted as (b)(4), so products is empty and product_redacted is true. No actual DEG/EG contamination is confirmed in this letter (only inadequate testing to rule it out), so contamination_present is false. recall_concern is true because FDA placed all of the firm's drugs on Import Alert 66-40, a quarantine-like detention/refusal-of-admission action, separate from the conditional 'product recalls' CAPA-boilerplate language.",
+  "expected": {
+    "company": "Champaklal Maganlal Homeo Pharmacy Private Limited",
+    "fei": "3018725547",
+    "date": "2023-04-10",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

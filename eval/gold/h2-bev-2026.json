@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/h2-bev-llc-and-h2-renu-inc-730567-07312026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "H2 BEV / H2 RENU acidified-foods + unapproved-drug-marketing letter. Product names are stated verbatim (not redacted). Not sterile, no contamination/recall angle. Some fields (e.g. violation_categories) are expected to fail against the current pipeline, which only models CGMP-sterile violation categories.",
+  "expected": {
+    "company": "H2 BEV, LLC and H2 RENU, INC",
+    "fei": null,
+    "date": "2026-07-31",
+    "issuing_office": "Human Foods Program",
+    "location_contains": "Plano, TX",
+    "organisms": [],
+    "products": [
+      "H2 RENU Oncology Care Beverage",
+      "Hydro Shot Hydrogen Beverage"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

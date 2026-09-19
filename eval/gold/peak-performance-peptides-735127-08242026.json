@@ -1,0 +1,34 @@
+{
+  "fixture": "fixtures/peak-performance-peptides-735127-08242026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "CDER website-review letter (no facility inspection) charging six injectable peptide/reconstitution products marketed on pppepz.com as unapproved new drugs under 505(a), based on disease/structure-function claims despite 'research use only, not for human consumption' labeling. location_contains is null since this is a website-review letter with no inspected facility mentioned. Products are taken verbatim from the letter's own subject-heading names for each product section.",
+  "expected": {
+    "company": "Peak Performance Peptides",
+    "fei": null,
+    "date": "2026-08-24",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Bac water",
+      "GLP-3R (retatrutide)",
+      "Semaglutide",
+      "SS-31",
+      "PT-141",
+      "Tesamorelin"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

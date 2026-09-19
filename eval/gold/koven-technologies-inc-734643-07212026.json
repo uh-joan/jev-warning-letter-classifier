@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/koven-technologies-inc-734643-07212026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "CDRH Quality Management System Regulation (21 CFR 820 / ISO 13485) letter for a Doppler-device firm: undocumented design change expanding the Bidop 3's indication for use to fetal monitoring without a new 510(k) evaluation, inadequate fetal-risk analysis for the Bidop 3 and Bidop 7, insufficient supplier (contract manufacturer) controls, and complaint-handling failures (RGA forms not evaluated as complaints) illustrated with Bidop 7, Bidop 3, a CRP-20H cardiovascular probe, and an Aneroid Sphygmomanometer. Products use the shortest exact-casing span (e.g., 'Bidop 3' rather than the longer 'Bidop 3 Doppler'). No FEI is stated in this device letter (only a CMS case number). fei is null.",
+  "expected": {
+    "company": "Koven Technologies, Inc.",
+    "fei": null,
+    "date": "2026-07-21",
+    "issuing_office": "CDRH",
+    "location_contains": "Saint Louis, MO",
+    "organisms": [],
+    "products": [
+      "Bidop 3",
+      "Bidop 7",
+      "CRP-20H",
+      "Aneroid Sphygmomanometer"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

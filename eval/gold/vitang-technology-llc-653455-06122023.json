@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/vitang-technology-llc-653455-06122023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Inspection of Vitang Technology's Tustin, CA facility found the UniSmile Clear Aligner System (marketed also as 2usmiles) was modified without a new 510(k), making it misbranded and adulterated, plus multiple Quality System Regulation (21 CFR 820) CGMP violations and a misleading 'FDA APPROVED' website claim.",
+  "expected": {
+    "company": "Vitang Technology LLC",
+    "fei": null,
+    "date": "2023-06-12",
+    "issuing_office": "CDRH",
+    "location_contains": "Tustin, CA",
+    "organisms": [],
+    "products": [
+      "UniSmile Clear Aligner System",
+      "2usmiles"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

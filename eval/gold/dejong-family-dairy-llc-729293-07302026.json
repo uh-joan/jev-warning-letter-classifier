@@ -1,0 +1,27 @@
+{
+  "fixture": "fixtures/dejong-family-dairy-llc-729293-07302026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "other",
+  "notes": "CVM letter to a dairy farm citing extralabel use of a new animal drug (name redacted as (b)(4) throughout) for intramammary infusion without a valid veterinarian order, making the drug adulterated under 501(a)(5). This is a farm-level extralabel-use adulteration case, not a manufacturing/CGMP, device, food/supplement, biologics, unapproved-marketing, or compounding letter, so letter_type is 'other'.",
+  "expected": {
+    "company": "DeJong Family Dairy, LLC",
+    "fei": null,
+    "date": "2026-07-30",
+    "issuing_office": "CVM",
+    "location_contains": "Dorchester, WI",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

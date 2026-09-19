@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/homeopathic-educational-services-dba-homeopathic-family-medicine-708635-08252025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "CDER website-review letter (no facility inspection) charging a homeopathic ophthalmic product, 'Cineraria Maritima Eye Drops', as an unapproved new drug based on cataract-treatment claims. location_contains is null since only the website was reviewed, no facility inspected.",
+  "expected": {
+    "company": "Homeopathic Educational Services dba Homeopathic Family Medicine",
+    "fei": null,
+    "date": "2025-08-25",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Cineraria Maritima Eye Drops"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

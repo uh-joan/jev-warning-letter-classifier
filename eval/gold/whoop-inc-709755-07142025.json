@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/whoop-inc-709755-07142025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "FDA reviewed WHOOP's website and its Blood Pressure Insights (BPI) feature (no facility inspection) and determined BPI is an unapproved/uncleared medical device, making it adulterated (no PMA) and misbranded (no 510(k)) under the FD&C Act.",
+  "expected": {
+    "company": "WHOOP, Inc.",
+    "fei": null,
+    "date": "2025-07-14",
+    "issuing_office": "CDRH",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Blood Pressure Insights"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

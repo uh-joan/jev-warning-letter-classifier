@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/prime-vitality-inc-dba-prime-peptides-695156-12102024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Website-review letter (no facility inspection) charging that 'Semaglutide' and 'Retatrutide' marketed as peptides are unapproved new drugs based on disease-treatment claims; no CGMP, sterility, or contamination issues discussed.",
+  "expected": {
+    "company": "Prime Vitality, Inc. dba Prime Peptides",
+    "fei": null,
+    "date": "2024-12-10",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Semaglutide",
+      "Retatrutide"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

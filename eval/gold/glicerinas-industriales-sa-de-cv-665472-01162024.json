@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/glicerinas-industriales-sa-de-cv-665472-01162024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER API-repackager CGMP letter (Warning Letter 320-24-15): inadequate identity/DEG-EG testing of high-risk components and failure to investigate observed particulate contamination (unidentified colored particulates, insects, hair, fibers) in repackaged glycerin, propylene glycol, and other drugs over a three-month period -- contamination_present is true since this is an actual, confirmed finding, not a hypothetical risk. Glycerin/propylene glycol are component-only ingredients the firm repackages, not named finished products, so products is empty. recall_concern is true: FDA criticizes the firm's own investigation for failing to 'assess the safety risk of contaminated drugs released to your customers, including customer notification,' matching the assess-distributed criterion.",
+  "expected": {
+    "company": "Glicerinas Industriales, S.A. de C.V.",
+    "fei": "3016420687",
+    "date": "2024-01-16",
+    "issuing_office": "CDER",
+    "location_contains": "Zapopan",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

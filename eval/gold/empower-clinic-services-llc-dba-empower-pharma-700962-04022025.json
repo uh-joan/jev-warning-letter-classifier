@@ -1,0 +1,46 @@
+{
+  "fixture": "fixtures/empower-clinic-services-llc-dba-empower-pharma-700962-04022025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503B outsourcing-facility letter for sterile injectables: loss of 503B labeling exemption plus insanitary-conditions/CGMP findings including confirmed ISO 5 microbial recoveries (Bacillus altitudinis/pumilus/safensis, Rhodotorula bacarum, Pseudomonas luteola) and inadequate investigations. Firm recalled Pyridoxine HCL Injection Solution lot 609763 for lack of sterility assurance. Products are the named compounded formulations discussed in the corrective-action findings; no FEI is stated anywhere in the letter.",
+  "expected": {
+    "company": "Empower Clinic Services, LLC dba Empower Pharma",
+    "fei": null,
+    "date": "2025-04-02",
+    "issuing_office": "CDER",
+    "location_contains": "Houston, TX",
+    "organisms": [
+      "Bacillus altitudinis/pumilus/safensis",
+      "Rhodotorula bacarum",
+      "Pseudomonas luteola"
+    ],
+    "products": [
+      "Pyridoxine HCL Injection Solution, 100mg/mL",
+      "Ascorbic Acid Preserved 500 mg/mL Injection 30 mL",
+      "Lipo-B/Methionine/Choline Chloride/Cyanocobalamin 25/50/1 mg/mL",
+      "Testosterone Cypionate 200mg/mL",
+      "Glutathione Preservative Free 200 mg/mL",
+      "Glutathione 200mg/mL",
+      "Testosterone 200mg/mL"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

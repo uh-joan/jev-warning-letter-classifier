@@ -1,0 +1,38 @@
+{
+  "fixture": "fixtures/us-specialty-formulations-llc-659142-07262023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503B outsourcing facility (US Specialty Formulations LLC, Allentown, PA) failed conditions of section 503B and had extensive sterile-drug CGMP/aseptic-processing adulteration violations, including recovered microbial contamination in an ISO 5 area and a firm-initiated sterility-related recall; the letter also separately charges unapproved new drug and misbranding for products falling outside the 503B exemptions.",
+  "expected": {
+    "company": "US Specialty Formulations, LLC",
+    "fei": "3010680515",
+    "date": "2023-07-26",
+    "issuing_office": "Division of Pharmaceutical Quality Operations I",
+    "location_contains": "Allentown, PA",
+    "organisms": [],
+    "products": [
+      "B-Complex plus Chromic Chloride 30 mL",
+      "Sarracenia Purpurea 0.17 g/mL",
+      "medroxyprogesterone"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

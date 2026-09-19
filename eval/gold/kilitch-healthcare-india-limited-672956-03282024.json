@@ -1,0 +1,35 @@
+{
+  "fixture": "fixtures/kilitch-healthcare-india-limited-672956-03282024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "Sterile ophthalmic (eye drop) manufacturer; extensive aseptic-processing, environmental-monitoring, and data-integrity (fabricated EM results) violations plus insanitary conditions. No specific microorganism genus/species is named, only CFU/action-level excursion counts. Two products are named with their full label-style established names; other batches are referenced only by redacted (b)(4) codes.",
+  "expected": {
+    "company": "Kilitch Healthcare India Limited",
+    "fei": "3011853060",
+    "date": "2024-03-28",
+    "issuing_office": "CDER",
+    "location_contains": "Navi Mumbai",
+    "organisms": [],
+    "products": [
+      "Multi Action Relief Drops, Polyvinyl Alcohol 0.5%, Povidone 0.6%, and Tetrahydrozoline HCl 0.05%",
+      "Equate Hydration Polyethylene Glycol 400 and Propylene Glycol Eye Drops"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "data_integrity",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

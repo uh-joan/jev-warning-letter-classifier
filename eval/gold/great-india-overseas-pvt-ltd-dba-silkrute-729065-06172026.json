@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/great-india-overseas-pvt-ltd-dba-silkrute-729065-06172026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "CDER website-review letter (no facility inspection) charging three products sold on silkrute.com as unapproved new drugs based on disease-treatment claims (prostate health, erectile dysfunction, UTI/BPH symptoms); ProGlan Capsules is also misbranded for a false FDA-approval claim on its labeling. location_contains is null since this is a website review with no inspected facility.",
+  "expected": {
+    "company": "Great India Overseas Pvt. Ltd. dba Silkrute",
+    "fei": null,
+    "date": "2026-06-17",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "ProGlan Capsules",
+      "Cordiagra",
+      "Prost Aid Tablet"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

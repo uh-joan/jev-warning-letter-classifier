@@ -1,0 +1,25 @@
+{
+  "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/sato-pharmaceutical-co-ltd-723059-05182026",
+  "slug": "sato-pharmaceutical-co-ltd-723059-05182026",
+  "company": "Sato Pharmaceutical Co., Ltd.",
+  "marcs_cms": "723059",
+  "issue_date": "2026-05-18",
+  "reference": "320-26-75",
+  "delivery_method": "Via Email Return Receipt Requested",
+  "product": [
+    "Drugs",
+    "Over-the-Counter Drugs"
+  ],
+  "recipient": [
+    "Seiichi Sato",
+    "President and CEO",
+    "Sato Pharmaceutical Co., Ltd.",
+    "1-5-27 Moto-Akasaka Minato-ku",
+    "Tokyo",
+    "107-0051",
+    "Japan",
+    "seiichi@sato-seiyaku.co.jp"
+  ],
+  "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+  "fetched_at": "2026-09-19T08:06:51.110Z"
+}

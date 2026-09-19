@@ -1,0 +1,39 @@
+{
+  "fixture": "fixtures/neobiosis-llc-662985-06052024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "HCT/P-derived amniotic fluid and umbilical cord (Wharton's Jelly) products marketed for wound-healing/orthopedic uses, found to be unapproved drugs/biologics (fail homologous-use and minimal-manipulation criteria of 21 CFR 1271.10(a)) plus CGMP aseptic-processing, environmental-monitoring, and stability violations causing 501(a)(2)(B) adulteration. organisms lists the two species named in the growth-promotion study discussion (S. aureus, A. brasiliensis), not contamination isolates, so linked_to_complaints and contamination_present are false. recall_concern is true: FDA substantively questions the firm's plans for already-distributed, still-within-expiry product manufactured under non-CGMP conditions.",
+  "expected": {
+    "company": "Neobiosis, LLC",
+    "fei": null,
+    "date": "2024-06-05",
+    "issuing_office": "Division of Biological Products Operations I",
+    "location_contains": "Gainesville, FL",
+    "organisms": [
+      "Staphylococcus aureus",
+      "Aspergillus brasiliensis"
+    ],
+    "products": [
+      "Purified Amniotic Fluid (PAF)",
+      "Wharton\u2019s Jelly Cellular",
+      "Wharton\u2019s Jelly Acellular"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

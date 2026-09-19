@@ -1,0 +1,37 @@
+{
+  "fixture": "fixtures/time-challenger-labs-international-inc-706900-09182025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Dietary supplement firm cited for 21 CFR Part 111 CGMP violations (no specifications, no master manufacturing/batch records, no QC procedures), a misbranded Resveratrol supplement, and unapproved-new-drug disease claims for herbal tincture products sold on its website.",
+  "expected": {
+    "company": "Time Challenger Labs International, Inc.",
+    "fei": null,
+    "date": "2025-09-18",
+    "issuing_office": "Human Foods Program",
+    "location_contains": "Round Rock, TX",
+    "organisms": [],
+    "products": [
+      "Adrenal Boost",
+      "Chaga",
+      "Brain & Vein",
+      "Thyroid Support",
+      "UTI",
+      "Resveratrol"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

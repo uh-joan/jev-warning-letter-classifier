@@ -1,0 +1,35 @@
+{
+  "fixture": "fixtures/southern-tier-home-infusion-inc-dba-pharmacy-innovations-667414-09202023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503A compounding-pharmacy letter framed around loss of the section 503A exemption (no valid prescriptions for individually-identified patients for some sterile products, e.g. Lidocaine/Tetracaine/Phenylephrine Gel and Dutasteride Injectable), with adulteration charged under 501(a)(2)(A) insanitary conditions (dirty ISO 5/ISO 7 surfaces, detected microbial contamination in critical areas, poor aseptic technique) rather than a standard 21 CFR 211 CGMP citation, so CGMP is omitted from violation_categories (the letter only discusses CGMP as a future/conditional obligation, not a current specific-section finding). Also charges misbranding (502(f)(1), no adequate directions for use) and unapproved new drug (505(a)/301(d)). contamination_present is true (actual microbial contamination detected in the ISO 5 area) and recall_concern is true (FDA acknowledges the firm's voluntary recall of all sterile compounded products).",
+  "expected": {
+    "company": "Southern Tier Home Infusion, Inc. dba Pharmacy Innovations",
+    "fei": null,
+    "date": "2023-09-20",
+    "issuing_office": "Division of Pharmaceutical Quality Operations I",
+    "location_contains": "Erie, PA",
+    "organisms": [],
+    "products": [
+      "Lidocaine/Tetracaine/Phenylephrine 20/4/2% Gel",
+      "Dutasteride 0.1% (1.5mL Vial) Injectable"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "compounding",
+      "sterility",
+      "aseptic_processing",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

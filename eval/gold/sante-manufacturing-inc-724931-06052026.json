@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/sante-manufacturing-inc-724931-06052026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER letter based on a review of records the firm submitted under section 704(a)(4) (no on-site inspection occurred), citing CGMP failures for OTC drug manufacturing: inadequate identity/COA-reliability testing of high-risk components, no process validation, and an ineffective quality unit. All specific drug/component names are redacted as (b)(4), so products is empty and product_redacted is true. location_contains is null because this was a records review, not a facility inspection.",
+  "expected": {
+    "company": "Sante Manufacturing Inc.",
+    "fei": "3021535057",
+    "date": "2026-06-05",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

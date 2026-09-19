@@ -1,0 +1,36 @@
+{
+  "fixture": "fixtures/optikem-international-inc-683606-08132024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Medical device QSR warning letter to Optikem International for failing to validate sterilization/media-fill and calibration/design-control/CAPA processes for sterile-labeled Sereine contact lens solutions, plus adulteration and misbranding for unauthorized formulation changes requiring a new 510(k) and missing UDI/GUDID submission.",
+  "expected": {
+    "company": "Optikem International, Inc.",
+    "fei": null,
+    "date": "2024-08-13",
+    "issuing_office": "CDRH",
+    "location_contains": "Denver, CO",
+    "organisms": [],
+    "products": [
+      "Sereine Extra Strength Daily Cleaner",
+      "Sereine Contact Lens Wetting and Soaking Solution",
+      "Sereine Hard Contact Lens Wetting Solution",
+      "Sereine Hard Contact Lens Soaking and Cleaning Solution"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "sterility",
+      "aseptic_processing"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

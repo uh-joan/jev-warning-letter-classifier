@@ -1,0 +1,40 @@
+{
+  "fixture": "fixtures/r3-medical-companies-726330-08142026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "CBER letter to R3 Medical Companies' co-located Bello (manufacturer) and Regen (private-label distributor) facilities: umbilical-cord/cord-blood HCT/P products (ReBellaWJ, ReBellaXO, ReBellaXOL, ReBellaCB, and Bello's own-labeled BelloWJ/BelloXO/BelloXOL, plus ReBellaXOL's alternate label ReBellaGF) fail the homologous-use HCT/P exception and are charged as unapproved new drugs / unlicensed biologics, with CGMP sterile/aseptic-processing violations (unvalidated aseptic processes, sterility-test samples frozen/thawed before testing). contamination_present is false: the letter describes validation and testing-methodology deficiencies (e.g., freeze-thaw before sterility testing that could mask contamination) rather than a documented finding of actual product contamination. recall_concern is true because FDA presses for a disposition plan for undistributed inventory and for previously distributed, still-within-expiry product made under the violative conditions.",
+  "expected": {
+    "company": "R3 Medical Companies",
+    "fei": null,
+    "date": "2026-08-14",
+    "issuing_office": "CBER",
+    "location_contains": "Scottsdale, AZ",
+    "organisms": [],
+    "products": [
+      "ReBellaWJ",
+      "ReBellaXO",
+      "ReBellaXOL",
+      "ReBellaCB",
+      "BelloWJ",
+      "BelloXO",
+      "BelloXOL",
+      "ReBellaGF"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "adulteration",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

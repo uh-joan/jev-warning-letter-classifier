@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/kardesler-ucan-yaglar-sanayi-anonim-sirketi-695413-01212025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "OTC hand-sanitizing-wipe manufacturer cited via a 21 U.S.C. 704(a)(4) records request (no on-site inspection) for failing to test high-DEG/EG-risk components (glycerin, propylene glycol) and ethanol for methanol, failing finished-product release testing, and an ineffective quality unit. No specific finished product name is stated in clear, only generic descriptors and raw-material names, so products is empty. location_contains reflects the facility address given in the records-request letter since there was no physical inspection sentence.",
+  "expected": {
+    "company": "Kardesler Ucan Yaglar Sanayi Anonim Sirketi",
+    "fei": "3012634391",
+    "date": "2025-01-21",
+    "issuing_office": "CDER",
+    "location_contains": "Gebze, Kocaeli, Turkey",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

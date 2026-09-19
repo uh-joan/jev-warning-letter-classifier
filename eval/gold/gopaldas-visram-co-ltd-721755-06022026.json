@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/gopaldas-visram-co-ltd-721755-06022026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER CGMP letter based on a section 704(a)(4) records review (no on-site inspection), so location_contains is null per the 704(a)(4) precedent (e.g. tianjin-kilo, sante-manufacturing, respilon-production). Findings concern talc-containing OTC drug products: inadequate QU oversight of asbestos-in-talc identity testing at a contract lab (suspicious IR spectral data raising data-integrity concerns), and release of a talc lot that failed identity specifications. All drug/ingredient names are redacted as (b)(4), so products is empty and product_redacted is true. contamination_present is false because the letter describes inadequate/questionable asbestos testing methodology, not a confirmed asbestos detection. recall_concern is true given the request for retain-sample identity/assay/impurity testing of implicated talc lots and a three-year retrospective review of components used in U.S. products (assess-distributed).",
+  "expected": {
+    "company": "Gopaldas Visram & Co., Ltd.",
+    "fei": "3009565091",
+    "date": "2026-06-02",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "data_integrity"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

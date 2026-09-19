@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/brenntag-great-lakes-llc-660268-10262023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER nonsterile CGMP letter for an OTC hand-sanitizer manufacturer that continued using non-dedicated blending tanks shared with non-drug industrial chemicals (e.g., automotive brake parts cleaner) despite a prior commitment to stop, plus inadequate QU oversight. The specific hand-sanitizer product name is redacted as (b)(4), so products is empty and product_redacted is true. recall_concern is true because the letter specifically asks the firm to assess drugs made on the shared equipment and provide plans addressing risk for any product still in distribution, 'including potential recalls or market withdrawals' -- not generic CAPA boilerplate.",
+  "expected": {
+    "company": "Brenntag Great Lakes, LLC",
+    "fei": "2126821",
+    "date": "2023-10-26",
+    "issuing_office": "Division of Pharmaceutical Quality Operations III",
+    "location_contains": "Menomonee Falls, WI",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

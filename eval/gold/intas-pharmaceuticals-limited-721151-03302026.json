@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/intas-pharmaceuticals-limited-721151-03302026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER CGMP letter for finished-pharmaceutical (oral tablet) manufacturing: inadequate OOS/stability investigations leading to prior recalls, plus a data-integrity finding (QA employee directed the software vendor to alter an electronic batch record entry outside the audit trail). No sterile/aseptic claims. All drug/batch names redacted as (b)(4). location_contains uses 'Dehradun', the city named in the inspection sentence ('Camp Road, Selaqui, Dehradun'); no state/region term is given in the letter.",
+  "expected": {
+    "company": "Intas Pharmaceuticals Limited",
+    "fei": "3005890633",
+    "date": "2026-03-30",
+    "issuing_office": "CDER",
+    "location_contains": "Dehradun",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "data_integrity"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

@@ -1,0 +1,38 @@
+{
+  "fixture": "fixtures/bausch-lomb-inc-732398-09042026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "CDER sterile-manufacturing CGMP letter (same underlying facility/findings as the repo's bausch-lomb-2026.json live example, refetched under this slug): inadequate EM/PM program, RABS/airflow design deficiencies, poor aseptic technique, undersized media fills, and organisms linked to consumer complaints. Product identity is redacted as (b)(4) throughout, so products is empty and product_redacted is true. location_contains is 'Tampa' alone (no state abbreviation) because this fixture's own inspection sentence ('at 8500 Hidden River Parkway, Tampa, from March 12 to 20, 2026') does not state the state adjacent to the city, unlike the recipient mailing address in meta.json; this differs from the pre-existing bausch-lomb-2026.json gold ('Tampa, FL'), which I did not defer to since instructions require reading this fixture directly.",
+  "expected": {
+    "company": "Bausch & Lomb Inc.",
+    "fei": "1000113778",
+    "date": "2026-09-04",
+    "issuing_office": "CDER",
+    "location_contains": "Tampa",
+    "organisms": [
+      "Serratia marcescens",
+      "Stenotrophomonas maltophilia",
+      "Neovaginatispora magiferae",
+      "Geodermatophilus obscurus",
+      "Pseudomonas aeruginosa",
+      "Aspergillus brasiliensis"
+    ],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": true,
+    "recall_concern": true
+  },
+  "split": "test"
+}

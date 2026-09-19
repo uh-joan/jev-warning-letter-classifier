@@ -1,0 +1,87 @@
+Warning Letter 320-26-114
+August 13, 2026
+Dear Mr. Brady:
+The United States Food and Drug Administration (FDA) inspected your drug manufacturing facility, Suretec Innovations, LLC, FEI 3030456591, at 190 South McQueen Road, Suite 102, Gilbert, Arizona, from March 2 to 5, 2026.
+This warning letter summarizes significant violations of Current Good Manufacturing Practice (CGMP) regulations for finished pharmaceuticals. See Title 21 Code of Federal Regulations (CFR), parts 210 and 211 (21 CFR parts 210 and 211).
+Because your methods, facilities, or controls for manufacturing, processing, packing, or holding do not conform to CGMP, your drug product is adulterated within the meaning of section 501(a)(2)(B) of the Federal Food, Drug, and Cosmetic Act (FD&C Act), 21 U.S.C. 351(a)(2)(B).
+In addition, violations were identified and documented during a review of your firm’s drug listing submissions in FDA’s electronic Drug Registration and Listing System (eDRLS). Based on our review, you failed to provide drug listing information for KleenLine Alcohol-Free Sanitizing Wipes, a drug you are manufacturing on behalf of a private label distributor (PLD). Failure to provide listing information for a drug in accordance with 510(j) of the FD&C Act, 21 U.S.C. 360(j), is prohibited under section 301(p) of the FD&C Act, 21 U.S.C. 331(p). Therefore, this drug is misbranded under section 502(o) of the FD&C Act, 21 U.S.C. 352(o). Introducing or delivering for introduction into interstate commerce, or the causing thereof, of this drug is prohibited under section 301(a) of the FD&C Act, 21 U.S.C. 331(a). These violations are described in more detail below.
+We reviewed your March 25, 2026, response to our Form FDA 483 in detail and acknowledge receipt of your subsequent correspondence.
+During our inspection, our investigator observed specific violations including, but not limited to, the following.
+CGMP Violations
+1. Your firm failed to test samples of each component for identity and conformity with all appropriate written specifications for purity, strength, and quality. Your firm also failed to validate and establish the reliability of your component supplier’s test analyses at appropriate intervals (21 CFR 211.84(d)(1) and 211.84(d)(2)).
+Your firm contract manufactures over-the-counter (OTC) (b)(4) containing the active pharmaceutical ingredient (API) (b)(4). You failed to conduct adequate identity testing of incoming components, including the API, used in the manufacturing of your drug product. Additionally, you relied on your suppliers’ certificates of analyses (COA) without establishing the reliability of each of your component suppliers’ analyses at appropriate intervals.
+Your response is inadequate. You state that you initiated supplier qualification activities on March 23, 2026, and you provided your Supplier Qualification and Approval Program procedure. You also provided references to supplier qualification activities. However, your response lacks sufficient details to demonstrate adequate corrective action. Specifically, your response failed to include documentation establishing component-specific acceptance criteria, defined identity testing specifications and methods for (b)(4) or other incoming components, or results of any retrospective confirmatory testing.
+Without adequate testing and confirmation of reliability of supplier test results, you lack scientific evidence that the components conform to appropriate specifications prior to use in the drugs products you manufacture.
+In response to this letter, provide:
+A comprehensive, independent review of your material system, including but not limited to:
+o Evaluating all suppliers of materials (components, containers, and closures) to determine if they are reliable and appropriately qualified;
+o An assessment of all materials to determine whether they are consistently of acceptable quality;
+o A review to ensure assigned expiration or retest dates are appropriate (supported by data)
+o Adequacy of the supplier qualification program, and its selection, qualification, and disqualification provisions.
+Based on a thorough review, provide a summary of your systems corrective actions and preventive actions (CAPA) to remediate the vendor qualification program and prevent use of unsuitable components, containers and closures.
+The chemical and microbiological quality control specifications you use to test and release each incoming lot of component for use in manufacturing.
+A description of how you will test each component lot for conformity with all appropriate specifications for identity, strength, quality, and purity. If you intend to accept any results from your supplier’s COA instead of testing each component lot for strength, quality, and purity, specify how you will robustly establish the reliability of your supplier’s results through initial validation as well as periodic re-validation. In addition,
+include a commitment to always conduct at least one specific identity test for each incoming component lot.
+A summary of results obtained from testing all components to evaluate the reliability of the COA from each component manufacturer. Include your standard operating procedure that describes this COA validation program.
+A summary of your program for qualifying and overseeing contract facilities that test your components and the finished drug products you manufacture.
+
+2. Your firm failed to conduct appropriate laboratory testing, as necessary, for each batch of drug product required to be free of objectionable microorganisms (21 CFR 211.165(b)).
+You failed to ensure adequate microbiological testing for each batch of your drug product prior to release. Your non-compendial test method used to determine microbiological attributes (e.g., total count, objectionable microorganisms) for your finished OTC drug product was inadequate. Specifically, you lacked appropriate incubation times, lacked appropriate method suitability, and lacked positive and negative controls. In addition, you did not validate this non-compendial method.
+Your response is inadequate. You state that a contract laboratory will perform validation of United States Pharmacopeia (USP) <61> and <62> test methods for future release testing. While you submitted your Laboratory Controls and Test Method Management procedure and CAPA-2026-005, which references validation planning for microbiological methods, your response does not demonstrate adequate corrective actions to ensure that distributed product was appropriately tested prior to release, nor does it include a retrospective assessment of product quality.
+Testing is essential to ensure that the drug product you manufacture conform to all predetermined quality attributes appropriate for their intended use. Because you lacked adequate testing of each batch of your drug products, you do not know whether they conform to all appropriate finished-product specifications and are suitable for release to consumers.
+In response to this letter, provide:
+A list of chemical and microbial specifications, including test methods, used to analyze each batch of your drug products before a batch disposition decision.
+An action plan and timelines for conducting full chemical and microbiological testing of retain samples to determine the quality of all batches of drug product distributed to the United States that are within expiry as of the date of this letter.
+A summary of all results obtained from testing retain samples from each batch. If such testing reveals substandard-quality drug products, take rapid corrective actions, such as notifying customers and product recalls.
+
+3. Your firm failed to thoroughly investigate any unexplained discrepancy or failure of a batch or any of its components to meet any of its specifications, whether or not the batch has already been distributed (21 CFR 211.192).
+Your quality unit (QU) failed to thoroughly investigate multiple microbial count results that exceeded (b)(4) colony forming units/milliliters from your (b)(4) system. You use (b)(4) from this system as a component to manufacture your drug products. Instead, you continued to use (b)(4) from this system with out-of-limit (OOL) test results to manufacture drug products that were ultimately released, distributing potentially contaminated drug products to market.
+Your response is inadequate. You provided your (b)(4) System Monitoring Program procedure and CAPA-2026-005 which references enhanced (b)(4) monitoring and investigation procedures. However, neither document addresses specific microbiological alert or action limits, sampling frequencies, or acceptance criteria for (b)(4) used in drug product manufacturing. Furthermore, your response does not demonstrate that your firm has implemented adequate investigation procedures or completed retrospective reviews of the OOL events.
+Inadequate investigations can lead to unidentified root causes, ineffective CAPAs, and recurring problems that compromise your ability to manufacture safe and effective drug products.
+In response to this letter, provide:
+A comprehensive, independent assessment of your overall system for investigating deviations, discrepancies, complaints, OOL results, and failures. Provide a detailed action plan to remediate this system. Your action plan should include, but not be limited to, significant improvements in investigation competencies, scope determination, root cause evaluation, CAPA effectiveness, QU oversight, and written procedures. Address how your firm will ensure that all phases of investigations are appropriately conducted.
+A detailed risk assessment addressing the potential effects of the observed (b)(4) system failures on the quality of all drug product lots currently in U.S. distribution or within expiry. Specify actions that you will take in response to the risk assessment, such as customer notifications and product recalls.
+
+4. Your firm’s quality control unit failed to exercise its responsibility to ensure drug products manufactured are in compliance with CGMP, and meet established specifications for identity, strength, quality, and purity (21 CFR 211.22).
+Your firm failed to establish an adequate QU with the responsibilities and authority to oversee the manufacturing of drug products. For example, the QU failed to ensure:
+Establishment of appropriate written procedures for production and process controls, including appropriate qualification of the (b)(4) system (21 CFR 211.100(a)).
+Establishment of an appropriate written testing program designed to assess the stability characteristics of drug products and to use results of stability testing to determine appropriate storage conditions and expiration dates (21 CFR 211.166(a)).
+Establishment of adequate written procedures defining QU responsibilities and controls (21 CFR 211.22(d)).
+An adequate number of qualified personnel to perform and supervise the manufacturing, processing, packing, or holding of each drug product (21 CFR 211.25(c)).
+
+Your firm’s quality systems are inadequate. For help implementing quality systems and risk management approaches to meet the requirements of CGMP regulations 21 CFR, parts 210 and 211, see FDA’s guidance documents Quality Systems Approach to Pharmaceutical CGMP Regulations at https://www.fda.gov/media/71023/download, Q9(R1) Quality Risk Management at https://www.fda.gov/media/167721/download, and ICH Q10 Pharmaceutical Quality System at https://www.fda.gov/media/71553/download.
+In response to this letter, provide:
+A comprehensive assessment and remediation plan to ensure your QU is given the authority and resources to effectively function. The assessment should also include, but not be limited to:
+o A determination of whether procedures used by your firm are robust and appropriate
+o Provisions for QU oversight throughout your operations to evaluate adherence to appropriate practices
+o A complete and final review of each batch and its related information before the QU disposition decision
+o Oversight and approval of investigations and discharging of all other QU duties to ensure identity, strength, quality, and purity of all products.
+
+CGMP Consultant Recommended
+Based upon the nature of the violations we identified at your firm, you should engage a consultant qualified as set forth in 21 CFR 211.34 to evaluate your operations and to assist your firm in meeting CGMP requirements. The qualified consultant should also perform a comprehensive six-system audit of your entire operation for CGMP compliance and evaluate the completion and efficacy of your CAPA before you pursue resolution of your firm’s compliance status with FDA.
+Your use of a consultant does not relieve your firm’s obligation to comply with CGMP. Your firm’s executive management remains responsible for resolving all deficiencies and systemic flaws to ensure ongoing CGMP compliance.
+Drug Listing Violations
+Section 510(j) of the FD&C Act and 21 CFR Part 207 set forth the requirements for the listing of drugs. In addition to listing a drug that you manufacture under your own labeler code, under 21 CFR 207.41(c)(1), you are required to list each drug you manufacture for commercial distribution under the trade name or label of a PLD using an NDC that includes such PLD’s labeler code. Evidence from the most recent inspection of your site and a search of eDRLS confirms that you are manufacturing KleenLine Alcohol-Free Sanitizing Wipes for a PLD, Brady Industries, Inc., but you did not list this drug under the PLD’s trade name and labeler code as required.
+Therefore, you failed to fulfill your drug listing obligations in accordance with section 510 of the FD&C Act. Failure to provide listing information for a drug in accordance with 510(j) of the FD&C Act is prohibited under section 301(p) of the FD&C Act. Under section 502(o), a drug is misbranded if it is not included in a list required by section 510(j). Under section 301(a), the introduction or delivery for introduction, or the causing thereof, into interstate commerce of any drug that is misbranded is prohibited.
+Complete, accurate, and up-to-date establishment registration and drug listing information is essential to promote and protect patient safety. FDA relies on establishment registration and drug listing information for several key programs, including drug establishment inspections, supply chain security, and post-market surveillance. Establishment registration and drug listing information is also widely used outside FDA for purposes such as electronic prescribing and electronic health records, insurance reimbursement, and patient education.
+We note that the labeling provided in your drug listing for Hand Sanitizing Alcohol-Free Wipes, NDC 84111-000, bears the trade name of what appears to be another PLD. Please update your labeling accordingly. It is your responsibility to ensure that all drugs manufactured at your establishment comply with all establishment registration and drug listing requirements under section 510 of the FD&C Act, 21 U.S.C. 360, 21 CFR Part 207, and all other applicable FDA regulations. Registration and listing information and instructions on how to properly register an establishment or submit drug listings can be found at Electronic Drug Registration and Listing Instructions.
+Conclusion
+The violations cited in this letter are not intended to be an all-inclusive list of violations that exist at your facility. You are responsible for investigating and determining the causes of any violations and for preventing their recurrence or the occurrence of other violations.
+Correct any violations promptly. Failure to promptly and adequately address this matter may result in regulatory or legal action without further notice including, without limitation, seizure and injunction. Unresolved violations may also prevent other Federal agencies from awarding contracts.
+Failure to address violations may also cause FDA to withhold issuance of Export Certificates. FDA may withhold approval of new applications or supplements listing your firm as a drug manufacturer until any violations are completely addressed and we confirm your compliance with CGMP. We may re-inspect to verify that you have completed corrective actions to address any violations.
+This letter notifies you of our findings and provides you an opportunity to address the above deficiencies. After you receive this letter, respond to this office in writing within 15 working days. Specify what you have done to address any violations and to prevent their recurrence. In response to this letter, you may provide additional information for our consideration as we continue to assess your activities and practices. If you cannot complete corrective actions within 15 working days, state your reasons for delay and your schedule for completion.
+Send your electronic reply to CDER-OC-OMQ-Communications@fda.hhs.gov. Identify your response with FEI 3030456591 and ATTN: Christopher M. Jenner.
+Sincerely,
+/S/
+Francis Godwin
+Director
+Office of Manufacturing Quality
+Office of Compliance
+Center for Drug Evaluation and Research
+/S/
+Tina Smith
+Captain, U.S. Public Health Service
+Director
+Office of Unapproved Drugs & Labeling Compliance
+Office of Compliance
+Center for Drug Evaluation and Research

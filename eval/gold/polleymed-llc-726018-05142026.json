@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/polleymed-llc-726018-05142026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Website/labeling-review warning letter charging the SaniiSwab\u2122 nasal product as an unapproved new drug and misbranded for falsely displaying '...FDA OTC approved...' on its order page; no facility inspection occurred, so FEI and location_contains are null.",
+  "expected": {
+    "company": "PolleyMed, LLC",
+    "fei": null,
+    "date": "2026-05-14",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "SaniiSwab\u2122"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

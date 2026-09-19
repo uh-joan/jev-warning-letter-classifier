@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/patcos-cosmetics-pvt-ltd-669465-12152023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "Drug CGMP warning letter to Patcos Cosmetics citing failure to identity-test high-risk components (glycerin, propylene glycol, sorbitol) for DEG/EG contamination risk and inadequate quality-unit oversight; subject OTC drug product names are withheld as (b)(4) throughout so products is empty and product_redacted is true. No actual contamination is described, only the risk of it.",
+  "expected": {
+    "company": "Patcos Cosmetics Pvt. Ltd.",
+    "fei": "3009250196",
+    "date": "2023-12-15",
+    "issuing_office": "CDER",
+    "location_contains": "Mumbai, Maharashtra",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

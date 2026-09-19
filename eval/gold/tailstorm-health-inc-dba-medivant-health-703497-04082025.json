@@ -1,0 +1,38 @@
+{
+  "fixture": "fixtures/tailstorm-health-inc-dba-medivant-health-703497-04082025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503B outsourcing-facility letter (Office of Compounding Quality and Compliance) citing failure to meet section 503B conditions (missing 'Office Use Only' label statement, inadequate adverse-event-reporting procedures), insanitary sterile-compounding conditions (uninvestigated ISO 5 microbial contamination, inadequate smoke studies/personnel monitoring), CGMP violations, and explicit Unapproved New Drug and Misbranded Drug Products sections. Firm voluntarily recalled six lots of Bevacizumab (Avastin) due to lack of sterility assurance. No FEI is stated in the letter text. No genus/species organism is identified.",
+  "expected": {
+    "company": "Tailstorm Health Inc. dba Medivant Health",
+    "fei": null,
+    "date": "2025-04-08",
+    "issuing_office": "CDER",
+    "location_contains": "Phoenix, AZ",
+    "organisms": [],
+    "products": [
+      "Semaglutide Injection 1mg/0.2ml",
+      "Tirzepatide Injection 2.5mg/0.5ml",
+      "Bevacizumab (Avastin) 1.25mg/0.05mL, 0.5 mL Single-Dose Syringe"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

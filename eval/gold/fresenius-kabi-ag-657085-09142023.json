@@ -1,0 +1,40 @@
+{
+  "fixture": "fixtures/fresenius-kabi-ag-657085-09142023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "Blood-establishment CGMP letter (Fenwal International/Fresenius Kabi) for terminally-sterilized blood-collection products: chronic failure to investigate TNTC bioburden and swarming-organism excursions, invalid sterility-assurance-level calculations, and facility/equipment contamination findings. Organisms recovered in the facility (Staphylococcus saprophyticus, Acinetobacter baumanni) were genetically matched to isolates from clinical septic-transfusion-reaction cases, so linked_to_complaints is true. No FEI number and no recall are stated in the letter; issuing_office is given as published since the signing division is not one of the standard center acronyms.",
+  "expected": {
+    "company": "Fresenius Kabi AG",
+    "fei": null,
+    "date": "2023-09-14",
+    "issuing_office": "Division of Biological Products Operations I",
+    "location_contains": "Maricao, PR",
+    "organisms": [
+      "Staphylococcus saprophyticus",
+      "Acinetobacter baumanni",
+      "Bacillus subtilis",
+      "Candida Albicans"
+    ],
+    "products": [
+      "blood-pack units (BPUs)",
+      "Alyx component solutions",
+      "Amicus component solutions",
+      "InterSol"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "environmental_monitoring",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": true,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

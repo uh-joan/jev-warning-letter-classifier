@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/optihealth-products-inc-704899-04292026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Human Foods Program website-review letter (no facility inspection) charging 'Super Antioxidant (OPCXtra)' as an unapproved new drug based on disease-treatment claims (heart health, diabetes management, anti-inflammatory, cognitive decline, macular degeneration) on the firm's website and blog, and as misbranded for lacking adequate directions for lay use. location_contains is null since only the website and social media were reviewed, no facility inspected. No FEI is stated.",
+  "expected": {
+    "company": "OptiHealth Products, Inc.",
+    "fei": null,
+    "date": "2026-04-29",
+    "issuing_office": "Human Foods Program",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Super Antioxidant (OPCXtra)"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

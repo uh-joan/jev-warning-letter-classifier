@@ -7,7 +7,17 @@
  */
 
 import { productsForFacility, DRUG_KB } from "./drug-kb.js";
-import type { Candidate, ExtractedCandidates } from "./types.js";
+import { analyzeRedactions } from "./redaction.js";
+import {
+  extractCitations,
+  summarizeViolations,
+  detectDataIntegrity,
+  detectCompounding,
+  detectAdulteration,
+  detectMisbranding,
+  detectDrugCgmp,
+} from "./citations.js";
+import type { Candidate, ExtractedCandidates, LetterMeta } from "./types.js";
 
 const MONTHS: Record<string, string> = {
   january: "01", february: "02", march: "03", april: "04", may: "05", june: "06",
@@ -33,15 +43,79 @@ function extractCompany(text: string): string | null {
   return m ? `${m[1]} ${m[2]}`.replace(/\s+/g, " ").trim() : null;
 }
 
-function extractFacilityLocation(text: string): string | null {
-  // Street + City, ST ZIP.
-  const m = text.match(
-    /\b(\d{1,6}\s+[A-Z][\w.'-]*(?:\s+[A-Z][\w.'-]*){0,4}(?:\s+(?:Parkway|Pkwy|Street|St|Avenue|Ave|Road|Rd|Boulevard|Blvd|Drive|Dr|Lane|Ln|Way))?)\s*,?\s*([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+)?,\s*[A-Z]{2}\s*\d{5}(?:-\d{4})?)/,
+const STREET_ADDRESS =
+  /\b(\d{1,6}\s+[A-Z][\w.'-]*(?:\s+[A-Z][\w.'-]*){0,4}(?:\s+(?:Parkway|Pkwy|Street|St|Avenue|Ave|Road|Rd|Boulevard|Blvd|Drive|Dr|Lane|Ln|Way))?)\s*,?\s*([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+)?,\s*[A-Z]{2}\s*\d{5}(?:-\d{4})?)/g;
+
+/**
+ * Address of the INSPECTED facility, from the inspection sentence:
+ *   "…inspected your facility, X, located at <addr>, from March 12…"
+ *   "…facility, X, FEI 3011407349, at <addr>, from March 30…"
+ *   "…inspection of your firm located in <City, ST> from February 2…"
+ * The letterhead address is the recipient's and is often a different site.
+ */
+function extractInspectedLocation(text: string): string | null {
+  // Stop the capture at a date ("on/from/between <Month> <n>") or a sentence end
+  // after a ZIP, a 2-letter state code, or a full state/region name (so an
+  // address ending "…, Pierz, Minnesota. This letter…" terminates cleanly).
+  const stateNames = [...STATE_NAME_TO_CODE.keys()]
+    .map((s) => s.replace(/\b\w/g, (c) => c.toUpperCase()))
+    .join("|");
+  const re = new RegExp(
+    `\\b(?:[Ll]ocated\\s+(?:at|in)|FEI\\)?\\s*\\d{7,12},\\s+at)\\s+([\\s\\S]{5,200}?)(?=,?\\s+(?:on|from|between)\\s+(?:[A-Z][a-z]+\\s+\\d|\\d)|(?<=\\d{5}(?:-\\d{4})?|[A-Z]{2}|${stateNames})\\.\\s+[A-Z])`,
+    "g",
   );
-  if (m) return `${m[1]}, ${m[2]}`.replace(/\s+/g, " ").trim();
-  // Fallback: "City, ST".
-  const c = text.match(/\b([A-Z][a-zA-Z]+),\s*([A-Z]{2})\b/);
-  return c ? `${c[1]}, ${c[2]}` : null;
+  for (const m of text.matchAll(re)) {
+    const before = text.slice(Math.max(0, m.index - 300), m.index);
+    const captured = m[1]!.replace(/\s+/g, " ").replace(/,$/, "").trim();
+    // "located at the above address" is indirection, not a location (jaggedness #4).
+    if (/\babove(?:-referenced)?\b/i.test(captured)) continue;
+    if (/inspect/i.test(before)) return captured;
+  }
+  return null;
+}
+
+/**
+ * Normalize a location tail to "City, CODE": spell-out state/province → code, so
+ * the output contains the "City, ST" form gold uses ("El Paso, Texas" →
+ * "…El Paso, TX"). Foreign addresses without a known region are left as-is.
+ */
+function normalizeLocation(loc: string): string {
+  // Drop administrative-division noise between a city and its region so the
+  // "City, Region" gold form appears ("Xinxiang County, Henan" → "Xinxiang,
+  // Henan"; "Indrad, Dist. Mehsana, Gujarat" → "Indrad, Gujarat").
+  loc = loc
+    .replace(/\s+(County|Prefecture|Province|Municipality)\b/gi, "")
+    .replace(/,\s*(?:Dist\.?|District)\s+[A-Z][a-z]+/gi, "");
+  // Only a state/province name in the trailing segment (before an optional ZIP /
+  // country) is the state — never a city like "Iowa City" mid-address.
+  return loc.replace(
+    new RegExp(
+      `,\\s*(${[...STATE_NAME_TO_CODE.keys()].join("|")})\\b(?=\\s*(?:\\d{5}(?:-\\d{4})?)?\\s*(?:,\\s*(?:USA|United States|US))?\\s*$)`,
+      "i",
+    ),
+    (_m, name: string) => `, ${STATE_NAME_TO_CODE.get(name.toLowerCase())}`,
+  );
+}
+
+function extractFacilityLocation(text: string): string | null {
+  const addresses = [...text.matchAll(STREET_ADDRESS)].map((m) =>
+    `${m[1]}, ${m[2]}`.replace(/\s+/g, " ").trim(),
+  );
+  const inspected = extractInspectedLocation(text);
+  if (inspected) {
+    // Prefer a fuller rendering (with ZIP) of the same street address if the letter has one.
+    const head = inspected.slice(0, 12).toLowerCase();
+    return normalizeLocation(addresses.find((a) => a.toLowerCase().startsWith(head)) ?? inspected);
+  }
+  // Without an inspection sentence, an address in the letter is the recipient's,
+  // not an inspected facility (e.g. website-review letters) — don't report it.
+  if (!/\binspect/i.test(text)) return null;
+  if (addresses[0]) return normalizeLocation(addresses[0]);
+  // Fallback: "City, ST" — ST must be a real state code ("Amatrudo, JD" is a signature).
+  for (const c of text.matchAll(/\b([A-Z][a-zA-Z]+),\s*([A-Z]{2})\b/g)) {
+    if (US_STATES.has(c[2]!)) return `${c[1]}, ${c[2]}`;
+  }
+  return null;
 }
 
 function extractFei(text: string): string | null {
@@ -51,11 +125,45 @@ function extractFei(text: string): string | null {
   return m ? m[1]! : null;
 }
 
+/** "Center for Drug Evaluation and Research (CDER)" → "CDER"; otherwise the name as published. */
+function normalizeOffice(office: string | null | undefined): string | null {
+  if (!office?.trim()) return null;
+  const acronym = office.match(/\(([A-Z]{3,5})\)\s*$/);
+  if (acronym) return acronym[1]!;
+  return extractIssuingOffice(office) ?? office.trim();
+}
+
+/** Full US state / Canadian province names → their postal codes (for normalization). */
+const STATE_NAME_TO_CODE = new Map<string, string>(
+  Object.entries({
+    alabama: "AL", alaska: "AK", arizona: "AZ", arkansas: "AR", california: "CA",
+    colorado: "CO", connecticut: "CT", delaware: "DE", florida: "FL", georgia: "GA",
+    hawaii: "HI", idaho: "ID", illinois: "IL", indiana: "IN", iowa: "IA", kansas: "KS",
+    kentucky: "KY", louisiana: "LA", maine: "ME", maryland: "MD", massachusetts: "MA",
+    michigan: "MI", minnesota: "MN", mississippi: "MS", missouri: "MO", montana: "MT",
+    nebraska: "NE", nevada: "NV", "new hampshire": "NH", "new jersey": "NJ",
+    "new mexico": "NM", "new york": "NY", "north carolina": "NC", "north dakota": "ND",
+    ohio: "OH", oklahoma: "OK", oregon: "OR", pennsylvania: "PA", "rhode island": "RI",
+    "south carolina": "SC", "south dakota": "SD", tennessee: "TN", texas: "TX",
+    utah: "UT", vermont: "VT", virginia: "VA", washington: "WA", "west virginia": "WV",
+    wisconsin: "WI", wyoming: "WY", "puerto rico": "PR",
+    ontario: "ON", quebec: "QC", "british columbia": "BC", alberta: "AB",
+    manitoba: "MB", saskatchewan: "SK", "nova scotia": "NS", "new brunswick": "NB",
+  }),
+);
+
+const US_STATES = new Set(
+  "AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC PR".split(
+    " ",
+  ),
+);
+
 function extractIssuingOffice(text: string): string | null {
   if (/\bCDER\b|Center for Drug Evaluation and Research/i.test(text)) return "CDER";
   if (/\bCBER\b|Center for Biologics/i.test(text)) return "CBER";
   if (/\bCDRH\b|Center for Devices/i.test(text)) return "CDRH";
   if (/\bCVM\b|Center for Veterinary/i.test(text)) return "CVM";
+  if (/\bCTP\b|Center for Tobacco/i.test(text)) return "CTP";
   return null;
 }
 
@@ -79,6 +187,11 @@ function extractOrganisms(text: string): string[] {
   return [...out];
 }
 
+// Words that signal a matched Title-case phrase is regulatory boilerplate, not a
+// product name. Used to reject false positives from the prose/quote heuristics.
+const NON_PRODUCT_WORDS =
+  /\b(Warning|Letter|Response|Act|Inspection|Inspectional|School|Form|Establishment|Registration|Division|Office|Guidance|Federal|Code|Regulation|Agency|Firm|Facility|Company|Investigator|President|Owner|Director|Compliance|Enforcement)\b/i;
+
 /** Product/brand candidates mentioned literally in the letter. */
 function extractDrugMentions(text: string): Candidate[] {
   const out = new Map<string, Candidate>();
@@ -98,12 +211,35 @@ function extractDrugMentions(text: string): Candidate[] {
     }
   }
 
-  // 2) Quoted product-like tokens: "NAME (ingredient)" or bare Title-case near "drug product".
+  // 2) Product names named in prose as a possessive: "your <Name> product(s)".
+  //    Catches brands that are neither in the KB nor quoted (common in
+  //    unapproved-drug / marketing letters). Bounded to 1..6 Title/number words.
+  const prose = text.matchAll(
+    /\byour\s+([A-Z][A-Za-z0-9][\w'-]*(?:\s+[A-Z0-9][\w'-]*){1,6})\s+products?\b/g,
+  );
+  for (const p of prose) {
+    const name = p[1]!.trim().replace(/\s+/g, " ");
+    const key = name.toLowerCase();
+    if (out.has(key) || NON_PRODUCT_WORDS.test(name)) continue;
+    out.set(key, {
+      id: `drug_p_${key.replace(/\W+/g, "_")}`,
+      text: `${name} — product named in the letter`,
+      payload: { source: "letter-text", name },
+    });
+  }
+
+  // 3) Quoted product-like tokens: "NAME (ingredient)" or bare Title-case near
+  //    "drug product". Reject ALL-CAPS spans (marketing slogans/headers) and
+  //    regulatory boilerplate.
   const quoted = text.matchAll(/["“]([A-Z][A-Za-z0-9 -]{2,40})["”]/g);
   for (const q of quoted) {
     const name = q[1]!.trim();
     const key = name.toLowerCase();
-    if (!out.has(key) && !/warning|letter|company|facility/i.test(name)) {
+    if (
+      !out.has(key) &&
+      /[a-z]/.test(name) && // has a lowercase letter → not an ALL-CAPS slogan
+      !NON_PRODUCT_WORDS.test(name)
+    ) {
       out.set(key, {
         id: `drug_q_${key.replace(/\W+/g, "_")}`,
         text: `${name} — quoted product name in the letter`,
@@ -124,6 +260,11 @@ export interface ExtractOptions {
   extraDrugCandidates?: Candidate[];
   /** If true, seed candidates from the KB using the extracted FEI/location. */
   seedFromFacility?: boolean;
+  /**
+   * Structured page metadata from fda.gov (see scripts/fetch-letter.ts). Preferred
+   * over body regexes for company / date / issuing office when present.
+   */
+  meta?: LetterMeta;
 }
 
 export function extractCandidates(text: string, opts: ExtractOptions = {}): ExtractedCandidates {
@@ -167,13 +308,47 @@ export function extractCandidates(text: string, opts: ExtractOptions = {}): Extr
     }
   }
 
+  const meta = opts.meta;
+  const company = meta?.company?.trim() || extractCompany(text);
+  const redaction = analyzeRedactions(text);
+  const issuing_office = normalizeOffice(meta?.issuing_office) ?? extractIssuingOffice(text);
+
   return {
-    company: extractCompany(text),
-    facility: { name: extractCompany(text), location, fei },
-    date: extractDate(text),
-    issuing_office: extractIssuingOffice(text),
+    company,
+    facility: { name: company, location, fei },
+    date: meta?.issue_date || extractDate(text),
+    issuing_office,
+    reference: meta?.reference ?? null,
+    marcs_cms: meta?.marcs_cms ?? null,
     organisms: extractOrganisms(text),
+    redaction: {
+      total: redaction.total,
+      by_role: redaction.by_role,
+      product_name_redacted: redaction.product_name_redacted,
+      score: redaction.product_redaction_score,
+      evidence: redaction.evidence,
+    },
+    citations: augmentCitations(summarizeViolations(extractCitations(text)), text, issuing_office),
     drugs: [...drugs.values()],
     indications,
   };
+}
+
+/** Add language-detected categories the citation parser can't see. */
+function augmentCitations<T extends { categories: string[] }>(
+  summary: T,
+  text: string,
+  issuingOffice: string | null,
+): T {
+  const categories = [...summary.categories];
+  const add = (present: boolean, cat: string) => {
+    if (present && !categories.includes(cat)) categories.push(cat);
+  };
+  add(detectDataIntegrity(text), "data_integrity");
+  add(detectCompounding(text), "compounding");
+  add(detectAdulteration(text), "adulteration");
+  add(detectMisbranding(text), "misbranding");
+  // Drug CGMP only on CDER letters — the phrase also covers food/supplement CGMP.
+  add(issuingOffice === "CDER" && detectDrugCgmp(text), "CGMP_finished_pharma");
+  return { ...summary, categories };
 }

@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/lus-essentials-llc-728783-05142026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Website-review warning letter (no facility inspection, no FEI stated) for skin-lightening/acne products sold as unapproved new drugs; FDA lab testing confirmed undeclared mercury, cited here as a misbranding failure-to-disclose violation rather than adulteration under the letter's stated sections. contamination_present is marked true for the lab-confirmed mercury contamination even though no microbial organism was identified.",
+  "expected": {
+    "company": "Lus Essentials LLC",
+    "fei": null,
+    "date": "2026-05-14",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Dr. Yanhee Acne Treatment Set (Green)",
+      "Dr. Yanhee Cream Set (Pekas & Melasma Treatment) \u2013 Blue"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

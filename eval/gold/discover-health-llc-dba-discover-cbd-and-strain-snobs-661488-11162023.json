@@ -1,0 +1,47 @@
+{
+  "fixture": "fixtures/discover-health-llc-dba-discover-cbd-and-strain-snobs-661488-11162023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Website-review letter (no facility inspection, so location_contains is null) jointly signed by CDER, CFSAN, and CVM covering unapproved new human/animal CBD drugs, misbranding, and adulterated CBD/Delta-8 foods and animal foods based solely on marketing claims. Products list includes every distinctly named CBD/Delta-8/HHC item discussed, including the dietary-supplement-labeled items raised in the closing comment section. No organisms, no CGMP inspection, and no recall are involved.",
+  "expected": {
+    "company": "Discover Health, LLC d/b/a Discover CBD and Strain Snobs",
+    "fei": null,
+    "date": "2023-11-16",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Active CBD Oil \u2013 Full Spectrum Distillate Cartridge",
+      "Active CBD Oil \u2013 Full Spectrum CBD Salve",
+      "Strain Snobs- 99% Pure CBD Isolate powder",
+      "Active CBD Oil-CBD Lotion",
+      "CBG Isolate Powder",
+      "HHC Cartridge- OG Kush",
+      "Strain Snobs \u03948 THC Salve",
+      "Active CBD Oil Infused Coffee",
+      "Active CBD Oil Gummies",
+      "CBD Living Water",
+      "Strain Snobs\u2122 Delta-8 Plant-Based Gummies",
+      "Active CBD Oil Savory Pumpkin Treats",
+      "Active CBD Oil 120mg CBD Pet Tincture \u2013 Bacon",
+      "Active CBD Oil 300mg CBD Broad Spectrum \u2013 Chicken",
+      "Active CBD Oil Capsules Gold Label Hemp Supplement",
+      "Active CBD Oil Full Spectrum CBD Capsules",
+      "Active CBD Oil Tinctures (1250-2500 mg)"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

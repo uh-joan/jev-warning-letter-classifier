@@ -1,0 +1,76 @@
+Warning Letter 320-25-61
+April 4, 2025
+Dear Mr. Li:
+The United States Food and Drug Administration (FDA) inspected your drug manufacturing facility, Wuxi Medical Instrument Factory Co., Ltd., FEI 3006851654, located at No. 43 Xixin Road, Zhangjing, Xibei Town, Wuxi, from November 11 to 15, 2024.
+Because your drug products were prepared, packed, or held under insanitary conditions, whereby they may have become contaminated with filth or rendered injurious to health, your drug products are also adulterated within the meaning of section 501(a)(2)(A) of the FD&C Act, 21 U.S.C. 351(a)(2)(A).
+This warning letter summarizes significant violations of Current Good Manufacturing Practice (CGMP) regulations for finished pharmaceuticals. See Title 21 Code of Federal Regulations (CFR), parts 210 and 211 (21 CFR parts 210 and 211).
+Because your methods, facilities, or controls for manufacturing, processing, packing, or holding do not conform to CGMP, your drug products are adulterated within the meaning of section 501(a)(2)(B) of the Federal Food, Drug, and Cosmetic Act (FD&C Act), 21 U.S.C. 351(a)(2)(B).
+Inadequate Response
+We reviewed your December 5, 2024 response to our Form FDA 483 in detail. Your response is inadequate because you fail to provide adequate evidence of corrective actions taken to bring your operations into compliance with CGMP or confidence that you can manufacture sterile drugs. Your response notes that your “…company does not have the ability to pass FDA factory inspection and was not prepared to produce sterilized (b)(4) in accordance with the requirements of OCT [sic] Drug product so it does not produce sterilized (b)(4), nor carry out the testing of sterility testing.” Drug manufacturers labeling their product as sterile must recognize the serious public health implications of distributing a non-sterile product, as it poses a significant health risk to patients.
+During our inspection, our investigators observed specific violations including, but not limited to, the following.
+Insanitary Conditions
+Your drug products are adulterated under section 501(a)(2)(A) of the FD&C Act because they were prepared, packed, or held under insanitary conditions whereby drugs may become contaminated with filth or rendered injurious to health. FDA investigators observed your facility to be in a state of disrepair, poorly cleaned, and maintained as evidenced by:
+Numerous dead insects were inside the tubing used to transfer the active pharmaceutical ingredient (API), (b)(4), from storage drums to (b)(4) tanks, as well as a (b)(4) used for storing API transfer hoses and (b)(4).
+Multiple pieces of unknown debris in an (b)(4) solution that was being (b)(4) to a filling machine and transferred (b)(4) that were packaged and labelled as sterile.
+Multiple pieces of tubing used to transfer (b)(4) solution from holding containers to filling machines were cracked, leaking, discolored, or contained unidentified residues.
+Bulk (b)(4) of (b)(4) used to make (b)(4) had hair, unknown particulates, or insects on them.
+The ceiling areas above uncovered filling and packaging machines used to manufacture (b)(4) labelled as sterile were visibly dirty and damaged.
+
+CGMP Violations
+1. Your firm failed to establish and follow appropriate written procedures that are designed to prevent microbiological contamination of drug products purporting to be sterile, and that include validation of all sterilization processes (21 CFR 211.113(b)).
+In addition to the insanitary conditions described above, FDA investigators observed during the inspection that since the previous inspection, your firm discontinued sterilization via (b)(4) without implementing a new sterilization procedure. Furthermore, your firm lacked a procedure for conducting environmental monitoring during manufacturing operations and failed to ensure operators adhered to proper gowning requirements, thereby compromising the sterility assurance of (b)(4) labeled as sterile.
+See FDA’s guidance document, Sterile Drug Products Produced by Aseptic Processing—Current Good Manufacturing Practice, to help you meet the CGMP requirements when manufacturing sterile drugs using aseptic processing, at https://www.fda.gov/downloads/Drugs/Guidances/ucm070342.pdf.
+In response to this letter, provide:
+Comprehensive, independent risk assessment of all contamination hazards with respect to your aseptic processes, equipment, and facilities, that includes, but is not limited to:
+o All human interactions within the ISO 5 area
+o Equipment placement and ergonomics
+o Air quality in the ISO 5 area and surrounding room
+o Facility layout
+o Personnel Flows and Material Flows (throughout all rooms used to conduct and support sterile operations)
+A detailed remediation plan with timelines to address the findings of the contamination hazards risk assessment. Describe specific tangible improvements to be made in the design and control of the aseptic processing operation.
+Your plan to ensure appropriate aseptic practices and cleanroom behavior during production. Include steps to ensure routine and effective supervisory oversight for all production batches. Also describe the frequency of quality unit oversight (e.g., audit) during aseptic processing and its support-operations.
+A thorough retrospective review and risk assessment that evaluates how poor aseptic technique and cleanroom behavior may have affected the quality and sterility of your drugs.
+A robust sterilization method and rigorous validation protocol that assures a sterility assurance level of 10-6 or more is achieved (e.g., provide F-value and Z-value data for any heat sterilization method), and uses an appropriate resistant biological indicator that represents the worst-case resistance of microbes that could be found in your environment and product. Include D-value determinations for each biological indicator lot to demonstrate its resistance to the specific sterilization method proposed for use by your firm.
+
+2. Your firm failed to conduct appropriate laboratory testing to determine whether each batch of drug product purporting to be sterile and pyrogen-free conforms to such requirements (21 CFR 211.167(a)).
+You manufactured and distributed an (b)(4) product labeled as "sterile." However, you failed to perform sterility testing. It is essential that you conduct sterility testing on these and other purportedly sterile drugs prior to batch disposition decisions.
+In response to this letter, provide a list of chemical and microbial test methods and specifications used to analyze each batch of your drug product before making a batch disposition decision, and the associated written procedures.
+3. Your firm failed to test samples of each component for identity and conformity with all appropriate written specifications for purity, strength, and quality. Your firm also failed to validate and establish the reliability of your component supplier’s test analyses at appropriate intervals (21 CFR 211.84(d)(1) and 211.84(d)(2)).
+Your firm relied solely on certificates of analysis (COAs) for incoming lots of (b)(4), instead of conducting identity testing and verification for purity, strength, and quality or qualifying your component supplier. Additionally, your firm failed to test the (b)(4) system for (b)(4) and microbial limits, despite its use in drug production. Without adequate testing, there is no assurance that these critical components meet required specifications before use in manufacturing. The failure to perform appropriate identity and testing raises concerns about product quality and associated potential risks to patients.
+In response to this letter, provide:
+The chemical and microbiological quality control specifications you use to test and release each incoming lot of components for use in manufacturing.
+A description of how you will test each component lot for conformity with all appropriate specifications for identity, strength, quality, and purity. If you intend to accept any results from your supplier’s COA instead of testing each component lot for strength, quality, and purity, specify how you will robustly establish the reliability of your supplier’s results through initial validation as well as periodic re-validation. In addition, include a commitment to always conduct at least one specific identity test for each incoming component lot.
+A summary of results obtained from testing all components to evaluate the reliability of the COA from each component manufacturer. Include your SOP that describes this COA validation program.
+
+4. Your firm failed to establish and follow an adequate written testing program designed to assess the stability characteristics of drug products and to use results of stability testing to determine appropriate storage conditions and expiration dates (21 CFR 211.166(a)).
+Your firm assigned a (b)(4) expiration date to your sterile (b)(4) despite having only (b)(4) of stability data. Additionally, your firm's procedure did not address ongoing stability testing to monitor your drug’s integrity throughout its shelf life. Without sufficient data, there is no assurance that your drug product maintains its identity, strength, quality, and purity for the full labeled expiration period.
+In response to this letter, provide:
+A comprehensive, independent assessment and corrective action and preventive action (CAPA) plan to ensure the adequacy of your stability program. Your remediated program should include, but not be limited to:
+o Stability indicating methods.
+o Stability studies for each drug product in its marketed container-closure system before distribution is permitted.
+o An ongoing program in which representative batches of each product are added each year to the program to determine if the shelf-life claim remains valid.
+o Detailed definition of the specific attributes to be tested at each station (timepoint).
+All procedures that describe these and other elements of your remediated stability program.
+
+Drug Recall
+On January 21, 2025, the FDA held a teleconference with you recommending you consider removing any batches of sterile (b)(4) currently in distribution from the U.S. market.
+On February 11, 2025, you issued a voluntary recall of sterile (b)(4) due to a lack of sterility assurance and CGMP violations observed during an inspection.
+Quality Systems
+Your firm’s quality systems are inadequate. See FDA’s guidance document Quality Systems Approach to Pharmaceutical CGMP Regulations for help implementing quality systems and risk management approaches to meet the requirements of CGMP regulations 21 CFR, parts 210 and 211 at https://www.fda.gov/media/71023/download.
+CGMP Consultant Recommended
+Based upon the nature of the violations we identified at your firm, you should engage a consultant qualified as set forth in 21 CFR 211.34 to evaluate your operations and to assist your firm in meeting CGMP requirements if your firm intends to resume manufacturing drugs for the U.S. market. The qualified consultant should also perform a comprehensive six-system audit of your entire operation for CGMP compliance and evaluate the completion and efficacy of your CAPAs before you pursue resolution of your firm’s compliance status with FDA.
+Your use of a consultant does not relieve your firm’s obligation to comply with CGMP. Your firm’s executive management remains responsible for resolving all deficiencies and systemic flaws to ensure ongoing CGMP compliance.
+Conclusion
+The violations cited in this letter are not intended to be an all-inclusive list of violations that exist at your facility in connection with your products. You are responsible for investigating and determining the causes of any violations and for preventing their recurrence or the occurrence of other violations.
+FDA placed products offered for import into the United States from your firm on Import Alert 66-40 on January 21, 2025.
+Correct any violations promptly. FDA may withhold approval of new applications or supplements listing your firm as a drug manufacturer until any violations are completely addressed and we confirm your compliance with CGMP. We may re-inspect to verify that you have completed corrective actions to any violations.
+Failure to address any violations may also result in the FDA continuing to refuse admission of articles manufactured at Wuxi Medical Instrument Factory Co., Ltd., Wuxi, China, into the United States under section 801(a)(3) of the FD&C Act, 21 U.S.C. 381(a)(3). Articles under this authority that appear to be adulterated may be detained or refused admission, in that the methods and controls used in their manufacture do not appear to conform to CGMP within the meaning of section 501(a)(2)(B) of the FD&C Act, 21 U.S.C. 351(a)(2)(B).
+This letter notifies you of our findings and provides you an opportunity to address the above deficiencies. After you receive this letter, respond to this office in writing within 15 working days. Specify what you have done to address any violations and to prevent their recurrence. In response to this letter, you may provide additional information for our consideration as we continue to assess your activities and practices. If you cannot complete corrective actions within 15 working days, state your reasons for delay and your schedule for completion.
+Send your electronic reply to CDER-OC-OMQ-Communications@fda.hhs.gov. Identify your response with FEI 3006851654 and ATTN: Joseph Lambert, Pharm.D.
+Sincerely,
+/S/
+Francis Godwin
+Director
+Office of Manufacturing Quality
+Office of Compliance
+Center for Drug Evaluation and Research

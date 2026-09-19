@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/mile-high-compounds-llc-721600-03312026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "CDER website-review letter (no facility inspection) charging four injectable peptide/reconstitution products marketed on milehighcompounds.is and an affiliated Skool community as unapproved new drugs under 505(a), despite 'research and educational purposes only' labeling. location_contains is null since this is a website-review letter with no inspected facility mentioned.",
+  "expected": {
+    "company": "Mile High Compounds LLC",
+    "fei": null,
+    "date": "2026-03-31",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "GLP-1 SM",
+      "GLP-2 TRZ",
+      "GLP-3 RT",
+      "BAC Water"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

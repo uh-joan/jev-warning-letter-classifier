@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/tianjin-kilo-pharmaceutical-sci-tech-co-ltd-731761-08062026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "API manufacturer CGMP letter based on a section 704(a)(4) records review (no on-site inspection occurred), citing missing process validation, incomplete master batch records, unvalidated test methods, no stability program, plus drug-listing/misbranding violations for demecarium bromide and chlorambucil. location_contains is null because this was a paper records review, not a physical facility inspection, comparable to the website-review case.",
+  "expected": {
+    "company": "Tianjin Kilo Pharmaceutical Sci-tech Co., Ltd.",
+    "fei": "3012560989",
+    "date": "2026-08-06",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "demecarium bromide",
+      "chlorambucil"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

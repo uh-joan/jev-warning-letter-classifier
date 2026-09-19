@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/almon-healthcare-private-limited-729291-07132026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "API/CGMP letter (deliberately mislabeled raw materials, unvalidated test methods, inadequate equipment cleaning); all specific material/API names are redacted as (b)(4) so no product is named in clear. recall_concern is set true because FDA requires testing of retain samples from all distributed-within-expiry batches and instructs the firm to pursue notifications/recalls if substandard quality is found.",
+  "expected": {
+    "company": "Almon Healthcare Private Limited",
+    "fei": "3030509366",
+    "date": "2026-07-13",
+    "issuing_office": "CDER",
+    "location_contains": "Ahmedabad",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/hemarus-llc-688656-10082024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "CBER blood/blood-components CGMP letter for a Source Plasma collection facility: deficient donor-reinstatement physician approval, inadequate physician-substitute training, deviation from freezing SOP, incomplete discrepancy investigations, and record-keeping failures including donor adverse-event reports signed by the responsible physician on dates the physician's own visit log shows they were not present, plus inconsistent duplicate investigation reports -- these record-accuracy failures are captured as data_integrity. No FEI is stated in the letter (only the CBER case reference 'CBER 25-688656'). The only named product/material is 'Source Plasma'. No organism is named; no recall is mentioned.",
+  "expected": {
+    "company": "Hemarus LLC",
+    "fei": null,
+    "date": "2024-10-08",
+    "issuing_office": "CBER",
+    "location_contains": "Lauderhill, FL",
+    "organisms": [],
+    "products": [
+      "Source Plasma"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "data_integrity"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

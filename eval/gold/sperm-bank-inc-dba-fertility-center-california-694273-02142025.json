@@ -1,0 +1,25 @@
+{
+  "fixture": "fixtures/sperm-bank-inc-dba-fertility-center-california-694273-02142025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "CBER HCT/P (reproductive-tissue/sperm bank) letter citing donor-eligibility screening/testing/recordkeeping failures under 21 CFR Part 1271 Subpart C (missed WNV NAT testing window, incomplete donor screening procedures, specimen collection timing failures, missing written procedures), matching the conceive-fertility-center precedent: no CGMP (210/211/111/820), adulteration, misbranding, or unapproved-new-drug charge is made, so violation_categories is empty. WNV and ZIKV are common virus names, not genus-species organism names, so organisms is empty per the same precedent. No specific commercial product name is given (only generic 'semen'/oocyte/embryo specimens), so products is empty. recall_concern is true because FDA repeatedly requires the firm to keep non-compliant donors' HCT/Ps in quarantine under 21 CFR 1271.60(a).",
+  "expected": {
+    "company": "Sperm Bank, Inc. dba Fertility Center of California",
+    "fei": null,
+    "date": "2025-02-14",
+    "issuing_office": "CBER",
+    "location_contains": "San Diego, CA",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

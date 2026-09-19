@@ -1,0 +1,38 @@
+{
+  "fixture": "fixtures/thomas-brunner-hygiene-gmbh-729018-07242026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER letter combining (1) a records review under section 704(a)(4) (no on-site inspection) finding CGMP failures for OTC drug manufacturing -- no finished-product assay testing, no process/cleaning validation, inadequate high-risk-component identity testing, no stability program -- and (2) a website-labeling review finding the 'syNeo' antiperspirant line (7 named products) to be unapproved new drugs/misbranded because their active-ingredient combination does not conform to the OTC antiperspirant monograph (M019). Classified letter_type as cgmp_nonsterile since the CGMP findings are the more extensive/substantive charge, but violation_categories includes the unapproved_new_drug and misbranding charges from the marketing section as well. location_contains is null because no facility inspection occurred (records review only, consistent with other 704(a)(4) letters in this corpus).",
+  "expected": {
+    "company": "Thomas Brunner Hygiene GmbH",
+    "fei": "3035784232",
+    "date": "2026-07-24",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "syNeo ANTI-PERSPIRANT PUMP SPRAY",
+      "syNeo ANTI-PERSPIRANT ROLL-ON",
+      "syNeo ANTI-PERSPIRANT WET WIPES",
+      "syNeo MAN ANTI-PERSPIRANT PUMP SPRAY",
+      "syNeo MAN ANTI-PERSPIRANT ROLL-ON",
+      "syNeo SOFT ANTI-PERSPIRANT PUMP SPRAY",
+      "syNeo SOFT ANTI-PERSPIRANT ROLL-ON"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

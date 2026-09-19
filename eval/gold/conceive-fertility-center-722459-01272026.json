@@ -1,0 +1,25 @@
+{
+  "fixture": "fixtures/conceive-fertility-center-722459-01272026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "CBER HCT/P (reproductive-tissue bank) letter citing donor-eligibility screening/testing/recordkeeping failures under 21 CFR Part 1271 Subpart C (incomplete communicable-disease screening questionnaire, donors incorrectly determined eligible, eligibility determined before test results returned, incomplete summaries of records). No CGMP (210/211/111/820), adulteration, misbranding, or unapproved-new-drug charge is made -- the violations are all Part 1271 donor-eligibility provisions outside the given category list -- so violation_categories is left empty. Organisms field omits the communicable-disease agents named in the donor-screening questionnaire (e.g., Chlamydia trachomatis, Neisseria gonorrhea, hepatitis, HIV, WNV) since these are disease-testing-panel references, not environmental/product-contamination organisms. recall_concern is true because FDA repeatedly directs the firm to keep non-compliant donors' HCT/Ps (oocytes, semen, embryos) in quarantine under 21 CFR 1271.60(a).",
+  "expected": {
+    "company": "Conceive Fertility Center",
+    "fei": null,
+    "date": "2026-01-27",
+    "issuing_office": "CBER",
+    "location_contains": "Dallas, TX",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

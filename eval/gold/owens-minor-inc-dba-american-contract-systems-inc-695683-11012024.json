@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/owens-minor-inc-dba-american-contract-systems-inc-695683-11012024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Device QSR warning letter to Owens & Minor dba American Contract Systems for accepting out-of-spec sterilization bags and incomplete design verification/validation for EO-sterilized convenience kits including the C-Section Pack. The letter body does not print an explicit issue date (only 'CMS # 695683'), so meta.json's issue_date is used for date.",
+  "expected": {
+    "company": "Owens & Minor, Inc. dba American Contract Systems, Inc.",
+    "fei": "3008492337",
+    "date": "2024-11-01",
+    "issuing_office": "CDRH",
+    "location_contains": "Tiffin, OH",
+    "organisms": [],
+    "products": [
+      "C-Section Pack"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "sterility"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

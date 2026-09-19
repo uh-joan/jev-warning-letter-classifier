@@ -1,0 +1,45 @@
+{
+  "fixture": "fixtures/skye-biologics-holdings-llc-654466-12162024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "CBER letter for umbilical-cord-derived BioECM placental connective tissue matrix products (with named variants BioECM ActiveMatrix/BurnMatrix/CryoMatrix/MX/NX/RX/WoundEx): fails HCT/P minimal-manipulation and homologous-use criteria, making it an unapproved new drug/unlicensed biological product, plus CGMP violations (21 CFR 210/211) for aseptic-area environmental monitoring, endotoxin testing, batch records, and stability. Explicitly adulterated (501(a)(2)(B)). Additional related products (BioRenew, HRT BioPower-A, HRT BioPower-C, HRT NX) are named as an open question in the letter, so included in products. No organisms, no confirmed contamination, and no recall are mentioned.",
+  "expected": {
+    "company": "Skye Biologics Holdings LLC",
+    "fei": null,
+    "date": "2024-12-16",
+    "issuing_office": "CBER",
+    "location_contains": "El Segundo, CA",
+    "organisms": [],
+    "products": [
+      "BioECM\u2122",
+      "BioECM ActiveMatrix\u00ae",
+      "BioECM BurnMatrix\u00ae",
+      "BioECM CryoMatrix\u00ae",
+      "BioECM MX\u2122",
+      "BioECM NX\u2122",
+      "BioECM RX",
+      "BioECM WoundEx\u2122",
+      "BioRenew\u2122",
+      "HRT\u00ae BioPower-A",
+      "HRT\u00ae BioPower-C",
+      "HRT\u00ae NX"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

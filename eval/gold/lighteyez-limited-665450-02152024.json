@@ -1,0 +1,50 @@
+{
+  "fixture": "fixtures/lighteyez-limited-665450-02152024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "Ophthalmic (sterile) eye-drop products found grossly microbially contaminated by FDA lab testing, plus a family of unapproved MSM/color-changing/eye-lightening eye drop products marketed on the firm's website. No LightEyez or contract-manufacturer facility was successfully inspected (the U.S. manufacturer's address is redacted and no one was found on-site), so location_contains is null. Organisms are stated only at the genus (+ 'spp.') level, no species given. Product list includes every distinctly named variant found in the letter body and footnote.",
+  "expected": {
+    "company": "LightEyez Limited",
+    "fei": "3027822577",
+    "date": "2024-02-15",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [
+      "Pseudomonas spp.",
+      "Mycobacterium spp.",
+      "Mycolicibacterium spp.",
+      "Methylorubrum spp."
+    ],
+    "products": [
+      "LightEyez.com MSM Eye Drops v2.0 \u2013 Eye Repair",
+      "MSM Eye Repair Drops",
+      "MSM Eye Support Eye Drop",
+      "Antioxidant Eye Drop (with MSM)",
+      "Limbal Ring Preserver",
+      "Ultra X - The Ultimate Color Changing Drop",
+      "The Ultra Drop",
+      "Advanced Extra Strength Color Changing Eye Drop (Kijoc Mushroom)",
+      "Premium Manuka Eye Lightening Drop",
+      "The Original Eye Lightening Drop",
+      "The \u2018Just Raw Honey\u2019 Eye Lightening Drop",
+      "Premium High Strength Eye Colour Changer (Jarrah + Manuka Honey)",
+      "Premium High Strength Eye Colour Changer Jarrah Honey Drops",
+      "The Sensitive Eye Lightening Drop"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "adulteration",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

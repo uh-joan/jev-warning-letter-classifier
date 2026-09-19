@@ -1,0 +1,35 @@
+{
+  "fixture": "fixtures/intas-pharmaceuticals-limited-652067-07282023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "Large drug manufacturing facility (injectables including carboplatin injection and oral tablets including amitriptyline hydrochloride tablets USP 100 mg) cited for pervasive data-integrity failures (destroyed/torn CGMP records, uncontrolled manual chromatographic integration, missing raw data), inadequate laboratory controls and OOS handling, inadequate process validation, and environmental-monitoring/aseptic-processing (Grade A ISO 5, RABS smoke studies) deficiencies. is_sterile_product and sterility/aseptic_processing categories reflect the ISO 5/RABS aseptic-filling operations described alongside the oral solid-dose line.",
+  "expected": {
+    "company": "Intas Pharmaceuticals Limited",
+    "fei": "3004011473",
+    "date": "2023-07-28",
+    "issuing_office": "CDER",
+    "location_contains": "Sanand, India",
+    "organisms": [],
+    "products": [
+      "amitriptyline hydrochloride tablets USP 100 mg",
+      "carboplatin injection"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "data_integrity",
+      "environmental_monitoring",
+      "aseptic_processing",
+      "sterility",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

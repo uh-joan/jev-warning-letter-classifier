@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/libby-laboratories-inc-708259-06272025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "OTC sunscreen and a topical/hospital antiseptic; letter explicitly calls these 'non-sterile drug products'. All specific product identities are hidden behind (b)(4) redactions (only the generic category 'sunscreen' is named in clear), so product_redacted is true and products is empty. Location is quoted as written ('Berkeley, California') rather than abbreviated since that is the literal text of the inspection sentence.",
+  "expected": {
+    "company": "Libby Laboratories, Inc.",
+    "fei": "2912388",
+    "date": "2025-06-27",
+    "issuing_office": "CDER",
+    "location_contains": "Berkeley, California",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/laboratorios-jaloma-sa-de-cv-725939-05222026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "Non-sterile OTC drug CGMP letter centered on data-integrity failures (fabricated sampling records, falsified incubation times, unvalidated GC software with unexplained missing/undated electronic data) and inadequate lab test-method validation. No specific drug product name or organism is stated in clear; 'recalling product' appears only inside a generic boilerplate CAPA interim-measures list, not as an actual raised recall, so recall_concern is false.",
+  "expected": {
+    "company": "Laboratorios Jaloma S.A. de C.V.",
+    "fei": "3002600322",
+    "date": "2026-05-22",
+    "issuing_office": "CDER",
+    "location_contains": "Guadalajara, Jalisco",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "data_integrity",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

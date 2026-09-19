@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/macau-union-pharmaceutical-limited-724506-05292026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "OTC topical-drug CGMP letter (inadequate release/component testing, no process validation, no stability program) plus unapproved-new-drug and misbranding findings for two named external-analgesic rub products that don't conform to the OTC monograph M017. The inspected facility's street address has no city/region stated anywhere in the letter text, so location_contains is null; 'drug product recalls' appears only inside a generic boilerplate CAPA-ask list, not as an actual raised recall.",
+  "expected": {
+    "company": "Macau-Union Pharmaceutical Limited",
+    "fei": "3011219786",
+    "date": "2026-05-29",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Bamboo Pharmacy\u00ae Mobility penetrating muscle & joint rub",
+      "Bamboo Pharmacy\u00ae Relief + Recovery deep tissue pain relieving rub"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

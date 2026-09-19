@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/tentamus-india-private-limited-720463-03032026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "Contract drug testing laboratory cited for CGMP/data-integrity violations (destroyed analytical records, unofficial diaries, backdated records, un-investigated OOS results) and for delaying/limiting inspection access. No specific finished drug products or organisms are named since this is a testing lab, not a manufacturer.",
+  "expected": {
+    "company": "Tentamus India Private Limited",
+    "fei": "3010960741",
+    "date": "2026-03-03",
+    "issuing_office": "CDER",
+    "location_contains": "Hyderabad, Telangana State",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "data_integrity",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

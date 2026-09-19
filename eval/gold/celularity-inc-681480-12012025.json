@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/celularity-inc-681480-12012025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "CBER letter (no CGMP inspection findings cited) charging that Interfyl\u00ae, a decellularized human placental connective tissue matrix product, is an unapproved new drug and unlicensed biological product because it fails the HCT/P homologous-use criterion and is promoted for non-homologous orthopedic uses. FDA did inspect the facility, but the letter's violations rest entirely on the product's regulatory classification/marketing claims, not on manufacturing/CGMP deficiencies, so no CGMP-related categories apply. No FEI or organisms are stated.",
+  "expected": {
+    "company": "Celularity, Inc",
+    "fei": null,
+    "date": "2025-12-01",
+    "issuing_office": "CBER",
+    "location_contains": "Florham Park, NJ",
+    "organisms": [],
+    "products": [
+      "Interfyl\u00ae"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

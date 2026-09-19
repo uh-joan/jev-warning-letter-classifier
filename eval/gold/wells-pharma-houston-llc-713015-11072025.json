@@ -1,0 +1,37 @@
+{
+  "fixture": "fixtures/wells-pharma-houston-llc-713015-11072025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "CDER Office of Compounding Quality and Compliance letter for a 503B sterile outsourcing facility (Houston, TX): failure to meet section 503B conditions (missing 'This is a compounded drug' labeling statement, inadequate adverse-event-reporting procedures), adulteration from insanitary aseptic-processing conditions (blocked first air, inadequate media fills, deficient smoke studies, cracked LAFH plexiglass) plus separate CGMP citations (211.113(b) aseptic validation, 211.42(c)(10) EM/cleaning/equipment maintenance, 211.192 investigations, 211.22(d) QC unit, 211.125(a) labeling control, 211.63 equipment), a dedicated 'Unapproved New Drug Products' section (no approved 505 application), and misbranding (labeling lacks adequate directions for use). contamination_present is left false: the letter discusses insanitary-condition risk and inadequate EM alert/action CFU levels hypothetically ('any microbial contamination... is a serious concern and upon recovery...') but does not describe an actual confirmed contamination finding or organism. recall_concern is true because multiple sections direct the firm to assess risk/impact to already-distributed product. No FEI is stated (only WL # 713015).",
+  "expected": {
+    "company": "Wells Pharma of Houston, LLC",
+    "fei": null,
+    "date": "2025-11-07",
+    "issuing_office": "CDER",
+    "location_contains": "Houston, TX",
+    "organisms": [],
+    "products": [
+      "Fentanyl 50 mcg/10 mL in 0.9% Sodium Chloride",
+      "Phenylephrine Hydrochloride 800 mcg/10 mL in 0.9% Sodium Chloride"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "compounding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

@@ -1,0 +1,22 @@
+{
+  "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/polleymed-llc-726018-05142026",
+  "slug": "polleymed-llc-726018-05142026",
+  "company": "PolleyMed, LLC",
+  "marcs_cms": "726018",
+  "issue_date": "2026-05-14",
+  "reference": null,
+  "delivery_method": "Via Electronic Mail - Delivery and Read Receipt Requested",
+  "product": [
+    "Drugs"
+  ],
+  "recipient": [
+    "John W. Polley, MD",
+    "PolleyMed, LLC",
+    "1248 Hastings Street",
+    "Traverse City, MI 49686",
+    "United States",
+    "(b)(6), (b)(7)(C)"
+  ],
+  "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+  "fetched_at": "2026-09-19T09:47:57.066Z"
+}

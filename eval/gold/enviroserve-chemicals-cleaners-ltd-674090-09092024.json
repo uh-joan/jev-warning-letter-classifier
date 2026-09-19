@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/enviroserve-chemicals-cleaners-ltd-674090-09092024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "704(a)(4) records-review CGMP letter for a hand-sanitizer manufacturer (identity/methanol testing gaps, no release/stability testing, inadequate QU), plus unapproved-new-drug and misbranding charges specific to the SOPURE ANTISEPTIC SKIN CLEANSER label/website claims (virus-killing claim outside the TFM, implied FDA endorsement, extraneous Drug Facts content). No organisms, contamination, or recall (import alert only).",
+  "expected": {
+    "company": "EnviroServe Chemicals & Cleaners Ltd.",
+    "fei": "3011214285",
+    "date": "2024-09-09",
+    "issuing_office": "CDER",
+    "location_contains": "Etobicoke, ON",
+    "organisms": [],
+    "products": [
+      "SOPURE ANTISEPTIC SKIN CLEANSER"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

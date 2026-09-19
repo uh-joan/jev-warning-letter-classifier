@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/dabur-india-limited-728828-07242026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER CGMP letter for an OTC-drug manufacturer in India: a dedicated data-integrity section (falsified equipment-usage logbook that omitted marketed products, unexplained discrepancies between raw analytical data and reported COA values, missing microbiology plates, unsupported COAs for batches), plus non-validated cleaning (cross-contamination risk) and missing process validation. No sterile/aseptic processing is discussed. Specific product names are redacted as (b)(4) throughout. location_contains uses the Indian union-territory name in place of a US state abbreviation, following the shoolin-pharma-chem precedent, since the facility is in Silvassa, Dadra and Nagar Haveli and Daman and Diu, India. recall_concern true: firm issued a voluntary recall of some (redacted) drug products and FDA placed the firm's imports on Import Alert 66-40.",
+  "expected": {
+    "company": "Dabur India Limited",
+    "fei": "3001413302",
+    "date": "2026-07-24",
+    "issuing_office": "CDER",
+    "location_contains": "Silvassa, Dadra and Nagar Haveli and Daman and Diu",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "data_integrity"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

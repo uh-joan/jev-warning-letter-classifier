@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/meridian-bioscience-inc-720826-12222025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "IVD device QSR (21 CFR 820) warning letter for LeadCare blood-lead test kits manufactured by Magellan Diagnostics (a Meridian Bioscience subsidiary), citing CAPA/design-control/process-validation failures plus MDR reporting and Corrections-and-Removals misbranding violations. FEI is not stated anywhere in the letter text, so it is null. The already-completed device field correction/removal for a mislabeled calibration button is discussed in detail (not boilerplate), so recall_concern is true.",
+  "expected": {
+    "company": "Meridian Bioscience, Inc",
+    "fei": null,
+    "date": "2025-12-22",
+    "issuing_office": "CDRH",
+    "location_contains": "North Billerica, MA",
+    "organisms": [],
+    "products": [
+      "LeadCare II Blood Lead Analyzer and Test Kit",
+      "LeadCare Plus Blood Lead Testing Systems",
+      "LeadCare Ultra"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "misbranding",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

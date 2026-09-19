@@ -1,0 +1,35 @@
+{
+  "fixture": "fixtures/txp-innovations-llc-dba-tex-peptides-735067-08242026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Website-review letter (texpeptide.com) citing seven peptide/reconstitution products as unapproved new drugs under 505(a); no facility was inspected. Products listed as verbatim-quoted in the letter's opening violation sentence.",
+  "expected": {
+    "company": "TXP Innovations LLC dba Tex Peptides",
+    "fei": null,
+    "date": "2026-08-24",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Semaglutide (GLP-1 SEM)",
+      "Tirzepatide (GLP-2 TRZ)",
+      "Retatrutide (GLP-3 RT)",
+      "SS-31 (Elamipretide)",
+      "Tesamorelin",
+      "PT-141 (Bremelanotide)",
+      "Bacteriostatic Water 0.9% Benzyl Alcohol (10 ml)"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

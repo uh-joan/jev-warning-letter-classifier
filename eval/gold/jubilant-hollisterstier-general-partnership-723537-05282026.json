@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/jubilant-hollisterstier-general-partnership-723537-05282026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "CDER CGMP letter for sterile injectable manufacturing: aseptic-processing design flaws revealed by deficient smoke studies, media fills that failed to simulate worst-case intervention durations, unexplained surface discoloration near a filling line, and untimely investigation of environmental-monitoring excursions (adverse trend of mold recoveries on personnel) and a visible-particulate contamination investigation. Organisms are omitted from the list because only 'mold' (no genus-species) is named, not a specific organism. Products are redacted as (b)(4) throughout. Facility is in Kirkland, Quebec, Canada.",
+  "expected": {
+    "company": "Jubilant HollisterStier General Partnership",
+    "fei": "3001623073",
+    "date": "2026-05-28",
+    "issuing_office": "CDER",
+    "location_contains": "Kirkland, QC",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/deqing-jiarou-daily-chemical-co-ltd-677928-03182024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "704(a)(4) records-review CGMP letter for an OTC hand-sanitizer manufacturer: no identity/methanol testing of ethanol, no release/stability testing, and inadequate QU oversight. Product name 'Antibacterial Hand Sanitizer (b)(4)' has a redacted variant/scent suffix but the base product name is stated in clear, so product_redacted is false.",
+  "expected": {
+    "company": "Deqing Jiarou Daily Chemical Co., Ltd.",
+    "fei": "3013042669",
+    "date": "2024-03-18",
+    "issuing_office": "CDER",
+    "location_contains": "Huzhou, Zhejiang",
+    "organisms": [],
+    "products": [
+      "Antibacterial Hand Sanitizer"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

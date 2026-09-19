@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/terragene-sa-667432-11012023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Medical device (sterilization process indicator) manufacturer cited for QSR (21 CFR 820) complaint-handling and MDR-procedure failures, and for marketing an 'extended cycle' labeling claim on the Integron IT26-C beyond its cleared 510(k) without a new submission. No FEI is stated in the letter (only a CMS case number).",
+  "expected": {
+    "company": "Terragene S.A.",
+    "fei": null,
+    "date": "2023-11-01",
+    "issuing_office": "CDRH",
+    "location_contains": "Alvear, Santa Fe",
+    "organisms": [],
+    "products": [
+      "Integron IT26-C"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

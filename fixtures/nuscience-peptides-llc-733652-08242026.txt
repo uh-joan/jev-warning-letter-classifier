@@ -1,0 +1,68 @@
+August 24, 2026
+WARNING LETTER
+Reference Number: 733652
+To Joseph and Ratsamy DeRosa:
+This warning letter advises you of significant violations observed during a U.S. Food and Drug Administration (FDA) review of your website. Promptly address the violations described herein without delay, including ensuring that appropriate resources are allocated to fully address the violations and prevent their recurrence. This is not intended to be an all-inclusive list of the violations that may exist in connection with your products or operations. It is your responsibility to ensure that your firm complies with all requirements of federal law, including FDA regulations. Failure to adequately address violations may result in regulatory or legal action without further notice including, without limitation, seizure and injunction.
+These products are especially concerning from a public health perspective because injectable drug products can pose risks of serious harm to users. Injectable products are delivered directly into the body, sometimes directly into the bloodstream, and therefore, bypass some of the body’s key defenses against toxins and microorganisms that can lead to serious and life-threatening conditions.
+FDA Review
+Violations were identified and documented during a review of your website nusciencepeptides.com in July 2026. Based on our review, “GLP-2 Tirz Peptide,” “GLP-1 Sema Research Peptide,” “GLP-3 RT (Retatrutide) Research Peptide,” “Survodutide,” “Mazdutide,” “PT-141 Peptide (Bremelanotide),” “Tesamorelin Research Peptide,” “Tesamorelin Ipamorelin Blend,” and “Bacteriostatic water for Peptides (BAC Water)” are unapproved new drugs under section 505(a) of the Federal Food, Drug, and Cosmetic Act (FD&C Act), 21 U.S.C. 355(a). As explained further below, introducing or delivering these products for introduction into interstate commerce violates sections 301(d) and 505(a) of the FD&C Act, 21 U.S.C. 331(d) and 355(a).
+This review was conducted as part of FDA’s public health responsibility to protect the public from unsafe, ineffective, and poor-quality drugs.
+Violations of the Federal Food, Drug, and Cosmetic Act
+The following are violations identified during our review. As a reminder, this is not an all-inclusive list of violations that may exist in connection with your products or operations.
+Unapproved New Drug Violations
+Based on a review of your website, “GLP-2 Tirz Peptide,” “GLP-1 Sema Research Peptide,” “GLP-3 RT (Retatrutide) Research Peptide,” “Survodutide,” “Mazdutide,” “PT-141 Peptide (Bremelanotide),” “Tesamorelin Research Peptide,” “Tesamorelin Ipamorelin Blend,” and “Bacteriostatic water for Peptides (BAC Water)” are drugs under section 201(g)(1) of the FD&C Act, 21 U.S.C. 321(g)(1), because they are intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease, and/or intended to affect the structure or any function of the body.1 Examples from your product labeling, including on your website, that provide evidence of the intended use (as defined in 21 CFR 201.128) of these products as drugs include, but may not be limited to, the following:
+GLP-2 Tirz Peptide
+On the webpage https://nusciencepeptides.com/product/glp-2-tz-2/:
+“GLP-2 Tirz, a research peptide of significant interest, is known for its dual agonist activity on glucagon-like peptide-2 (GLP-2) and glucose-dependent insulinotropic polypeptide (GIP) receptors. This peptide has been extensively studied in rodent models, particularly rats, to explore its metabolic effects and potential therapeutic applications in various conditions. Researchers use these models to gain valuable insights into the complex mechanisms of metabolic regulation and the integrated actions of incretin hormones.”
+
+GLP-1 Sema Research Peptide
+On the webpage https://pubchem.ncbi.nlm.nih.gov/compound/56843331#datasheet=LCSS (hyperlinked from https://nusciencepeptides.com/product/glp-1-sm/):
+“**Mechanism of cardiovascular benefit and weight loss** In hypercholesterolemia, semaglutide is believed to reduce the progression of atherosclerosis via decreased gut permeability and decreased inflammation. Weight loss is believed to occur via the reduction of appetite and food cravings after semaglutide administration.”
+
+GLP-3 RT (Retatrutide) Research Peptide
+On the webpage https://nusciencepeptides.com/product/glp-3-rt/:
+“GLP-3 RT (Retatrutide) is a novel investigational peptide being explored for its potential research applications in metabolic disorders, particularly obesity and type 2 diabetes. Also known as LY3437943, it functions as a triple receptor agonist — a glp3 peptide that targets the GLP-1, GIP, and glucagon receptor pathways simultaneously”
+
+Survodutide
+On the webpage https://nusciencepeptides.com/product/survodutide/:
+“Survodutide (BI 456906) is a dual agonist targeting both the glucagon receptor (GCGR) and the glucagon-like peptide-1 receptor (GLP-1R), developed for laboratory research into obesity and type 2 diabetes metabolic pathways. Preclinical studies in rodent models have demonstrated its efficacy in promoting weight loss and improving glycemic control.”
+“In conclusion, survodutide’s dual GCGR/GLP-1R agonism offers a multifaceted approach to treating metabolic disorders. Its efficacy in preclinical models supports further investigation and development as a subject of investigation for obesity and metabolic disorder research.”
+
+Mazdutide
+On the webpage https://nusciencepeptides.com/product/mazdutide/:
+“Mazdutide (IBI362), a dual agonist targeting both GLP-1 and glucagon receptors, has shown promising results in clinical trials for weight management and metabolic disorders. This mazdutide peptide has been extensively studied in humans, but preclinical research, particularly in rat models, remains limited.”
+“Furthermore, mazdutide has been associated with reductions in liver fat content and improvements in insulin sensitivity in clinical trials, highlighting its potential for treating non-alcoholic fatty liver disease and type 2 diabetes.”
+
+PT-141 Peptide (Bremelanotide)
+On the webpage https://nusciencepeptides.com/product/pt-141-bremelanotide/:
+“PT-141, also known as bremelanotide, is a synthetic PT-141 peptide classified as a non-selective agonist of melanocortin receptors, with primary activity at MC3R and MC4R. This research peptide has been widely examined in preclinical models to better understand melanocortin-mediated signaling pathways involved in sexual behavior and neuroendocrine regulation.”
+“Additional studies examining melanocortin receptor agonists support the role of PT-141 in modulating sexual behaviors across sexes through central nervous system pathways. The involvement of the melanocortin system highlights the relevance of PT-141 peptide in experimental research exploring neural control of sexual function.”
+
+Tesamorelin Research Peptide and Tesamorelin Ipamorelin Blend
+On the webpage https://nusciencepeptides.com/product/tesamorelin/:
+“Beyond metabolic effects, tesamorelin has demonstrated the ability to reduce muscle fat and increase muscle area in clinical studies . . . [s]uch findings are particularly relevant for exploring interventions in muscle-wasting conditions.”
+“Furthermore, research indicates that tesamorelin may enhance cognitive function, including improvements in executive function and verbal memory.”
+
+On the webpage https://nusciencepeptides.com/product/tesamorelin-ipamorelin/:
+“Tesamorelin, a growth hormone-releasing hormone (GHRH) analog, has been shown to significantly reduce visceral adipose tissue and improve liver health by decreasing liver fat and preventing fibrosis progression.”
+“[R]esearch has indicated that ipamorelin can counteract glucocorticoid-induced reductions in bone formation, suggesting its potential in mitigating bone density loss associated with glucocorticoid therapy.”
+
+Bacteriostatic water for Peptides (BAC Water)
+Your firm offers “Bacteriostatic water for Peptides (BAC Water)” for sale to be used to reconstitute the peptide products sold on your website, which are drugs intended for injection, including the above-mentioned products. The sale of these products together demonstrates that you intend for your “Bacteriostatic water for Peptides (BAC Water)” to be used in combination for injection. Therefore, your “Bacteriostatic water for Peptides (BAC Water)” is a drug.
+“GLP-2 Tirz Peptide,” “GLP-1 Sema Research Peptide,” “GLP-3 RT (Retatrutide) Research Peptide,” “Survodutide,” “Mazdutide,” “PT-141 Peptide (Bremelanotide),” “Tesamorelin Research Peptide,” “Tesamorelin Ipamorelin Blend,” and “Bacteriostatic water for Peptides (BAC Water)” are “new drugs” under section 201(p) of the FD&C Act, 21 U.S.C. 321(p), because they are not generally recognized as safe and effective (GRASE) for use under the conditions prescribed, recommended, or suggested in their labeling. With certain exceptions not applicable here, a new drug may not be introduced or delivered for introduction into interstate commerce without an approved application from FDA in effect, as described in section 505(a) of the FD&C Act, 21 U.S.C. 355(a). No approved applications pursuant to section 505 of the FD&C Act, 21 U.S.C. 355, are in effect for these products. Accordingly, these products are unapproved new drugs. The introduction or delivery for introduction into interstate commerce of these unapproved new drug products violates sections 301(d) and 505(a) of the FD&C Act, 21 U.S.C. 331(d) and 355(a).
+Conclusion
+As previously stated, you are responsible for investigating and determining the root causes of any violations and implementing corrective and preventative measures to ensure future and sustained compliance so that these violations and any others do not occur.
+Send your written response to FDAAdvisory@fda.hhs.gov within fifteen (15) business days of receipt of this letter. Include the specific steps you have taken to correct any violations, an explanation of each step being taken to prevent the recurrence of violations, as well as copies of related documentation. Identify your response with reference number “733652” in the subject line of the email.
+If you have information that you believe demonstrates that your products are not in violation of the FD&C Act and FDA regulations, include that information for our consideration.
+Please note FDA posts warning letters on www.fda.gov.
+Sincerely,
+/S/
+Tina Smith, M.S.
+Captain, U.S. Public Health Service
+Director
+Office of Unapproved Drugs and Labeling Compliance
+Office of Compliance
+Center for Drug Evaluation and Research
+U.S. Food and Drug Administration
+__________________________
+1 Despite statements on your product labeling marketing your products “for laboratory, research, and analytical use” and “not intended for human or veterinary use,” evidence obtained from your website establishes that your products are intended to be drugs for human use. In addition to the cited drug claims, you market bacteriostatic water alongside a “peptide calculator,” a resource that provides the means to prepare an injectable drug for human administration.

@@ -1,0 +1,38 @@
+{
+  "fixture": "fixtures/nipro-renal-solutions-usa-corporation-732874-07242026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "CDRH QMS-Regulation (21 CFR 820 / ISO 13485) letter for a hemodialysis-concentrate device manufacturer, plus UDI-labeling misbranding violations for the 'Nipro Dry complete dry acid concentrate for hemodialysis' line. The letter's own dateline reads 'July 16, 2026' but the FDA-published issue date (matching the fixture slug and meta.json) is 2026-07-24, so I used the published issue date and note the discrepancy here. Product names given are the shortest verbatim spans I could identify; catalog/lot suffixes like 'LC 228', 'AC 213', and '(45X)' were treated as identifiers rather than part of the product name, and the letter itself is inconsistent between 'MedicaLyte Liquid Bicarbonate' and 'MedicaLyte Liquid Bicarbonate Concentrate' for the recalled product. violation_categories omits environmental_monitoring because the relevant CAPA descriptions reference '(b)(4) monitoring' / 'utility monitoring failures' without enough unredacted text to confirm it means environmental monitoring specifically.",
+  "expected": {
+    "company": "Nipro Renal Solutions USA, Corporation",
+    "fei": null,
+    "date": "2026-07-24",
+    "issuing_office": "CDRH",
+    "location_contains": "Lewisberry, PA",
+    "organisms": [],
+    "products": [
+      "MedicaLyte Bicarbonate Powder",
+      "Citric Complete Dry Citric Acid Concentrate",
+      "Liquid Citric Acid Concentrate",
+      "Liquid Acidic Concentrate",
+      "Liquid Sodium Bicarbonate Hemodialysis Solution",
+      "MedicaLyte Liquid Bicarbonate Concentrate",
+      "Nipro Dry complete dry acid concentrate for hemodialysis"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "data_integrity"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

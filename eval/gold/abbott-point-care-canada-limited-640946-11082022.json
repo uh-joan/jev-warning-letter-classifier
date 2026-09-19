@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/abbott-point-care-canada-limited-640946-11082022.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Device inspection in Ottawa, Canada found the i-STAT cTnI cartridge underwent multiple significant design changes without a new 510(k), rendering it adulterated (no PMA) and misbranded (502(o)), plus QSR/CGMP (21 CFR 820) design-control and recordkeeping violations.",
+  "expected": {
+    "company": "Abbott Point of Care Canada Limited",
+    "fei": null,
+    "date": "2022-11-08",
+    "issuing_office": "CDRH",
+    "location_contains": "Ottawa, Canada",
+    "organisms": [],
+    "products": [
+      "i-STAT cTnI Test",
+      "i-STAT cTnI cartridge"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

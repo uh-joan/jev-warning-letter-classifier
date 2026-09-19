@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/guangzhou-baiyunshan-jingxiutang-pharmaceutical-co-ltd-675823-08012024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER CGMP letter (Warning Letter 320-24-54) for an OTC finished-drug manufacturer: no scientifically sound release specifications/test methods for a two-active-ingredient OTC product, inadequate microbial testing of a (b)(4) component (no objectionable-organism testing besides total aerobic count; firm commits to testing for Burkholderia cepacia complex going forward), and an ineffective quality unit. All drug/ingredient names are redacted as (b)(4), so products is empty and product_redacted is true. Burkholderia cepacia complex is listed in organisms as a genus-species name stated in the letter (per the abbott-laboratories/Similac-probiotic precedent of listing any stated genus-species name), though it is a forward-looking test-method commitment rather than a confirmed contamination finding (contamination_present is false). recall_concern is true given the explicit instruction that substandard retain-sample testing results should trigger 'rapid corrective actions, such as notifying customers and product recalls.'",
+  "expected": {
+    "company": "Guangzhou Baiyunshan Jingxiutang Pharmaceutical Co. Ltd.",
+    "fei": "3006010954",
+    "date": "2024-08-01",
+    "issuing_office": "CDER",
+    "location_contains": "Foshan City, Guangdong",
+    "organisms": [
+      "Burkholderia cepacia complex"
+    ],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

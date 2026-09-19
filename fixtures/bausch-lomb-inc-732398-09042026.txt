@@ -1,0 +1,94 @@
+September 4, 2026
+WARNING LETTER
+Reference number: 320-26-123
+To Mr. Robert T. Fulop:
+This warning letter advises you of significant violations observed during a U.S. Food and Drug Administration (FDA) inspection of your facility. Promptly address the violations described herein without delay, including ensuring that appropriate resources are allocated to fully address the violations and prevent their recurrence. This is not intended to be an all-inclusive list of the violations that exist at your facility. It is your responsibility to ensure that your firm complies with all requirements of federal law, including FDA regulations. Failure to adequately address violations may result in regulatory or legal action without further notice including, without limitation, seizure and injunction.
+FDA Inspection
+Violations were observed and documented during an inspection of your drug manufacturing facility, Bausch & Lomb Inc., FDA Establishment Identifier (FEI) 1000113778, at 8500 Hidden River Parkway, Tampa, from March 12 to 20, 2026. This inspection was conducted under FDA’s statutory authority and public health responsibilities to protect the public from unsafe, ineffective, and poor quality drugs.
+This warning letter summarizes significant violations of Current Good Manufacturing Practice (CGMP) regulations for finished pharmaceuticals. See Title 21 Code of Federal Regulations (CFR), parts 210 and 211 (21 CFR parts 210 and 211).
+Because your methods, facilities, or controls for manufacturing, processing, packing, or holding do not conform to CGMP, your drug products are adulterated within the meaning of section 501(a)(2)(B) of the Federal Food, Drug, and Cosmetic Act (FD&C Act), 21 U.S.C. 351(a)(2)(B).
+We reviewed your April 10, 2026, response to our Form FDA 483 in detail and acknowledge receipt of your subsequent correspondence.
+Violations of the Federal Food, Drug, and Cosmetic Act
+The following are violations identified during our inspection and review. As a reminder, this is not an all-inclusive list of violations at your facility.
+1. Your firm failed to perform operations within specifically defined areas of adequate size and to have separate or defined areas or such other control systems necessary to prevent contamination or mix-ups in aseptic processing areas (21 CFR 211.42(c)(10)).
+Inadequate Monitoring of Aseptic Processing
+Your firm is a manufacturer of sterile prescription and over-the-counter (OTC) (b)(4) drug products produced by aseptic processing. Your environmental monitoring (EM) program and personnel monitoring (PM) was inadequate for classified areas used to produce your sterile (b)(4) drug products. For example,
+Your program did not sufficiently monitor significant locations (e.g., phones used in the aseptic processing area).
+EM procedures used to evaluate the aseptic processing environment were insufficient.
+Media used to support your EM program was observed to be inadequate to support growth of recovered contamination (e.g., cracked media).
+
+From 2023 to 2025 you routinely recovered microorganisms from aseptic ISO 5 areas (air, surface, and personnel) that were out-of-limit (OOL). Notably, recovered microbes in the aseptic processing environment included gram-negative rods such as Serratia marcescens and Stenotrophomonas maltophilia, organisms frequently associated with water sources, suggesting a moisture-related contamination issue. You continued (b)(4) drug production without adequate corrective action and preventive action (CAPA) measures to address the persistent microbiological contamination in your ISO 5 environments that posed a risk to product sterility.
+Manufacturing Design and Unidirectional Airflow
+Your restricted access barrier system (RABS) line (b)(4) included design deficiencies, including (b)(4) placement that led to ergonomic difficulties (e.g., when (b)(4) transferring sterilized components (b)(4)). We also noted that line (b)(4) had insufficient barrier protection. In addition, your dynamic smoke studies failed to sufficiently demonstrate unidirectional airflow protection across multiple lines (e.g., during equipment setup and assembly in the filling areas).
+Basic design deficiencies and excessive recoveries of microorganisms from ISO 5 areas indicate that there is significant inherent contamination risk in your current operation.
+Your response indicates that your aseptic processing operation is in control based on EM data, sterility test results, and foreign matter complaint rates. Your response also states that you have implemented procedural changes for (b)(4) loading and added mandatory disinfection requirements following recovery of fungi or gram-negative rods from ISO 5 and ISO 7 areas.
+Overall, your response fails to address how you will ensure adequate aseptic processing operations, proper future assessment of your EM and PM data to support your aseptic processes, and appropriate interpretation and assessment of consumer complaint samples. You also lack a commitment to implement significant design remediations.
+It should be noted that a sterility test, while a critical quality control for drug products that purport to be sterile, cannot be solely relied upon as justification to release drug product batches. The test is only the last in a series of design provisions and controls intended to protect the consumer from distribution of an unsafe batch.
+The ISO 5 processing environments are critical because sterile products are exposed during aseptic production and therefore vulnerable to contamination if operations are not well designed and diligently controlled. Your aseptic processes should be designed, and operations executed, to prevent contamination hazards to your sterile product. Flaws in the design of cleanrooms and aseptic processing lines, or improper execution of operations, can promote influx of contamination into the critical processing area.
+You also failed to adequately investigate microbiological departures from action limits and adverse trends in your water for injection system and environmental and personnel monitoring programs. Your investigations did not evaluate the persistent recovery of microorganisms over time, and you did not perform adequate microorganism identification. Notably, microorganisms recovered from your facility, including Pseudomonas aeruginosa and Aspergillus brasiliensis, were the same genus and species as those recovered from several consumer complaint samples.
+In response to this letter, provide:
+An independent, comprehensive review of your EM program to ensure vigilant, timely detection and response to potential product contamination hazards in your manufacturing environment. This assessment should include, but not be limited to, the following:
+o Establishing appropriate limits
+o Sampling methods
+o Sampling locations and frequencies
+o Trend analysis
+o Appropriate investigation of deviations and adverse trends
+o A CAPA plan based on the findings of the assessment
+A comprehensive, independent assessment of the design and control of your firm’s manufacturing operations, with a detailed and thorough review of all microbiological hazards.
+A detailed risk assessment addressing the hazards posed by distributing drug products with potentially objectionable contamination. Specify actions you will take in response to the risk assessment, such as customer notifications and product recalls.
+Complete investigations into all batches with potential objectionable microbiological contamination or an OOL microbiological result (whether or not later invalidated). The investigations should detail your findings regarding the root causes of the contamination.
+Appropriate microbiological batch release specifications (i.e., total counts, identification of bioburden to detect objectionable microbes) for each of your drug products.
+All microbiological test methods used to analyze each of your drug products.
+A summary of results from testing retain samples of all drug product batches within expiry. You should test all appropriate quality attributes including, but not limited to, identity and strength of active ingredients and microbiological quality (total counts and identification of bioburden to detect any objectionable microbes) of each batch. If testing yields an OOL result, indicate the corrective actions you will take, including notifying customers and initiating recalls.
+Perform a critical evaluation of airflow unidirectionality in your aseptic process, with the assistance of a qualified consultant. Ensure smoke studies are conducted under dynamic conditions, with thorough and complete evaluations of aseptic processing line airflow unidirectionality, including the impact of dynamic interactions and aseptic interventions. These thorough smoke studies should be performed after you remediate your aseptic operation and conducted using proper practices (e.g., neutrally buoyant media) to appropriately visualize airflow.
+
+2. Your firm failed to establish and follow appropriate written procedures that are designed to prevent microbiological contamination of drug products purporting to be sterile, and that include validation of all aseptic and sterilization processes (21 CFR 211.113(b)).
+Poor Aseptic Technique and Cleanroom Behavior
+Your operators were observed repeatedly exhibiting poor aseptic practices during filling operations on (b)(4) line (b)(4), including, but not limited to, the following:
+Operators reached over exposed (b)(4) bottles while (b)(4) to remove jammed bottles.
+Operators failed to disinfect (b)(4) (e.g., prior to handling sterile supplies and between use of different (b)(4)).
+(b)(4) contacted (b)(4) housing and blocked unidirectional air to open sterilized bottles.
+(b)(4) contacted sterile portions of aseptic tweezers used to remove jammed bottles, and operators returned those bottles back to the (b)(4).
+Bags used to transfer sterile components (bottles) were exposed to the ISO 7 environment prior to manipulation with (b)(4) and contacted internal portions of the (b)(4) housing.
+Operators used (b)(4) to push trash into a receptacle located below the processing line rather than using equipment dedicated for this purpose.
+
+In your response, you commit to updating your personnel training and using (b)(4) aseptic training (b)(4). Your response does not address the failure of the operations and quality unit to detect and require remediation of these significant aseptic processing hazards. Your response also fails to address how your operations and quality unit will proactively oversee and maintain ongoing control over aseptic conditions, processes, and finished product.
+Other aseptic line deficiencies were also observed during our inspection. For example, line (b)(4) included aseptic setup hazards related to personnel and line design that could compromise the sterility of product contact equipment.
+In addition, your process simulations (media fill) were inadequate. Data indicated that the total number of units in your media fills were substantially smaller than your aseptically produced commercial batch sizes and did not sufficiently represent the contamination risks associated with your aseptic processing lines. Significantly, you documented a media fill failure on line 16 in July 2025, in which two units demonstrated fungal (Neovaginatispora magiferae) and spore forming gram-positive Geodermatophilus obscurus, contamination, respectively.
+See FDA’s guidance document Sterile Drug Products Produced by Aseptic Processing - Current Good Manufacturing Practice to help you meet the CGMP requirements when manufacturing sterile drugs using aseptic processing at https://www.fda.gov/media/71026/download.
+In response to this letter, provide:
+A comprehensive, independent risk assessment of all contamination hazards with respect to your aseptic processes, equipment, and facilities, including but not limited to, the following:
+o All human interactions within the ISO 5 area (e.g., risk reduction or elimination of manual interventions wherever possible)
+o Equipment suitability (e.g., reliability, capability, ergonomics, placement) and sufficient cleanroom space
+o Air quality in the ISO 5 area and surrounding room including, but not limited to, air volume and flow
+o Facility layout
+o Personnel flow and material flow (movement throughout all rooms used to conduct and support sterile operations, and all material transfers)
+o Specific CAPA recommendations that will comprehensively address the design and control hazards identified in the risk assessment
+A detailed remediation plan with timelines to address the findings of the contamination hazards risk assessment. Describe specific tangible improvements to be made to aseptic processing operation design and control at your facility and explain how this CAPA plan will robustly remediate your deficient sterile manufacturing operations. Include comprehensive changes to the design of (b)(4) aseptic processing lines and cleanrooms. Also, describe your plans for qualification and validation of your extensively remediated operations.
+Your systematic plan to assure adherence to appropriate aseptic practices, cleanroom behavior, and written procedures, including but not limited to an independent assessment of the following with accompanying CAPA:
+o Suitability of actual practices based on extensive retrospective review and prospective observation of aseptic processing operations
+o Deficiencies in production management oversight, and identification of specific improvements to ensure effective and routine supervisory oversight for all batches
+o Frequency and depth of quality unit oversight (e.g., audit, ad hoc, daily interactions) of aseptic processing and its support operations
+o Adequacy of written procedures
+
+Ineffective Quality System
+Significant findings in this letter demonstrate that your firm does not operate an effective quality system in accord with CGMP. In addition to the lack of effective management oversight of your production operations, we found your quality unit is not enabled to exercise proper authority and/or has insufficiently implemented its responsibilities. Executive management should immediately and comprehensively assess your company’s global manufacturing operations to ensure that your systems, processes, and products conform to FDA requirements.
+Request for a Meeting with FDA
+After you submit your response to this warning letter, we recommend you reach out to this office to arrange for a teleconference to discuss your corrective actions and preventive actions in detail. Direct your request to Kathryn Hall Kathryn.Hall@fda.hhs.gov and cc: CDER-OC-OMQ-Communications@fda.hhs.gov.
+Conclusion
+You are responsible for investigating and determining the root causes of any violations and implementing corrective and preventative measures to ensure future and sustained compliance so that these violations and any others do not occur.
+Unresolved violations may prevent other Federal agencies from awarding contracts. Failure to address violations may also cause FDA to withhold issuance of Export Certificates. FDA may withhold approval of new applications or supplements listing your firm as a drug manufacturer until any violations are completely addressed and we confirm your compliance with CGMP. We may re-inspect to verify that you have completed corrective actions to address any violations.
+If you are considering an action that is likely to lead to a disruption in the supply of drugs produced at your facility, FDA requests that you contact CDER’s Drug Shortages Staff immediately, at drugshortages@fda.hhs.gov, so that FDA can work with you on the most effective way to bring your operations into compliance with the law. Contacting the Drug Shortages Staff also allows you to meet any obligations you may have to report discontinuances or interruptions in your drug manufacture under 21 U.S.C. 356c(b). This also allows FDA to consider, as soon as possible, what actions, if any, may be needed to avoid shortages and protect the health of patients who depend on your products.
+Send your written response to CDER-OC-OMQ-Communications@fda.hhs.gov within fifteen (15) business days of receipt of this letter1. Identify your written response with FEI 1000113778 and ATTN: Compliance Officer Matthew R. Dionne, in the letter or /in the subject line of the email.
+If you have information that you believe demonstrates that your products are not in violation of the FD&C Act and FDA regulations, include that information for our consideration.
+FDA posts warning letters to www.FDA.gov.
+Sincerely,
+/S/
+Francis Godwin
+Director
+Office of Manufacturing Quality
+Office of Compliance
+Center for Drug Evaluation and Research
+U.S. Food and Drug Administration
+__________________________
+1 Under program enhancements for the Generic Drug User Fee Amendments (GDUFA) reauthorization for fiscal years (FYs) 2023-2027, also known as the GDUFA III Commitment Letter, your facility may be eligible for a Post-Warning Letter Meeting to obtain preliminary feedback from FDA on the adequacy and completeness of your corrective action plans.

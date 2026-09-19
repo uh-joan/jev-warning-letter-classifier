@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/hydramed-iv-llc-dba-hydramed-728282-06082026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "CDER Office of Compounding Quality and Compliance website-review letter (no facility inspection), near-identical in template to the NativeMed letter: misbranding under 502(a)/502(bb) for falsely suggesting HydraMed is the compounder of pictured semaglutide/tirzepatide products and for calling the sourcing pharmacy 'FDA-approved,' a designation FDA does not grant to compounders. The FEI identifies the website's associated establishment rather than an inspected facility, so location_contains is null per the no-inspection rule. is_sterile_product is set false to match the NativeMed precedent for this same letter template.",
+  "expected": {
+    "company": "HydraMed IV LLC dba HydraMed",
+    "fei": "3044021141",
+    "date": "2026-06-08",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "semaglutide",
+      "tirzepatide"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "misbranding",
+      "compounding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

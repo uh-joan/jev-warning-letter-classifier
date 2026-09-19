@@ -1,0 +1,37 @@
+{
+  "fixture": "fixtures/hearthy-foods-inc-712415-02102026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Human Foods Program letter covering both adulterated conventional food (RTE Whey Protein Isolate under 21 CFR Part 117, incl. hazard-analysis and sanitation failures with observed employee cross-contact and facility filth/debris and rodent droppings) and adulterated/misbranded dietary supplements (Collagen, Collagen+ With Hyaluronic Acid + Vitamin C + Biotin, Creatine Powder under 21 CFR Part 111) plus misbranded conventional food (undeclared milk/sunflower lecithin, Nutrition Facts errors). Salmonella and Listeria monocytogenes are cited only as illustrative hazard-analysis examples, not as detected findings, so organisms is left empty. contamination_present is true based on directly observed employee cross-contact, food residue, and rodent droppings (actual insanitary conditions, not just a hazard-analysis gap).",
+  "expected": {
+    "company": "Hearthy Foods, Inc.",
+    "fei": null,
+    "date": "2026-02-10",
+    "issuing_office": "Human Foods Program",
+    "location_contains": "Los Angeles, CA",
+    "organisms": [],
+    "products": [
+      "Whey Protein Isolate",
+      "Collagen",
+      "Collagen+ With Hyaluronic Acid + Vitamin C + Biotin",
+      "Creatine Powder",
+      "Almond Flour",
+      "Cashew Flour"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "environmental_monitoring"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

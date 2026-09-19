@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/pharmathen-international-sa-723680-05272026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "CDER sterile-manufacturing CGMP letter for the Sapes, Rodopi (Evrou, Greece) facility: deficient airflow visualization/smoke studies and aseptic behavior on an aseptic vial filling line, recurring gram-negative microbial recoveries in ISO 5 air samples, inadequate OOS/sterility-failure and visible-particulate investigations, inadequate room pressurization/facility monitoring, undocumented laboratory controls, and a dedicated Data Integrity Remediation section. All specific drug names are redacted as (b)(4), so no product is named in clear. location_contains uses 'Sapes, Rodopi' (town, regional unit) as the closest US-style 'City, ST' analog for this Greek address; judgment call given the address text is not fully parseable. contamination_present is true given the documented gram-negative recoveries in ISO 5 air samples and confirmed sterility/media-fill failures. recall_concern is true: sponsors issued voluntary recalls of two in-distribution products due to lack of sterility assurance.",
+  "expected": {
+    "company": "Pharmathen International S.A.",
+    "fei": "3009961173",
+    "date": "2026-05-27",
+    "issuing_office": "CDER",
+    "location_contains": "Sapes, Rodopi",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "data_integrity",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

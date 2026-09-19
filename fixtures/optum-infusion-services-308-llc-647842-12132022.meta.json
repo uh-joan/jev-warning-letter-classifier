@@ -1,0 +1,23 @@
+{
+  "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/optum-infusion-services-308-llc-647842-12132022",
+  "slug": "optum-infusion-services-308-llc-647842-12132022",
+  "company": "Optum Infusion Services 308 LLC",
+  "marcs_cms": "647842",
+  "issue_date": "2022-12-13",
+  "reference": null,
+  "delivery_method": "Via Email Delivery Confirmation",
+  "product": [
+    "Drugs"
+  ],
+  "recipient": [
+    "William J. Kottmer, PharmD",
+    "General Manager",
+    "Optum Infusion Services 308 LLC",
+    "2555 West Fairview Street Suite 104 Building D",
+    "Chandler, AZ 85224-4708",
+    "United States",
+    "bkottmer@optum.com"
+  ],
+  "issuing_office": "Division of Pharmaceutical Quality Operations IV",
+  "fetched_at": "2026-09-19T09:47:27.793Z"
+}
