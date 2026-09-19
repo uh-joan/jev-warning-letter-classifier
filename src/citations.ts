@@ -164,9 +164,15 @@ function classifyFdcaBase(base: string, firstSub?: string): { category: Citation
       }
       return { category: "prohibited_acts", description: "Prohibited act" };
     case "201":
+      // Only specific §201 subsections are drug signals. 201(f)=food, 201(h)=device,
+      // 201(ff)=dietary supplement, 201(qq)=major food allergen, 201(a)=general —
+      // none of those are a drug, so don't map them to drug_definition.
       if (sub === "p") return { category: "unapproved_new_drug", description: "New drug definition" };
       if (sub === "g") return { category: "drug_definition", description: "Drug definition" };
-      return { category: "drug_definition", description: "Definitions" };
+      if (sub === "f") return { category: "other", description: "Food definition (§201(f))" };
+      if (sub === "h") return { category: "other", description: "Device definition (§201(h))" };
+      if (sub === "ff") return { category: "other", description: "Dietary supplement definition (§201(ff))" };
+      return { category: "other", description: `Definitions (§201${sub ? `(${sub})` : ""})` };
     case "503A":
     case "503a":
       return { category: "compounding", description: "Pharmacy compounding" };
@@ -444,8 +450,10 @@ export function classifyRegulatedProduct(
     c.has("unapproved_new_drug") ||
     c.has("drug_definition") ||
     c.has("CGMP_finished_pharma") ||
-    c.has("dietary_supplement_cgmp") ||
-    c.has("misbranding");
+    c.has("dietary_supplement_cgmp");
+  // NB: misbranding is deliberately NOT a drug signal — food is misbranded too
+  // (allergen/labeling), so a bakery would otherwise be treated as a drug letter.
+  // Supplements stay drug-relevant via dietary_supplement_cgmp above.
 
   return { product, drug_relevant };
 }

@@ -240,7 +240,7 @@ function scoreExtraction(expected: GoldExpected, cands: ExtractedCandidates): Fi
   return results;
 }
 
-function scoreJev(expected: GoldExpected, result: WarningLetter): FieldResult[] {
+function scoreJev(expected: GoldExpected, result: WarningLetter, letterType: string): FieldResult[] {
   const results: FieldResult[] = [];
 
   if (expected.document_type !== undefined) {
@@ -254,10 +254,15 @@ function scoreJev(expected: GoldExpected, result: WarningLetter): FieldResult[] 
   }
 
   if (expected.product_redacted !== undefined) {
+    const foodLetter = letterType === "food_supplement" || letterType === "other";
+    const declinedFood =
+      foodLetter && result.regulated_product === "food_or_supplement" && result.drug.name === null;
     const pass = expected.product_redacted
       ? result.drug.name === null
-      : result.drug.name != null &&
-        (expected.products ?? []).some((p) => substrEitherWay(result.drug.name!, p));
+      : declinedFood // a food letter with no drug — null is the correct answer
+        ? true
+        : result.drug.name != null &&
+          (expected.products ?? []).some((p) => substrEitherWay(result.drug.name!, p));
     results.push({
       name: "drug",
       scored: true,
@@ -268,8 +273,13 @@ function scoreJev(expected: GoldExpected, result: WarningLetter): FieldResult[] 
   }
 
   // Multi-product letters: score the set of products Jev flags as subjects
-  // (products[].is_subject) against the gold product list.
-  if (expected.products !== undefined && !expected.product_redacted) {
+  // (products[].is_subject) against the gold product list. Skip on a food letter
+  // the tool correctly scoped as non-drug (drug-subject ID doesn't apply there).
+  const declinedFoodLetter =
+    (letterType === "food_supplement" || letterType === "other") &&
+    result.regulated_product === "food_or_supplement" &&
+    result.products.length === 0;
+  if (expected.products !== undefined && !expected.product_redacted && !declinedFoodLetter) {
     const subjects = result.products.filter((p) => p.is_subject).map((p) => p.name);
     const matchedExp = (expected.products ?? []).filter((g) =>
       subjects.some((s) => substrEitherWay(s, g)),
@@ -510,7 +520,7 @@ async function main() {
         const jev = await getJevResult(text, cands);
         if (jevCacheMiss) await pace();
         const result = assemble(cands, jev, text);
-        fields.push(...scoreJev(gold.expected, result));
+        fields.push(...scoreJev(gold.expected, result, gold.letter_type));
       } catch (e) {
         // Extraction fields are still scored; Jev fields are left unscored for this letter.
         jevFailures.push(slug);
