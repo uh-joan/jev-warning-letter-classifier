@@ -15,6 +15,7 @@ import {
   detectCompounding,
   detectAdulteration,
   detectMisbranding,
+  detectDrugCgmp,
 } from "./citations.js";
 import type { Candidate, ExtractedCandidates, LetterMeta } from "./types.js";
 
@@ -310,12 +311,13 @@ export function extractCandidates(text: string, opts: ExtractOptions = {}): Extr
   const meta = opts.meta;
   const company = meta?.company?.trim() || extractCompany(text);
   const redaction = analyzeRedactions(text);
+  const issuing_office = normalizeOffice(meta?.issuing_office) ?? extractIssuingOffice(text);
 
   return {
     company,
     facility: { name: company, location, fei },
     date: meta?.issue_date || extractDate(text),
-    issuing_office: normalizeOffice(meta?.issuing_office) ?? extractIssuingOffice(text),
+    issuing_office,
     reference: meta?.reference ?? null,
     marcs_cms: meta?.marcs_cms ?? null,
     organisms: extractOrganisms(text),
@@ -326,14 +328,18 @@ export function extractCandidates(text: string, opts: ExtractOptions = {}): Extr
       score: redaction.product_redaction_score,
       evidence: redaction.evidence,
     },
-    citations: augmentCitations(summarizeViolations(extractCitations(text)), text),
+    citations: augmentCitations(summarizeViolations(extractCitations(text)), text, issuing_office),
     drugs: [...drugs.values()],
     indications,
   };
 }
 
 /** Add language-detected categories the citation parser can't see. */
-function augmentCitations<T extends { categories: string[] }>(summary: T, text: string): T {
+function augmentCitations<T extends { categories: string[] }>(
+  summary: T,
+  text: string,
+  issuingOffice: string | null,
+): T {
   const categories = [...summary.categories];
   const add = (present: boolean, cat: string) => {
     if (present && !categories.includes(cat)) categories.push(cat);
@@ -342,5 +348,7 @@ function augmentCitations<T extends { categories: string[] }>(summary: T, text: 
   add(detectCompounding(text), "compounding");
   add(detectAdulteration(text), "adulteration");
   add(detectMisbranding(text), "misbranding");
+  // Drug CGMP only on CDER letters — the phrase also covers food/supplement CGMP.
+  add(issuingOffice === "CDER" && detectDrugCgmp(text), "CGMP_finished_pharma");
   return { ...summary, categories };
 }

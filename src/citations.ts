@@ -466,3 +466,15 @@ export function detectMisbranding(text: string): boolean {
     text,
   );
 }
+
+/**
+ * Drug CGMP charged in prose ("current good manufacturing practice") on letters
+ * that don't carry a parseable 21 CFR 210/211 citation — common on foreign
+ * manufacturers. The caller must gate this to drug-center (CDER) letters, since
+ * the same phrase covers food (21 CFR 117) and supplement (111) CGMP.
+ */
+export function detectDrugCgmp(text: string): boolean {
+  return /\bcurrent good manufacturing practice\b|\bCGMP\s+(?:regulations?|requirements?)\b|\bconform to (?:the )?CGMP\b|\bviolations? of (?:the )?CGMP\b/i.test(
+    text,
+  );
+}
