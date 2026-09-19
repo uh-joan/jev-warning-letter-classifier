@@ -1,13 +1,54 @@
 {
-  "name": "jev-warning-letter-classifier",
+  "name": "classify-warning-letter",
   "version": "0.1.0",
-  "private": true,
+  "description": "Classify FDA Warning Letters into structured regulatory data using TypeSafe's Jev (System One) model — selection over generation, so it never hallucinates a drug name.",
+  "keywords": [
+    "fda",
+    "warning-letter",
+    "pharma",
+    "regulatory",
+    "classifier",
+    "typesafe",
+    "jev",
+    "cgmp",
+    "nlp"
+  ],
+  "license": "MIT",
+  "author": "Joan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uh-joan/jev-warning-letter-classifier.git"
+  },
+  "homepage": "https://github.com/uh-joan/jev-warning-letter-classifier#readme",
+  "bugs": {
+    "url": "https://github.com/uh-joan/jev-warning-letter-classifier/issues"
+  },
   "type": "module",
-  "description": "Classify FDA Warning Letters into structured regulatory entities using TypeSafe's Jev (System One) via the Vercel AI Gateway.",
+  "bin": {
+    "classify-warning-letter": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "run": "tsx src/run.ts",
-    "demo": "tsx src/run.ts fixtures/bausch-lomb-2026.txt",
+    "run": "tsx src/cli.ts",
+    "demo": "tsx src/cli.ts fixtures/bausch-lomb-2026.txt",
+    "start": "tsx src/cli.ts",
     "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build",
     "eval": "tsx eval/run-eval.ts"
   },
   "dependencies": {
