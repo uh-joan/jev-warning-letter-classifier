@@ -12,7 +12,9 @@
     "issuing_office": "CBER",
     "location_contains": null,
     "organisms": [],
-    "products": [],
+    "products": [
+      "exosomes"
+    ],
     "product_redacted": false,
     "document_type": "warning_letter",
     "is_sterile_product": false,

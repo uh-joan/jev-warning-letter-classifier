@@ -18,7 +18,12 @@
       "ZIIP DOT",
       "ZIIP Gels",
       "ZIIP Device",
-      "ZIIP+ Device"
+      "ZIIP+ Device",
+      "Golden gel",
+      "Clear gel",
+      "Silver gel",
+      "Crystal gel",
+      "Electric complex gel"
     ],
     "product_redacted": false,
     "document_type": "warning_letter",
