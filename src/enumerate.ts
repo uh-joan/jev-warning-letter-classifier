@@ -35,6 +35,16 @@ const NON_PRODUCT =
 /** A citation-shaped span like "21 CFR 211.113", "127 Stat. 587", "§ 351". */
 const CITATION_SHAPE = /\d+\s*(?:CFR|U\.?S\.?C|Stat|§)|§|\bStat\.|\b\d{2,5}\s+Stat\b/i;
 
+/** Lot / batch / catalog / 510(k) codes — associated with products but not names.
+ *  Kept conservative so real peptide codes (PT-141, SS-31, GLP-3) survive;
+ *  short letter+digit codes are caught by CODE_CONTEXT instead. */
+const CODE_SHAPE = /\d{5,}|^K\d{6}$/;
+/** Generic category words that are not a specific product name. */
+const GENERIC =
+  /^(products?|drug products?|dietary supplements?|active pharmaceutical ingredients?|ingredients?|components?|raw materials?|finished products?)$/i;
+/** Preceded by a lot/batch/catalog/510(k) label → the span is a code, not a name. */
+const CODE_CONTEXT = /\b(lot|batch|catalog|cat\.?|no\.?|number|#|510\s*\(k\)|ndc)\s*(?:no\.?|#|:)?\s*$/i;
+
 interface Raw {
   name: string;
   index: number;
@@ -61,6 +71,7 @@ function plausible(name: string): boolean {
   if (STOP.test(name)) return false;
   if (PROSE.test(name)) return false; // reject running-prose fragments
   if (NON_PRODUCT.test(name) || CITATION_SHAPE.test(name)) return false; // acronyms / citations
+  if (CODE_SHAPE.test(name) || GENERIC.test(name)) return false; // lot/catalog codes, generic terms
   if (/\d{3,}\s+[A-Z]/.test(name)) return false; // street addresses ("3801 Mojave Court")
   // A capital / digit / internal-cap is the usual product signal. All-lowercase
   // names ("vancomycin", "flunixin meglumine injection") are plausible too:
@@ -73,6 +84,8 @@ export function enumerateProductCandidates(text: string): Candidate[] {
   const raws: Raw[] = [];
   const push = (name: string, index: number, priority: number, source: string) => {
     const n = clean(name);
+    // Reject a span introduced by a lot/batch/catalog/510(k) label (it's a code).
+    if (CODE_CONTEXT.test(text.slice(Math.max(0, index - 16), index))) return;
     if (plausible(n)) raws.push({ name: n, index, priority, source });
   };
 
