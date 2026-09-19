@@ -130,11 +130,19 @@ function classifyCfr(part: number, section?: string): { category: CitationCatego
   if (part === 1271 || (part >= 600 && part <= 680)) {
     return { category: "biologics", description: `Biologics regulation (21 CFR ${section ?? `Part ${part}`})` };
   }
-  if (part === 50 || part === 56 || part === 312 || part === 812) {
+  // Unambiguous bioresearch conduct: informed consent (50), IRB (56), GLP (58),
+  // IDE clinical device study (812). NOT 312 — an IND cite usually means the
+  // *product* needs an IND (an unapproved-drug theory, common on stem-cell/HCT-P
+  // letters), not a study-conduct violation.
+  if (part === 50 || part === 56 || part === 58 || part === 812) {
+    const glp = part === 58;
     return {
       category: "bioresearch_gcp",
-      description: `Bioresearch / good clinical practice (21 CFR ${section ?? `Part ${part}`})`,
+      description: `${glp ? "Good laboratory practice (nonclinical)" : "Bioresearch / good clinical practice"} (21 CFR ${section ?? `Part ${part}`})`,
     };
+  }
+  if (part === 312) {
+    return { category: "other", description: `Investigational new drug application (21 CFR ${section ?? "Part 312"})` };
   }
   if (part >= 1100 && part <= 1169) {
     return { category: "tobacco", description: `Tobacco product regulation (21 CFR ${section ?? `Part ${part}`})` };
