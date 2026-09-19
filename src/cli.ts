@@ -18,7 +18,8 @@
  */
 
 import { readFileSync } from "node:fs";
-import { resolve as resolvePath } from "node:path";
+import { homedir } from "node:os";
+import { resolve as resolvePath, join } from "node:path";
 import { extractCandidates } from "./extract.js";
 import { classifyWarningLetter, gatherCandidates } from "./index.js";
 import { resolveLetter, isUrl, isFdaUrl } from "./resolve.js";
@@ -45,21 +46,59 @@ Environment:
                         https://console.typesafe.ai/settings/keys
   FDA_API_KEY           optional, raises openFDA rate limits (--openfda)
 
+The key is read from the environment, or from the first .env found in:
+  ./.env  ·  ~/.classify-warning-letter.env  ·  ~/.config/classify-warning-letter/.env
+Real environment variables always take precedence.
+
 Examples:
   classify-warning-letter ./fixtures/bausch-lomb-2026.txt
   classify-warning-letter https://www.fda.gov/.../warning-letters/<slug> --json`;
 
-/** Load KEY=value pairs from a .env in the current working directory, if present. */
+/** Files we read KEY=value pairs from, in order. A real env var always wins. */
+function envFileCandidates(): string[] {
+  const home = homedir();
+  return [
+    resolvePath(process.cwd(), ".env"),
+    join(home, ".classify-warning-letter.env"),
+    join(home, ".config", "classify-warning-letter", ".env"),
+  ];
+}
+
+/**
+ * Load KEY=value pairs from the known .env locations. Environment variables
+ * already set take precedence (we never overwrite them), and earlier files win
+ * over later ones. Missing files are simply skipped.
+ */
 function loadDotEnv(): void {
-  try {
-    const env = readFileSync(resolvePath(process.cwd(), ".env"), "utf8");
-    for (const line of env.split("\n")) {
+  for (const file of envFileCandidates()) {
+    let content: string;
+    try {
+      content = readFileSync(file, "utf8");
+    } catch {
+      continue; // not present — fine
+    }
+    for (const line of content.split("\n")) {
       const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*)\s*$/);
       if (m && !process.env[m[1]!]) process.env[m[1]!] = m[2]!.replace(/^["']|["']$/g, "");
     }
-  } catch {
-    /* no .env — environment only, which is fine */
   }
+}
+
+/** An actionable message for when no TypeSafe key is available. */
+function missingKeyMessage(): string {
+  return [
+    "error: no TypeSafe API key found — the classifier needs one to reach Jev.",
+    "",
+    "Fix it any of these ways:",
+    "  • export it for this shell:",
+    '      export TYPESAFE_AI_API_KEY="your-key-here"',
+    "  • save it once so every run picks it up:",
+    "      echo 'TYPESAFE_AI_API_KEY=your-key-here' >> ~/.classify-warning-letter.env",
+    "  • or put it in a .env file in the current directory.",
+    "",
+    "Get a free key at https://console.typesafe.ai/settings/keys",
+    "No key handy? Add --extract-only for a deterministic pass that needs no key.",
+  ].join("\n");
 }
 
 const fmtPct = (p: number | null | undefined): string =>
@@ -166,11 +205,7 @@ async function main(): Promise<number> {
   }
 
   if (!process.env.TYPESAFE_AI_API_KEY && !process.env.TYPESAFE_API_KEY) {
-    console.error(
-      "error: TYPESAFE_AI_API_KEY is not set (Jev runs through the TypeSafe SDK).\n" +
-        "Set it in your environment or a .env file, or use --extract-only for deterministic\n" +
-        "extraction without a key. Get a key at https://console.typesafe.ai/settings/keys",
-    );
+    console.error(missingKeyMessage());
     return 2;
   }
 

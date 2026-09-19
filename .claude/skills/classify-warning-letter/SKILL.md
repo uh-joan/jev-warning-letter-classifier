@@ -21,11 +21,14 @@ name and returns `unknown`/`null` when the product is redacted.
 1. **Get the input.** Accept exactly what the user gave — an `https://www.fda.gov/…`
    warning-letter URL, or a path to a `.txt` file. Do not fabricate one.
 
-2. **Check the API key.** The tool needs `TYPESAFE_AI_API_KEY` in the environment
-   (or a `.env` in the working directory). If it is missing, tell the user to set
-   it (get one at https://console.typesafe.ai/settings/keys) and stop — do not ask
-   for the key or print it. If they only want deterministic extraction, you may run
-   with `--extract-only`, which needs no key.
+2. **API key.** The tool needs `TYPESAFE_AI_API_KEY`. It is read from the
+   environment, or from the first `.env` found in: the current directory,
+   `~/.classify-warning-letter.env`, or `~/.config/classify-warning-letter/.env`.
+   Just run the command — if the key is missing, the CLI prints an actionable
+   message (with the exact `export …` line and where to get a key); relay that to
+   the user and stop. **Never ask the user to paste the key into the chat, never
+   print the key, and never put it on the command line.** If they only want
+   deterministic extraction, run with `--extract-only`, which needs no key.
 
 3. **Run the classifier.** Prefer the published CLI:
 
