@@ -113,10 +113,19 @@ export function assemble(
     violations.push("unapproved_new_drug");
   if (cited.has("compounding")) violations.push("compounding");
   if (cited.has("data_integrity")) violations.push("data_integrity");
-  if (P(a.is_sterile_product.probability) && P(a.has_contamination.probability))
+  // A sterility violation is a sterile product with a sterility-assurance
+  // failure (actual contamination OR aseptic-processing deficiencies) — gold
+  // does not require confirmed contamination.
+  if (
+    P(a.is_sterile_product.probability) &&
+    (P(a.has_contamination.probability) || P(a.has_aseptic_violation.probability))
+  )
     violations.push("sterility");
   if (P(a.has_aseptic_violation.probability)) violations.push("aseptic_processing");
-  if (P(a.has_env_monitoring_violation.probability)) violations.push("environmental_monitoring");
+  // Environmental-monitoring is asserted only at high confidence — the noul
+  // over-fires in the uncertain band (0.5-0.8) on CGMP letters generally.
+  if (P(a.has_env_monitoring_violation.probability, 0.8))
+    violations.push("environmental_monitoring");
 
   // --- Uncertainty routing (consistency_noul + confidence-routing) ---
   const review: ReviewFlag[] = [];
