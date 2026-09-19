@@ -107,8 +107,12 @@ export function assemble(
   if (cited.size > 0 ? cgmpCited : P(a.has_cgmp_violation.probability)) violations.push("CGMP");
   if (cited.has("adulteration")) violations.push("adulteration");
   if (cited.has("misbranding")) violations.push("misbranding");
-  if (cited.has("unapproved_new_drug")) violations.push("unapproved_new_drug");
+  // In a compounding (503A/503B) letter the products are unapproved by definition,
+  // but FDA frames it as the compounding violation, not a separate new-drug charge.
+  if (cited.has("unapproved_new_drug") && !cited.has("compounding"))
+    violations.push("unapproved_new_drug");
   if (cited.has("compounding")) violations.push("compounding");
+  if (cited.has("data_integrity")) violations.push("data_integrity");
   if (P(a.is_sterile_product.probability) && P(a.has_contamination.probability))
     violations.push("sterility");
   if (P(a.has_aseptic_violation.probability)) violations.push("aseptic_processing");

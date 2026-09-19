@@ -8,7 +8,12 @@
 
 import { productsForFacility, DRUG_KB } from "./drug-kb.js";
 import { analyzeRedactions } from "./redaction.js";
-import { extractCitations, summarizeViolations } from "./citations.js";
+import {
+  extractCitations,
+  summarizeViolations,
+  detectDataIntegrity,
+  detectCompounding,
+} from "./citations.js";
 import type { Candidate, ExtractedCandidates, LetterMeta } from "./types.js";
 
 const MONTHS: Record<string, string> = {
@@ -50,9 +55,29 @@ function extractInspectedLocation(text: string): string | null {
     /\b(?:located\s+(?:at|in)|FEI\)?\s*\d{7,12},\s+at)\s+([\s\S]{5,200}?)(?=,?\s+(?:on|from|between)\s+(?:[A-Z][a-z]+\s+\d|\d)|(?<=\d{5}(?:-\d{4})?|[A-Z]{2})\.\s+[A-Z])/g;
   for (const m of text.matchAll(re)) {
     const before = text.slice(Math.max(0, m.index - 300), m.index);
-    if (/inspect/i.test(before)) return m[1]!.replace(/\s+/g, " ").replace(/,$/, "").trim();
+    const captured = m[1]!.replace(/\s+/g, " ").replace(/,$/, "").trim();
+    // "located at the above address" is indirection, not a location (jaggedness #4).
+    if (/\babove(?:-referenced)?\b/i.test(captured)) continue;
+    if (/inspect/i.test(before)) return captured;
   }
   return null;
+}
+
+/**
+ * Normalize a location tail to "City, CODE": spell-out state/province → code, so
+ * the output contains the "City, ST" form gold uses ("El Paso, Texas" →
+ * "…El Paso, TX"). Foreign addresses without a known region are left as-is.
+ */
+function normalizeLocation(loc: string): string {
+  // Only a state/province name in the trailing segment (before an optional ZIP /
+  // country) is the state — never a city like "Iowa City" mid-address.
+  return loc.replace(
+    new RegExp(
+      `,\\s*(${[...STATE_NAME_TO_CODE.keys()].join("|")})\\b(?=\\s*(?:\\d{5}(?:-\\d{4})?)?\\s*(?:,\\s*(?:USA|United States|US))?\\s*$)`,
+      "i",
+    ),
+    (_m, name: string) => `, ${STATE_NAME_TO_CODE.get(name.toLowerCase())}`,
+  );
 }
 
 function extractFacilityLocation(text: string): string | null {
@@ -63,9 +88,12 @@ function extractFacilityLocation(text: string): string | null {
   if (inspected) {
     // Prefer a fuller rendering (with ZIP) of the same street address if the letter has one.
     const head = inspected.slice(0, 12).toLowerCase();
-    return addresses.find((a) => a.toLowerCase().startsWith(head)) ?? inspected;
+    return normalizeLocation(addresses.find((a) => a.toLowerCase().startsWith(head)) ?? inspected);
   }
-  if (addresses[0]) return addresses[0];
+  // Without an inspection sentence, an address in the letter is the recipient's,
+  // not an inspected facility (e.g. website-review letters) — don't report it.
+  if (!/\binspect/i.test(text)) return null;
+  if (addresses[0]) return normalizeLocation(addresses[0]);
   // Fallback: "City, ST" — ST must be a real state code ("Amatrudo, JD" is a signature).
   for (const c of text.matchAll(/\b([A-Z][a-zA-Z]+),\s*([A-Z]{2})\b/g)) {
     if (US_STATES.has(c[2]!)) return `${c[1]}, ${c[2]}`;
@@ -87,6 +115,25 @@ function normalizeOffice(office: string | null | undefined): string | null {
   if (acronym) return acronym[1]!;
   return extractIssuingOffice(office) ?? office.trim();
 }
+
+/** Full US state / Canadian province names → their postal codes (for normalization). */
+const STATE_NAME_TO_CODE = new Map<string, string>(
+  Object.entries({
+    alabama: "AL", alaska: "AK", arizona: "AZ", arkansas: "AR", california: "CA",
+    colorado: "CO", connecticut: "CT", delaware: "DE", florida: "FL", georgia: "GA",
+    hawaii: "HI", idaho: "ID", illinois: "IL", indiana: "IN", iowa: "IA", kansas: "KS",
+    kentucky: "KY", louisiana: "LA", maine: "ME", maryland: "MD", massachusetts: "MA",
+    michigan: "MI", minnesota: "MN", mississippi: "MS", missouri: "MO", montana: "MT",
+    nebraska: "NE", nevada: "NV", "new hampshire": "NH", "new jersey": "NJ",
+    "new mexico": "NM", "new york": "NY", "north carolina": "NC", "north dakota": "ND",
+    ohio: "OH", oklahoma: "OK", oregon: "OR", pennsylvania: "PA", "rhode island": "RI",
+    "south carolina": "SC", "south dakota": "SD", tennessee: "TN", texas: "TX",
+    utah: "UT", vermont: "VT", virginia: "VA", washington: "WA", "west virginia": "WV",
+    wisconsin: "WI", wyoming: "WY", "puerto rico": "PR",
+    ontario: "ON", quebec: "QC", "british columbia": "BC", alberta: "AB",
+    manitoba: "MB", saskatchewan: "SK", "nova scotia": "NS", "new brunswick": "NB",
+  }),
+);
 
 const US_STATES = new Set(
   "AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC PR".split(
@@ -263,8 +310,17 @@ export function extractCandidates(text: string, opts: ExtractOptions = {}): Extr
       score: redaction.product_redaction_score,
       evidence: redaction.evidence,
     },
-    citations: summarizeViolations(extractCitations(text)),
+    citations: augmentCitations(summarizeViolations(extractCitations(text)), text),
     drugs: [...drugs.values()],
     indications,
   };
+}
+
+/** Add language-detected categories the citation parser can't see (data integrity, compounding). */
+function augmentCitations<T extends { categories: string[] }>(summary: T, text: string): T {
+  const categories = [...summary.categories];
+  if (detectDataIntegrity(text) && !categories.includes("data_integrity"))
+    categories.push("data_integrity");
+  if (detectCompounding(text) && !categories.includes("compounding")) categories.push("compounding");
+  return { ...summary, categories };
 }

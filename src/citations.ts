@@ -360,3 +360,28 @@ export function summarizeViolations(citations: Citation[]): {
     by_category: byCategory,
   };
 }
+
+/**
+ * Data-integrity failures are usually described in language, not a distinct
+ * citation (they ride on 21 CFR 211.194 / 211.68 / 211.180 / 212). Detect them
+ * deterministically: FDA uses recognizable phrasing.
+ */
+export function detectDataIntegrity(text: string): boolean {
+  return /\bdata integrity\b|\baudit trail|\bbackdat|\b(deleted|overwrit|altered|discarded|manipulat)\w*\s+(data|records?|results?)|\bshared (?:login|password|account)|\buncontrolled\s+(?:access|spreadsheet)|\b(?:results?|data)\s+(?:were|was)?\s*not recorded|\btrial (?:injection|run)|\btesting into compliance|\b211\.194\b/i.test(
+    text,
+  );
+}
+
+/**
+ * Compounding letters cite section 503A/503B, but some write "section 503",
+ * "outsourcing facility", or only describe compounding in prose. Detect it so
+ * the compounding category (and its suppression of a separate new-drug charge)
+ * applies consistently.
+ */
+export function detectCompounding(text: string): boolean {
+  // High-precision signals only — bare "503" matches too much (page nums, 503(a)
+  // cross-refs), so require the compounding-specific forms.
+  return /\b503[AB]\b|\bsection 503[AB]\b|\b353[ab]\b|\boutsourcing facilit|\bcompounded (?:drug|sterile|human|preparation)|\bsterile compounding|\bcompounding pharmac/i.test(
+    text,
+  );
+}
