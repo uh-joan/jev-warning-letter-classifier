@@ -7,6 +7,7 @@
  */
 
 import { lookup } from "./drug-kb.js";
+import { classifyRegulatedProduct } from "./citations.js";
 import { subjectKey, crossReferenceLeads, type JevResult } from "./classify.js";
 import { noulUncertain, choiceUncertain, type ReviewFlag } from "./review.js";
 import type {
@@ -65,15 +66,32 @@ export function assemble(
     })
     .sort((x, y) => (y.subject_probability ?? 0) - (x.subject_probability ?? 0));
 
+  // --- Scope: what does this letter regulate? ---
+  // The drug fields only apply to a drug-type letter; a pure food/produce
+  // sanitation letter has no drug to name, so gate the drug field on it.
+  const { product: regulatedProduct, drug_relevant } = classifyRegulatedProduct(
+    cands.issuing_office,
+    cands.citations.categories,
+  );
+
   // --- Drug (Jev selects, we copy + enrich) ---
   // Prefer the single choice; if it abstained (`unknown`) only because several
   // products tie, fall back to the highest-scoring subject product. Never
   // fabricate one when the product name is redacted.
   const chosenDrugId = a.drug_candidate.choice;
-  const singleChoice = chosenDrugId === "unknown" ? undefined : findCandidate(cands.drugs, chosenDrugId);
+  const singleChoice =
+    drug_relevant && chosenDrugId !== "unknown"
+      ? findCandidate(cands.drugs, chosenDrugId)
+      : undefined;
+  // A product Jev confidently flags as a subject AND that is stated verbatim in
+  // the letter is a real named product — even if the redaction detector fired on
+  // a (b)(4) elsewhere (strengths, lots). Trust that over a null, so a stray
+  // redaction marker no longer blanks a clearly-named product. When nothing in
+  // the letter is a confident subject (truly redacted, e.g. Bausch), topSubject
+  // is undefined and drug stays null.
   const topSubject = products.find((p) => p.is_subject);
   const fallback =
-    !singleChoice && !cands.redaction.product_name_redacted && topSubject
+    drug_relevant && !singleChoice && !cands.redaction.product_name_redacted && topSubject
       ? findCandidate(cands.drugs, cands.drugs.find((c) => c.payload?.name === topSubject.name)?.id ?? "")
       : undefined;
   const chosen = singleChoice ?? fallback;
@@ -174,6 +192,7 @@ export function assemble(
   return {
     document_type: a.document_type.choice as WarningLetter["document_type"],
     regulator: "FDA",
+    regulated_product: regulatedProduct,
     issuing_office: cands.issuing_office,
     reference: cands.reference,
     marcs_cms: cands.marcs_cms,
@@ -190,11 +209,13 @@ export function assemble(
       confidence: Number(drugProb.toFixed(3)),
       redaction_note:
         chosenName == null
-          ? cands.redaction.product_name_redacted
-            ? "product name redacted (b)(4) in the letter"
-            : cands.drugs.length === 0
-              ? "no product name found in letter and no cross-reference candidates supplied"
-              : "no candidate supported by the letter"
+          ? !drug_relevant
+            ? `not a drug-type letter (regulated as ${regulatedProduct}); no drug identified`
+            : cands.redaction.product_name_redacted
+              ? "product name redacted (b)(4) in the letter"
+              : cands.drugs.length === 0
+                ? "no product name found in letter and no cross-reference candidates supplied"
+                : "no candidate supported by the letter"
           : fromLetter
             ? null
             : "selected from cross-reference candidates; not stated verbatim in the letter",

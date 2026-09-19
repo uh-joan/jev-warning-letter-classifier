@@ -107,6 +107,11 @@ export interface CitationSummary {
 export interface WarningLetter {
   document_type: "warning_letter" | "other_regulatory" | "unknown";
   regulator: string; // "FDA"
+  /** What the letter regulates — drug/biologic/device/compounding/food/etc. The
+   *  drug-specific fields (drug, is_sterile_product, sterility …) are meaningful
+   *  only when this is a drug-type letter; on a pure food/produce letter they
+   *  are suppressed. */
+  regulated_product: string;
   issuing_office: string | null; // e.g. "CDER"
   /** FDA reference number / MARCS-CMS id, from page metadata when available. */
   reference: string | null;

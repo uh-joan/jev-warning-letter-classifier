@@ -385,3 +385,67 @@ export function detectCompounding(text: string): boolean {
     text,
   );
 }
+
+/** Broad product category a letter regulates, for scope-gating the drug fields. */
+export type RegulatedProduct =
+  | "drug"
+  | "biologic"
+  | "device"
+  | "compounding"
+  | "food_or_supplement"
+  | "veterinary"
+  | "tobacco"
+  | "other";
+
+/**
+ * Classify what the letter regulates, from the issuing office and the citation
+ * categories (both already extracted). `drug_relevant` says whether a drug-type
+ * product is at issue — when false (a pure food/produce/sanitation letter), the
+ * drug fields don't apply and code should not assert a drug.
+ */
+export function classifyRegulatedProduct(
+  issuingOffice: string | null,
+  citationCategories: string[],
+): { product: RegulatedProduct; drug_relevant: boolean } {
+  const c = new Set(citationCategories);
+  const office = (issuingOffice ?? "").toUpperCase();
+
+  let product: RegulatedProduct;
+  if (c.has("device_qsr") || c.has("device_mdr") || office === "CDRH") product = "device";
+  else if (c.has("biologics") || office === "CBER") product = "biologic";
+  else if (c.has("compounding")) product = "compounding";
+  else if (office === "CVM") product = "veterinary";
+  else if (office === "CTP" || c.has("tobacco")) product = "tobacco";
+  else if (
+    c.has("CGMP_finished_pharma") ||
+    c.has("unapproved_new_drug") ||
+    c.has("drug_definition") ||
+    office === "CDER"
+  )
+    product = "drug";
+  else if (
+    c.has("acidified_lacf_food") ||
+    c.has("food_cgmp_preventive_controls") ||
+    c.has("dietary_supplement_cgmp") ||
+    /FOOD/.test(office) ||
+    /INSPECTIONS/.test(office)
+  )
+    product = "food_or_supplement";
+  else product = "other";
+
+  // Whether the letter has a specific regulated product the drug fields can
+  // name. True for drug/biologic/device/compounding/veterinary letters, and for
+  // any letter charging a product theory (unapproved new drug, drug definition,
+  // drug/supplement CGMP, misbranding) — supplement letters name their products.
+  // Only a pure food-manufacturing / produce-safety / sanitation letter (generic
+  // food, no product charge) has nothing to name.
+  const drug_relevant =
+    ["drug", "biologic", "device", "compounding", "veterinary"].includes(product) ||
+    c.has("unapproved_new_drug") ||
+    c.has("drug_definition") ||
+    c.has("CGMP_finished_pharma") ||
+    c.has("dietary_supplement_cgmp") ||
+    c.has("misbranding");
+
+  return { product, drug_relevant };
+}
