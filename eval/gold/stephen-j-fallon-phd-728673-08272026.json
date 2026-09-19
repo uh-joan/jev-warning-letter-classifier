@@ -1,0 +1,21 @@
+{
+  "fixture": "fixtures/stephen-j-fallon-phd-728673-08272026.txt",
+  "options": { "seedFromFacility": false },
+  "letter_type": "device",
+  "notes": "BIMO clinical-investigator letter (not a manufacturing facility inspection): informed-consent and investigator-oversight violations under 21 CFR 812/50 during a clinical study of the INSTI HIV Self-Test investigational device. Classified as 'device' since the cited regulations (21 CFR 812) and subject product are device-related, even though CBER issued it. location_contains omitted: the letter states an inspection of 'your clinical study site' occurred but never names its city/state (the recipient's mailing address is Dr. Fallon's own address, not stated as the study-site location), so neither a location value nor the 'no facility inspection' null case cleanly applies. fei omitted is not needed (using null) since this is an individual investigator, not a registered facility. violation_categories is a judgment call: none of CGMP/sterility/adulteration/misbranding/unapproved_new_drug/compounding apply to this BIMO letter, but 'data_integrity' is included for the described record alterations (white-out changes) and mismatched/incomplete study records (Section 4).",
+  "expected": {
+    "company": "Stephen J. Fallon, Ph.D.",
+    "fei": null,
+    "date": "2026-08-27",
+    "issuing_office": "CBER",
+    "organisms": [],
+    "products": ["INSTI® HIV Self-Test"],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": ["data_integrity"],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  }
+}

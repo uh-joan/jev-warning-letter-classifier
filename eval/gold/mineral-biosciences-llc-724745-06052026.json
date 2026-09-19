@@ -1,0 +1,22 @@
+{
+  "fixture": "fixtures/mineral-biosciences-llc-724745-06052026.txt",
+  "options": { "seedFromFacility": false },
+  "letter_type": "food_supplement",
+  "notes": "Human Foods Program letter combining website/social-media unapproved-new-drug and misbranding claims for Totala Fulvic Ionic Mineral Complex and Ionicell with on-site 21 CFR Part 111 dietary-supplement CGMP findings (sanitation, QC record approval, batch records, supplier qualification) at the Goodyear, AZ facility. contamination_present is false: the CGMP findings describe unsanitary conditions and pest-control-record gaps (e.g. rodent activity noted near storage) but no documented actual contamination of product.",
+  "expected": {
+    "company": "Mineral BioSciences, LLC",
+    "fei": null,
+    "date": "2026-06-05",
+    "issuing_office": "Human Foods Program",
+    "location_contains": "Goodyear, AZ",
+    "organisms": [],
+    "products": ["Totala Fulvic Ionic Mineral Complex", "Ionicell"],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": ["CGMP", "adulteration", "misbranding", "unapproved_new_drug"],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  }
+}

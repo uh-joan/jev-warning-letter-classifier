@@ -52,8 +52,19 @@ export function assemble(
     (chosenInd?.payload?.indication as string | undefined) ?? rec?.indication ?? null;
 
   // --- Violations ---
+  // Legal citations are deterministic, so they are authoritative for the
+  // categories they can express. Jev's CGMP judgment is only a fallback for
+  // letters in which no citation was recognised at all.
+  const cited = new Set(cands.citations.categories);
   const violations: ViolationCategory[] = [];
-  if (P(a.has_cgmp_violation.probability)) violations.push("CGMP");
+  const cgmpCited = ["CGMP_finished_pharma", "dietary_supplement_cgmp", "device_qsr"].some((c) =>
+    cited.has(c),
+  );
+  if (cited.size > 0 ? cgmpCited : P(a.has_cgmp_violation.probability)) violations.push("CGMP");
+  if (cited.has("adulteration")) violations.push("adulteration");
+  if (cited.has("misbranding")) violations.push("misbranding");
+  if (cited.has("unapproved_new_drug")) violations.push("unapproved_new_drug");
+  if (cited.has("compounding")) violations.push("compounding");
   if (P(a.is_sterile_product.probability) && P(a.has_contamination.probability))
     violations.push("sterility");
   if (P(a.has_aseptic_violation.probability)) violations.push("aseptic_processing");
@@ -63,6 +74,8 @@ export function assemble(
     document_type: a.document_type.choice as WarningLetter["document_type"],
     regulator: "FDA",
     issuing_office: cands.issuing_office,
+    reference: cands.reference,
+    marcs_cms: cands.marcs_cms,
     company: cands.company,
     facility: cands.facility,
     warning_letter_date: cands.date,
@@ -76,13 +89,23 @@ export function assemble(
       confidence: Number(drugProb.toFixed(3)),
       redaction_note:
         chosenName == null
-          ? cands.drugs.length === 0
-            ? "no product name in letter and no cross-reference candidates supplied"
-            : "product name not identifiable / likely redacted (b)(4)"
+          ? cands.redaction.product_name_redacted
+            ? "product name redacted (b)(4) in the letter"
+            : cands.drugs.length === 0
+              ? "no product name found in letter and no cross-reference candidates supplied"
+              : "no candidate supported by the letter"
           : fromLetter
             ? null
             : "selected from cross-reference candidates; not stated verbatim in the letter",
     },
+
+    products: cands.drugs
+      .filter((c) => typeof c.payload?.name === "string" && nameInText(letterText, c.payload.name))
+      .map((c) => ({
+        name: c.payload!.name as string,
+        kind: (c.payload?.kind as string | undefined) ?? null,
+        role: (c.payload?.role as string | undefined) ?? null,
+      })),
 
     is_sterile_product: P(a.is_sterile_product.probability),
     violation_categories: violations,
@@ -92,6 +115,9 @@ export function assemble(
       linked_to_complaints: P(a.contamination_linked_to_complaints.probability),
     },
     recall_concern: P(a.has_recall_concern.probability),
+
+    redaction: cands.redaction,
+    citations: cands.citations,
 
     _jev: {
       confidence: conf,

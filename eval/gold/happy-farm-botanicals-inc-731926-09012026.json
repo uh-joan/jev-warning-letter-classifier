@@ -1,0 +1,22 @@
+{
+  "fixture": "fixtures/happy-farm-botanicals-inc-731926-09012026.txt",
+  "options": { "seedFromFacility": false },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER CGMP letter for an OTC drug manufacturer: failed component identity testing, inadequate stability program, and quality-unit oversight failures (21 CFR 211.84, 211.166, 211.22 etc.). No sterile/aseptic processing is discussed. All specific drug/API names are redacted as (b)(4) throughout, so no product is named in clear.",
+  "expected": {
+    "company": "Happy Farm Botanicals, Inc.",
+    "fei": "3011407349",
+    "date": "2026-09-01",
+    "issuing_office": "CDER",
+    "location_contains": "Hyattsville",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": ["CGMP", "adulteration"],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  }
+}

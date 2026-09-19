@@ -1,0 +1,23 @@
+{
+  "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/kc-pharmaceuticals-inc-729870-08122026",
+  "slug": "kc-pharmaceuticals-inc-729870-08122026",
+  "company": "K.C. Pharmaceuticals, Inc.",
+  "marcs_cms": "729870",
+  "issue_date": "2026-08-12",
+  "reference": "320-26-112",
+  "delivery_method": "VIA EMAIL WITH READ RECEIPT",
+  "product": [
+    "Drugs",
+    "Over-the-Counter Drugs"
+  ],
+  "recipient": [
+    "Ms. Ratnawati Li",
+    "Chief Executive Officer",
+    "K.C. Pharmaceuticals, Inc.",
+    "3420 Pomona Blvd.",
+    "Pomona, CA 91768",
+    "United States"
+  ],
+  "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+  "fetched_at": "2026-09-18T22:50:13.906Z"
+}

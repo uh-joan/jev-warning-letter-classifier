@@ -7,7 +7,9 @@
  */
 
 import { productsForFacility, DRUG_KB } from "./drug-kb.js";
-import type { Candidate, ExtractedCandidates } from "./types.js";
+import { analyzeRedactions } from "./redaction.js";
+import { extractCitations, summarizeViolations } from "./citations.js";
+import type { Candidate, ExtractedCandidates, LetterMeta } from "./types.js";
 
 const MONTHS: Record<string, string> = {
   january: "01", february: "02", march: "03", april: "04", may: "05", june: "06",
@@ -33,15 +35,42 @@ function extractCompany(text: string): string | null {
   return m ? `${m[1]} ${m[2]}`.replace(/\s+/g, " ").trim() : null;
 }
 
+const STREET_ADDRESS =
+  /\b(\d{1,6}\s+[A-Z][\w.'-]*(?:\s+[A-Z][\w.'-]*){0,4}(?:\s+(?:Parkway|Pkwy|Street|St|Avenue|Ave|Road|Rd|Boulevard|Blvd|Drive|Dr|Lane|Ln|Way))?)\s*,?\s*([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+)?,\s*[A-Z]{2}\s*\d{5}(?:-\d{4})?)/g;
+
+/**
+ * Address of the INSPECTED facility, from the inspection sentence:
+ *   "…inspected your facility, X, located at <addr>, from March 12…"
+ *   "…facility, X, FEI 3011407349, at <addr>, from March 30…"
+ *   "…inspection of your firm located in <City, ST> from February 2…"
+ * The letterhead address is the recipient's and is often a different site.
+ */
+function extractInspectedLocation(text: string): string | null {
+  const re =
+    /\b(?:located\s+(?:at|in)|FEI\)?\s*\d{7,12},\s+at)\s+([\s\S]{5,200}?)(?=,?\s+(?:on|from|between)\s+(?:[A-Z][a-z]+\s+\d|\d)|(?<=\d{5}(?:-\d{4})?|[A-Z]{2})\.\s+[A-Z])/g;
+  for (const m of text.matchAll(re)) {
+    const before = text.slice(Math.max(0, m.index - 300), m.index);
+    if (/inspect/i.test(before)) return m[1]!.replace(/\s+/g, " ").replace(/,$/, "").trim();
+  }
+  return null;
+}
+
 function extractFacilityLocation(text: string): string | null {
-  // Street + City, ST ZIP.
-  const m = text.match(
-    /\b(\d{1,6}\s+[A-Z][\w.'-]*(?:\s+[A-Z][\w.'-]*){0,4}(?:\s+(?:Parkway|Pkwy|Street|St|Avenue|Ave|Road|Rd|Boulevard|Blvd|Drive|Dr|Lane|Ln|Way))?)\s*,?\s*([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+)?,\s*[A-Z]{2}\s*\d{5}(?:-\d{4})?)/,
+  const addresses = [...text.matchAll(STREET_ADDRESS)].map((m) =>
+    `${m[1]}, ${m[2]}`.replace(/\s+/g, " ").trim(),
   );
-  if (m) return `${m[1]}, ${m[2]}`.replace(/\s+/g, " ").trim();
-  // Fallback: "City, ST".
-  const c = text.match(/\b([A-Z][a-zA-Z]+),\s*([A-Z]{2})\b/);
-  return c ? `${c[1]}, ${c[2]}` : null;
+  const inspected = extractInspectedLocation(text);
+  if (inspected) {
+    // Prefer a fuller rendering (with ZIP) of the same street address if the letter has one.
+    const head = inspected.slice(0, 12).toLowerCase();
+    return addresses.find((a) => a.toLowerCase().startsWith(head)) ?? inspected;
+  }
+  if (addresses[0]) return addresses[0];
+  // Fallback: "City, ST" — ST must be a real state code ("Amatrudo, JD" is a signature).
+  for (const c of text.matchAll(/\b([A-Z][a-zA-Z]+),\s*([A-Z]{2})\b/g)) {
+    if (US_STATES.has(c[2]!)) return `${c[1]}, ${c[2]}`;
+  }
+  return null;
 }
 
 function extractFei(text: string): string | null {
@@ -51,11 +80,26 @@ function extractFei(text: string): string | null {
   return m ? m[1]! : null;
 }
 
+/** "Center for Drug Evaluation and Research (CDER)" → "CDER"; otherwise the name as published. */
+function normalizeOffice(office: string | null | undefined): string | null {
+  if (!office?.trim()) return null;
+  const acronym = office.match(/\(([A-Z]{3,5})\)\s*$/);
+  if (acronym) return acronym[1]!;
+  return extractIssuingOffice(office) ?? office.trim();
+}
+
+const US_STATES = new Set(
+  "AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC PR".split(
+    " ",
+  ),
+);
+
 function extractIssuingOffice(text: string): string | null {
   if (/\bCDER\b|Center for Drug Evaluation and Research/i.test(text)) return "CDER";
   if (/\bCBER\b|Center for Biologics/i.test(text)) return "CBER";
   if (/\bCDRH\b|Center for Devices/i.test(text)) return "CDRH";
   if (/\bCVM\b|Center for Veterinary/i.test(text)) return "CVM";
+  if (/\bCTP\b|Center for Tobacco/i.test(text)) return "CTP";
   return null;
 }
 
@@ -152,6 +196,11 @@ export interface ExtractOptions {
   extraDrugCandidates?: Candidate[];
   /** If true, seed candidates from the KB using the extracted FEI/location. */
   seedFromFacility?: boolean;
+  /**
+   * Structured page metadata from fda.gov (see scripts/fetch-letter.ts). Preferred
+   * over body regexes for company / date / issuing office when present.
+   */
+  meta?: LetterMeta;
 }
 
 export function extractCandidates(text: string, opts: ExtractOptions = {}): ExtractedCandidates {
@@ -195,12 +244,26 @@ export function extractCandidates(text: string, opts: ExtractOptions = {}): Extr
     }
   }
 
+  const meta = opts.meta;
+  const company = meta?.company?.trim() || extractCompany(text);
+  const redaction = analyzeRedactions(text);
+
   return {
-    company: extractCompany(text),
-    facility: { name: extractCompany(text), location, fei },
-    date: extractDate(text),
-    issuing_office: extractIssuingOffice(text),
+    company,
+    facility: { name: company, location, fei },
+    date: meta?.issue_date || extractDate(text),
+    issuing_office: normalizeOffice(meta?.issuing_office) ?? extractIssuingOffice(text),
+    reference: meta?.reference ?? null,
+    marcs_cms: meta?.marcs_cms ?? null,
     organisms: extractOrganisms(text),
+    redaction: {
+      total: redaction.total,
+      by_role: redaction.by_role,
+      product_name_redacted: redaction.product_name_redacted,
+      score: redaction.product_redaction_score,
+      evidence: redaction.evidence,
+    },
+    citations: summarizeViolations(extractCitations(text)),
     drugs: [...drugs.values()],
     indications,
   };

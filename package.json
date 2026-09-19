@@ -7,7 +7,8 @@
   "scripts": {
     "run": "tsx src/run.ts",
     "demo": "tsx src/run.ts fixtures/bausch-lomb-2026.txt",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "eval": "tsx eval/run-eval.ts"
   },
   "dependencies": {
     "ai": "^7.0.105"

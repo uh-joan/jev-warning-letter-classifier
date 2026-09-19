@@ -33,6 +33,9 @@ export type ViolationCategory =
   | "data_integrity"
   | "labeling"
   | "adulteration"
+  | "misbranding"
+  | "unapproved_new_drug"
+  | "compounding"
   | "other";
 
 export interface Contamination {
@@ -43,10 +46,44 @@ export interface Contamination {
   linked_to_complaints: boolean;
 }
 
+/**
+ * Structured metadata published alongside the letter on fda.gov (written by
+ * scripts/fetch-letter.ts as `<slug>.meta.json`). When present it is preferred
+ * over regex extraction from the body: FDA already labels these fields.
+ */
+export interface LetterMeta {
+  url?: string;
+  company?: string | null;
+  marcs_cms?: string | null;
+  issue_date?: string | null; // ISO
+  reference?: string | null; // e.g. "320-26-121"
+  product?: string[]; // FDA product categories, e.g. ["Drugs", "Over-the-Counter Drugs"]
+  issuing_office?: string | null;
+}
+
+/** Deterministic summary of what the letter's (b)(4) redactions hide. */
+export interface RedactionSummary {
+  total: number;
+  by_role: Record<string, number>;
+  product_name_redacted: boolean;
+  score: number;
+  evidence: string[];
+}
+
+/** Deterministic summary of the legal citations in the letter. */
+export interface CitationSummary {
+  categories: string[];
+  cgmp_sections: string[];
+  by_category: Record<string, string[]>;
+}
+
 export interface WarningLetter {
   document_type: "warning_letter" | "other_regulatory" | "unknown";
   regulator: string; // "FDA"
   issuing_office: string | null; // e.g. "CDER"
+  /** FDA reference number / MARCS-CMS id, from page metadata when available. */
+  reference: string | null;
+  marcs_cms: string | null;
   company: string | null;
   facility: {
     name: string | null;
@@ -55,15 +92,28 @@ export interface WarningLetter {
   };
   warning_letter_date: string | null; // ISO where possible
 
+  /** Primary subject product, selected by Jev. */
   drug: DrugEntity;
+  /**
+   * Every product/ingredient name found verbatim in the letter (regex, KB or
+   * LLM-proposed-then-verified). Cross-reference leads are not listed here.
+   */
+  products: { name: string; kind: string | null; role: string | null }[];
 
   is_sterile_product: boolean;
   violation_categories: ViolationCategory[];
   contamination: Contamination;
   recall_concern: boolean;
 
+  /** What the (b)(4) redactions hide — deterministic, no model involved. */
+  redaction: RedactionSummary;
+  /** Legal citations mapped to a violation taxonomy — deterministic. */
+  citations: CitationSummary;
+
   /** Full raw probability/confidence detail from Jev, for auditing. */
   _jev: unknown;
+  /** How the candidate set was built (proposer model, rejected proposals, openFDA seeds). */
+  _candidates?: unknown;
 }
 
 /** A single extraction candidate handed to Jev as a Choice option. */
@@ -79,7 +129,11 @@ export interface ExtractedCandidates {
   facility: { name: string | null; location: string | null; fei: string | null };
   date: string | null;
   issuing_office: string | null;
+  reference: string | null;
+  marcs_cms: string | null;
   organisms: string[];
+  redaction: RedactionSummary;
+  citations: CitationSummary;
   /** Drug candidates: from the letter text + any caller-supplied cross-reference list. */
   drugs: Candidate[];
   /** Indication candidates aligned to drug candidates (may be empty). */

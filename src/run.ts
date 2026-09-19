@@ -10,7 +10,8 @@
 
 import { readFileSync } from "node:fs";
 import { extractCandidates } from "./extract.js";
-import { classifyWarningLetter } from "./index.js";
+import { classifyWarningLetter, gatherCandidates } from "./index.js";
+import { loadLetter } from "./load.js";
 
 function loadDotEnv() {
   try {
@@ -36,11 +37,22 @@ async function main() {
     process.exit(1);
   }
 
-  const text = readFileSync(file, "utf8");
-  const opts = { seedFromFacility: seedFacility };
+  const { text, meta } = loadLetter(file);
+  const opts = {
+    seedFromFacility: seedFacility,
+    meta,
+    propose: args.includes("--propose"),
+    seedFromOpenFda: args.includes("--openfda"),
+    enrichFromOpenFda: args.includes("--openfda"),
+  };
 
   if (extractOnly) {
-    console.log(JSON.stringify(extractCandidates(text, opts), null, 2));
+    // Deterministic extraction only, unless a network candidate source was asked for.
+    const out =
+      opts.propose || opts.seedFromOpenFda
+        ? await gatherCandidates(text, opts)
+        : extractCandidates(text, opts);
+    console.log(JSON.stringify(out, null, 2));
     return;
   }
 
