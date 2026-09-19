@@ -1,17 +1,18 @@
 /**
  * CLI:
- *   pnpm run demo                         # classify the bundled Bausch & Lomb fixture
- *   tsx src/run.ts path/to/letter.txt     # classify a file
+ *   pnpm run demo                              # classify the bundled Bausch & Lomb fixture
+ *   tsx src/run.ts path/to/letter.txt          # classify a local file
+ *   tsx src/run.ts https://www.fda.gov/.../... # classify a letter straight from its URL
  *   tsx src/run.ts letter.txt --extract-only   # deterministic extraction only (no API key)
  *   tsx src/run.ts letter.txt --seed-facility  # seed drug candidates from facility cross-ref
  *
- * Reads AI_GATEWAY_API_KEY from the environment (loads a local .env if present).
+ * Reads TYPESAFE_AI_API_KEY from the environment (loads a local .env if present).
  */
 
 import { readFileSync } from "node:fs";
 import { extractCandidates } from "./extract.js";
 import { classifyWarningLetter, gatherCandidates } from "./index.js";
-import { loadLetter } from "./load.js";
+import { resolveLetter } from "./resolve.js";
 
 function loadDotEnv() {
   try {
@@ -33,11 +34,11 @@ async function main() {
   const seedFacility = args.includes("--seed-facility");
 
   if (!file) {
-    console.error("usage: tsx src/run.ts <letter.txt> [--extract-only] [--seed-facility]");
+    console.error("usage: tsx src/run.ts <letter.txt | fda-url> [--extract-only] [--seed-facility]");
     process.exit(1);
   }
 
-  const { text, meta } = loadLetter(file);
+  const { text, meta } = await resolveLetter(file);
   const opts = {
     seedFromFacility: seedFacility,
     meta,
