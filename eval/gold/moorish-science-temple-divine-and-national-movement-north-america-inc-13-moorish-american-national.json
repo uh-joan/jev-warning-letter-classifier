@@ -1,0 +1,51 @@
+{
+  "fixture": "fixtures/moorish-science-temple-divine-and-national-movement-north-america-inc-13-moorish-american-national.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Herbal dietary-supplement website marketing disease-treatment claims (unapproved new drugs/misbranded drugs) combined with numbered 21 CFR Part 111 dietary-supplement CGMP violations that adulterate the products under 402(g)(1), plus separate Part 101 labeling misbranding. Classified as food_supplement since the Part 111 CGMP/adulteration section is the most substantial numbered charge, mirroring similar mixed unapproved-drug + Part 111 letters. FEI is not stated in the letter. Inspected facility address in the inspection sentence is Livonia, MI (the recipient's mailing address on file is a separate Detroit, MI address).",
+  "expected": {
+    "company": "Moorish Science Temple, The Divine and National Movement of North America, Inc; #13 The Moorish American National Republic dba Moor Herbs, Inc.",
+    "fei": null,
+    "date": "2023-08-01",
+    "issuing_office": "Division of Human and Animal Food Operations East VI",
+    "location_contains": "Livonia, MI",
+    "organisms": [],
+    "products": [
+      "Full Body Antibiotic",
+      "Anti-Viral",
+      "Appendix Support",
+      "Blood Pressure",
+      "Brain Tune-Up",
+      "Cardiovascular System",
+      "Headache & Pain Relief",
+      "Healthy Mommy Healthy Baby",
+      "Quit Smoking",
+      "HyperThyroidism",
+      "HypoThyroidism",
+      "Mucus Release",
+      "Parasite Cleanse",
+      "ResErection Extra Strength w/Yohimbe Bark",
+      "Tumor Release",
+      "Un-Vax",
+      "Venereal Defense",
+      "Womb Care Cramp Relief & Fibroid Release",
+      "Lungs & Respiratory",
+      "Bright Eyes"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding",
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

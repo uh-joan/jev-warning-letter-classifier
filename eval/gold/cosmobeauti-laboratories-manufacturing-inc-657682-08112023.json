@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/cosmobeauti-laboratories-manufacturing-inc-657682-08112023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "OTC sunscreen manufacturer CGMP letter: QU failure to prevent backdating of batch records, missing microbiological/stability testing, and incomplete water-system/cleaning validation. Products are only referenced generically as 'sunscreen drug products', so no named product appears in clear and products is empty (this is not a (b)(4) redaction, just no proper name given).",
+  "expected": {
+    "company": "Cosmobeauti Laboratories & Manufacturing Inc.",
+    "fei": "3003921470",
+    "date": "2023-08-11",
+    "issuing_office": "CDER",
+    "location_contains": "San Dimas, CA",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "data_integrity",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

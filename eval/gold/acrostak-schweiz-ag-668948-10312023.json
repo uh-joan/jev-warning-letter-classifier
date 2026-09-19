@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/acrostak-schweiz-ag-668948-10312023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Device inspection in Winterthur, Switzerland found the M-Cath Flexy Microcatheter was introduced with significant design changes lacking a new 510(k) (adulterated/misbranded) plus QSR/CGMP violations including failure to monitor cleanroom particle counts under normal operation; FDA is refusing entry of the device into the US pending correction, which we treat as a recall-type concern.",
+  "expected": {
+    "company": "Acrostak Schweiz AG",
+    "fei": null,
+    "date": "2023-10-31",
+    "issuing_office": "CDRH",
+    "location_contains": "Winterthur, Switzerland",
+    "organisms": [],
+    "products": [
+      "M-Cath Microcatheter",
+      "M-Cath Flexy Microcatheter"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "environmental_monitoring"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

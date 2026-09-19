@@ -1,0 +1,36 @@
+{
+  "fixture": "fixtures/biomylz-pvt-ltd-729483-07132026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER nonsterile OTC (topical psoriasis cream) CGMP letter centered on egregious data-integrity failures (torn/discarded original batch and lab records recovered from a garbage bag, falsified entries by a former plant manager) plus inadequate process/cleaning validation and missing microbiological testing for objectionable organisms (Staphylococcus aureus, Pseudomonas aeruginosa are named as organisms that should have been tested for, not as confirmed contamination). Also cites drug-listing/misbranding violations for Soraresal Cream and Equate Medicated Vaporizing Steam Liquid. contamination_present is false because no actual contamination is described, only inadequate controls; recall_concern is false because the recall/notification language appears only as generic conditional CAPA boilerplate.",
+  "expected": {
+    "company": "BioMylz Pvt. Ltd.",
+    "fei": "3013697420",
+    "date": "2026-07-13",
+    "issuing_office": "CDER",
+    "location_contains": "Bengaluru, Karnataka",
+    "organisms": [
+      "Staphylococcus aureus",
+      "Pseudomonas aeruginosa"
+    ],
+    "products": [
+      "Soraresal Cream",
+      "Equate Medicated Vaporizing Steam Liquid"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "data_integrity",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

@@ -1,0 +1,38 @@
+{
+  "fixture": "fixtures/amnio-technology-llc-646460-10012024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "Inspection in Phoenix, AZ of amniotic-derived HCT/P products purported to be sterile and intended for injection; PalinGen Flow fails HCT/P minimal-manipulation/homologous-use criteria and, with PalinGen InovoFlo, is an unapproved new drug/biologic lacking a BLA, plus CGMP deviations including a stability protocol that omitted sterility testing; FDA also flags undescribed disposition of distributed inventory.",
+  "expected": {
+    "company": "Amnio Technology, LLC",
+    "fei": null,
+    "date": "2024-10-01",
+    "issuing_office": "CBER",
+    "location_contains": "Phoenix, AZ",
+    "organisms": [],
+    "products": [
+      "PalinGen\u00ae Flow\u00ae",
+      "PalinGen\u00ae Inov\u014dFlo\u00ae",
+      "ProMatrX ACF\u00ae",
+      "ASGFluid",
+      "Cell-ECT",
+      "Gryphon Amnio Flow",
+      "SXFluid"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "unapproved_new_drug",
+      "adulteration",
+      "sterility"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/baxter-healthcare-corporation-654136-07252023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "CDER sterile-injectable CGMP letter for an India-based finished-pharmaceutical facility: inadequate investigations into endotoxin OOS results and automated visual-inspection failures (with confirmed uncharacterized particulate matter in endotoxin test wells and identified product residue in a bulk holding tank), plus inadequate cleaning, production/process control, and equipment design for sterile injectable manufacturing. All specific drug names are redacted as (b)(4) throughout. location_contains uses 'Ahmedabad, India' as written in the inspection sentence (the later paragraph adds 'Gujarat' but that is not part of the inspection sentence itself).",
+  "expected": {
+    "company": "Baxter Healthcare Corporation",
+    "fei": "3004610460",
+    "date": "2023-07-25",
+    "issuing_office": "CDER",
+    "location_contains": "Ahmedabad, India",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

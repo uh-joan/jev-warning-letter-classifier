@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/medivance-instruments-ltd-647562-02132023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Dental abrasion device (Velopex) with unreported 510(k) design changes and Quality System Regulation (21 CFR 820) violations plus MDR reporting failures. No FEI applies to this device case (identified by CMS case number instead). Omitted the ambiguous 'Aquacut and AquaCare Single and Twin devices' fragment from products since it is unclear whether this names distinct model variants or describes a configuration option.",
+  "expected": {
+    "company": "Medivance Instruments Ltd.",
+    "fei": null,
+    "date": "2023-02-13",
+    "issuing_office": "CDRH",
+    "location_contains": "Harlesden, London",
+    "organisms": [],
+    "products": [
+      "Velopex Aquacut Fluid Abrasion Unit",
+      "Velopex AquaCare Dental Abrasion"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "misbranding",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

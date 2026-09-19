@@ -1,0 +1,35 @@
+{
+  "fixture": "fixtures/amco-international-manufacturing-design-inc-681557-06252024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Device inspection in Brooklyn, NY found AMCO manufactures replacement AED batteries (identified only by AMCO part numbers, treated here as the product identifiers since no other name is given) that required a PMA by a February 3, 2022 compliance deadline that was missed, rendering them adulterated; no CGMP/QSR or misbranding violations were cited.",
+  "expected": {
+    "company": "AMCO International Manufacturing & Design, Inc.",
+    "fei": null,
+    "date": "2024-06-25",
+    "issuing_office": "CDRH",
+    "location_contains": "Brooklyn, NY",
+    "organisms": [],
+    "products": [
+      "AM9146-2",
+      "AM5070",
+      "AM1000",
+      "5L318",
+      "6L785",
+      "5L500",
+      "AM9141"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

@@ -1,0 +1,39 @@
+{
+  "fixture": "fixtures/pq-pharmacy-llc-715795-10102025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503B outsourcing-facility warning letter to PQ Pharmacy citing loss of 503B exemptions, sterile/aseptic insanitary conditions and environmental-monitoring failures, CGMP production-control deficiencies (211.100(a), 211.113(b), 211.42(c)(10)(iv), 211.192), and separately charged unapproved-new-drug and misbranding violations resulting from the lost 503B exemptions, for the named sterile ophthalmic combination products and Semaglutide vials.",
+  "expected": {
+    "company": "PQ Pharmacy, LLC",
+    "fei": null,
+    "date": "2025-10-10",
+    "issuing_office": "CDER",
+    "location_contains": "Brooksville, FL",
+    "organisms": [],
+    "products": [
+      "Prednisolone/Moxifloxacin HCl/Bromfenac PF Sterile Ophthalmic Solution",
+      "Prednisolone/Moxifloxacin HCl PF Sterile Ophthalmic Solution",
+      "Prednisolone Sodium Phosphate/Moxifloxacin HCl/Bromfenac PF",
+      "Semaglutide 5mg vials"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "compounding",
+      "unapproved_new_drug",
+      "misbranding",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

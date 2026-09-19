@@ -1,0 +1,39 @@
+{
+  "fixture": "fixtures/velocity-pharma-llc-676434-07172024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "Velocity Pharma's Farmingdale, NY facility distributed adulterated ophthalmic (eye drop) drug products manufactured by CMOs (Kilitch Healthcare India and an unnamed (b)(4) CMO) that had sterile-manufacturing CGMP violations including fabricated microbiology records and microbial recoveries in ISO 5 areas; brand names of the implicated eye drop products are listed as verbatim product names.",
+  "expected": {
+    "company": "Velocity Pharma LLC",
+    "fei": "2000044401",
+    "date": "2024-07-17",
+    "issuing_office": "CDER",
+    "location_contains": "Farmingdale, NY",
+    "organisms": [],
+    "products": [
+      "Equate",
+      "Rite Aid",
+      "CVS",
+      "Up&Up",
+      "Velocity Pharma",
+      "Leader",
+      "Rugby"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "adulteration",
+      "data_integrity"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

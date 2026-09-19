@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/kaylaan-llc-681977-08192024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "OTC drug manufacturer of Kaylaan Toothpaste Tablets with Fluoride cited for a total lack of finished-product and raw-material identity/strength testing, no functioning quality unit, no process or cleaning validation, and a facility not maintained in a good state of repair.",
+  "expected": {
+    "company": "Kaylaan LLC",
+    "fei": "3021091668",
+    "date": "2024-08-19",
+    "issuing_office": "Office of Pharmaceutical Quality Operations Division I",
+    "location_contains": "Floral Park, NY",
+    "organisms": [],
+    "products": [
+      "Kaylaan Toothpaste Tablets with Fluoride"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

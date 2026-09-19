@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/ibeautistorecom-726302-04242026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Online retailer sold a hyaluronic-acid dietary supplement found by FDA lab analysis to contain hidden active drug ingredients (diclofenac, dexamethasone, omeprazole); charged as unapproved new drug and misbranded drug. Website review only, no facility inspection.",
+  "expected": {
+    "company": "ibeautistore.com",
+    "fei": null,
+    "date": "2026-04-24",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "New Hyaluronic Acid 850 mg Sealed 30 Caps",
+      "Umary"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

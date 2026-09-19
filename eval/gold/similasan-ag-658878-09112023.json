@@ -1,0 +1,47 @@
+{
+  "fixture": "fixtures/similasan-ag-658878-09112023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "CDER letter for a homeopathic ophthalmic-drops manufacturer: unapproved-new-drug charge for twelve named ophthalmic products (plus three additional named products raised as a concern though not currently on the US website), combined with CGMP violations for aseptic/media-fill representativeness, incomplete visual-inspection/sterility-testing records, and inadequate quality-unit oversight (21 CFR 211). Classified cgmp_sterile rather than unapproved_drug_marketing per the LightEyez precedent for a similarly-structured ophthalmic CGMP+unapproved-drug letter. No actual confirmed contamination event or organism is described (the findings are about inadequate validation/testing rigor, not detected contamination), but FDA explicitly asks for an action plan covering potential recalls of distributed batches, so recall_concern is true.",
+  "expected": {
+    "company": "Similasan AG",
+    "fei": "1000110034",
+    "date": "2023-09-11",
+    "issuing_office": "CDER",
+    "location_contains": "Jonen",
+    "organisms": [],
+    "products": [
+      "Similasan Dry Eye Relief",
+      "Similasan Complete Eye Relief",
+      "Similasan Allergy Eye Relief",
+      "Similasan Kids Allergy Eye Relief",
+      "Similasan Red Eye Relief",
+      "Similasan Pink Eye Relief",
+      "Similasan Kids Pink Eye Relief",
+      "Similasan Aging Eye Relief",
+      "Similasan Computer Eye Relief",
+      "Similasan Stye Eye Relief",
+      "Similasan Pink Eye Nighttime Gel",
+      "Similasan Dry Eye Nighttime Gel",
+      "Similasan Children\u2019s Allergy Eye Relief",
+      "Similasan Children\u2019s Pink Eye Relief",
+      "Similasan Irritated Eye Relief"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "adulteration",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

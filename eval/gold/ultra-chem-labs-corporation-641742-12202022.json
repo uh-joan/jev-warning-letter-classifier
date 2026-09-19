@@ -1,0 +1,34 @@
+{
+  "fixture": "fixtures/ultra-chem-labs-corporation-641742-12202022.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "Hand sanitizer manufacturer cited for CGMP violations (no QU oversight, no release/component testing, no stability program) that allowed release of PROTON ARMOR hand sanitizer batches containing an unacceptable, undisclosed methanol level, and for marketing the product as an unapproved new drug that is misbranded (dangerous to health, false/misleading labeling, undisclosed ingredient, non-conforming with the OTC monograph). Treated methanol formulation/toxicity as a labeling/safety violation rather than microbial/particulate contamination.",
+  "expected": {
+    "company": "Ultra Chem Labs Corporation",
+    "fei": "3011622931",
+    "date": "2022-12-20",
+    "issuing_office": "Division of Pharmaceutical Quality Operations IV",
+    "location_contains": "Ontario, California",
+    "organisms": [],
+    "products": [
+      "PROTON ARMOR ANTI-MICROBIAL ALCOHOL-FREE FOAMING HAND SANITIZER",
+      "PROTON ARMOR ANTI-MICROBIAL ALCOHOL-FREE FOAMING HAND SANITIZER green tea & aloe",
+      "PROTON ARMOR ANTI-MICROBIAL ALCOHOL-FREE FOAMING HAND SANITIZER with green tea & aloe essence"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

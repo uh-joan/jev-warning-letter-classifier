@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/seema-international-716072-11132025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER API-manufacturer CGMP letter (equipment cleaning, stability testing, quality-unit oversight failures under 21 CFR/ICH Q7); the API itself is redacted as (b)(4) throughout with no product named in clear, so products is empty and product_redacted is true. No organisms and no confirmed contamination event are described (only cleaning-failure risk).",
+  "expected": {
+    "company": "Seema International",
+    "fei": "3007016503",
+    "date": "2025-11-13",
+    "issuing_office": "CDER",
+    "location_contains": "New Delhi",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

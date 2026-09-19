@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/konrad-rejdak-md-phd-671405-05292024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "other",
+  "notes": "Bioresearch Monitoring (clinical investigator) letter about mishandled/edited case-report data for a clinical study (21 CFR Part 312), not a manufacturing/CGMP letter, so classified as 'other'. The inspection sentence gives no facility location (clinic address only appears in the recipient block), so location_contains is null. No FEI applies to a clinical-investigator letter. The two study drugs are named by their brand designations in the protocol title.",
+  "expected": {
+    "company": "Konrad Rejdak, M.D., Ph.D.",
+    "fei": null,
+    "date": "2024-05-29",
+    "issuing_office": "CBER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "HYQVIA/HyQvia",
+      "GAMMAGARD LIQUID/KIOVIG"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "data_integrity"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

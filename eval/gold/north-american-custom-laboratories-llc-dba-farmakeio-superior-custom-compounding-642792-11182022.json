@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/north-american-custom-laboratories-llc-dba-farmakeio-superior-custom-compounding-642792-11182022.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503A sterile-compounding pharmacy letter for a Richardson, TX facility; only an insanitary-conditions adulteration charge (501(a)(2)(A)) is made (sterilization-equipment integrity, disinfection, cross-contamination controls, dynamic smoke studies, media fills) with no numbered 21 CFR 211 CGMP citation and no misbranding/unapproved-new-drug sections, so CGMP, misbranding, and unapproved_new_drug are omitted. No specific drug product is named in clear text and none is redacted as (b)(4) either (the (b)(4) redactions are process/equipment details), so products is [] and product_redacted is false. recall_concern is true: the firm's own April 2022 voluntary recall of sterile drug products is explicitly discussed.",
+  "expected": {
+    "company": "North American Custom Laboratories, LLC dba FarmaKeio Superior Custom Compounding",
+    "fei": null,
+    "date": "2022-11-18",
+    "issuing_office": "Division of Pharmaceutical Quality Operations II",
+    "location_contains": "Richardson, TX",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "sterility",
+      "aseptic_processing",
+      "adulteration",
+      "compounding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

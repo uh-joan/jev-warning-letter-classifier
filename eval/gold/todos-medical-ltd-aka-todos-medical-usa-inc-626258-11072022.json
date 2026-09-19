@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/todos-medical-ltd-aka-todos-medical-usa-inc-626258-11072022.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Website/social-media/Amazon review (no facility inspection) finding that Tollovid 3CL Protease Inhibitor Delayed Release is marketed with COVID-19 mitigation/treatment/prevention claims and testimonials, making it an unapproved new drug and misbranded. No FEI or facility location is stated since only online marketing was reviewed.",
+  "expected": {
+    "company": "Todos Medical Ltd aka Todos Medical USA Inc",
+    "fei": null,
+    "date": "2022-11-07",
+    "issuing_office": "Center for Food Safety and Applied Nutrition",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Tollovid 3CL Protease Inhibitor Delayed Release"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

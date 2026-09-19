@@ -1,0 +1,46 @@
+{
+  "fixture": "fixtures/fagron-compounding-services-llc-dba-fagron-sterile-service-698861-12192024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503B outsourcing-facility letter for sterile injectables: loss of 503B labeling exemption (missing dosage form/established name/active-ingredient list on drug and container labels) plus insanitary-conditions/CGMP findings including a confirmed Chaetomium globosum recovery in the ISO 5 area and production during uncontrolled construction. Firm recalled four lots of Lidocaine HCl Injection, 2% for lack of sterility assurance. No FEI is stated in the letter.",
+  "expected": {
+    "company": "Fagron Compounding Services, LLC dba Fagron Sterile Service",
+    "fei": null,
+    "date": "2024-12-19",
+    "issuing_office": "CDER",
+    "location_contains": "Wichita, KS",
+    "organisms": [
+      "Chaetomium globosum"
+    ],
+    "products": [
+      "Tropicamide 1%/Cyclopentolate 1%/Phenylephrine 2.5%/Ketorolac 0.5%, 5mL",
+      "Fentanyl Citrate 2mcg/mL (100mcg/50mL)/Ropivacaine HCl 0.15% (1.5mg/mL) (75mg/50mL)",
+      "Sodium Citrate 4% (40mg/mL) containing Gentamicin 320mcg/mL Injection, 3mL, 5 mL, and 30 mL",
+      "Epinephrine (1mg/mL), Sterile Solution for Injection",
+      "Phenol Injection 6% (60 mg/mL), in Sterile Water for Injection, 10 mL in Multi-Dose Vial",
+      "Dexamethasone Sodium Phosphate 10 mg/mL Solution for Injection, 2 mL in Multi-Dose Vial",
+      "Lidocaine HCl Injection, 2%",
+      "Succinylcholine",
+      "Rocuronium"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

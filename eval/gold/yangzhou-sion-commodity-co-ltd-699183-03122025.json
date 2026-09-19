@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/yangzhou-sion-commodity-co-ltd-699183-03122025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER nonsterile-manufacturing CGMP letter for an OTC drug manufacturer citing component-identity/COA-reliance failures on high-risk (redacted) ingredients, inadequate QU oversight (missing potency/stability assurance), and a dedicated Data Integrity Remediation section (missing original data, discrepant re-written records, correction-fluid alterations on microbial test records), so data_integrity is included. The drug product/high-risk components are referred to only as '(b)(4)' with no name given in clear, so products is empty and product_redacted is true. recall_concern is true given the repeated recall/market-withdrawal language tied to the risk assessment and DI remediation CAPA plan. location_contains is 'Yangzhou, Jiangsu' since the inspection sentence states the province immediately adjacent to the city.",
+  "expected": {
+    "company": "Yangzhou Sion Commodity Co., Ltd.",
+    "fei": "3011346498",
+    "date": "2025-03-12",
+    "issuing_office": "CDER",
+    "location_contains": "Yangzhou, Jiangsu",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "data_integrity"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

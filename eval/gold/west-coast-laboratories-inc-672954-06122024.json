@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/west-coast-laboratories-inc-672954-06122024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Inspection of West Coast Laboratories' Gardena, CA facility found 21 CFR Part 111 dietary supplement CGMP violations (identity testing, specifications, batch records) making Calcium Pyruvate, Chromium Picolinate, and CalComplex adulterated, plus supplement-labeling misbranding issues; no actual contamination or complaints are described.",
+  "expected": {
+    "company": "West Coast Laboratories, Inc.",
+    "fei": null,
+    "date": "2024-06-12",
+    "issuing_office": "Office of Human and Animal Food Operations- West Division 5",
+    "location_contains": "Gardena, CA",
+    "organisms": [],
+    "products": [
+      "Calcium Pyruvate",
+      "Chromium Picolinate",
+      "CalComplex"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

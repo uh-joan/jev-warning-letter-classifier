@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/innate-healthcare-institute-695592-08152025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "Website review (no facility inspection) of a clinic marketing umbilical cord mesenchymal stem cells (UC-MSCs) / 'UC-MSC therapy' for autism and other conditions; product found to be more-than-minimally-manipulated HCT/P regulated as a drug and biological product, not the subject of an approved BLA, and misbranded for lacking adequate directions for use.",
+  "expected": {
+    "company": "Innate Healthcare Institute",
+    "fei": null,
+    "date": "2025-08-15",
+    "issuing_office": "CBER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "umbilical cord mesenchymal stem cells (UC-MSCs)",
+      "UC-MSC therapy"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

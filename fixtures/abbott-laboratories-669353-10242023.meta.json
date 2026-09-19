@@ -1,0 +1,25 @@
+{
+  "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/abbott-laboratories-669353-10242023",
+  "slug": "abbott-laboratories-669353-10242023",
+  "company": "Abbott Laboratories",
+  "marcs_cms": "669353",
+  "issue_date": "2023-10-24",
+  "reference": null,
+  "delivery_method": "VIA UPS and Electronic Mail",
+  "product": [
+    "Biologics",
+    "Dietary Supplements",
+    "Drugs"
+  ],
+  "recipient": [
+    "Robert B. Ford",
+    "CEO",
+    "Abbott Laboratories",
+    "100 Abbott Park Road",
+    "Abbott Park, IL 60064",
+    "United States",
+    "robert.ford@abbott.com"
+  ],
+  "issuing_office": "Center for Biologics Evaluation and Research (CBER)",
+  "fetched_at": "2026-09-19T09:48:36.271Z"
+}

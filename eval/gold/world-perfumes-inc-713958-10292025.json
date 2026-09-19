@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/world-perfumes-inc-713958-10292025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER nonsterile-manufacturing CGMP letter for an OTC oral/topical drug manufacturer: missing identity testing on high-risk components (ethanol for methanol; glycerin for DEG/EG) and an inadequately designed/monitored non-sterile water system, with Burkholderia cepacia complex cited as an example objectionable organism the firm failed to test its water for. No specific product name or brand is given in clear (only the generic descriptor 'OTC oral and topical drug products'), so products is empty and product_redacted is false. location_contains is 'Opa-Locka' alone because the inspection sentence ('at 2360 NW 150th Street, Opa-Locka, from May 5 to 9, 2025') does not state the state adjacent to the city. recall_concern is true because the letter twice requests customer notifications/product recalls for affected lots (DEG/EG risk assessment and water-system risk assessment), consistent with other letters in this corpus containing that language.",
+  "expected": {
+    "company": "World Perfumes Inc.",
+    "fei": "3009971047",
+    "date": "2025-10-29",
+    "issuing_office": "CDER",
+    "location_contains": "Opa-Locka",
+    "organisms": [
+      "Burkholderia cepacia complex"
+    ],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

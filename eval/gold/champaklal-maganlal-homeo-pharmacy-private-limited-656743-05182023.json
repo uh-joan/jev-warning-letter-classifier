@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/champaklal-maganlal-homeo-pharmacy-private-limited-656743-05182023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "CDER marketed-products letter (joint to Pharmadel/CAD Import as marketers/importers and CMHP as manufacturer) charging homeopathic infant products 'Bebelyn Diarrhea' and 'Bebelyn Colic' as unapproved new drugs based on disease-treatment labeling/website claims. The letter references a separate CGMP warning letter (320-23-13) issued to CMHP only as background context, not as a fresh CGMP/adulteration charge against these recipients for these products, so CGMP and adulteration are omitted from violation_categories. No facility inspection occurred here (product-label and website review only), so location_contains is null.",
+  "expected": {
+    "company": "Champaklal Maganlal Homeo Pharmacy Private Limited",
+    "fei": null,
+    "date": "2023-05-18",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Bebelyn Diarrhea",
+      "Bebelyn Colic"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

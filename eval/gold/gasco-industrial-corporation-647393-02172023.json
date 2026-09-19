@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/gasco-industrial-corporation-647393-02172023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CGMP letter (Division of Pharmaceutical Quality Operations II, ORA) for a hand-soap/antiseptic/hand-sanitizer OTC drug manufacturer: shared non-pharmaceutical equipment, inadequate cleaning/water-system/process validation, and an ineffective quality unit. No branded product name is stated, only generic OTC categories (hand soap, antiseptics, hand sanitizer), so products is empty and product_redacted is false (not a (b)(4) redaction). recall_concern is true because FDA explicitly asks for 'plans for addressing the product quality and patient safety risks for any product still in distribution, including potential recalls or market withdrawals.'",
+  "expected": {
+    "company": "Gasc\u00f3 Industrial Corporation",
+    "fei": "3010222586",
+    "date": "2023-02-17",
+    "issuing_office": "Division of Pharmaceutical Quality Operations II",
+    "location_contains": "Gurabo, Puerto Rico",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

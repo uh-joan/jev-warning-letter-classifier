@@ -1,0 +1,41 @@
+{
+  "fixture": "fixtures/berkeley-biologics-llc-previously-operating-elutia-inc-orthobiologics-business-unit-formerly-aziyo.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "CBER letter on viable bone matrix HCT/P products found ineligible for section 361 regulation (fail minimal-manipulation and combination-article criteria), making them unapproved biological drugs, plus CGTP donor-eligibility failures (donors with documented sepsis, tied to an outbreak of Mycobacterium tuberculosis infections in recipients) and CGMP deviations (process validation, aseptic processing/environmental and personnel monitoring in the BSC, inadequate specifications, frozen sterility samples). The letter names the products with an internal inconsistency: 'Cellular Fiber Matrix (CFM)/Excel Viable Bone Matrix (EFM)' appears verbatim even though a footnote says the prior name of CFM was 'Excel Fiber Matrix'; both verbatim variants are included. linked_to_complaints is false because the TB outbreak is tied to donor eligibility screening, not organisms matched to consumer-complaint samples.",
+  "expected": {
+    "company": "Berkeley Biologics, LLC, previously operating as Elutia, Inc. \u2013 Orthobiologics Business Unit, formerly Aziyo Biologics, Inc.",
+    "fei": null,
+    "date": "2024-06-28",
+    "issuing_office": "CBER",
+    "location_contains": "Richmond, CA",
+    "organisms": [
+      "Mycobacterium tuberculosis"
+    ],
+    "products": [
+      "Viable Bone Matrix (VBM)",
+      "Fiber Viable Bone Matrix (FVBM)",
+      "Cellular Fiber Matrix (CFM)",
+      "Excel Viable Bone Matrix (EFM)",
+      "Osteo Viable Bone Matrix (OVM)",
+      "Excel Fiber Matrix"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

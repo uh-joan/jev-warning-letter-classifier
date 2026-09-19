@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/pinnacle-professional-research-dba-pinnacle-peptides-719337-12122025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Website-review warning letter charging unapproved new drug violations for SARM products marketed as 'FOR RESEARCH ONLY'/'NOT FOR HUMAN USE' but with drug-like disease claims; no facility inspection occurred, so FEI and location_contains are null. Used the shortest verbatim spans (S4 ANDARINE, LGD-4033, MK-2866) since the surrounding 'SARM's/SARM's' text has inconsistent straight/curly apostrophes across the letter.",
+  "expected": {
+    "company": "Pinnacle Professional Research dba Pinnacle Peptides",
+    "fei": null,
+    "date": "2025-12-12",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "S4 ANDARINE",
+      "LGD-4033",
+      "MK-2866"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

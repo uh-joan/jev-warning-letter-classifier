@@ -1,0 +1,58 @@
+{
+  "fixture": "fixtures/herbal-vitality-inc-640206-03072023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Dietary supplement (herbal tincture/glycerite) manufacturer cited for unapproved new drug / misbranded drug claims on many product labels, 21 CFR Part 111 dietary supplement CGMP violations, and misbranded dietary supplement labeling. Products list covers the many named formulas across both the drug-claims section and the misbranded-dietary-supplement section; the later renamed product 'Children\u2019s Tonsils and Ears Formula' is omitted as a mere rename of the already-listed 'Children\u2019s Tonsillitis/Otitis'.",
+  "expected": {
+    "company": "Herbal Vitality, Inc.",
+    "fei": null,
+    "date": "2023-03-07",
+    "issuing_office": "Office of Human and Animal Food Operations \u2013 West Division 4",
+    "location_contains": "Sedona, Arizona",
+    "organisms": [],
+    "products": [
+      "Acute Kidney Stone Relief",
+      "Adult Cold & Flu",
+      "Antifungal Formula",
+      "Baby Cold & Flu",
+      "Children\u2019s Antibiotic Formula",
+      "Children\u2019s Asthma Formula",
+      "Hemorrhoid Remedial",
+      "Pregnancy Cold and Flu Formula",
+      "Prostrate Formula",
+      "Special Lyme Formula",
+      "Fibromyalgia Formula",
+      "Hepatitis C Formula Glycerite",
+      "Kidney Stone Remedial",
+      "Lung Tonic COPD",
+      "Children\u2019s Antiviral Formula",
+      "Children\u2019s Allergy Relief Formula",
+      "Antiparasite Formula",
+      "Anti-Amoeba Formula",
+      "Hyperthyroid Relief",
+      "PCOS Formula",
+      "Children\u2019s Tonsillitis/Otitis",
+      "Allergy Aid",
+      "Prostate Formula",
+      "Immune Tonic",
+      "Children\u2019s Antiparasite",
+      "Children\u2019s Antifungal Formula",
+      "Male Fertility Tonic"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

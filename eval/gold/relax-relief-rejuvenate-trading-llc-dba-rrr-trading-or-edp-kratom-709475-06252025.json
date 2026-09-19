@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/relax-relief-rejuvenate-trading-llc-dba-rrr-trading-or-edp-kratom-709475-06252025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Human Foods Program letter about a single named kratom-derived 7-OH dietary-supplement shot; charges adulteration as an unsafe new dietary ingredient (402(f)(1)(B)), with no facility inspection, CGMP, or contamination findings.",
+  "expected": {
+    "company": "Relax Relief Rejuvenate Trading, LLC dba RRR Trading or EDP Kratom",
+    "fei": null,
+    "date": "2025-06-25",
+    "issuing_office": "Human Foods Program",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "EDP 7OH Mitragyna Speciosa Extract 50 mg shot"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

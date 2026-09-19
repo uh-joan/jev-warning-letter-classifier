@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/kabana-skin-care-688254-03122025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Website/labeling review (no facility inspection) of 'Kabana Body Wash +UV' marketed with sunscreen/UV-protection claims; cited as an unapproved new drug (505(a)) and misbranded under 502(ee) because sunscreen in a body-wash dosage form is not covered by the OTC sunscreen monograph or any 505G order.",
+  "expected": {
+    "company": "Kabana Skin Care",
+    "fei": null,
+    "date": "2025-03-12",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Kabana Body Wash +UV"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

@@ -26,5 +26,5 @@
     "linked_to_complaints": false,
     "recall_concern": false
   },
-  "split": "dev"
+  "split": "test"
 }

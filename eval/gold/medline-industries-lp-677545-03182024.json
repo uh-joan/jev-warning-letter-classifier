@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/medline-industries-lp-677545-03182024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Piston syringes (Medline-branded and Jiangsu Shenli-supplied) distributed with unreported 510(k) changes, plus QSR (21 CFR 820) design-control, complaint-handling and CAPA failures. Individual model numbers in Table 1 (e.g. 'SYR 30ML L/S') are catalog/configuration codes, not product names, so they are excluded. No FEI applies (identified by CMS case number). contamination_present reflects the specific 'particles found in syringe'/'particles found in packaging' complaint entries the letter itself quotes as examples of unevaluated complaints. No FEI is stated.",
+  "expected": {
+    "company": "Medline Industries, LP",
+    "fei": null,
+    "date": "2024-03-18",
+    "issuing_office": "CDRH",
+    "location_contains": "Northfield, IL",
+    "organisms": [],
+    "products": [
+      "MEDLINE SYRINGES, MULTIPLE",
+      "Jiangsu Shenli Medical Production Co. Ltd. Piston Syringe (5cc Luer Lock)"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "misbranding",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

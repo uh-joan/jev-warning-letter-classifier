@@ -1,0 +1,38 @@
+{
+  "fixture": "fixtures/new-england-life-care-inc-dba-advanced-compounding-solutions-659161-05162023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503B outsourcing-facility sterile-compounding letter for a Woburn, MA facility; failure to meet 503B labeling conditions (missing dosage form) plus insanitary-condition and 21 CFR 211 CGMP/aseptic-processing adulteration, misbranding (502(f)(1)), and unapproved-new-drug violations. No specific environmental-monitoring-program citation appears (only investigation/complaint-handling, aseptic-validation, cleaning, building-repair, and HEPA/air-supply CGMP citations), so environmental_monitoring is omitted. contamination_present is false because the cited conditions 'may have become contaminated' (risk language), not confirmed actual contamination.",
+  "expected": {
+    "company": "New England Life Care, Inc. dba Advanced Compounding Solutions",
+    "fei": "3010371376",
+    "date": "2023-05-16",
+    "issuing_office": "Division of Pharmaceutical Quality Operations I",
+    "location_contains": "Woburn, MA",
+    "organisms": [],
+    "products": [
+      "Diltiazem HCl 125mg in 100mL bag",
+      "Norepinephrine Bitartrate 8mg Dextrose 5% 250mL bag",
+      "Vancomycin HCl 750mg in 0.9% Sodium Chloride 250mL bag",
+      "Phenylephrine HCl 20mg in 250mL bag"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "compounding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

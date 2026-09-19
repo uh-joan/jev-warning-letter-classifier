@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/anti-lage-698661-04172025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Inspection of a Riverside, CA dietary supplement facility found extensive 21 CFR Part 111 CGMP violations (no specifications, master manufacturing/batch records, QC procedures, reserve samples, quarantine, or complaint procedures) rendering ESR Amino, Transfer Factor C, and Heart Amino adulterated, plus multiple labeling misbranding violations.",
+  "expected": {
+    "company": "Anti L\u2019Age",
+    "fei": null,
+    "date": "2025-04-17",
+    "issuing_office": "Human Foods Program",
+    "location_contains": "Riverside, CA",
+    "organisms": [],
+    "products": [
+      "ESR Amino",
+      "Transfer Factor C",
+      "Heart Amino"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

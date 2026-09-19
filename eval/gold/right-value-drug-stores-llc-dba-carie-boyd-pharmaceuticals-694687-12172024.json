@@ -1,0 +1,37 @@
+{
+  "fixture": "fixtures/right-value-drug-stores-llc-dba-carie-boyd-pharmaceuticals-694687-12172024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "503B outsourcing-facility sterile-compounding letter for Irving, TX facility; charges 503B-labeling condition failures, CGMP/aseptic-processing adulteration (including particulate/filament defects found on visual inspection), misbranding, and unapproved-new-drug violations. No specific environmental-monitoring-program citation is made (only smoke-study/media-fill/equipment CGMP citations), so environmental_monitoring is omitted from violation_categories.",
+  "expected": {
+    "company": "Right Value Drug Stores, LLC dba Carie Boyd Pharmaceuticals",
+    "fei": null,
+    "date": "2024-12-17",
+    "issuing_office": "CDER",
+    "location_contains": "Irving, TX",
+    "organisms": [],
+    "products": [
+      "Ketoconazole 2% (b)(4) Cream",
+      "Testosterone Cypionate 200 mg/ml injections",
+      "Testosterone Cypionate 200 mg/ml + Testosterone Propionate 10 mg/ml injections"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

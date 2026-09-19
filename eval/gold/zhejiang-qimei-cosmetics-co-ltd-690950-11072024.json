@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/zhejiang-qimei-cosmetics-co-ltd-690950-11072024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "CDER sterile-manufacturing CGMP letter based on a 704(a)(4) records review (no on-site inspection) of an OTC isopropyl alcohol (IPA) prep pad manufacturer: the QU did not demonstrate the manufacturing process renders the product, labeled as sterile, actually sterile, plus missing active-ingredient release testing and missing component identity/DEG-EG/methanol testing. The product is described only by the generic descriptor 'isopropyl alcohol (IPA) prep pad drug products,' not a proprietary name, so products is empty; it is not (b)(4)-redacted, so product_redacted is false. No organism, contamination, or recall language is stated. location_contains is 'Jiaxing, Zhejiang' (the city/province pair immediately preceding the postal code in the facility address), a judgment call since the more specific 'TongXiang City' sits between Chongfu Town and Jiaxing in that address.",
+  "expected": {
+    "company": "Zhejiang Qimei Cosmetics Co., Ltd.",
+    "fei": "3018321301",
+    "date": "2024-11-07",
+    "issuing_office": "CDER",
+    "location_contains": "Jiaxing, Zhejiang",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

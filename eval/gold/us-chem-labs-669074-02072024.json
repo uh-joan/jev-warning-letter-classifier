@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/us-chem-labs-669074-02072024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Website-review letter (no facility inspection) citing US Chem Labs for selling 'Semaglutide,' 'Tirzepatide,' and 'Thymalin' as unapproved new drugs and misbranded drugs based on disease-treatment claims.",
+  "expected": {
+    "company": "US Chem Labs",
+    "fei": null,
+    "date": "2024-02-07",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Semaglutide",
+      "Tirzepatide",
+      "Thymalin"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

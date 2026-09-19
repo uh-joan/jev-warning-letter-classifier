@@ -1,0 +1,46 @@
+WARNING LETTER
+December 12, 2025
+RE: 719337
+Pinnacle Professional Research dba Pinnacle Peptides:
+This letter is to advise you that the U.S. Food and Drug Administration (FDA) reviewed your website at the Internet address https://www.pinnaclepeptides.com in November 2025. The FDA has observed that you offer products marketed on your firm’s website as selective androgen receptor modulators (SARMs) including, but not limited to, “SARM’s S4 ANDARINE,” “LGD-4033,” and “MK-2866” (hereinafter products marketed as SARMs) for sale in the United States. Based on our review, these products are unapproved new drugs under section 505(a) of the Federal Food, Drug, and Cosmetic Act (FD&C Act), 21 U.S.C. 355(a). As explained further below, introducing or delivering these products for introduction into interstate commerce violates sections 301(d) and 505(a) of the FD&C Act, 21 U.S.C. 331(d) and 355(a).
+FDA has safety concerns about products that contain SARMs. Life-threatening reactions, including liver toxicity, have occurred in people taking products containing SARMs. SARMs also have the potential to increase the risk of heart attack and stroke.1
+Despite statements on your product labeling marketing your products, “FOR RESEARCH ONLY” and “NOT FOR HUMAN USE,” evidence obtained from your product labeling, including your website establishes that your products are intended to be drugs for human use. Based on a review of your website, your products marketed as SARMs are drugs under section 201(g)(1) of the FD&C Act, 21 U.S.C. 321(g)(1), because they are intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease, and/or intended to affect the structure or any function of the body. Examples from your product labeling, including on your website, that provide evidence of the intended use (as defined in 21 CFR 201.128) of these products as drugs include, but may not be limited to, the following:
+SARM's S4 ANDARINE
+On the webpage https://www.pinnaclepeptides.com/buy-s4-sarms.html:
+“Andarine . . . is a non-steroidal selective androgen receptor modulator (SARM) . . . anabolic activity is similar to that of testosterone’s . . . for musculoskeletal disorders and benign prostatic hyperplasia [and] found to improve fertility and sexual health in men and women.”
+“Cancer . . . Andarine might have the ability to inhibit tumor growth. The androgen receptor has been shown to be associated with the development of pancreatic cancer. Hence, SARMs might prove effective in treating pancreatic cancer.”
+“[A]ndarine shows anticarcinogenic effects on lung cancer by inhibiting cell growth and proliferation and promoting apoptosis.”
+“Literature supports the evidence that S4 can boost muscle mass and increase strength.”
+“Andarine positively impacts bone mineral density and might offer a promising treatment for osteoporosis.”
+
+LGD-4033
+On the webpage https://www.pinnaclepeptides.com/buy-lgd-4033.html:
+“LGD-4033 . . . belongs to the class selective androgen receptor modulator (SARM). . . . [I]t exerts anabolic effects on muscles and bones without causing side effects associated with steroids.”
+“Osteoporosis . . . Ligandrol binds to the androgen receptors in bone cells and stimulates the activity of osteoblasts. Osteoblasts are the bone cells mainly responsible for the formation of bone and mineral deposition.”
+“Hormonal decline with age is associated with the loss of muscle health and function. . . . [L]igandrol can counteract these changes and boost muscle strength and mass.”
+“As ligandrol has been shown to improve bone mineral density, it might also speed up the healing of fractured bones.”
+
+MK-2866
+On the webpage https://www.pinnaclepeptides.com/buy-mk2866.html:
+“MK-2866 . . . belongs to the class selective androgen receptor modulator (SARM). . . . [I]t increases muscle mass and growth, improves insulin sensitivity and prevents bone loss. It has also been shown to treat breast cancer.”
+“[MK-2866] binds with androgen receptors in specific tissues such as muscles. This triggers the cascade of intracellular signaling, resulting in protein synthesis within muscle cells that promotes muscle growth and repair.”
+“One study investigated the effect of ostarine on cachexia in cancer patients. . . . [R]esults indicated a significant increase in lean body mass in patients who took ostarine as compared to the control group.”
+“Insulin Sensitivity . . . antidiabetic effect”
+
+Your products marketed as SARMs are “new drugs” under section 201(p) of the FD&C Act, 21 U.S.C. 321(p), because they are not generally recognized as safe and effective (GRASE) for use under the above-described conditions prescribed, recommended, or suggested in their labeling. With certain exceptions not applicable here, a new drug may not be introduced or delivered for introduction into interstate commerce without an approved application from FDA in effect, as described in section 505(a) of the FD&C Act, 21 U.S.C. 355(a). No approved applications pursuant to section 505 of the FD&C Act, 21 U.S.C. 355, are in effect for these products. Accordingly, these products are unapproved new drugs. The introduction or delivery for introduction into interstate commerce of these unapproved new drug products violates sections 301(d) and 505(a) of the FD&C Act, 21 U.S.C. 331(d) and 355(a).
+Conclusion
+The violations cited in this letter are not intended to be an all-inclusive statement of violations that may exist in connection with your products. You are responsible for investigating and determining the causes of any violations and for preventing their recurrence or the occurrence of other violations. It is your responsibility to ensure that your firm complies with all requirements of federal law, including FDA regulations.
+This letter notifies you of our concerns and provides you an opportunity to address them. Failure to adequately address this matter may lead to regulatory or legal action including, without limitation, seizure and injunction.
+Please notify FDA in writing, within fifteen working days of receipt of this letter, of the specific steps you have taken to correct any violations. Include an explanation of each step being taken to prevent the recurrence of violations, as well as copies of related documentation. If you believe that your products are not in violation of the FD&C Act, include your reasoning and any supporting information for our consideration. If you cannot complete corrective action within fifteen working days, state the reason for the delay and the time within which you will complete the correction.
+Your response should be sent to U.S. Food and Drug Administration, CDER/OC/Office of Unapproved Drugs and Labeling Compliance by email to FDAAdvisory@fda.hhs.gov. Please include your firm name and the unique identifier “719337” in the subject line of the email.
+Sincerely,
+/S/
+Tina Smith, M.S.
+Captain, U.S. Public Health Service
+Director
+Office of Unapproved Drugs and Labeling Compliance
+Office of Compliance
+Center for Drug Evaluation and Research
+Food and Drug Administration
+__________________
+1 See https://www.fda.gov/consumers/consumer-updates/fda-warns-use-selective-androgen-receptor-modulators-sarms-among-teens-young-adults.

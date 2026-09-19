@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/usapeptidecom-696885-02262025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Website-review letter to a foreign-based Internet seller (usapeptide.com) for offering unapproved and misbranded semaglutide and tirzepatide drug products; no facility was inspected. Bacteriostatic water and syringes are mentioned only as context for injection risk, not charged as violative products, so they are excluded from the products list.",
+  "expected": {
+    "company": "USApeptide.com",
+    "fei": null,
+    "date": "2025-02-26",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Semaglutide (GLP-1 Analogue) 5mg",
+      "Semaglutide (GLP-1 Analogue) 10mg",
+      "5mg Tirzepatide (Mounjaro) 5mg",
+      "10mg Tirzepatide (Mounjaro) 10mg"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

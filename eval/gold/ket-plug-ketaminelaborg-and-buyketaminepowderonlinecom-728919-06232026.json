@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/ket-plug-ketaminelaborg-and-buyketaminepowderonlinecom-728919-06232026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "FDA reviewed the recipient's websites selling ketamine powder as an unapproved/misbranded drug; no facility inspection occurred. 'ketamine powder' is the only product term used (no brand name) so it is listed as the subject product.",
+  "expected": {
+    "company": "Ket Plug / ketaminelab.org and buyketaminepowderonline.com",
+    "fei": "3044408515",
+    "date": "2026-06-23",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "ketamine powder"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

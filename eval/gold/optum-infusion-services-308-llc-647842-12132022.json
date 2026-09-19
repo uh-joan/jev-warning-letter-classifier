@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/optum-infusion-services-308-llc-647842-12132022.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "Sterile drug compounding warning letter under FDCA 503A citing insanitary conditions (vermin, ISO 5 microbial contamination, improper glove sanitization) that adulterated products; the letter cites only section 501(a)(2)(A) insanitary conditions, not 21 CFR 210/211, so CGMP is omitted from violation_categories.",
+  "expected": {
+    "company": "Optum Infusion Services 308 LLC",
+    "fei": null,
+    "date": "2022-12-13",
+    "issuing_office": "Division of Pharmaceutical Quality Operations IV",
+    "location_contains": "Chandler, Arizona",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "adulteration",
+      "compounding",
+      "sterility",
+      "aseptic_processing"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

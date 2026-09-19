@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/vasocorp-inc-732724-07092026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Website-review letter (no facility inspection) citing VasoCorp's NeuropAWAY nerve-support products for disease-treatment claims that make them unapproved new drugs and misbranded drugs.",
+  "expected": {
+    "company": "VasoCorp, Inc.",
+    "fei": null,
+    "date": "2026-07-09",
+    "issuing_office": "Human Foods Program",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "NeuropAWAY \u2013 Nerve Support Formula",
+      "NeuropAWAY pm \u2013 Nighttime Nerve Support Formula"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

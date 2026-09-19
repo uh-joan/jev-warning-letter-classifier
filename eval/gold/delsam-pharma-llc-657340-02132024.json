@@ -1,0 +1,37 @@
+{
+  "fixture": "fixtures/delsam-pharma-llc-657340-02132024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "Distributor letter tied to the Global Pharma Healthcare artificial-tears outbreak: FDA sterility testing confirmed non-sterile ophthalmic products (Pseudomonas aeruginosa outbreak, Burkholderia cepacia complex in the eye ointment), causing adulteration and misbranding (502(j)/502(a)) of Delsam's own labeled products; CGMP violations cited belong to the CMO's inspection. FEI given is Delsam's own facility FEI (3018035065), not the CMO's (3012323885).",
+  "expected": {
+    "company": "Delsam Pharma LLC",
+    "fei": "3018035065",
+    "date": "2024-02-13",
+    "issuing_office": "Division of Pharmaceutical Quality Operations I",
+    "location_contains": "Bronx, NY",
+    "organisms": [
+      "Pseudomonas aeruginosa",
+      "Burkholderia cepacia complex"
+    ],
+    "products": [
+      "Delsam Pharma\u2019s Artificial Tears",
+      "Delsam Pharma\u2019s Artificial Eye Ointment"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": true,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

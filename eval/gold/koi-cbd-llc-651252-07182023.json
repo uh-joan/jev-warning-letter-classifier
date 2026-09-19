@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/koi-cbd-llc-651252-07182023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Human food (Delta-8 THC edibles) adulterated as an unsafe food additive. No FEI is stated in the letter (only a Unique Identification Number). Issuing office lacks a CDER/CBER/CDRH/CVM/CTP acronym so the published sub-office name is used.",
+  "expected": {
+    "company": "Koi CBD, LLC",
+    "fei": null,
+    "date": "2023-07-18",
+    "issuing_office": "Office of Human and Animal Food Operations \u2013 West Division 5",
+    "location_contains": "Norwalk, CA",
+    "organisms": [],
+    "products": [
+      "Delta 8 Gummies",
+      "Pot Rocks"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

@@ -1,0 +1,36 @@
+{
+  "fixture": "fixtures/turbare-manufacturing-713516-09162025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503B outsourcing facility with sterile-compounding CGMP violations (inadequate media fills, unexplained discrepancies, environmental monitoring failures) including a confirmed Curvularia intermedia mold recovery from personnel monitoring during a Bevacizumab media fill; the firm already voluntarily recalled affected Bevacizumab lots for lack of sterility assurance. No misbranding or unapproved-new-drug charge is made, and no FEI is stated in the letter.",
+  "expected": {
+    "company": "Turbare Manufacturing",
+    "fei": null,
+    "date": "2025-09-16",
+    "issuing_office": "CDER",
+    "location_contains": "Conway, Arkansas",
+    "organisms": [
+      "Curvularia intermedia"
+    ],
+    "products": [
+      "Bevacizumab 1.25mg/0.05mL in 0.25mL Syringe"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

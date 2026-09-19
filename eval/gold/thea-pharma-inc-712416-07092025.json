@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/thea-pharma-inc-712416-07092025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Website/labeling review (no facility inspection) of IVIZIA sterile lubricant eye drops, an OTC ophthalmic demulcent formulated with hyaluronic acid and trehalose that are not permitted active ingredients under the applicable OTC monograph, making it an unapproved new drug and misbranded under 502(ee). No FEI or facility location is stated since this concerns only website/product-labeling claims.",
+  "expected": {
+    "company": "Thea Pharma, Inc.",
+    "fei": null,
+    "date": "2025-07-09",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "IVIZIA sterile lubricant eye drops"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/pinnacle-transplant-technologies-llc-646783-10012024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "CBER warning letter to Pinnacle Transplant Technologies covering unapproved new drug/biologic status of PalinGen amniotic membrane/fluid products (specific variant names redacted as (b)(4), so products is empty and product_redacted is true) plus CGMP deviations including unvalidated aseptic processing, 8 uninvestigated sterility failures with redacted contaminating organisms, and inadequate environmental monitoring placement. No recall/withdrawal/quarantine language is present in the letter.",
+  "expected": {
+    "company": "Pinnacle Transplant Technologies, LLC",
+    "fei": null,
+    "date": "2024-10-01",
+    "issuing_office": "CBER",
+    "location_contains": "Phoenix, AZ",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "unapproved_new_drug",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

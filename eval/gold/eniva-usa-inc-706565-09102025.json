@@ -1,0 +1,36 @@
+{
+  "fixture": "fixtures/eniva-usa-inc-706565-09102025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Dietary supplement CGMP letter under 21 CFR Part 111 (finished-product specification and material-review documentation failures) causing adulteration under 402(g)(1). Products list includes the two supplements cited in the CGMP violations plus the Vibe product line named in the closing acid-food comment section. No contamination, complaints, or recall are described.",
+  "expected": {
+    "company": "Eniva USA, Inc.",
+    "fei": null,
+    "date": "2025-09-10",
+    "issuing_office": "Human Foods Program",
+    "location_contains": "Plymouth, MN",
+    "organisms": [],
+    "products": [
+      "Immune Support",
+      "Cold Buster",
+      "Ashwagandha Gummies",
+      "Vibe Original",
+      "Vibe 2.0",
+      "Vibe Apple",
+      "Vibe Kids"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

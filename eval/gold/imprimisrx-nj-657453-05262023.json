@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/imprimisrx-nj-657453-05262023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503A compounding pharmacy cited for insanitary sterile-compounding conditions (ISO 5/ISO 7 aseptic areas, HEPA/airflow/gowning deficiencies including fiber-like particles hanging in the cleanroom) and for releasing subpotent Timolol-Latanoprost PF ophthalmic solution that was later recalled. contamination_present is set true based on the described fiber-like particles and insanitary aseptic-area conditions rather than a lab-confirmed organism.",
+  "expected": {
+    "company": "ImprimisRx NJ",
+    "fei": "3003348498",
+    "date": "2023-05-26",
+    "issuing_office": "Office of Pharmaceutical Quality Operations Division I",
+    "location_contains": "Ledgewood, NJ",
+    "organisms": [],
+    "products": [
+      "Timolol-Latanoprost PF (0.5/0.005%) Ophthalmic Solution"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "compounding",
+      "sterility",
+      "aseptic_processing",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

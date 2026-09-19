@@ -1,0 +1,34 @@
+{
+  "fixture": "fixtures/quva-pharma-inc-675685-01262024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "503B outsourcing-facility sterile-compounding letter for Bloomsbury, NJ facility; mold recovered on operator glove-fingertip samples plus CGMP/aseptic-processing violations caused adulteration and a voluntary recall of a specific oxytocin/saline injection product. Issuing office is the signing division as printed in the letter (no CDER acronym appears in the letter body itself, though it is a CDER division).",
+  "expected": {
+    "company": "QuVa Pharma, Inc.",
+    "fei": "3013931875",
+    "date": "2024-01-26",
+    "issuing_office": "Division of Pharmaceutical Quality Operations",
+    "location_contains": "Bloomsbury, NJ",
+    "organisms": [],
+    "products": [
+      "oxytocin 30 Units/500 mL (0.06 Units/mL) added to 0.9% Sodium Chloride, Injection for IV Use"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

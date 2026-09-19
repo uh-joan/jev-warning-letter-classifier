@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/genovate-720554-01082026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "CBER website-review letter (no facility inspection) for an HIV dried-blood-spot self-collection test kit marketed without a PMA/IDE and without 510(k) notification, charged as adulterated (501(f)(1)(B)) and misbranded (502(o)). The kit is referred to only by the generic descriptor 'HIV DBS card self-collection kit' throughout -- no distinct brand/model name is ever given -- so products is left empty rather than guessing a name; not marked product_redacted since it isn't a (b)(4) redaction, just no branded name used. HIV is referenced only as a disease/test target, not a genus-species organism, so organisms is empty. No FEI or facility location is stated (website review only).",
+  "expected": {
+    "company": "Genovate",
+    "fei": null,
+    "date": "2026-01-08",
+    "issuing_office": "CBER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

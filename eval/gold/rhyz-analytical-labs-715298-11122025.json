@@ -1,0 +1,27 @@
+{
+  "fixture": "fixtures/rhyz-analytical-labs-715298-11122025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CGMP letter to a Provo (state not given in the inspection sentence) contract testing laboratory for OTC drug products; cites 21 CFR 211.192 and 211.22(d) for inadequate OOS/microbial-excursion investigations and quality-unit oversight. All specific lot/product identities are (b)(4)-redacted with none named in clear, so product_redacted is true. No sterile/aseptic manufacturing is described since this is a testing lab, not a manufacturer.",
+  "expected": {
+    "company": "Rhyz Analytical Labs",
+    "fei": "3020181366",
+    "date": "2025-11-12",
+    "issuing_office": "CDER",
+    "location_contains": "Provo",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

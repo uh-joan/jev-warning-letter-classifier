@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/blackfly-investments-llc-dba-molecularr-testing-labs-680324-10112024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "CBER website-review letter (no facility inspection) for an HIV serological diagnostic dried-blood-spot self-collection kit marketed without a PMA/510(k)/IDE, making the device adulterated and misbranded. Despite CBER being the issuing office, the subject product is clearly a device under section 201(h)(1), so letter_type is 'device' rather than 'biologics'. organisms is empty because HIV is not a genus-species name. location_contains is null since this is a website review with no facility inspection.",
+  "expected": {
+    "company": "Blackfly Investments, LLC dba Molecular\u00ae Testing Labs",
+    "fei": null,
+    "date": "2024-10-11",
+    "issuing_office": "CBER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "HIV DBS card self-collection kit"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

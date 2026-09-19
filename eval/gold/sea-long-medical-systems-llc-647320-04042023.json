@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/sea-long-medical-systems-llc-647320-04042023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "CDRH device letter for the Sea-Long Medical Treatment Hood (hyperbaric-chamber accessory): extensive 21 CFR 820 Quality System Regulation (CGMP) violations (complaint handling, process validation, CAPA, DMR/DHR, audits, management review), plus adulteration (501(h) QSR nonconformance and 501(f)(1)(B) lack of PMA for new intended uses such as NIV/ARDS/COVID-19 treatment) and misbranding (502(o) no new 510(k), 502(c)/502(t)(2) UDI/GUDID failures). No organisms, sterility, or contamination are involved (non-sterile device).",
+  "expected": {
+    "company": "Sea-Long Medical Systems, LLC",
+    "fei": null,
+    "date": "2023-04-04",
+    "issuing_office": "CDRH",
+    "location_contains": "Waxahachie, TX",
+    "organisms": [],
+    "products": [
+      "Sea-Long Medical Treatment Hoods"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

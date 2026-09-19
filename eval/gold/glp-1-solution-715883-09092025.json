@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/glp-1-solution-715883-09092025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "CDER website-review letter (no facility inspection): compounded retatrutide is charged as an unapproved new drug and misbranded (505(a), 502(f)(1)) because it fails the 503A/503B bulk-substance conditions, while compounded semaglutide and tirzepatide are charged only with false/misleading advertising under 502(a)/502(bb) (implying equivalence to FDA-approved Mounjaro/Ozempic/Wegovy/Rybelsus). Classified 'compounding' (matching the nativemed-llc-dba-nativemed / healthy-male precedent for this 503A/503B letter template) but, unlike those precedents, unapproved_new_drug is also included because retatrutide is formally charged under section 505(a)/301(d), not just a compounding-exemption failure. 'MOUNJARO' is excluded from products since it is quoted only as a misleading marketing claim referencing a competitor's approved drug, not the firm's own product name. is_sterile_product is true given the explicit discussion of injectable delivery risk (bypassing the body's defenses via bloodstream injection). No FEI/location_contains since this is a website review only.",
+  "expected": {
+    "company": "GLP-1 Solution",
+    "fei": null,
+    "date": "2025-09-09",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "retatrutide",
+      "semaglutide",
+      "tirzepatide"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding",
+      "compounding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

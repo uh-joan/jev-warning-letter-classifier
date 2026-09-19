@@ -1,0 +1,41 @@
+{
+  "fixture": "fixtures/stokes-healthcare-inc-dba-epicur-pharma-677624-04022024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503B outsourcing facility (Tacrolimus AQ ophthalmic suspensions, Fluorouracil PF injection) that failed 503B conditions and had sterile-drug insanitary-condition and CGMP violations, including an unaddressed Mucor circinelloides contamination trend.",
+  "expected": {
+    "company": "Stokes Healthcare Inc. dba Epicur Pharma",
+    "fei": "3002815949",
+    "date": "2024-04-02",
+    "issuing_office": "Office of Pharmaceutical Quality Operations Division I",
+    "location_contains": "Mount Laurel, NJ",
+    "organisms": [
+      "Mucor circinelloides"
+    ],
+    "products": [
+      "Tacrolimus (Aqueous) Ophthalmic Suspensions",
+      "Tacrolimus (AQ) 0.5% Ophthalmic Suspension 10mL",
+      "Fluorouracil (AQ) PF 50mg/mL Injection Solution 50ms",
+      "Tacrolimus AQ",
+      "Fluorouracil PF"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "misbranding",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

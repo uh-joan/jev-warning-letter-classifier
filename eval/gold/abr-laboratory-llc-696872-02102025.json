@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/abr-laboratory-llc-696872-02102025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "Contract testing laboratory failed to validate/verify its microbial test methods against USP compendial methods and did not investigate an out-of-range refrigerator storing reference microorganisms; tested drug products are OTC and redacted as (b)(4) with no clear product name given.",
+  "expected": {
+    "company": "ABR Laboratory LLC",
+    "fei": "3020570829",
+    "date": "2025-02-10",
+    "issuing_office": "CDER",
+    "location_contains": "Hollywood, FL",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

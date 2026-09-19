@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/natural-relief-inc-659048-10182023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Herbal dietary-supplement website marketing disease-treatment claims (Edema NatRelief 6, BP NatRelief 11) as unapproved new/misbranded drugs, combined with numbered 21 CFR Part 111 dietary-supplement CGMP violations causing 402(g)(1) adulteration, plus Part 101 labeling misbranding. Classified as food_supplement given the substantial Part 111 CGMP section, consistent with similar mixed unapproved-drug + Part 111 letters. FEI not stated in the letter.",
+  "expected": {
+    "company": "Natural Relief Inc.",
+    "fei": null,
+    "date": "2023-10-18",
+    "issuing_office": "Division of Human and Animal Food Operations East V",
+    "location_contains": "Coshocton, OH",
+    "organisms": [],
+    "products": [
+      "Edema NatRelief 6",
+      "BP NatRelief 11"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding",
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

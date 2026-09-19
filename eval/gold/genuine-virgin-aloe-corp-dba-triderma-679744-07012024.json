@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/genuine-virgin-aloe-corp-dba-triderma-679744-07012024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CGMP letter (Division of Pharmaceutical Quality Operations IV) for an OTC skin-protectant-cream (eczema/diabetic) manufacturer: inadequate component identity/DEG-EG testing, no process validation, no stability program, and an ineffective quality unit (including an incomplete batch record for the named 'Psoriasis Control Cream'). recall_concern is true because FDA explicitly directs the firm to 'take prompt and appropriate actions to determine the safety of all lots of the component(s) and any related drug product that could contain DEG or EG, including customer notifications and product recalls for any contaminated lots.'",
+  "expected": {
+    "company": "Genuine Virgin Aloe Corp dba Triderma",
+    "fei": "3008235829",
+    "date": "2024-07-01",
+    "issuing_office": "Division of Pharmaceutical Quality Operations IV",
+    "location_contains": "Anaheim, CA",
+    "organisms": [],
+    "products": [
+      "Psoriasis Control Cream"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

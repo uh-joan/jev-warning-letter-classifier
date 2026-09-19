@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/nelson-co-ltd-720283-02122026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "Homeopathic OTC drug CGMP letter (non-sterile) citing inadequate batch microbial testing (21 CFR 211.165(b)) and quality-unit/data-integrity failures (211.22(d)), including discarded out-of-trend records and a batch that FDA border testing found microbiologically contaminated. All specific product/batch identifiers are redacted as (b)(4) throughout and none is named in clear, so products is [] and product_redacted is true. recall_concern is true because FDA explicitly discusses testing retain samples and 'notifying customers and product recalls,' not a boilerplate CAPA mention. contamination_present is true because FDA testing found actual microbiological contamination in a specific detained batch.",
+  "expected": {
+    "company": "A. Nelson & Co. Ltd.",
+    "fei": "1000568184",
+    "date": "2026-02-12",
+    "issuing_office": "CDER",
+    "location_contains": "London",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "data_integrity",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

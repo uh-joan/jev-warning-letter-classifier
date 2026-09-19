@@ -1,0 +1,62 @@
+Warning Letter 320-26-19
+November 13, 2025
+Dear Mr. Jain:
+The United States Food and Drug Administration (FDA) inspected your drug manufacturing facility, Seema International, FEI 3007016503, at BT-3/211, Phase-1, Mangolpuri Industrial Area, New Delhi, from May 15 to 21, 2025.
+This warning letter summarizes significant deviations from Current Good Manufacturing Practice (CGMP) for active pharmaceutical ingredients (APIs).
+Because your methods, facilities, or controls for manufacturing, processing, packing, or holding do not conform to CGMP, your APIs are adulterated within the meaning of section 501(a)(2)(B) of the Federal Food, Drug, and Cosmetic Act (FD&C Act), 21 U.S.C. 351(a)(2)(B).
+We reviewed your June 5, 2025, response to our Form FDA 483 in detail.
+During our inspection, our investigator observed specific deviations, including but not limited to the following:
+1. Failure to clean equipment and utensils to prevent contamination or carry-over of a material that would alter the quality of the API beyond the official or other established specifications.
+Your firm failed to clean separation equipment (b)(4) used for the repackaging and relabeling of your (b)(4) API. This is also a repeat deviation from a previous inspection.
+In your response, you state that your dirty and rusted (b)(4) you had used for drug production were discarded and replaced. You also state that you are creating and maintaining logbooks that record equipment cleaning and usage, as well as finalizing a standard operating procedure (SOP) for these processes.
+Your response is inadequate because it fails to evaluate the impact and risk of using inadequately cleaned equipment in the manufacture of your API, including API currently on the market.
+Inadequately cleaned and maintained manufacturing equipment can lead to potential cross-contamination that could compromise your API’s quality and safety.
+In response to this letter, provide a corrective action and preventive action (CAPA) plan, based on the retrospective assessment of your cleaning program, that includes appropriate remediations to your cleaning processes and practices, and timelines for completion. Provide a detailed summary of vulnerabilities in your process for lifecycle management of equipment cleaning. Describe improvements to your cleaning program, including enhancements to cleaning effectiveness; improved ongoing verification of proper cleaning execution for all products and equipment; and all other needed remediations.
+2. Failure to design a documented, ongoing stability testing program to monitor the stability characteristics of APIs and to use the results to confirm appropriate storage conditions and retest of expiry dates.
+You lacked stability data to support your firm’s (b)(4) expiry date for your (b)(4) API. This is also a repeat deviation from a previous inspection.
+Your response does not specifically address the lack of stability testing and associated corrective actions.
+Without an ongoing stability program, you cannot ensure that your products will remain acceptable throughout their expiry period.
+In response to this letter, provide:
+A comprehensive assessment and CAPA plan to ensure the adequacy of your stability program. Your remediated program should include but not be limited to:
+o Stability-indicating methods
+o Stability studies for each drug product in its marketed container-closure system before distribution is permitted
+o An ongoing program in which representative batches of each product are added to the program each year to determine if the shelf-life claim remains valid
+o Detailed definition of the specific attributes to be tested at each station (timepoint)
+All procedures that describe these and other elements of your remediated stability program.
+
+3. Failure of your quality unit to exercise its responsibility to ensure the APIs manufactured at your facility are in compliance with CGMP.
+Your quality unit (QU) did not adequately exercise its authority and responsibilities, including but not limited to implementing effective procedures and conducting adequate oversight of the drug products you manufacture. For example, your QU failed to ensure that:
+Your written master batch records were reviewed and approved.
+Your completed batch records for your (b)(4) API were reviewed before release and distribution.
+Identity testing was performed on your bulk (b)(4) API.
+An adequate supplier qualification program is in place.
+Adequate traceability of API, e.g., you received bulk (b)(4) API in (b)(4) bags, without adequate labeling and certificates of analysis.
+
+In response to this letter, provide a comprehensive assessment and remediation plan to ensure that your QU is given the authority and resources to function effectively. The assessment should also include but not be limited to:
+A determination of whether procedures used by your firm are robust and appropriate
+Provisions for QU oversight throughout your operations to evaluate adherence to appropriate practices
+A complete and final review of each batch and its related information before the QU disposition decision
+Oversight and approval of investigations and discharging of all other QU duties to ensure identity, strength, quality, and purity of all products
+
+Additional API CGMP Guidance
+FDA considers the expectations outlined in ICH Q7 when determining whether API are manufactured in conformance with CGMP. See FDA’s guidance document Q7 Good Manufacturing Practice Guidance for Active Pharmaceutical Ingredients at https://www.fda.gov/media/71518/download for guidance regarding CGMP for the manufacture of API.
+CGMP Consultant Recommended
+Based upon the nature of the deviations we identified at your firm, and because you failed to correct repeat deviations, you should engage a consultant qualified to evaluate your operations and to assist your firm in meeting CGMP requirements. The qualified consultant should also perform a comprehensive six-system audit of your entire operation for CGMP compliance, and evaluate the completion and efficacy of your CAPAs before you pursue resolution of your firm’s compliance status with FDA.
+Your use of a consultant does not relieve your firm’s obligation to comply with CGMP. Your firm’s executive management remains responsible for resolving all deficiencies and systemic flaws to ensure ongoing CGMP compliance.
+Conclusion
+The deviations cited in this letter are not intended to be an all-inclusive list of deviations that exist at your facility. You are responsible for investigating and determining the causes of any deviations and for preventing their recurrence or the occurrence of other deviations.
+FDA placed all drugs and drug products offered for import into the United States from your firm on Import Alert 66-40 on September 18, 2025.
+Correct any deviations promptly. FDA may withhold approval of new applications or supplements listing your firm as a drug manufacturer until any deviations are completely addressed and we confirm your compliance with CGMP. We may re-inspect to verify that you have completed corrective actions to any deviations.
+Failure to address any deviations may also result in the FDA continuing to refuse admission of articles manufactured at BT-3/211, Phase-1, Mangolpuri Industrial Area, New Delhi, into the United States under section 801(a)(3) of the FD&C Act, 21 U.S.C. 381(a)(3). Articles under this authority that appear to be adulterated may be detained or refused admission, in that the methods and controls used in their manufacture do not appear to conform to CGMP within the meaning of section 501(a)(2)(B) of the FD&C Act, 21 U.S.C. 351(a)(2)(B).
+This letter notifies you of our findings and provides you an opportunity to address the above deficiencies. After you receive this letter, respond to this office in writing within 15 working days. Specify what you have done to address any deviations and to prevent their recurrence. In response to this letter, you may provide additional information for our consideration as we continue to assess your activities and practices. If you cannot complete corrective actions within 15 working days, state your reasons for delay and your schedule for completion.
+Send your electronic reply to CDER-OC-OMQ-Communications@fda.hhs.gov. Identify your response with FEI 3007016503 and ATTN: Yvette Johnson.
+Sincerely,
+/S/
+Francis Godwin
+Director
+Office of Manufacturing Quality
+Office of Compliance
+Center for Drug Evaluation and Research
+Cc: Registered U.S. Agent
+Amin Talati, LLC
+Email: kfefferman@awglaw.com

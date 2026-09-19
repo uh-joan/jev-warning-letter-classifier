@@ -1,0 +1,38 @@
+{
+  "fixture": "fixtures/row1-inc-dba-regenative-labs-638823-06212023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "CBER (Office of Biological Products Operations - Division 1) letter for umbilical-cord-derived cellular products (ProText, CoreText, CryoText Pro, CryoText Plus, SecreText, SecreText Pro) that fail HCT/P minimal-manipulation and homologous-use criteria, making them unapproved new drugs/unlicensed biological products, plus CGMP deviations for aseptic processing/environmental monitoring of products purporting to be sterile. The letter never uses the word 'adulterated' (it cites 501(a)(2)(B) only as the basis of the CGMP deviations, not as a formal adulteration charge), so adulteration is omitted from violation_categories. No FEI or organisms are stated.",
+  "expected": {
+    "company": "Row1 Inc. dba Regenative Labs",
+    "fei": null,
+    "date": "2023-06-21",
+    "issuing_office": "Office of Biological Products Operations \u2013 Division 1",
+    "location_contains": "Pensacola, FL",
+    "organisms": [],
+    "products": [
+      "ProText\u2122",
+      "CoreText\u2122",
+      "CryoText\u2122 Pro",
+      "CryoText\u2122 Plus",
+      "SecreText\u2122",
+      "SecreText\u2122 Pro"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

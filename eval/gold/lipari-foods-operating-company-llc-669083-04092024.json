@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/lipari-foods-operating-company-llc-669083-04092024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Undeclared major food allergen (walnuts/hazelnuts/cashews) mislabeling by a subsidiary facility (JLM Manufacturing). No FEI is stated. The subsidiary's 21 CFR Part 117 preventive-controls failure is food CGMP, which the spec's CGMP definition (21 CFR 210/211/111/820 only) excludes, so CGMP is not tagged. linked_to_complaints is false because the retail-store complaints concerned mislabeling, not organisms matched to consumer-complaint samples.",
+  "expected": {
+    "company": "Lipari Foods Operating Company, LLC",
+    "fei": null,
+    "date": "2024-04-09",
+    "issuing_office": "Office of Human and Animal Food Operations Division East 6",
+    "location_contains": "Warren, MI",
+    "organisms": [],
+    "products": [
+      "IO Inspired Organics brand Organic Raw Walnut Halves & Pieces",
+      "JLM brand Roasted Salted Pecan Halves",
+      "IO Inspired Organics brand Raw Walnuts"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

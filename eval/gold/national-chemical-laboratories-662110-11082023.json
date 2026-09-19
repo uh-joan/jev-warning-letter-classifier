@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/national-chemical-laboratories-662110-11082023.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "OTC topical drug (antibacterial hand sanitizer) CGMP letter citing 21 CFR 210/211 component-testing and quality-unit oversight failures; no sterile/aseptic claims. No specific product name is stated beyond the generic 'antibacterial hand sanitizers containing benzalkonium chloride (BZK)' description, so products is []. The inspection sentence names the city 'Philadelphia' without an adjacent state, so location_contains is the city alone per spec.",
+  "expected": {
+    "company": "National Chemical Laboratories",
+    "fei": "1000071237",
+    "date": "2023-11-08",
+    "issuing_office": "Office of Pharmaceutical Quality Operations",
+    "location_contains": "Philadelphia",
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

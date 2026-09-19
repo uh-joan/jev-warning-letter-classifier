@@ -1,0 +1,40 @@
+{
+  "fixture": "fixtures/shenzhen-moyeah-intelligent-life-technology-co-677092-08082024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "CDRH website-review letter (no facility inspection; the firm's own address is partly (b)(4)-redacted) for eleven distinctly listed CPAP cleaner/sanitizer/disinfector products marketed without 510(k) clearance or PMA approval, making them adulterated (501(f)(1)(B)) and misbranded (502(o)). No organisms, sterility, or contamination findings (the devices claim to disinfect CPAP equipment but are not themselves sterile products).",
+  "expected": {
+    "company": "Shenzhen Moyeah Intelligent Life Technology Co.",
+    "fei": null,
+    "date": "2024-08-08",
+    "issuing_office": "CDRH",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "CPAP Cleaner With Sanitizer Bag Ozone Disinfector C966",
+      "CPAP Cleaner And Sanitizer Mini Portable Cleaning Kit For Resmed Respironics Tube And Mask",
+      "MOYEAH Mini Travel CPAP Cleaner Sanitizer With Disinfector Sterilizer Bag",
+      "Moyeah CPAP Cleaner Ozone Disinfector C966 With Big Battery 2200mAh",
+      "MOYEAH UVC Cleaner Sanitizer Bag | CPAP Machine Cleaner Disinfector Bag",
+      "2023 Moyeah Latest UV Sterilizer Box & Ozone Disinfector Bag Oxygen Breathing Sleep Apnea Cleaner Bag With FDA By MOYEAH",
+      "Mini Travel Cpap Cleaner And Sanitizer With CPAP Travel Bag For Resmed Respironics Tube And Mask",
+      "CPAP Cleaner and Sanitizer Disinfector with Tube Adapters Hose Connectors For Cleaning CPAP Machine Mask Hose",
+      "Rescomf Cpap Cleaner Sanitizer With Two adaptors For Resmed Respironics",
+      "Moyeah Mini Portable Travel CPAP Cleaning Kit For Resmed Respironics Tube And Mask| Supplies CPAP Machines & Cleaners.",
+      "MOYEAH UVC CPAP Sanitizer Bag for Cleaning | CPAP Cleaner and Sanitizer Bag for CPAP Machine, Accessories, Tubes & Mask"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

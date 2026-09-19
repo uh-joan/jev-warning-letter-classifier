@@ -1,0 +1,26 @@
+{
+  "fixture": "fixtures/namita-goyal-md-677324-10102024.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "BIMO clinical-investigator letter (not a manufacturing facility inspection): eligibility, informed-consent, IRB, and case-history violations under 21 CFR 312/50/56 during a clinical study of a CBER-regulated investigational biologic. The study/protocol name is redacted as (b)(4) and never named in clear anywhere in the letter, so products is [] and product_redacted is true. location_contains is omitted: the letter never names a city/state for 'your clinical study site' (only the FDA regional office's Chicago, IL cc address appears, which is not the study site). fei is null since this is an individual investigator, not a registered facility. violation_categories includes only data_integrity, for the inaccurate/backdated protocol training log and the uncalibrated-spirometer data-reliability issue; none of CGMP/sterility/adulteration/misbranding/unapproved_new_drug/compounding are charged.",
+  "expected": {
+    "company": "Namita A. Goyal, M.D.",
+    "fei": null,
+    "date": "2024-10-10",
+    "issuing_office": "CBER",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "data_integrity"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

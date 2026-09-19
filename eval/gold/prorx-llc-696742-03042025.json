@@ -1,0 +1,39 @@
+{
+  "fixture": "fixtures/prorx-llc-696742-03042025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "Amended 503B outsourcing-facility letter for sterile compounding at Exton, PA; charges 503B-condition failures, CGMP/aseptic/insanitary-condition adulteration, misbranding, and unapproved-new-drug violations. Letter header date (and meta issue_date) of March 4, 2025 used; a footnote states the original December 20, 2024 letter date is FDA's tracking date of issuance. No FEI is stated in the letter.",
+  "expected": {
+    "company": "ProRx, LLC",
+    "fei": null,
+    "date": "2025-03-04",
+    "issuing_office": "CDER",
+    "location_contains": "Exton, PA",
+    "organisms": [],
+    "products": [
+      "Semaglutide 5mg/2ml (2.5mg/ml) 2ml",
+      "Tirzepatide 60mg/3ml (20mg/ml) 3ml",
+      "Vancomycin 25mg/ml 10ml",
+      "Tobramycin 14mg/ml 10ml"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "compounding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

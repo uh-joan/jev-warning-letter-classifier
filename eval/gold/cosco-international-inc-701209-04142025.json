@@ -1,0 +1,39 @@
+{
+  "fixture": "fixtures/cosco-international-inc-701209-04142025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "CDER nonsterile OTC-manufacturer CGMP letter: lack of process and cleaning validation (shared equipment with cosmetics), no stability studies for wound-treatment products intended for children, and an inadequately designed/tested non-sterile water system (Burkholderia cepacia complex named only as a required test organism, not confirmed contamination, matching the world-perfumes precedent for this same boilerplate water-system language). Also charges 'Carpe ANTIPERSPIRANT FOOT LOTION', 'Carpe ANTIPERSPIRANT HAND LOTION', and a redacted '(b)(4)' skin-protectant product as unapproved new drugs (non-conforming to OTC monographs M016/M019) and misbranded under 502(ee); since other products are named in clear, product_redacted is false. location_contains is 'Marietta' alone because the inspection sentence omits the state ('at 1633 Sands Pl SE. Marietta, from October 15th to 25th 2024'). recall_concern is true because the letter requests actions such as 'customer notifications and product recalls' in response to the water-system risk assessment.",
+  "expected": {
+    "company": "Cosco International, Inc.",
+    "fei": "3000220439",
+    "date": "2025-04-14",
+    "issuing_office": "CDER",
+    "location_contains": "Marietta",
+    "organisms": [
+      "Burkholderia cepacia complex"
+    ],
+    "products": [
+      "Berberex Wound Gel",
+      "Asystem Pain Roll On",
+      "Forticept Antimicrobial Gel",
+      "Forticept Antiseptic Ear Flush",
+      "Carpe ANTIPERSPIRANT FOOT LOTION",
+      "Carpe ANTIPERSPIRANT HAND LOTION"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

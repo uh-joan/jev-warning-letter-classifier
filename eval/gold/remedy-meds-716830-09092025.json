@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/remedy-meds-716830-09092025.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "Website-review letter (no facility inspection) about compounded semaglutide and tirzepatide products; charges misbranding (502(a)/502(bb)) because marketing falsely claims equivalence to approved Ozempic/Wegovy/Mounjaro/Zepbound. No CGMP, sterility, or unapproved-new-drug charge is made.",
+  "expected": {
+    "company": "Remedy Meds",
+    "fei": null,
+    "date": "2025-09-09",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "semaglutide",
+      "tirzepatide"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

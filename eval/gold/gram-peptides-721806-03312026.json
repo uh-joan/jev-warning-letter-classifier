@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/gram-peptides-721806-03312026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "CDER Office of Unapproved Drugs and Labeling Compliance website-review letter (no facility inspection; unlike the 503A/503B compounding letters, this one never mentions sections 503A/503B) for injectable peptide products (retatrutide/'GLP-1-R peptide', tirzepatide/'GLP-2 peptide') and bacteriostatic reconstitution water, despite 'Research Use Only' labeling, charged solely as unapproved new drugs (505(a)/301(d)); no misbranding section appears. is_sterile_product is true given the explicit injectable/bloodstream-delivery framing and the sale of bacteriostatic water for injection alongside the peptides. Alias names used by the firm (GLP-1-R Peptide, GLP-2 Peptide) refer to the same two products and are not counted as separate entries. No FEI/location_contains since this is a website review only.",
+  "expected": {
+    "company": "Gram Peptides",
+    "fei": null,
+    "date": "2026-03-31",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Retatrutide",
+      "Tirzepatide",
+      "Bacteriostatic Water for Injection"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}
