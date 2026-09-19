@@ -8,6 +8,7 @@
  */
 
 import { TypeSafeClient } from "@typesafe-ai/sdk";
+import { classifyRegulatedProduct } from "./citations.js";
 import type { Candidate, ExtractedCandidates } from "./types.js";
 
 export const JEV_MODEL = "jev-latest";
@@ -133,6 +134,15 @@ export async function classifyWithJev(
   cands: ExtractedCandidates,
 ): Promise<JevResult> {
   const redacted = cands.redaction.product_name_redacted;
+  // Intent routing (patterns/intent-routing): the letter category is known
+  // deterministically from office + citations, so we ask only the questions that
+  // apply. A pure food/produce letter never gets drug-manufacturing questions
+  // (sterility, aseptic, environmental monitoring, drug selection) — they don't
+  // apply and asking them only invites false positives (jaggedness #5).
+  const { drug_relevant } = classifyRegulatedProduct(
+    cands.issuing_office,
+    cands.citations.categories,
+  );
   // Only offer candidates that could actually BE the product (idea #3).
   const drugCriteria = criteriaFrom(cands.drugs.filter((c) => eligibleAsProduct(c, redacted)));
   const indicationCriteria = criteriaFrom(cands.indications);
@@ -153,7 +163,9 @@ export async function classifyWithJev(
     },
   };
 
-  for (const c of candidatesInLetter(text, cands.drugs).slice(0, MAX_SUBJECT_QUESTIONS)) {
+  for (const c of drug_relevant
+    ? candidatesInLetter(text, cands.drugs).slice(0, MAX_SUBJECT_QUESTIONS)
+    : []) {
     const name = String(c.payload?.name);
     // Noul with true/false criteria (idea #2: spell out the boundary cases the
     // question exists to exclude) plus the candidate's evidence in instructions.
@@ -182,8 +194,8 @@ export async function classifyWithJev(
 
   // A choice needs at least one real option beside `unknown`; otherwise skip the
   // question and synthesise `unknown` rather than send a degenerate 1-option choice.
-  const askDrug = Object.keys(drugCriteria).length > 1;
-  const askIndication = Object.keys(indicationCriteria).length > 1;
+  const askDrug = drug_relevant && Object.keys(drugCriteria).length > 1;
+  const askIndication = drug_relevant && Object.keys(indicationCriteria).length > 1;
   if (askDrug) {
     questions.drug_candidate = {
       type: "choice",
@@ -205,25 +217,33 @@ export async function classifyWithJev(
     };
   }
 
+  // Drug-manufacturing signals — only for drug-type letters (intent routing).
+  if (drug_relevant) {
+    Object.assign(questions, {
+      is_sterile_product: {
+        type: "noul",
+        instructions:
+          "The letter concerns a sterile drug product or a sterile / aseptic drug manufacturing process.",
+      },
+      has_cgmp_violation: {
+        type: "noul",
+        instructions:
+          "The letter cites violations of current good manufacturing practice (CGMP) requirements.",
+      },
+      has_aseptic_violation: {
+        type: "noul",
+        instructions: "The letter describes deficiencies in aseptic processing or aseptic technique.",
+      },
+      has_env_monitoring_violation: {
+        type: "noul",
+        instructions:
+          "The letter describes inadequate environmental or personnel monitoring of classified areas.",
+      },
+    });
+  }
+
+  // Signals that apply to any letter (food included): contamination, recall, severity.
   Object.assign(questions, {
-    is_sterile_product: {
-      type: "noul",
-      instructions:
-        "The letter concerns a sterile drug product or a sterile / aseptic drug manufacturing process.",
-    },
-    has_cgmp_violation: {
-      type: "noul",
-      instructions: "The letter cites violations of current good manufacturing practice (CGMP) requirements.",
-    },
-    has_aseptic_violation: {
-      type: "noul",
-      instructions: "The letter describes deficiencies in aseptic processing or aseptic technique.",
-    },
-    has_env_monitoring_violation: {
-      type: "noul",
-      instructions:
-        "The letter describes inadequate environmental or personnel monitoring of classified areas.",
-    },
     has_contamination: {
       type: "noul",
       instructions:
