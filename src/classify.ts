@@ -33,8 +33,9 @@ function criteriaFrom(candidates: Candidate[]): Record<string, string> {
 /** Key of the per-candidate "is this a subject of the letter?" boolean question. */
 export const subjectKey = (candidateId: string): `subj_${string}` => `subj_${candidateId}`;
 
-/** Jev answers one request; keep the per-candidate question count bounded. */
-const MAX_SUBJECT_QUESTIONS = 40;
+/** Jev answers one request; keep the per-candidate question count bounded.
+ *  Matches enumerate.ts's candidate cap so no enumerated product goes unjudged. */
+const MAX_SUBJECT_QUESTIONS = 80;
 
 /** Candidates whose name is stated verbatim in the letter (i.e. not cross-reference leads). */
 export function candidatesInLetter(text: string, cands: Candidate[]): Candidate[] {

@@ -491,6 +491,7 @@ async function main() {
     const { cands, trace } = await gatherCandidates(text, {
       ...(gold.options ?? {}),
       meta,
+      enumerate: !propose, // pure-Jev enumeration by default; --propose swaps in the LLM proposer
       propose,
       seedFromOpenFda: openfda,
     });

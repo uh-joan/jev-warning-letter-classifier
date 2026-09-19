@@ -19,6 +19,14 @@ import type {
 
 const P = (p: number | undefined, t = 0.5) => (p ?? 0) >= t;
 
+/**
+ * A product is a confirmed subject only at high probability. The candidate set
+ * is deliberately high-recall (enumerate.ts floods it), so the positive bar is
+ * raised to keep precision — real subjects sit at ~0.95+, generic/borderline
+ * spans at ~0.5-0.85. Anything in the uncertain band still surfaces via review.
+ */
+const SUBJECT_YES = 0.95;
+
 /** Jev's `confidence` may be a number, an object (per-question), or undefined. */
 const asNumber = (v: unknown, fallback = 0): number => (typeof v === "number" ? v : fallback);
 
@@ -50,7 +58,7 @@ export function assemble(
       return {
         name: c.payload!.name as string,
         kind: (c.payload?.kind as string | undefined) ?? null,
-        is_subject: P(p),
+        is_subject: P(p, SUBJECT_YES),
         subject_probability: p == null ? null : Number(p.toFixed(3)),
         needs_review: p != null && noulUncertain(p),
       };

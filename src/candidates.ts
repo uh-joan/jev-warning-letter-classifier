@@ -16,6 +16,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractCandidates, type ExtractOptions } from "./extract.js";
+import { enumerateProductCandidates } from "./enumerate.js";
 import { productsForLabeler, toCandidate } from "./openfda.js";
 import {
   DEFAULT_PROPOSER_MODEL,
@@ -26,7 +27,13 @@ import {
 import type { Candidate, ExtractedCandidates } from "./types.js";
 
 export interface GatherOptions extends ExtractOptions {
-  /** Propose product names with an LLM, keep only those verbatim in the letter. */
+  /**
+   * Enumerate candidate product spans deterministically (enumerate.ts) and let
+   * Jev's subject nouls select — the pure-Jev, gateway-free default. Set false
+   * to fall back to the extract.ts regex candidates only.
+   */
+  enumerate?: boolean;
+  /** Propose product names with an LLM via the gateway (comparison only; off by default). */
   propose?: boolean;
   proposerModel?: string;
   /** When the product name is redacted, seed candidates from openFDA by labeler. */
@@ -36,6 +43,7 @@ export interface GatherOptions extends ExtractOptions {
 }
 
 export interface GatherTrace {
+  enumerate?: { candidates: number };
   proposer?:
     | { model: string; accepted: number; rejected: RejectedProposal[]; cached: boolean }
     | { error: string };
@@ -118,6 +126,20 @@ export async function gatherCandidates(
   const cands = extractCandidates(text, opts);
   const trace: GatherTrace = {};
   let drugs = cands.drugs;
+
+  // Pure-Jev candidate source (default): deterministic high-recall enumeration
+  // supersedes the extract.ts prose/quote regexes (drug_p_/drug_q_). KB literal
+  // matches (drug_<name>) and facility seeds (drug_fac_) stay; Jev's subject
+  // nouls then select. No gateway involved.
+  if (opts.enumerate !== false) {
+    const kept = drugs.filter((c) => !/^drug_[pq]_/.test(c.id));
+    const seen = new Set(kept.map(nameKey));
+    const enumerated = enumerateProductCandidates(text).filter(
+      (c) => !seen.has(nameKey(c)) && seen.add(nameKey(c)),
+    );
+    drugs = [...kept, ...enumerated];
+    trace.enumerate = { candidates: enumerated.length };
+  }
 
   if (opts.propose) {
     const model = opts.proposerModel ?? process.env.JEV_PROPOSER_MODEL ?? DEFAULT_PROPOSER_MODEL;

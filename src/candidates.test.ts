@@ -10,6 +10,7 @@
 import assert from "node:assert";
 import { readFileSync } from "node:fs";
 import { extractCandidates } from "./extract.js";
+import { enumerateProductCandidates } from "./enumerate.js";
 import { eligibleAsProduct, candidatesInLetter } from "./classify.js";
 import type { Candidate } from "./types.js";
 
@@ -75,6 +76,26 @@ ok(
   ok(
     inLetter.every((nm) => text.toLowerCase().includes(nm.toLowerCase())),
     "h2-bev: every in-letter candidate name is a verbatim substring of the letter",
+  );
+}
+
+// --- enumerate: high-recall, verbatim, boilerplate-free ---
+{
+  const text = load("h2-bev-llc-and-h2-renu-inc-730567-07312026");
+  const cands = enumerateProductCandidates(text);
+  const names = cands.map((c) => String(c.payload?.name));
+  ok(cands.length > 0 && cands.length <= 80, "enumerate: produces a bounded candidate set");
+  ok(
+    names.every((nm) => text.toLowerCase().includes(nm.toLowerCase())),
+    "enumerate: every candidate is a verbatim substring of the letter",
+  );
+  ok(
+    names.some((nm) => /H2 RENU Oncology Care Beverage/i.test(nm)),
+    "enumerate: finds the named product",
+  );
+  ok(
+    !names.some((nm) => /^(FDA|CFR|CGMP|WARNING LETTER|U\.S\.C)$/i.test(nm)),
+    "enumerate: rejects regulatory-boilerplate acronyms",
   );
 }
 
