@@ -92,6 +92,65 @@ letter**. If it's not in the letter, it doesn't make it into the answer.
 
 ---
 
+## Every answer comes with a probability
+
+This is the part that makes Jev different: it never just says *"drug: yes."* It
+says *"drug: yes, 80%"* — and the tool keeps the number, right next to the
+yes/no. You get to see how sure the model was about every single call.
+
+Here's real output from an Abbott medical-device letter (the FreeStyle Libre
+glucose monitor), trimmed to the interesting parts:
+
+**Which named things are actually a *subject* of the violations?** — a
+probability each:
+
+| Candidate found in the letter | Subject? | Jev's probability |
+|---|---|---|
+| FreeStyle Libre 3 | ✅ yes | **99%** |
+| iCGM | ✅ yes | **98%** |
+| FreeStyle Libre | ✅ yes | **98%** |
+| FreeStyle Libre 2 | ❔ unsure | **67%** → *flagged for review* |
+| "Part 820" (a citation, not a product) | ❌ no | **31%** |
+
+**Each violation judgment is a probability too:**
+
+| Question to Jev | Probability | Result |
+|---|---|---|
+| Is there a CGMP violation? | **98%** | ✅ fires |
+| Is it a sterile product? | **3%** | ❌ no |
+| Any contamination? | **5%** | ❌ no |
+| Any recall concern? | **50%** | ❔ too close to call → flagged |
+
+**And picking the specific drug carries its own confidence:**
+
+```json
+"drug": {
+  "name": "FreeStyle Libre Flash and Continuous Glucose Monitoring",
+  "confidence": 0.45          // several product names tied — Jev wasn't certain which
+}
+```
+
+The rule the tool applies is simple and comes straight from the TypeSafe
+playbook: **a confident answer (98%) is accepted automatically; a wobbly one
+(anywhere from 30–70%) is routed to a human instead of guessed.** Every
+uncertain call lands in a `review` list with its exact number and the reason:
+
+```json
+"needs_review": true,
+"review": [
+  { "field": "drug", "value": "FreeStyle Libre Flash…", "certainty": 0.43,
+    "reason": "drug selection confidence below 0.65" },
+  { "field": "has_recall_concern", "certainty": 0.50,
+    "reason": "probability in the uncertain band [0.30, 0.70]" }
+]
+```
+
+Nothing is a bare yes/no. Every yes/no has the number it came from sitting right
+beside it — and a full `_jev` block dumps the raw probability distribution over
+*every* candidate, so any decision can be audited after the fact.
+
+---
+
 ## How well does it work?
 
 Tested on a corpus of **230 real FDA Warning Letters** spanning every type —
