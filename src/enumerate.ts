@@ -52,7 +52,15 @@ interface Raw {
   source: string;
 }
 
-const clean = (s: string) => s.replace(/\s+/g, " ").replace(/[.,;:'"()]+$/, "").trim();
+const clean = (s: string) => {
+  // Strip trailing punctuation but NOT parens (that truncated "Name (ingredient)").
+  let t = s.replace(/\s+/g, " ").replace(/[.,;:'"]+$/, "").trim();
+  const opens = (t.match(/\(/g) ?? []).length;
+  const closes = (t.match(/\)/g) ?? []).length;
+  if (opens > closes) t = t.replace(/\s*\([^)]*$/, ""); // drop a dangling "(partial"
+  else if (closes > opens) t = t.replace(/\)\s*$/, ""); // drop an orphan trailing ")"
+  return t.trim();
+};
 
 /**
  * Function/verb words that mark a span as running PROSE, not a product name.
@@ -113,8 +121,12 @@ export function enumerateProductCandidates(text: string): Candidate[] {
   );
   for (const m of text.matchAll(concRe)) push(`${m[1]} ${m[2]}`, m.index!, 3, "concentration");
 
+  // 2b) "Name (ingredient)" as one unit ("GLP-1 S (Semaglutide)").
+  for (const m of text.matchAll(/\b([A-Z0-9][A-Za-z0-9 /®™-]{1,40}\([A-Za-z0-9 /,.+-]{2,40}\))/g))
+    push(m[1]!, m.index!, 3, "paren");
+
   // 3) Quoted strings.
-  for (const m of text.matchAll(/["“”']([A-Z0-9][^"“”']{2,70})["“”']/g))
+  for (const m of text.matchAll(/["“”'"]([A-Z0-9][^"“”'"]{2,70})["“”'"]/g))
     push(m[1]!, m.index!, 2, "quoted");
 
   // 4) Possessive product reference: "your <X> product(s)".

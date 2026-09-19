@@ -13,6 +13,8 @@ import {
   summarizeViolations,
   detectDataIntegrity,
   detectCompounding,
+  detectAdulteration,
+  detectMisbranding,
 } from "./citations.js";
 import type { Candidate, ExtractedCandidates, LetterMeta } from "./types.js";
 
@@ -330,11 +332,15 @@ export function extractCandidates(text: string, opts: ExtractOptions = {}): Extr
   };
 }
 
-/** Add language-detected categories the citation parser can't see (data integrity, compounding). */
+/** Add language-detected categories the citation parser can't see. */
 function augmentCitations<T extends { categories: string[] }>(summary: T, text: string): T {
   const categories = [...summary.categories];
-  if (detectDataIntegrity(text) && !categories.includes("data_integrity"))
-    categories.push("data_integrity");
-  if (detectCompounding(text) && !categories.includes("compounding")) categories.push("compounding");
+  const add = (present: boolean, cat: string) => {
+    if (present && !categories.includes(cat)) categories.push(cat);
+  };
+  add(detectDataIntegrity(text), "data_integrity");
+  add(detectCompounding(text), "compounding");
+  add(detectAdulteration(text), "adulteration");
+  add(detectMisbranding(text), "misbranding");
   return { ...summary, categories };
 }

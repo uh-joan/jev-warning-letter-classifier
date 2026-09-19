@@ -449,3 +449,20 @@ export function classifyRegulatedProduct(
 
   return { product, drug_relevant };
 }
+
+/**
+ * Adulteration / misbranding are often charged in prose ("your products are
+ * adulterated…") on short or foreign letters that don't carry a section-501/502
+ * citation the parser recognizes. Detect the charge from language so the
+ * category isn't lost.
+ */
+export function detectAdulteration(text: string): boolean {
+  return /\b(?:are|is|were|was|been|deemed|considered|remain)\s+adulterated\b|\badulterated within the meaning\b|\badulterated drugs?\b|\brenders?\b[^.]{0,40}\badulterated\b/i.test(
+    text,
+  );
+}
+export function detectMisbranding(text: string): boolean {
+  return /\b(?:are|is|were|was|been|deemed|considered|remain)\s+misbranded\b|\bmisbranded within the meaning\b|\bmisbranded drugs?\b/i.test(
+    text,
+  );
+}
