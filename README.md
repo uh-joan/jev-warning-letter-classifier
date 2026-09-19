@@ -200,27 +200,54 @@ the limits of your own scope is part of being trustworthy.
 You'll need [Node.js](https://nodejs.org) 20+ and a free TypeSafe API key from
 [console.typesafe.ai](https://console.typesafe.ai/settings/keys).
 
+### The quickest way — the command-line tool
+
+Point it at **a URL or a file** and it prints a readable summary:
+
 ```bash
-# 1. install
+export TYPESAFE_AI_API_KEY=your-key-here
+
+# classify straight from an FDA warning-letter URL
+npx classify-warning-letter https://www.fda.gov/.../warning-letters/<slug>
+
+# or a letter saved locally
+npx classify-warning-letter ./path/to/letter.txt
+```
+
+You get a digest like this:
+
+```
+FDA Warning Letter — Bausch & Lomb Inc (Tampa, FL · FEI 1000113778)
+2026-09-04 · CDER · regulated as: drug
+Drug:        (none) — product name redacted (b)(4) in the letter
+Violations:  CGMP, sterility, aseptic_processing, environmental_monitoring
+Sterile: yes   Contamination: yes (Serratia marcescens…)   Recall: yes
+⚠ Needs human review:
+  - has_recall_concern  (50%)  probability in the uncertain band [0.30, 0.70]
+```
+
+Add `--json` for the full structured object, `--openfda` to enrich the drug from
+openFDA, or `--extract-only` for a deterministic pass that needs **no API key**:
+
+```bash
+npx classify-warning-letter <url|path> --json
+npx classify-warning-letter <url|path> --extract-only
+```
+
+### Use it as a Claude skill
+
+There's a bundled [`/classify-warning-letter`](.claude/skills/classify-warning-letter/SKILL.md)
+skill: give Claude a URL or path and it runs the classifier and explains the
+result. Copy `.claude/skills/classify-warning-letter/` into your own
+`~/.claude/skills/` to use it anywhere.
+
+### From a local checkout
+
+```bash
 npm install
-
-# 2. add your key
-cp .env.example .env         # then paste your key into TYPESAFE_AI_API_KEY
-
-# 3. run the demo (a real Bausch & Lomb letter)
-npm run demo
-```
-
-Classify your own letter (any FDA Warning Letter saved as a .txt file):
-
-```bash
-npx tsx src/run.ts path/to/letter.txt
-```
-
-Want to see the extraction step without using any AI or a key? Add `--extract-only`:
-
-```bash
-npx tsx src/run.ts path/to/letter.txt --extract-only
+cp .env.example .env         # paste your key into TYPESAFE_AI_API_KEY
+npm run demo                 # classify the bundled Bausch & Lomb letter
+npm run start -- <url|path>  # classify anything
 ```
 
 ### Use it in your own code
@@ -246,6 +273,9 @@ If the product name is blacked out, `result.drug.name` is `null` and
 
 | File | What it does |
 |------|------|
+| `src/cli.ts`       | The `classify-warning-letter` command (URL or path → digest/JSON) |
+| `src/resolve.ts`   | Turns a URL **or** a file path into letter text + metadata |
+| `src/fetch.ts`     | Fetches an FDA page and parses it to clean text (shared with the corpus tool) |
 | `src/extract.ts`   | Reads the letter: company, facility, dates, organisms |
 | `src/enumerate.ts` | Finds every candidate product name written in the letter |
 | `src/redaction.ts` | Works out what the `(b)(4)` blackouts are hiding |
