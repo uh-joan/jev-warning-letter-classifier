@@ -51,8 +51,16 @@ const STREET_ADDRESS =
  * The letterhead address is the recipient's and is often a different site.
  */
 function extractInspectedLocation(text: string): string | null {
-  const re =
-    /\b(?:located\s+(?:at|in)|FEI\)?\s*\d{7,12},\s+at)\s+([\s\S]{5,200}?)(?=,?\s+(?:on|from|between)\s+(?:[A-Z][a-z]+\s+\d|\d)|(?<=\d{5}(?:-\d{4})?|[A-Z]{2})\.\s+[A-Z])/g;
+  // Stop the capture at a date ("on/from/between <Month> <n>") or a sentence end
+  // after a ZIP, a 2-letter state code, or a full state/region name (so an
+  // address ending "…, Pierz, Minnesota. This letter…" terminates cleanly).
+  const stateNames = [...STATE_NAME_TO_CODE.keys()]
+    .map((s) => s.replace(/\b\w/g, (c) => c.toUpperCase()))
+    .join("|");
+  const re = new RegExp(
+    `\\b(?:[Ll]ocated\\s+(?:at|in)|FEI\\)?\\s*\\d{7,12},\\s+at)\\s+([\\s\\S]{5,200}?)(?=,?\\s+(?:on|from|between)\\s+(?:[A-Z][a-z]+\\s+\\d|\\d)|(?<=\\d{5}(?:-\\d{4})?|[A-Z]{2}|${stateNames})\\.\\s+[A-Z])`,
+    "g",
+  );
   for (const m of text.matchAll(re)) {
     const before = text.slice(Math.max(0, m.index - 300), m.index);
     const captured = m[1]!.replace(/\s+/g, " ").replace(/,$/, "").trim();
@@ -69,6 +77,12 @@ function extractInspectedLocation(text: string): string | null {
  * "…El Paso, TX"). Foreign addresses without a known region are left as-is.
  */
 function normalizeLocation(loc: string): string {
+  // Drop administrative-division noise between a city and its region so the
+  // "City, Region" gold form appears ("Xinxiang County, Henan" → "Xinxiang,
+  // Henan"; "Indrad, Dist. Mehsana, Gujarat" → "Indrad, Gujarat").
+  loc = loc
+    .replace(/\s+(County|Prefecture|Province|Municipality)\b/gi, "")
+    .replace(/,\s*(?:Dist\.?|District)\s+[A-Z][a-z]+/gi, "");
   // Only a state/province name in the trailing segment (before an optional ZIP /
   // country) is the state — never a city like "Iowa City" mid-address.
   return loc.replace(
