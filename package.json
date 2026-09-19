@@ -11,11 +11,12 @@
     "eval": "tsx eval/run-eval.ts"
   },
   "dependencies": {
+    "@typesafe-ai/sdk": "^0.6.0",
     "ai": "^7.0.105"
   },
   "devDependencies": {
+    "@types/node": "^22.0.0",
     "tsx": "^4.19.2",
-    "typescript": "^5.6.0",
-    "@types/node": "^22.0.0"
+    "typescript": "^5.6.0"
   }
 }

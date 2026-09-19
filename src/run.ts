@@ -56,10 +56,11 @@ async function main() {
     return;
   }
 
-  if (!process.env.AI_GATEWAY_API_KEY && !process.env.TYPESAFE_AI_API_KEY) {
+  if (!process.env.TYPESAFE_AI_API_KEY && !process.env.TYPESAFE_API_KEY) {
     console.error(
-      "No AI_GATEWAY_API_KEY set. Run with --extract-only to see deterministic extraction,\n" +
-        "or copy .env.example to .env and add your Vercel AI Gateway key.",
+      "No TYPESAFE_AI_API_KEY set (Jev runs through the TypeSafe SDK). Run with --extract-only\n" +
+        "to see deterministic extraction, or copy .env.example to .env and add your TypeSafe key.\n" +
+        "(--propose additionally needs AI_GATEWAY_API_KEY for the candidate proposer.)",
     );
     process.exit(2);
   }

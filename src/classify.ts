@@ -1,15 +1,26 @@
 /**
  * Jev classification step.
  *
- * One evaluate() call to typesafe-ai/jev over the AI Gateway. Jev makes bounded
- * judgments only: which candidate is the drug, which indication, and a set of
- * boolean/score signals. It generates no free text.
+ * One systemOne() call to jev via the official TypeSafe SDK (@typesafe-ai/sdk),
+ * authenticated with TYPESAFE_AI_API_KEY — direct, not through the Vercel AI
+ * Gateway, so it is not subject to the gateway's free-tier throttle. Jev makes
+ * bounded judgments only (noul / choice / score); it generates no free text.
  */
 
-import { experimental_evaluate as evaluate } from "ai";
+import { TypeSafeClient } from "@typesafe-ai/sdk";
 import type { Candidate, ExtractedCandidates } from "./types.js";
 
-export const JEV_MODEL = "typesafe-ai/jev";
+export const JEV_MODEL = "jev-latest";
+
+let client: TypeSafeClient | undefined;
+/** Lazily built so the extract-only path (no key needed) can import this module. */
+function jevClient(): TypeSafeClient {
+  if (!client) {
+    const apiKey = process.env.TYPESAFE_AI_API_KEY ?? process.env.TYPESAFE_API_KEY;
+    client = new TypeSafeClient(apiKey ? { apiKey } : {});
+  }
+  return client;
+}
 
 /** Build a Choice `criteria` map from candidates, always adding an `unknown` escape hatch. */
 function criteriaFrom(candidates: Candidate[]): Record<string, string> {
@@ -69,10 +80,16 @@ export function crossReferenceLeads(cands: Candidate[]): string[] {
   return out;
 }
 
+interface ChoiceAnswer {
+  choice: string;
+  probabilities?: Record<string, number>;
+  confidence?: number;
+}
+
 export interface JevRawAnswers {
-  document_type: { choice: string; probabilities?: Record<string, number> };
-  drug_candidate: { choice: string; probabilities?: Record<string, number> };
-  indication_candidate: { choice: string; probabilities?: Record<string, number> };
+  document_type: ChoiceAnswer;
+  drug_candidate: ChoiceAnswer;
+  indication_candidate: ChoiceAnswer;
   is_sterile_product: { probability: number };
   has_cgmp_violation: { probability: number };
   has_aseptic_violation: { probability: number };
@@ -106,43 +123,122 @@ export async function classifyWithJev(
 
   // Warning letters routinely cite several products at once, so "which ONE is the
   // subject" has no right answer for them. Each product named in the letter gets
-  // its own bounded yes/no judgment; the single choice below still handles
-  // cross-reference leads for letters whose product name is redacted.
-  const subjectQuestions: Record<
-    string,
-    { type: "boolean"; instructions: Record<string, unknown> }
-  > = {};
+  // its own bounded Noul (yes/no) judgment; the single choice below still handles
+  // the primary product for letters that name one.
+  const questions: Record<string, unknown> = {
+    document_type: {
+      type: "choice",
+      instructions: "What type of regulatory document is this?",
+      criteria: {
+        warning_letter: "An FDA Warning Letter",
+        other_regulatory: "Another FDA regulatory communication (e.g. 483, untitled letter)",
+        unknown: "Cannot determine",
+      },
+    },
+  };
+
   for (const c of candidatesInLetter(text, cands.drugs).slice(0, MAX_SUBJECT_QUESTIONS)) {
     const name = String(c.payload?.name);
-    subjectQuestions[subjectKey(c.id)] = {
-      type: "boolean",
-      // Structured, ordered instructions (idea #2), so the boundary cases the
-      // question exists to exclude are spelled out rather than left to prose.
+    // Noul with true/false criteria (idea #2: spell out the boundary cases the
+    // question exists to exclude) plus the candidate's evidence in instructions.
+    questions[subjectKey(c.id)] = {
+      type: "noul",
       instructions: {
         question: `Is "${name}" a subject of this warning letter?`,
-        true_when:
+        evidence: c.text,
+        note: "Judge only from the letter; do not infer products the letter does not discuss.",
+      },
+      criteria: {
+        true:
           "A drug, biologic, device or consumable product — or a drug substance/API — that this firm " +
           "makes, markets, compounds, labels or distributes, AND that FDA discusses in this letter as " +
           "violative or as part of the violations (adulterated, misbranded, an unapproved new drug, or " +
           "made under the cited CGMP failures).",
-        false_when: [
+        false: [
           "A test reagent, growth medium, control, standard, or comparator product.",
           "A competitor or reference product named only for contrast.",
           "Equipment, a facility area, a supplier, or a regulation — not a product at all.",
           "A term merely mentioned in passing with no tie to the violations.",
         ],
-        evidence: c.text,
-        note: "Judge only from the letter; do not infer products the letter does not discuss.",
       },
     };
   }
 
-  const result = await evaluate({
+  // A choice needs at least one real option beside `unknown`; otherwise skip the
+  // question and synthesise `unknown` rather than send a degenerate 1-option choice.
+  const askDrug = Object.keys(drugCriteria).length > 1;
+  const askIndication = Object.keys(indicationCriteria).length > 1;
+  if (askDrug) {
+    questions.drug_candidate = {
+      type: "choice",
+      instructions:
+        "Which candidate is the drug product that is the primary subject of this warning letter? " +
+        "If several products are equally the subject, choose the one FDA discusses first or most. " +
+        "Choose a candidate ONLY if it is explicitly supported by the document. " +
+        "If the product name cannot be identified, choose unknown.",
+      criteria: drugCriteria,
+    };
+  }
+  if (askIndication) {
+    questions.indication_candidate = {
+      type: "choice",
+      instructions:
+        "Which candidate best represents the indication of the drug that is the subject of this letter? " +
+        "Choose only an indication supported by the document or the supplied candidate context; otherwise unknown.",
+      criteria: indicationCriteria,
+    };
+  }
+
+  Object.assign(questions, {
+    is_sterile_product: {
+      type: "noul",
+      instructions:
+        "The letter concerns a sterile drug product or a sterile / aseptic drug manufacturing process.",
+    },
+    has_cgmp_violation: {
+      type: "noul",
+      instructions: "The letter cites violations of current good manufacturing practice (CGMP) requirements.",
+    },
+    has_aseptic_violation: {
+      type: "noul",
+      instructions: "The letter describes deficiencies in aseptic processing or aseptic technique.",
+    },
+    has_env_monitoring_violation: {
+      type: "noul",
+      instructions:
+        "The letter describes inadequate environmental or personnel monitoring of classified areas.",
+    },
+    has_contamination: {
+      type: "noul",
+      instructions:
+        "The letter describes actual microbial or particulate contamination of the product or process.",
+    },
+    contamination_linked_to_complaints: {
+      type: "noul",
+      instructions:
+        "The letter states that organisms from the facility match organisms found in consumer complaint samples.",
+    },
+    has_recall_concern: {
+      type: "noul",
+      instructions:
+        "FDA identifies a potential need to recall, withdraw, quarantine, or assess distributed product.",
+    },
+    severity: {
+      type: "score",
+      instructions: "Overall severity of the compliance situation described.",
+      criteria: [
+        "Minor / administrative",
+        "Moderate CGMP gaps, no clear patient risk",
+        "Serious quality-system failure with potential patient risk",
+        "Severe: confirmed contamination reaching distributed product",
+      ],
+    },
+  });
+
+  const result = await jevClient().systemOne({
     model: JEV_MODEL,
-    // State can be a string or a JSON object; give Jev the text plus structured hints.
     // Lead with the facts the code already measured; the raw letter is reference
-    // (idea #4: Jev's accuracy drops as irrelevant state grows, so the measured
-    // signals go first and the full text follows, not the other way round).
+    // (idea #4: Jev's accuracy drops as irrelevant state grows).
     state: {
       extracted: {
         company: cands.company,
@@ -156,100 +252,65 @@ export async function classifyWithJev(
       },
       warning_letter: text,
     },
-    questions: {
-      document_type: {
-        type: "choice",
-        instructions: "What type of regulatory document is this?",
-        criteria: {
-          warning_letter: "An FDA Warning Letter",
-          other_regulatory: "Another FDA regulatory communication (e.g. 483, untitled letter)",
-          unknown: "Cannot determine",
-        },
-      },
-
-      ...subjectQuestions,
-
-      drug_candidate: {
-        type: "choice",
-        instructions:
-          "Which candidate is the drug product that is the primary subject of this warning letter? " +
-          "If several products are equally the subject, choose the one FDA discusses first or most. " +
-          "Choose a candidate ONLY if it is explicitly supported by the document. " +
-          "If the product name is redacted (e.g. (b)(4)) or cannot be identified, choose unknown.",
-        criteria: drugCriteria,
-      },
-
-      indication_candidate: {
-        type: "choice",
-        instructions:
-          "Which candidate best represents the indication of the drug that is the subject of this letter? " +
-          "Choose only an indication supported by the document or the supplied candidate context; otherwise unknown.",
-        criteria: indicationCriteria,
-      },
-
-      is_sterile_product: {
-        type: "boolean",
-        instructions:
-          "The letter concerns a sterile drug product or a sterile / aseptic drug manufacturing process.",
-      },
-      has_cgmp_violation: {
-        type: "boolean",
-        instructions:
-          "The letter cites violations of current good manufacturing practice (CGMP) requirements.",
-      },
-      has_aseptic_violation: {
-        type: "boolean",
-        instructions:
-          "The letter describes deficiencies in aseptic processing or aseptic technique.",
-      },
-      has_env_monitoring_violation: {
-        type: "boolean",
-        instructions:
-          "The letter describes inadequate environmental or personnel monitoring of classified areas.",
-      },
-      has_contamination: {
-        type: "boolean",
-        instructions:
-          "The letter describes actual microbial or particulate contamination of the product or process.",
-      },
-      contamination_linked_to_complaints: {
-        type: "boolean",
-        instructions:
-          "The letter states that organisms from the facility match organisms found in consumer complaint samples.",
-      },
-      has_recall_concern: {
-        type: "boolean",
-        instructions:
-          "FDA identifies a potential need to recall, withdraw, quarantine, or assess distributed product.",
-      },
-
-      severity: {
-        type: "score",
-        instructions: "Overall severity of the compliance situation described.",
-        criteria: [
-          "Minor / administrative",
-          "Moderate CGMP gaps, no clear patient risk",
-          "Serious quality-system failure with potential patient risk",
-          "Severe: confirmed contamination reaching distributed product",
-        ],
-      },
-    },
-    // ZDR (data not retained by the provider) requires a Vercel Pro/Enterprise
-    // plan. Opt in with JEV_ZERO_DATA_RETENTION=1; default off so hobby plans work.
-    ...(process.env.JEV_ZERO_DATA_RETENTION === "1"
-      ? { providerOptions: { gateway: { zeroDataRetention: true } } }
-      : {}),
+    questions: questions as never,
   });
 
-  const confidence = (
-    result as unknown as {
-      providerMetadata?: { typesafe?: { confidence?: number } };
-    }
-  ).providerMetadata?.typesafe?.confidence;
+  const answers = normalizeAnswers(result.answers as Record<string, RawAnswer>, {
+    askDrug,
+    askIndication,
+  });
+  return { answers, confidence: answers.drug_candidate.confidence, raw: result };
+}
 
-  return {
-    answers: result.answers as unknown as JevRawAnswers,
-    confidence,
-    raw: result,
+/** One answer as returned by the SDK, before normalising to JevRawAnswers. */
+type RawAnswer =
+  | { type: "noul"; noul: number }
+  | { type: "choice"; choice: string; confidence: number; probabilities: Record<string, number> }
+  | { type: "score"; score: number; confidence: number; probabilities: Record<number, number> };
+
+const noulProb = (a: RawAnswer | undefined) => (a?.type === "noul" ? a.noul : 0);
+
+/**
+ * Convert the SDK's native answers into the internal JevRawAnswers shape
+ * (Noul → `{probability}`, Choice → `{choice, probabilities, confidence}`,
+ * Score → `{score, probabilities}`), synthesising `unknown` for any choice that
+ * was skipped because it had no real candidates.
+ */
+function normalizeAnswers(
+  raw: Record<string, RawAnswer>,
+  opts: { askDrug: boolean; askIndication: boolean },
+): JevRawAnswers {
+  const choice = (key: string): { choice: string; probabilities: Record<string, number>; confidence: number } => {
+    const a = raw[key];
+    return a?.type === "choice"
+      ? { choice: a.choice, probabilities: a.probabilities, confidence: a.confidence }
+      : { choice: "unknown", probabilities: { unknown: 1 }, confidence: 1 };
   };
+  const score = raw.severity;
+  const answers: JevRawAnswers = {
+    document_type: choice("document_type"),
+    drug_candidate: opts.askDrug
+      ? choice("drug_candidate")
+      : { choice: "unknown", probabilities: { unknown: 1 }, confidence: 1 },
+    indication_candidate: opts.askIndication
+      ? choice("indication_candidate")
+      : { choice: "unknown", probabilities: { unknown: 1 }, confidence: 1 },
+    is_sterile_product: { probability: noulProb(raw.is_sterile_product) },
+    has_cgmp_violation: { probability: noulProb(raw.has_cgmp_violation) },
+    has_aseptic_violation: { probability: noulProb(raw.has_aseptic_violation) },
+    has_env_monitoring_violation: { probability: noulProb(raw.has_env_monitoring_violation) },
+    has_contamination: { probability: noulProb(raw.has_contamination) },
+    contamination_linked_to_complaints: { probability: noulProb(raw.contamination_linked_to_complaints) },
+    has_recall_concern: { probability: noulProb(raw.has_recall_concern) },
+    severity: {
+      score: score?.type === "score" ? score.score : 0,
+      probabilities: score?.type === "score" ? score.probabilities : {},
+    },
+  };
+  for (const [key, a] of Object.entries(raw)) {
+    if (key.startsWith("subj_") && a.type === "noul") {
+      (answers as unknown as Record<string, { probability: number }>)[key] = { probability: a.noul };
+    }
+  }
+  return answers;
 }
