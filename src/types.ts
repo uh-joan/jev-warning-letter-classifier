@@ -63,6 +63,7 @@ export type ViolationCategory =
   | "misbranding"
   | "unapproved_new_drug"
   | "compounding"
+  | "bioresearch_gcp"
   | "other";
 
 export interface Contamination {

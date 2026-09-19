@@ -131,6 +131,9 @@ export function assemble(
     violations.push("unapproved_new_drug");
   if (cited.has("compounding")) violations.push("compounding");
   if (cited.has("data_integrity")) violations.push("data_integrity");
+  // Clinical-investigator / bioresearch monitoring letters (21 CFR 50/56/312/812)
+  // — informed consent, protocol conduct — a different domain from manufacturing.
+  if (cited.has("bioresearch_gcp")) violations.push("bioresearch_gcp");
   // A sterility violation is a sterile product with a sterility-assurance
   // failure (actual contamination OR aseptic-processing deficiencies) — gold
   // does not require confirmed contamination.
