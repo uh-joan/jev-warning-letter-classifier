@@ -1,0 +1,42 @@
+{
+  "fixture": "fixtures/rc-outsourcing-llc-722877-03202026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "CDER Office of Compounding Quality and Compliance letter for a 503B outsourcing facility (Lowellville, OH): adulteration from insanitary sterile-repackaging/aseptic conditions and CGMP violations (investigations, environmental monitoring, laboratory controls, component identity testing, batch records), unapproved-new-drug status for repackaged Povidone-Iodine and manufactured Bevacizumab (also an unlicensed biological product under the PHS Act), and misbranding (inadequate directions for use plus a mislabeled bevacizumab strength). Documented CFU recoveries from gown sleeves/personnel monitoring and a sterility failure investigation (linked to an operator's skin condition) support contamination_present; the firm voluntarily recalled four lots of Bevacizumab for lack of sterility assurance. No FEI is stated in the letter (only the WL number). Classified as 'compounding' rather than 'biologics' because the letter's framing is centered on the 503B outsourcing-facility scheme, with the biologics point being one violation among several; judgment call.",
+  "expected": {
+    "company": "RC Outsourcing, LLC",
+    "fei": null,
+    "date": "2026-03-20",
+    "issuing_office": "CDER",
+    "location_contains": "Lowellville, OH",
+    "organisms": [],
+    "products": [
+      "Bevacizumab 1.75 mg/0.07 mL Syringe, 0.25 mL",
+      "Povidone-Iodine 5% Ophthalmic Solution",
+      "Lidocaine 23%-Tetracaine 7% ointment (LT)",
+      "Lidocaine, USP 20%-Tetracaine, USP 6%-Phenylephrine, HCl 2% ointment (LTP)",
+      "Benzocaine 20%-Lidocaine 6%-Tetracaine 4% ointment (BLT)",
+      "Lidocaine HCl 2% Injection",
+      "Lidocaine 2% Injection"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

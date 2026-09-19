@@ -1,0 +1,44 @@
+{
+  "fixture": "fixtures/prorx-llc-723704-04072026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "CDER Office of Compounding Quality and Compliance letter for a 503B outsourcing facility (Exton, PA): failure to meet 503B conditions (compounding with tirzepatide bulk substance not on the 503B bulks list, missing required label statements, inadequate adverse-event-reporting procedures), plus adulteration from insanitary aseptic conditions and CGMP violations, misbranding (502(f)(1), inadequate directions for use), and unapproved-new-drug status once 503B exemptions are lost. Actual microbial/CFU recoveries (including a Trichoderma oriental air-sample recovery) and a voluntary recall of tirzepatide/semaglutide injection lots for lack of sterility assurance are documented. No FEI is stated in the letter (only the WL number).",
+  "expected": {
+    "company": "ProRx LLC",
+    "fei": null,
+    "date": "2026-04-07",
+    "issuing_office": "CDER",
+    "location_contains": "Exton, PA",
+    "organisms": [
+      "Trichoderma oriental"
+    ],
+    "products": [
+      "Tirzepatide Injection 27mg/3mL",
+      "Semaglutide Injection",
+      "Tirzepatide 72MG/4ML",
+      "Tirzepatide 45MG/2.5ML",
+      "Nicotinamide Adenine Dinucleotide Injection 1200mg",
+      "Glutathione Injection 2000mg",
+      "Tirzepatide 60mg/3mL"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

@@ -1,0 +1,46 @@
+Warning Letter 320-26-55
+March 26, 2026
+Dear Mr. Jingyin:
+The United States Food and Drug Administration (FDA) inspected your drug manufacturing facility, Henan Lvyuan Pharmaceutical Company Limited, FEI 3013253128, at Industrial Park, Qiliying Town, Xinxiang County, Henan, from September 22 to 26, 2025.
+This warning letter summarizes significant deviations from Current Good Manufacturing Practice (CGMP) for active pharmaceutical ingredients (APIs).
+Because your methods, facilities, or controls for manufacturing, processing, packing, or holding do not conform to CGMP, your APIs are adulterated within the meaning of section 501(a)(2)(B) of the Federal Food, Drug, and Cosmetic Act (FD&C Act), 21 U.S.C. 351(a)(2)(B).
+We reviewed your October 16, 2025, response to our Form FDA 483 in detail.
+During our inspection, our investigator observed specific deviations including, but not limited to, the following.
+1. Failure to properly maintain buildings and facilities used in the manufacture of API.
+Your firm manufactures (b)(4) APIs, such as (b)(4) for use in human and animal drug compounding. You failed to adequately maintain your equipment and facility in an adequate state of repair, creating conditions that could contaminate your APIs and compromise drug quality. For example, our investigator observed extensive corrosion on the bottom pipe connections of (b)(4) tank (b)(4), located in equipment workshop (b)(4), where you manufacture (b)(4). Additionally, the investigator observed numerous water leaks in the ceiling of the warehouse and production and packaging areas. Due to these leaks, water puddled on the ground in the drug warehouse, the Class D area of workshop (b)(4) where drugs are packaged, and in the (b)(4) water distribution system area.
+In your response, you describe corrective actions you performed with photos of repairs to equipment and exterior roofs. You also outline a preventive maintenance program for equipment. Your response is inadequate because it lacks sufficient detail describing the repairs performed and adequate evidence of corrective actions taken to address facility deficiencies. You also do not provide a comprehensive assessment of your preventative maintenance program, nor do you adequately describe whether you evaluated all buildings and equipment for leaks and poor conditions. Additionally, your response lacks a risk assessment to determine whether excess moisture adversely impacted the quality of any APIs.
+Moisture exposure can cause chemical reactions that degrade API potency and purity. Furthermore, water leaks create ideal conditions for microbial growth which can contaminate APIs.
+In response to this letter, provide:
+A detailed risk assessment addressing the potential effects of the observed water on the quality of all API lots currently in U.S. distribution and within expiry. Specify actions that you will take in response to the risk assessment, such as customer notifications and product recalls.
+Your corrective actions and preventive actions plan to implement routine, vigilant operations management oversight of facilities and equipment. This plan should ensure, among other things, prompt detection of equipment/facilities performance issues, effective execution of repairs, adherence to appropriate preventive maintenance schedules, timely technological upgrades to the equipment/facility infrastructure, and improved systems for ongoing management review.
+
+2. Failure to prepare and use master production and control records.
+Your master batch record for (b)(4) lacked critical processing information necessary to ensure consistent manufacturing and product quality. For example, (b)(4) step (b)(4) lacked time limits; (b)(4) step (b)(4) did not specify the quantity or weight of the material to be (b)(4); and (b)(4) step (b)(4) lacked time limits for (b)(4) the (b)(4).
+Without these specific parameters, you cannot adequately monitor and analyze both intra-batch and inter-batch variations to ensure manufacturing processes remain in a state of control.
+In your response, you describe revisions to production records for the (b)(4) station. Your response is inadequate because it is limited to your updates to (b)(4) processes. Your response does not address updates to processes for other drugs such as (b)(4). Additionally, your response lacks a historical review of batch records to look for any major process deviations.
+In response to this letter, provide:
+A comprehensive, independent global review of the adequacy of design, control, monitoring, and documentation of the production processes used for all of your APIs
+Appropriately detailed master batch records that capture all significant manufacturing steps for each of your APIs
+A summary of process deviations identified from a historical review of batch records.
+
+(b)(4) cross contamination
+Additionally, we observed deficient separation between (b)(4) and (b)(4) operations that creates significant risk of cross-contamination between (b)(4) and (b)(4) drugs. Your firm not only manufactures (b)(4) which are (b)(4) drugs, but your firm has also manufactured and shipped (b)(4) to the United States. We note that you have not manufactured (b)(4) for the United States since 2019, but during the 2025 FDA inspection you informed the investigator that you may resume manufacturing and shipment of (b)(4) to the United States in the future. We are concerned about (b)(4) cross contamination in drugs you may manufacture in the future. In response to this letter, commit to not distributing (b)(4) to the United States unless adequate separation has been put in place.
+For additional information, please refer to our guidance for industry, (b)(4).
+Conclusion
+The deviations cited in this letter are not intended to be an all-inclusive list of deviations that exist at your facility. You are responsible for investigating and determining the causes of any deviations and for preventing their recurrence or the occurrence of other deviations.
+Correct any deviations promptly. FDA may withhold approval of new applications or supplements listing your firm as a drug manufacturer until any deviations are completely addressed and we confirm your compliance with CGMP. We may re-inspect to verify that you have completed corrective actions to any deviations.
+Failure to address any deviations may also result in the FDA refusing admission of articles manufactured at Henan Lvyuan Pharmaceutical Company Limited at Industrial Park, Qiliying Town, Xinxiang County, Henan, China, into the United States under section 801(a)(3) of the FD&C Act, 21 U.S.C. 381(a)(3). Articles under this authority that appear to be adulterated may be detained or refused admission, in that the methods and controls used in their manufacture do not appear to conform to CGMP within the meaning of section 501(a)(2)(B) of the FD&C Act, 21 U.S.C. 351(a)(2)(B).
+This letter notifies you of our findings and provides you an opportunity to address the above deficiencies. After you receive this letter, respond to this office in writing within 15 working days Specify what you have done to address any deviations and to prevent their recurrence. In response to this letter, you may provide additional information for our consideration as we continue to assess your activities and practices. If you cannot complete corrective actions within 15 working days, state your reasons for delay and your schedule for completion.
+Send your electronic reply to CDER-OC-OMQ-Communications@fda.hhs.gov. Identify your response with FEI 3013253128 and ATTN: Jamie Dion.
+Sincerely,
+/S/
+Francis Godwin
+Director
+Office of Manufacturing Quality
+Office of Compliance
+Center for Drug Evaluation and Research
+/S/
+Dillard H. Woody Jr.
+Acting Drug Compliance Director
+Office of Surveillance and Compliance
+Center for Veterinary Medicine

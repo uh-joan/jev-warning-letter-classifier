@@ -1,0 +1,29 @@
+{
+  "fixture": "fixtures/wild-arabic-herbs-729192-06172026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "Pure website-review letter (no facility inspection) citing 'Edral-17t' as an unapproved new drug based on disease-treatment/anticancer claims on the firm's website. location_contains is null because FDA only reviewed the website, not a physical facility.",
+  "expected": {
+    "company": "Wild Arabic Herbs",
+    "fei": null,
+    "date": "2026-06-17",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "Edral-17t"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

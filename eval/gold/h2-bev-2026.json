@@ -26,5 +26,6 @@
     "contamination_present": false,
     "linked_to_complaints": false,
     "recall_concern": false
-  }
+  },
+  "split": "test"
 }

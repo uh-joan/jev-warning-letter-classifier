@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/dynamic-stem-cell-therapy-712579-02112026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "CBER website-review letter (no facility inspection) for an umbilical-cord-derived stem cell product marketed for sports injuries, anti-aging, cardiovascular disease, arthritis, etc. FDA determines the HCT/P is more than minimally manipulated and not for homologous use, so it falls outside the section 361/21 CFR 1271 exception and is regulated as an unapproved new drug/unlicensed biological product, and is misbranded under 502(f)(1)/301(k) for lacking adequate directions for lay use. Classified 'biologics' (like the R3 Medical Companies precedent) given the extensive HCT/P minimal-manipulation/homologous-use analysis, even though, unlike R3, no facility/CGMP inspection occurred. No specific commercial product name is given (referred to only generically as 'your umbilical-cord derived product'), so products is empty and product_redacted is false (nothing is (b)(4)-redacted; it's simply unnamed). location_contains is null per the website-review-only rule.",
+  "expected": {
+    "company": "Dynamic Stem Cell Therapy",
+    "fei": null,
+    "date": "2026-02-11",
+    "issuing_office": "CBER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

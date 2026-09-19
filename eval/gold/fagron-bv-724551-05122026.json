@@ -1,0 +1,34 @@
+{
+  "fixture": "fixtures/fagron-bv-724551-05122026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "CDER 503B outsourcing-facility letter for a sterile compounding site (Fresenius Kabi Compounding dba Fagron Sterile Services, Canton, MA): insanitary conditions/inadequate airflow controls for reconstituting sterile vancomycin vials, QU oversight failures, and building-repair deficiencies tied to IV bag defects. Firm initiated a voluntary recall of drug products due to lack of sterility assurance, so recall_concern is true. No FEI is stated in the letter body.",
+  "expected": {
+    "company": "Fagron BV",
+    "fei": null,
+    "date": "2026-05-12",
+    "issuing_office": "CDER",
+    "location_contains": "Canton, MA",
+    "organisms": [],
+    "products": [
+      "vancomycin"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "compounding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

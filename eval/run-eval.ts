@@ -5,6 +5,7 @@
  *
  * --propose  add LLM-proposed, verbatim-verified product candidates (cached in .cache/propose)
  * --openfda  seed candidates from openFDA by labeler when the product name is redacted
+ * --split=dev|test  restrict to the held-out split (default: all letters)
  * --pace=N   sleep N seconds after every uncached gateway call (for throttled gateway plans;
  *            cached letters cost nothing, so an interrupted paced run resumes where it stopped)
  *
@@ -49,6 +50,7 @@ const refresh = args.includes("--refresh");
 const strict = args.includes("--strict");
 const propose = args.includes("--propose");
 const openfda = args.includes("--openfda");
+const split = args.find((a) => a.startsWith("--split="))?.split("=")[1]; // "dev" | "test"
 const paceSeconds = Number(args.find((a) => a.startsWith("--pace="))?.split("=")[1] ?? 0);
 const pace = () => (paceSeconds > 0 ? new Promise((r) => setTimeout(r, paceSeconds * 1000)) : undefined);
 let jevCacheMiss = false;
@@ -91,6 +93,7 @@ interface GoldFile {
   fixture: string;
   options?: ExtractOptions;
   letter_type: string;
+  split?: "dev" | "test";
   notes?: string;
   expected: GoldExpected;
 }
@@ -110,6 +113,7 @@ function loadGoldFiles(): GoldEntry[] {
     const slug = f.replace(/\.json$/, "");
     if (filter && !slug.includes(filter)) continue;
     const gold = JSON.parse(readFileSync(path.join(GOLD_DIR, f), "utf8")) as GoldFile;
+    if (split && (gold.split ?? "dev") !== split) continue;
     out.push({ slug, gold });
   }
   return out;

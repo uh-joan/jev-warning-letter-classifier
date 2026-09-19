@@ -1,0 +1,37 @@
+{
+  "fixture": "fixtures/meta-labs-pharmaceuticals-llc-725130-05152026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Human Foods Program letter combining unapproved-new-drug and misbranding charges (disease-treatment claims on labels/website for Diabetic Advantage, Yacon Root Extract, Nattokinase Max, Viral Immune Booster, Arthritis Bursitis Rheumatism, and Respiratory Response) with five dietary-supplement CGMP violations under 21 CFR Part 111 (missing product/component specifications, incomplete master manufacturing and batch production records, inadequate lab controls) that adulterate Diabetic Advantage and Respiratory Response under 402(g)(1). Classified as food_supplement since the CGMP/Part 111 adulteration section is the most substantial charge, though unapproved_new_drug and misbranding are also cited. issuing_office uses the published office name 'Human Foods Program' (not one of the listed acronyms).",
+  "expected": {
+    "company": "Meta Labs Pharmaceuticals, LLC",
+    "fei": null,
+    "date": "2026-05-15",
+    "issuing_office": "Human Foods Program",
+    "location_contains": "Roswell, GA",
+    "organisms": [],
+    "products": [
+      "Diabetic Advantage",
+      "Yacon Root Extract",
+      "Nattokinase Max",
+      "Viral Immune Booster",
+      "Arthritis Bursitis Rheumatism",
+      "Respiratory Response"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

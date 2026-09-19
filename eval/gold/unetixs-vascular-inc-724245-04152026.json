@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/unetixs-vascular-inc-724245-04152026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Medical device letter: modified MultiLab Series ROODRA and 2CP vascular diagnostic ultrasound devices are adulterated (no PMA) and misbranded (no new 510(k)) after a design/labeling change made in response to a fatal air-embolism complaint. No CGMP/QSR violations are cited, so 'CGMP' is excluded from violation_categories; the referenced complaint concerns a device connector failure, not organisms, so linked_to_complaints is false under this schema's organism-specific definition.",
+  "expected": {
+    "company": "Unetixs Vascular, Inc.",
+    "fei": null,
+    "date": "2026-04-15",
+    "issuing_office": "CDRH",
+    "location_contains": "Warwick, RI",
+    "organisms": [],
+    "products": [
+      "ROODRA",
+      "2CP"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

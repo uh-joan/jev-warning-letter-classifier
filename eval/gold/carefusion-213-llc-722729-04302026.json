@@ -1,0 +1,33 @@
+{
+  "fixture": "fixtures/carefusion-213-llc-722729-04302026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "CDER sterile-manufacturing CGMP letter for a Becton Dickinson subsidiary: inadequate complaint/OOS investigations (foreign matter, missing components, seal defects), a sterility-test failure and product recall tied to a container-closure (stopper) defect, unverified biological-indicator spore populations for a sterilization process, and inadequate cleaning/contamination control including a Streptococcus pneumoniae bioburden excursion. All specific drug names are redacted as (b)(4), so products is empty. linked_to_complaints is false: although complaints and EM/bioburden findings are both discussed extensively, the letter never explicitly ties a named organism to a consumer-complaint sample (unlike the Bausch & Lomb letter's explicit genus/species match).",
+  "expected": {
+    "company": "CareFusion 213, LLC",
+    "fei": "3004932373",
+    "date": "2026-04-30",
+    "issuing_office": "CDER",
+    "location_contains": "El Paso, TX",
+    "organisms": [
+      "Streptococcus pneumoniae"
+    ],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

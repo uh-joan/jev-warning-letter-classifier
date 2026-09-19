@@ -1,0 +1,583 @@
+[
+  {
+    "slug": "allandale-dairy-727610-06232026",
+    "issuing_office": "Center for Veterinary Medicine",
+    "reference": null,
+    "product_categories": [
+      "Animal & Veterinary"
+    ],
+    "guessed_type": "other",
+    "approx_chars": 9031,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "apollo-care-llc-715955-02022026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "compounding",
+    "approx_chars": 19049,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "bausch-lomb-inc-732398-09042026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-123",
+    "product_categories": [
+      "Drugs",
+      "Over-the-Counter Drugs"
+    ],
+    "guessed_type": "cgmp_sterile",
+    "approx_chars": 17120,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "boothwyn-pharmacy-llc-717525-01162026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "compounding",
+    "approx_chars": 17062,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "carefusion-213-llc-722729-04302026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-72",
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "cgmp_sterile",
+    "approx_chars": 29076,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "cellebration-llc-713252-09122025",
+    "issuing_office": "Center for Biologics Evaluation and Research (CBER)",
+    "reference": "CBER 25-713252",
+    "product_categories": [
+      "Biologics"
+    ],
+    "guessed_type": "biologics",
+    "approx_chars": 4189,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "conceive-fertility-center-722459-01272026",
+    "issuing_office": "Center for Biologics Evaluation and Research (CBER)",
+    "reference": "CBER 26-722459",
+    "product_categories": [
+      "Biologics"
+    ],
+    "guessed_type": "biologics",
+    "approx_chars": 16900,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "dabur-india-limited-728828-07242026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-105",
+    "product_categories": [
+      "Drugs",
+      "Over-the-Counter Drugs"
+    ],
+    "guessed_type": "cgmp_nonsterile",
+    "approx_chars": 23172,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "dejong-family-dairy-llc-729293-07302026",
+    "issuing_office": "Center for Veterinary Medicine",
+    "reference": null,
+    "product_categories": [
+      "Animal & Veterinary"
+    ],
+    "guessed_type": "other",
+    "approx_chars": 5939,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "dynamic-stem-cell-therapy-712579-02112026",
+    "issuing_office": "Center for Biologics Evaluation and Research",
+    "reference": "CBER 25-712579",
+    "product_categories": [
+      "Biologics"
+    ],
+    "guessed_type": "biologics",
+    "approx_chars": 9754,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "eugia-pharma-specialities-limited-730469-08132026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-115",
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "cgmp_sterile",
+    "approx_chars": 16326,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "fagron-bv-724551-05122026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "compounding",
+    "approx_chars": 21779,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "flax-more-corporation-722845-05122026",
+    "issuing_office": "Human Foods Program",
+    "reference": null,
+    "product_categories": [
+      "Dietary Supplements"
+    ],
+    "guessed_type": "food_supplement",
+    "approx_chars": 7147,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "genogenix-llc-718739-01202026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "compounding",
+    "approx_chars": 33057,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "genzyme-ireland-limited-728681-06222026",
+    "issuing_office": "Center for Biologics Evaluation and Research (CBER)",
+    "reference": "CBER 26-728681",
+    "product_categories": [
+      "Biologics"
+    ],
+    "guessed_type": "biologics",
+    "approx_chars": 9774,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "great-india-overseas-pvt-ltd-dba-silkrute-729065-06172026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "unapproved_drug_marketing",
+    "approx_chars": 6668,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "h2-bev-llc-and-h2-renu-inc-730567-07312026",
+    "issuing_office": "Human Foods Program",
+    "reference": null,
+    "product_categories": [
+      "Food & Beverages"
+    ],
+    "guessed_type": "food_supplement",
+    "approx_chars": 12829,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "happiest-baby-inc-718306-06152026",
+    "issuing_office": "Center for Devices and Radiological Health",
+    "reference": null,
+    "product_categories": [
+      "Medical Devices"
+    ],
+    "guessed_type": "device",
+    "approx_chars": 49228,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "happy-farm-botanicals-inc-731926-09012026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-121",
+    "product_categories": [
+      "Drugs",
+      "Over-the-Counter Drugs"
+    ],
+    "guessed_type": "cgmp_nonsterile",
+    "approx_chars": 17005,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "hearthy-foods-inc-712415-02102026",
+    "issuing_office": "Human Foods Program",
+    "reference": null,
+    "product_categories": [
+      "Dietary Supplements"
+    ],
+    "guessed_type": "food_supplement",
+    "approx_chars": 27382,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "henan-lvyuan-pharmaceutical-co-ltd-722497-03262026",
+    "issuing_office": "Center for Veterinary Medicine",
+    "reference": "320-26-55",
+    "product_categories": [
+      "Animal & Veterinary",
+      "Drugs"
+    ],
+    "guessed_type": "other",
+    "approx_chars": 7829,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "homeopathic-educational-services-dba-homeopathic-family-medicine-708635-08252025",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "unapproved_drug_marketing",
+    "approx_chars": 5069,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "intas-pharmaceuticals-limited-721151-03302026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-57",
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "cgmp_nonsterile",
+    "approx_chars": 14364,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "jubilant-hollisterstier-general-partnership-723537-05282026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-81",
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "cgmp_sterile",
+    "approx_chars": 18574,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "kc-pharmaceuticals-inc-729870-08122026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-112",
+    "product_categories": [
+      "Drugs",
+      "Over-the-Counter Drugs"
+    ],
+    "guessed_type": "cgmp_sterile",
+    "approx_chars": 31913,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "koven-technologies-inc-734643-07212026",
+    "issuing_office": "Center for Devices and Radiological Health",
+    "reference": null,
+    "product_categories": [
+      "Medical Devices"
+    ],
+    "guessed_type": "device",
+    "approx_chars": 13741,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "la-crema-de-rebeca-728782-05142026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "728782",
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "unapproved_drug_marketing",
+    "approx_chars": 6782,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "medline-inc-724347-05282026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-82",
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "cgmp_sterile",
+    "approx_chars": 15643,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "meta-labs-pharmaceuticals-llc-725130-05152026",
+    "issuing_office": "Human Foods Program",
+    "reference": null,
+    "product_categories": [
+      "Dietary Supplements",
+      "Drugs"
+    ],
+    "guessed_type": "food_supplement",
+    "approx_chars": 16180,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "mile-high-compounds-llc-721600-03312026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "unapproved_drug_marketing",
+    "approx_chars": 7079,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "mineral-biosciences-llc-724745-06052026",
+    "issuing_office": "Human Foods Program",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "food_supplement",
+    "approx_chars": 13685,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "nativemed-llc-dba-nativemed-728287-06082026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "unapproved_drug_marketing",
+    "approx_chars": 8341,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "nihon-kohden-digital-health-solutions-llc-727803-06122026",
+    "issuing_office": "Center for Devices and Radiological Health",
+    "reference": null,
+    "product_categories": [
+      "Medical Devices"
+    ],
+    "guessed_type": "device",
+    "approx_chars": 7709,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "nipro-renal-solutions-usa-corporation-732874-07242026",
+    "issuing_office": "Center for Devices and Radiological Health",
+    "reference": null,
+    "product_categories": [
+      "Medical Devices",
+      "UDI"
+    ],
+    "guessed_type": "device",
+    "approx_chars": 27534,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "nutratech-llc-723021-06042026",
+    "issuing_office": "Human Foods Program",
+    "reference": null,
+    "product_categories": [
+      "Dietary Supplements"
+    ],
+    "guessed_type": "food_supplement",
+    "approx_chars": 19888,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "peak-performance-peptides-735127-08242026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "unapproved_drug_marketing",
+    "approx_chars": 10031,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "pharmathen-international-sa-723680-05272026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-80",
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "cgmp_sterile",
+    "approx_chars": 31855,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "prorx-llc-723704-04072026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "compounding",
+    "approx_chars": 33204,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "r3-medical-companies-726330-08142026",
+    "issuing_office": "Center for Biologics Evaluation and Research (CBER)",
+    "reference": "CBER 26-726330",
+    "product_categories": [
+      "Biologics"
+    ],
+    "guessed_type": "biologics",
+    "approx_chars": 24130,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "rc-outsourcing-llc-722877-03202026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "compounding",
+    "approx_chars": 26436,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "reliance-life-sciences-private-limited-730801-08182026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-117",
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "cgmp_sterile",
+    "approx_chars": 25217,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "ridley-usa-inc-720800-04032026",
+    "issuing_office": "Center for Veterinary Medicine",
+    "reference": null,
+    "product_categories": [
+      "Animal & Veterinary"
+    ],
+    "guessed_type": "other",
+    "approx_chars": 15131,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "royal-peptides-llc-734884-08242026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "unapproved_drug_marketing",
+    "approx_chars": 10773,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "sato-pharmaceutical-co-ltd-723059-05182026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-75",
+    "product_categories": [
+      "Drugs",
+      "Over-the-Counter Drugs"
+    ],
+    "guessed_type": "cgmp_sterile",
+    "approx_chars": 15940,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "shoolin-pharma-chem-llp-734100-08182026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-116",
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "cgmp_nonsterile",
+    "approx_chars": 20802,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "stephen-j-fallon-phd-728673-08272026",
+    "issuing_office": "Center for Biologics Evaluation and Research (CBER)",
+    "reference": "CBER-26-728673",
+    "product_categories": [
+      "Biologics"
+    ],
+    "guessed_type": "biologics",
+    "approx_chars": 12031,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "tianjin-kilo-pharmaceutical-sci-tech-co-ltd-731761-08062026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-110",
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "cgmp_nonsterile",
+    "approx_chars": 13360,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "txp-innovations-llc-dba-tex-peptides-735067-08242026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "unapproved_drug_marketing",
+    "approx_chars": 9386,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "unetixs-vascular-inc-724245-04152026",
+    "issuing_office": "Center for Devices and Radiological Health",
+    "reference": null,
+    "product_categories": [
+      "Medical Devices"
+    ],
+    "guessed_type": "device",
+    "approx_chars": 7234,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "wild-arabic-herbs-729192-06172026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": null,
+    "product_categories": [
+      "Drugs"
+    ],
+    "guessed_type": "unapproved_drug_marketing",
+    "approx_chars": 5006,
+    "product_appears_redacted": false
+  },
+  {
+    "slug": "woodbine-products-company-inc-729345-07272026",
+    "issuing_office": "Center for Drug Evaluation and Research (CDER)",
+    "reference": "320-26-107",
+    "product_categories": [
+      "Drugs",
+      "Over-the-Counter Drugs"
+    ],
+    "guessed_type": "cgmp_nonsterile",
+    "approx_chars": 19848,
+    "product_appears_redacted": true
+  },
+  {
+    "slug": "ziip-inc-725870-05222026",
+    "issuing_office": "Center for Devices and Radiological Health",
+    "reference": null,
+    "product_categories": [
+      "Medical Devices"
+    ],
+    "guessed_type": "device",
+    "approx_chars": 30652,
+    "product_appears_redacted": false
+  }
+]

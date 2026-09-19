@@ -1,6 +1,8 @@
 {
   "fixture": "fixtures/txp-innovations-llc-dba-tex-peptides-735067-08242026.txt",
-  "options": { "seedFromFacility": false },
+  "options": {
+    "seedFromFacility": false
+  },
   "letter_type": "unapproved_drug_marketing",
   "notes": "Website-review letter (texpeptide.com) citing seven peptide/reconstitution products as unapproved new drugs under 505(a); no facility was inspected. Products listed as verbatim-quoted in the letter's opening violation sentence.",
   "expected": {
@@ -22,9 +24,12 @@
     "product_redacted": false,
     "document_type": "warning_letter",
     "is_sterile_product": false,
-    "violation_categories": ["unapproved_new_drug"],
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
     "contamination_present": false,
     "linked_to_complaints": false,
     "recall_concern": false
-  }
+  },
+  "split": "test"
 }

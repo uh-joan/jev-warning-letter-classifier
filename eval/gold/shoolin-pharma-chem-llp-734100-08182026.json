@@ -1,6 +1,8 @@
 {
   "fixture": "fixtures/shoolin-pharma-chem-llp-734100-08182026.txt",
-  "options": { "seedFromFacility": false },
+  "options": {
+    "seedFromFacility": false
+  },
   "letter_type": "cgmp_nonsterile",
   "notes": "API manufacturer (sildenafil citrate, tadalafil) cited for insanitary conditions and CGMP failures (cleaning/maintenance, lab record completeness, stability program, QU oversight) plus a dedicated Data Integrity Remediation section; company voluntarily recalled all distributed APIs. location_contains uses the Indian state (Gujarat) named in the inspection sentence in place of a US 'ST' since there is no US state.",
   "expected": {
@@ -10,13 +12,21 @@
     "issuing_office": "CDER",
     "location_contains": "Indrad, Gujarat",
     "organisms": [],
-    "products": ["sildenafil citrate", "tadalafil"],
+    "products": [
+      "sildenafil citrate",
+      "tadalafil"
+    ],
     "product_redacted": false,
     "document_type": "warning_letter",
     "is_sterile_product": false,
-    "violation_categories": ["CGMP", "adulteration", "data_integrity"],
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "data_integrity"
+    ],
     "contamination_present": true,
     "linked_to_complaints": false,
     "recall_concern": true
-  }
+  },
+  "split": "dev"
 }

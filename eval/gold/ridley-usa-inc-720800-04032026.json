@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/ridley-usa-inc-720800-04032026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "other",
+  "notes": "This is an animal-feed HARPC/medicated-feed CGMP letter (21 CFR Parts 507 and 225), not a human-drug CGMP letter, so none of the drug-specific letter_type options fit well; classified as 'other'. The mixed-up feed lot's own name is redacted throughout as (b)(4); 'monensin' is named in clear but is the misformulated drug substance found in the feed, not the subject feed product itself, so treated products as empty/redacted rather than naming monensin as a product.",
+  "expected": {
+    "company": "Ridley USA Inc.",
+    "fei": null,
+    "date": "2026-04-03",
+    "issuing_office": "CVM",
+    "location_contains": "Iowa City, IA",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

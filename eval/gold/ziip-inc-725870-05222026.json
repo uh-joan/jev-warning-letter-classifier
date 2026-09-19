@@ -1,0 +1,36 @@
+{
+  "fixture": "fixtures/ziip-inc-725870-05222026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "device",
+  "notes": "Medical device letter combining Quality System regulation (21 CFR 820) CGMP violations (design verification/validation, risk analysis, CAPA, design change control, complaint handling) with unapproved/misbranded device findings for the ZIIP Halo 2.0, ZIIP DOT, and ZIIP Gels. Numerous customer complaints (overheating, melting, gel ingress) are discussed as evidence of inadequate risk analysis, but these are device-malfunction complaints, not organisms, so linked_to_complaints is false under this schema's organism-specific definition; no recall is raised.",
+  "expected": {
+    "company": "ZIIP, Inc.",
+    "fei": null,
+    "date": "2026-05-22",
+    "issuing_office": "CDRH",
+    "location_contains": "Pleasant Hill, CA",
+    "organisms": [],
+    "products": [
+      "ZIIP HALO",
+      "ZIIP Halo 2.0",
+      "ZIIP DOT",
+      "ZIIP Gels",
+      "ZIIP Device",
+      "ZIIP+ Device"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "misbranding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

@@ -1,0 +1,31 @@
+{
+  "fixture": "fixtures/nativemed-llc-dba-nativemed-728287-06082026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "CDER Office of Compounding Quality and Compliance letter from a review of NativeMed's website (no on-site inspection). Charges are misbranding under 502(a)/502(bb) for false or misleading claims about compounded semaglutide and tirzepatide products (falsely implying NativeMed is the compounder, and claiming the same active ingredient as Ozempic/Wegovy), framed around the 503A/503B compounding exemption scheme. Classified as 'compounding' rather than 'unapproved_drug_marketing' because the charge is misbranding of compounded drugs under 502(bb) (a compounding-specific provision), not a 505(a) unapproved-new-drug claim; judgment call given both types could plausibly fit. location_contains is null since no facility was inspected, though the letter does state an FEI for the website domain's associated establishment.",
+  "expected": {
+    "company": "NativeMed LLC dba NativeMed",
+    "fei": "3044024130",
+    "date": "2026-06-08",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "semaglutide",
+      "tirzepatide"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "misbranding",
+      "compounding"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "test"
+}

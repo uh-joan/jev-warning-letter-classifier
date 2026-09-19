@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/woodbine-products-company-inc-729345-07272026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_nonsterile",
+  "notes": "OTC topical/ethanol drug CGMP letter citing missing identity testing on high-DEG/EG-risk components (glycerin, propylene glycol) and ethanol, use of nonpharmaceutical-grade propylene glycol, unvalidated processes/cleaning, and inadequate QU oversight. All specific product names are redacted as (b)(4); the letter requests recall of any lots confirmed contaminated with DEG/EG but does not describe contamination as already detected, so contamination_present is false while recall_concern is true.",
+  "expected": {
+    "company": "Woodbine Products Company Inc.",
+    "fei": "1519202",
+    "date": "2026-07-27",
+    "issuing_office": "CDER",
+    "location_contains": "Medina, OH",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "test"
+}

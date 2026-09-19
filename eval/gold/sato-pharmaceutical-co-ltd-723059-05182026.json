@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/sato-pharmaceutical-co-ltd-723059-05182026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "cgmp_sterile",
+  "notes": "OTC drug CGMP letter centered on a fundamentally flawed ISO 5 aseptic filling line (repeated media-fill failures with documented microbiological and particulate contamination) plus inadequate stability programs and missing Burkholderia cepacia complex release testing. All specific product names are redacted as (b)(4); Burkholderia cepacia complex is named only as a required test organism, not as confirmed contamination.",
+  "expected": {
+    "company": "Sato Pharmaceutical Co., Ltd.",
+    "fei": "3004055563",
+    "date": "2026-05-18",
+    "issuing_office": "CDER",
+    "location_contains": "Hachioji, Tokyo",
+    "organisms": [
+      "Burkholderia cepacia complex"
+    ],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

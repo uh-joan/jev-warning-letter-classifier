@@ -1,0 +1,32 @@
+{
+  "fixture": "fixtures/genzyme-ireland-limited-728681-06222026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "biologics",
+  "notes": "CBER CGMP/data-integrity letter for a licensed biologics manufacturer (Thymoglobulin and Altuviiio): quality-unit failures, incomplete/untraceable laboratory and environmental-monitoring records, uncontrolled review checklists, and deviations cancelled without investigation (including an unresolved 'orange material' filling-residue finding). is_sterile_product is marked true as an inference (injectable biologics manufactured with air/particulate monitoring) though the letter never uses the words 'sterile' or 'aseptic'. contamination_present is false because the orange-material finding was left unresolved/inconclusive rather than confirmed as contamination. No FEI is stated in the letter.",
+  "expected": {
+    "company": "Genzyme Ireland Limited",
+    "fei": null,
+    "date": "2026-06-22",
+    "issuing_office": "CBER",
+    "location_contains": "Waterford",
+    "organisms": [],
+    "products": [
+      "Thymoglobulin",
+      "Altuviiio"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "data_integrity",
+      "adulteration"
+    ],
+    "contamination_present": false,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

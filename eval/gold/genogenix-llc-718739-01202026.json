@@ -1,0 +1,52 @@
+{
+  "fixture": "fixtures/genogenix-llc-718739-01202026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "CDER 503B outsourcing-facility letter (Boca Raton, FL) covering failure to meet section 503B conditions, extensive aseptic/CGMP violations, sub-potent injectables, unapproved new drugs (repackaged Semaglutide/Tirzepatide/Retatrutide; manufactured Thymosin Beta-4), and misbranding. contamination_present is true: a released NAD+ lot was lab-confirmed to contain excessive bacterial endotoxins (3,360 EU/mL) tied to a healthcare-provider complaint of three adverse-reaction patients; linked_to_complaints is left false because no genus-species organism is named (the finding is endotoxin, not a named organism) even though it is complaint-linked. Firm initiated a voluntary recall for lack of sterility assurance/microbial contamination, so recall_concern is true. No FEI is stated in the letter.",
+  "expected": {
+    "company": "GenoGenix LLC",
+    "fei": null,
+    "date": "2026-01-20",
+    "issuing_office": "CDER",
+    "location_contains": "Boca Raton, FL",
+    "organisms": [],
+    "products": [
+      "Glutathione Magnesium",
+      "Reconstitution Solution",
+      "Epithalon",
+      "Rapamycin",
+      "Clear Mind 150",
+      "LIPO (MIC) + B",
+      "Ascorbic Acid Vitamin C",
+      "Alpha Lipoic Acid",
+      "Immune Defense Nasal Spray",
+      "Semaglutide",
+      "Tirzepatide",
+      "Retatrutide",
+      "Thymosin Beta-4",
+      "Methylcobalamin 5,000 mcg/mL",
+      "B Complex",
+      "NAD+",
+      "5-Amino-1MQ"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "adulteration",
+      "misbranding",
+      "unapproved_new_drug",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

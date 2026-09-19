@@ -1,0 +1,35 @@
+{
+  "fixture": "fixtures/apollo-care-llc-715955-02022026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "compounding",
+  "notes": "503B outsourcing-facility sterile-compounding letter: insanitary conditions (uncontrolled sanitizing-agent use near open bulk drug solution, EM/gowning contamination recoveries, foreign fiber/debris, non-cleanable textured wall panels) plus explicit CGMP citations (21 CFR 211.113(b), 211.67(a), 211.42(c)(10)(vi)), leading to a voluntary recall of Fentanyl and Ropivacaine/Sodium Chloride epidural lots for lack of sterility assurance. Classified 'compounding' (like the boothwyn-pharmacy precedent) since the legal framing is anchored in the 503B outsourcing-facility statutory scheme even though CGMP is also explicitly cited. contamination_present true based on documented ISO-classified-area microbial/gowning recoveries (1 CFU recoveries approved for release) and the sterility-assurance recall, consistent with the K.C. Pharmaceuticals precedent.",
+  "expected": {
+    "company": "Apollo Care, LLC",
+    "fei": null,
+    "date": "2026-02-02",
+    "issuing_office": "CDER",
+    "location_contains": "Columbia, MO",
+    "organisms": [],
+    "products": [
+      "Fentanyl 500mcg (2mcg/mL)",
+      "Ropivacaine HCl 250mg (0.1%) added to 250 mL, 0.9% Sodium Chloride Injection (For Epidural Use Only)"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": true,
+    "violation_categories": [
+      "CGMP",
+      "adulteration",
+      "sterility",
+      "aseptic_processing",
+      "environmental_monitoring",
+      "compounding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": true
+  },
+  "split": "dev"
+}

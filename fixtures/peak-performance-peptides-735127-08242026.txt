@@ -1,0 +1,80 @@
+August 24, 2026
+WARNING LETTER
+Reference Number: 735127
+To Jeffrey Deng:
+This warning letter advises you of significant violations observed during a U.S. Food and Drug Administration (FDA) review of your website. Promptly address the violations described herein without delay, including ensuring that appropriate resources are allocated to fully address the violations and prevent their recurrence. This is not intended to be an all-inclusive list of the violations that may exist in connection with your products or operations. It is your responsibility to ensure that your firm complies with all requirements of federal law, including FDA regulations. Failure to adequately address violations may result in regulatory or legal action without further notice including, without limitation, seizure and injunction.
+These products are especially concerning from a public health perspective because injectable drug products can pose risks of serious harm to users. Injectable products are delivered directly into the body, sometimes directly into the bloodstream, and therefore, bypass some of the body’s key defenses against toxins and microorganisms that can lead to serious and life-threatening conditions.
+FDA Review
+Violations were identified and documented during a review of your website pppepz.com in July 2026. Based on our review, “Bac water,” “GLP-3R” (retatrutide), “Semaglutide,” “SS-31,” “PT-141,” and “Tesamorelin”1 are unapproved new drugs under section 505(a) of the Federal Food, Drug, and Cosmetic Act (FD&C Act), 21 U.S.C. 355(a). As explained further below, introducing or delivering these products for introduction into interstate commerce violates sections 301(d) and 505(a) of the FD&C Act, 21 U.S.C. 331(d) and 355(a).
+This review was conducted as part of FDA’s public health responsibility to protect the public from unsafe, ineffective, and poor-quality drugs.
+Violations of the Federal Food, Drug, and Cosmetic Act
+The following are violations identified during our review. As a reminder, this is not an all-inclusive list of violations that may exist in connection with your products or operations.
+Unapproved New Drug Violations
+Based on a review of your website, “Bac water,” “GLP-3R” (retatrutide), “Semaglutide,” “SS-31,” “PT-141,” and “Tesamorelin” are drugs under section 201(g)(1) of the FD&C Act, 21 U.S.C. 321(g)(1), because they are intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease, and/or intended to affect the structure or any function of the body.2 Examples from your product labeling, including on your website, that provide evidence of the intended use (as defined in 21 CFR 201.128) of these products as drugs include, but may not be limited to, the following:
+GLP-3R (retatrutide)
+On, e.g., the webpage https://pppepz.com/product/retatrutide-5mg/:3
+“GLP-3R is a synthetic peptide under investigation for its potential effects on metabolic regulation, body weight management, and glycemic control. It acts as a multi-receptor agonist targeting GIP, GLP-1, and glucagon receptors in research settings.”
+“GLP-3R has been explored for its influence on appetite suppression, energy expenditure, and fat distribution. It is commonly considered in preclinical models studying obesity, metabolic health, and endocrine signaling.”
+“Studied for effects on glycemic control and insulin sensitivity”
+“Investigated for influence on appetite regulation and satiety pathways”“Explored for potential impact on body weight and fat distribution”
+“Considered in preclinical models of cardiometabolic and metabolic research”
+
+Semaglutide
+On, e.g., the webpage https://pppepz.com/product/semaglutide-5mg/:4
+“Semaglutide is a synthetic glucagon-like peptide-1 (GLP-1) receptor agonist studied for its potential effects on glucose regulation, appetite control, and metabolic health.”
+“Semaglutide has been investigated for its influence on insulin secretion, satiety pathways, and body weight management. It is commonly considered in preclinical models exploring endocrine signaling, diabetes, and obesity-related research.”
+“Studied for effects on insulin secretion and glycemic control”
+“Investigated for influence on appetite regulation and satiety pathways”
+“Explored for potential impact on body weight and metabolic health”
+“Considered in preclinical models of endocrine and cardiometabolic research”
+
+SS-31
+On the webpage https://pppepz.com/product/ss-31-10mg/:
+“SS-31 (Elamipretide) is a mitochondria-targeted peptide studied for its potential to reduce oxidative stress, improve mitochondrial function, and support cellular energy production.”
+“SS-31 has been investigated for its effects on mitochondrial health, neuroprotection, and cardiovascular function. It is commonly considered in preclinical models exploring metabolic disorders, age-related diseases, and tissue protection.”
+“Studied for mitochondrial protection and enhancement of energy metabolism”
+“Investigated for effects on oxidative stress and cellular health”
+“Explored for potential neuroprotective and cardiovascular benefits”
+“Considered in preclinical models of aging, metabolic, and degenerative diseases”
+
+PT-141
+On the webpage https://pppepz.com/product/pt-141-10mg/:
+“PT-141 is a synthetic peptide studied for its potential effects on sexual arousal and neuroendocrine regulation. It acts on melanocortin receptors, influencing central nervous system pathways related to libido and reproductive signaling.”
+“PT-141 has been investigated for its effects on sexual behavior, central nervous system modulation, and endocrine signaling. It is commonly considered in preclinical models exploring sexual health, reproductive research, and neuroendocrine pathways.”
+“Studied for effects on sexual arousal and libido”
+“Investigated for modulation of melanocortin receptors and CNS pathways”
+“Explored for influence on reproductive endocrine signaling”
+“Considered in preclinical models of sexual health and neuroendocrine research”
+
+Tesamorelin
+On, e.g., the webpage https://pppepz.com/product/tesamorelin-5mg/:5
+“Tesamorelin is a synthetic growth hormone–releasing hormone (GHRH) analog studied for its role in stimulating endogenous growth hormone secretion and regulating metabolic pathways.”
+“Tesamorelin has been investigated for its effects on body composition, lipid metabolism, and tissue repair. It is commonly used in preclinical research exploring endocrine regulation, fat distribution, and regenerative pathways.”
+“Studied for stimulation of endogenous growth hormone release”
+“Investigated for influence on metabolism and lipid regulation”
+“Explored for potential effects on body composition and tissue repair”
+“Considered in preclinical models of endocrine and metabolic research”
+
+Bac water
+Your firm offers “Bac water” for sale to be used to reconstitute the peptide products sold on your website, which are drugs intended for injection, including the above-mentioned products. The sale of these products together demonstrates that you intend for your “Bac water” to be used in combination for injection. Therefore, your “Bac water” is a drug.
+“Bac water,” “GLP-3R” (retatrutide), “Semaglutide,” “SS-31,” “PT-141,” and “Tesamorelin” are “new drugs” under section 201(p) of the FD&C Act, 21 U.S.C. 321(p), because they are not generally recognized as safe and effective (GRASE) for use under the conditions prescribed, recommended, or suggested in their labeling. With certain exceptions not applicable here, a new drug may not be introduced or delivered for introduction into interstate commerce without an approved application from FDA in effect, as described in section 505(a) of the FD&C Act, 21 U.S.C. 355(a). No approved applications pursuant to section 505 of the FD&C Act, 21 U.S.C. 355, are in effect for these products. Accordingly, these products are unapproved new drugs. The introduction or delivery for introduction into interstate commerce of these unapproved new drug products violates sections 301(d) and 505(a) of the FD&C Act, 21 U.S.C. 331(d) and 355(a).
+Conclusion
+As previously stated, you are responsible for investigating and determining the root causes of any violations and implementing corrective and preventative measures to ensure future and sustained compliance so that these violations and any others do not occur.
+Send your written response to FDAAdvisory@fda.hhs.gov within fifteen (15) business days of receipt of this letter. Include the specific steps you have taken to correct any violations, an explanation of each step being taken to prevent the recurrence of violations, as well as copies of related documentation. Identify your response with reference number “735127” in the subject line of the email.
+If you have information that you believe demonstrates that your products are not in violation of the FD&C Act and FDA regulations, include that information for our consideration.
+Please note FDA posts warning letters on www.fda.gov.
+Sincerely,
+/S/
+Tina Smith, M.S.
+Captain, U.S. Public Health Service
+Director
+Office of Unapproved Drugs and Labeling Compliance
+Office of Compliance
+Center for Drug Evaluation and Research
+U.S. Food and Drug Administration
+____________________
+1 Many of these are offered in different strengths.
+2 Despite statements on your product labeling marketing your products for “research use only” and “not for human consumption,” evidence obtained from your website establishes that your products are intended to be drugs for human use. In addition to the cited drug claims, you market bacteriostatic water as a solvent for reconstituting your products, thus, providing the means to prepare an injectable drug for human administration.
+3 Also found on your webpages https://pppepz.com/product/retatrutide-10mg/; https://pppepz.com/product/retatrutide-20mg/; and https://pppepz.com/product/retatrutide-30mg/.
+4 Also found on your webpages https://pppepz.com/product/semaglutide-10mg/ and https://pppepz.com/product/semaglutide-20mg/.
+5 Also found on your webpage https://pppepz.com/product/tesamorelin-10mg/.

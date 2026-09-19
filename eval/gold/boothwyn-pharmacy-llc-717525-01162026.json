@@ -1,6 +1,8 @@
 {
   "fixture": "fixtures/boothwyn-pharmacy-llc-717525-01162026.txt",
-  "options": { "seedFromFacility": false },
+  "options": {
+    "seedFromFacility": false
+  },
   "letter_type": "compounding",
   "notes": "503A compounding pharmacy warning letter: firm compounded drug products intended to be sterile under insanitary conditions (ISO 5 airflow/smoke-study deficiencies, dirty surfaces) and released subpotent and sterility-test-failing product, leading to a voluntary recall. Classified letter_type as 'compounding' rather than 'cgmp_sterile' because the legal analysis is framed entirely around the 503A exemption and 501(a)(2)(A) insanitary-conditions adulteration, not a CGMP (21 CFR 211) citation; judgment call given the letter also reads like a sterile-manufacturing letter in substance.",
   "expected": {
@@ -19,9 +21,16 @@
     "product_redacted": false,
     "document_type": "warning_letter",
     "is_sterile_product": true,
-    "violation_categories": ["adulteration", "misbranding", "sterility", "aseptic_processing", "compounding"],
+    "violation_categories": [
+      "adulteration",
+      "misbranding",
+      "sterility",
+      "aseptic_processing",
+      "compounding"
+    ],
     "contamination_present": true,
     "linked_to_complaints": false,
     "recall_concern": true
-  }
+  },
+  "split": "test"
 }

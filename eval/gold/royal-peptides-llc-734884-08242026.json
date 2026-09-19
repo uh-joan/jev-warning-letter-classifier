@@ -1,6 +1,8 @@
 {
   "fixture": "fixtures/royal-peptides-llc-734884-08242026.txt",
-  "options": { "seedFromFacility": false },
+  "options": {
+    "seedFromFacility": false
+  },
   "letter_type": "unapproved_drug_marketing",
   "notes": "CDER website-review letter (no facility inspection) charging seven peptide products marketed on royal-peptides.com as unapproved new drugs based on disease-treatment and structure/function claims, despite 'research use only' labeling. location_contains is null since this is a website-review letter with no inspected facility mentioned.",
   "expected": {
@@ -10,13 +12,24 @@
     "issuing_office": "CDER",
     "location_contains": null,
     "organisms": [],
-    "products": ["Tirzepatide", "Semaglutide", "Retatrutide", "SS-31 (Elamipretide)", "PT-141", "Tesamorelin", "BIMORELIN"],
+    "products": [
+      "Tirzepatide",
+      "Semaglutide",
+      "Retatrutide",
+      "SS-31 (Elamipretide)",
+      "PT-141",
+      "Tesamorelin",
+      "BIMORELIN"
+    ],
     "product_redacted": false,
     "document_type": "warning_letter",
     "is_sterile_product": false,
-    "violation_categories": ["unapproved_new_drug"],
+    "violation_categories": [
+      "unapproved_new_drug"
+    ],
     "contamination_present": false,
     "linked_to_complaints": false,
     "recall_concern": false
-  }
+  },
+  "split": "dev"
 }

@@ -1,0 +1,30 @@
+{
+  "fixture": "fixtures/la-crema-de-rebeca-728782-05142026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "unapproved_drug_marketing",
+  "notes": "CDER website-review letter (no facility inspection) for a skin-lightening cream marketed with disease-treatment claims; FDA lab analysis confirmed the product contains high levels of mercury, which is also not disclosed on the label, supporting both unapproved-new-drug and misbranding charges. location_contains is null (website review only, no facility inspected). contamination_present is marked true because the letter states FDA lab-confirmed mercury contamination of the product itself (a judgment call, since this is a toxic-ingredient/adulterant finding rather than a microbial-manufacturing contamination finding).",
+  "expected": {
+    "company": "La Crema De Rebeca",
+    "fei": null,
+    "date": "2026-05-14",
+    "issuing_office": "CDER",
+    "location_contains": null,
+    "organisms": [],
+    "products": [
+      "La Crema De Rebeca"
+    ],
+    "product_redacted": false,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "unapproved_new_drug",
+      "misbranding"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}

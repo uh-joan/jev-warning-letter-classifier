@@ -1,0 +1,97 @@
+August 13, 2026
+WARNING LETTER
+Reference number: 320-26-115
+To Yugandhar Puvvala:
+This warning letter advises you of significant violations observed during a U.S. Food and Drug Administration (FDA) inspection of your facility. Promptly address the violations described herein without delay, including ensuring that appropriate resources are allocated to fully address the violations and prevent their recurrence. This is not intended to be an all-inclusive list of the violations that exist at your facility. It is your responsibility to ensure that your firm complies with all requirements of federal law, including FDA regulations. Failure to adequately address violations may result in regulatory action without further notice.
+FDA Inspection
+Violations were observed and documented during an inspection of your drug manufacturing facility, Eugia Pharma Specialities Ltd., Unit 1, FDA Establishment Identifier (FEI) 3011960448, at Sy. No. 550, 551, & 552 Kolthur Village, from February 16 to 27, 2026. This inspection was conducted under FDA’s statutory authority and public health responsibilities to protect the public from unsafe, ineffective, and poor quality drugs.
+This warning letter summarizes significant violations of Current Good Manufacturing Practice (CGMP) regulations for finished pharmaceuticals. See Title 21 Code of Federal Regulations (CFR), parts 210 and 211 (21 CFR parts 210 and 211).
+Because your methods, facilities, or controls for manufacturing, processing, packing, or holding do not conform to CGMP, your drug products are adulterated within the meaning of section 501(a)(2)(B) of the Federal Food, Drug, and Cosmetic Act (FD&C Act), 21 U.S.C. 351(a)(2)(B).
+We reviewed your March 20, 2026, response to our Form FDA 483 in detail and acknowledge receipt of your subsequent correspondence.
+Violations of the Federal Food, Drug, and Cosmetic Act
+The following are violations identified during our inspection and review. As a reminder, this is not an all-inclusive list of violations at your facility.
+1. Your firm failed to perform operations within specifically defined areas of adequate size and to have separate or defined areas or such other control systems necessary to prevent contamination or mix-ups in aseptic processing areas (21 CFR 211.42(c)(10)).
+Inadequate Design of Facility and Equipment
+You manufacture sterile injectable drug products produced primarily through aseptic processing including, but not limited to, (b)(4) products for (b)(4). Aseptic processing lines (b)(4) and (b)(4) were intended to be “(b)(4) restricted access barrier systems.” However, segments of the line lacked sufficient restricted access barrier system (RABS) design elements (e.g., proper ergonomics, proper (b)(4) placement, and appropriate physical separation from the surrounding environment). These features are essential for minimizing or eliminating direct operator intervention into the critical (ISO 5) area during batch manufacturing.
+More specifically, portions of the line (b)(4) from aseptic processing on lines (b)(4) and (b)(4) are not RABS. These lines failed to provide appropriate separation and protection of the ISO 5 areas during equipment setup and routine production.
+Operators were allowed to physically enter the (b)(4) lifting area of the aseptic line on a frequent basis (e.g., permitted up to (b)(4) times per batch) to perform manually intensive interventions. When (b)(4), the (b)(4) partially folded over the processing line. Appropriate ISO 5 conditions were not reliably maintained during these activities.
+In addition, within the RABS portion of the line, the positioning of (b)(4) disrupted unidirectional airflow to open vials during interventions. This included, but was not limited to, the removal of empty vials from the (b)(4), which occurred up to (b)(4) times per batch.
+Furthermore, product contact equipment on each line was insufficiently protected or otherwise exposed to contamination hazards. For example, the processing lines lacked robust physical separation between ISO 5 and surrounding ISO 7 areas.
+These design flaws compromised your ability to maintain aseptic conditions.
+Inadequate Environmental Monitoring
+You failed to ensure adequate environmental monitoring (EM) of classified areas used for aseptic production. For example, you did not hold extended ISO 5 areas of processing line (b)(4), where critical aseptic connections occurred, to ISO 5 limits.
+Your response emphasizes aseptic processing controls and concludes there was no finished product impact. You based this conclusion on EM, Personnel Monitoring (PM), and process simulations (media fill re-qualifications). You also commit to reducing the number of elevated (b)(4) interventions, implementing post-intervention disinfection procedures, and having operators remove fallen vials at the (b)(4) using sterile forceps without positioning the (b)(4) over (b)(4) vials. Additionally, you temporarily paused production of (b)(4) injectable drug products.
+Your response is inadequate because you fail to include an adequate retrospective product impact assessment to address previous EM practices. Your response also does not sufficiently address flaws in your current (b)(4) RABS design including, but not limited to, significant contamination hazards related to (b)(4) placement, line setup, and material flow (e.g., at (b)(4) during setup). You also failed to address whether your firm is planning a more extensive redesign or replacement of your aseptic processing lines.
+Your response also includes an evaluation of retrospective sterility testing data. It should be noted that a sterility test, while a critical quality control for aseptically processed products that purport to be sterile, cannot be solely relied upon as justification to release drug product batches. The test is only the last in a series of design provisions and controls intended to protect the consumer from distribution of an unsafe batch.
+Your aseptic manufacturing processes should be designed, and operations executed, to prevent contamination hazards to your sterile product. Flaws in the design of cleanrooms and aseptic processing lines, or improper execution of aseptic operations, can promote influx of contamination into the critical processing area.
+In response to this letter, provide:
+Comprehensive, independent risk assessment of all contamination hazards with respect to your aseptic processes, equipment, and facilities including, but not limited to:
+o All human interactions within the ISO 5 area (e.g., risk reduction or elimination of manual interventions wherever possible)
+o Equipment suitability (e.g., reliability, capability, ergonomics, placement) and sufficient cleanroom space
+o Air quality in the ISO 5 area and surrounding room including, but not limited to, air volume and flow
+o Facility layout
+o Personnel flow and material flow (movement throughout all rooms used to conduct and support sterile operations, and all material transfers)
+o All aseptic connections. Include an assessment of practices and locations at which connections are made (e.g., proximity to the floor, unidirectional air impact), and equipment including but not limited to sterile-to-sterile connectors.
+o Suitability of barrier system (e.g., whether operators can access the aseptic processing line through gaps in the (b)(4) barriers).
+o Specific corrective action and preventive action (CAPA) recommendations that will comprehensively address the design and control hazards identified in the risk assessment.
+A detailed remediation plan with timelines to address the findings of the contamination hazards risk assessment. Describe specific tangible improvements to be made to aseptic processing operation design and control at your facility and explain how this CAPA plan will robustly remediate your deficient sterile manufacturing operations. Include comprehensive changes to the design of both your aseptic processing lines and cleanrooms. Also, describe your plans for qualification and validation of your extensively remediated operations.
+
+2. Your firm failed to establish and follow appropriate written procedures that are designed to prevent microbiological contamination of drug products purporting to be sterile, and that include validation of all aseptic and sterilization processes (21 CFR 211.113(b)).
+Poor Aseptic Technique and Cleanroom Behavior
+We observed your operators using poor aseptic practices during line setup and routine production on processing lines (b)(4) and (b)(4). These deviations included, but were not limited to:
+During (b)(4) installation, operators touched sterile portions of the RABS (b)(4) and brushed their gown sleeves against open (b)(4). Operators did not typically further disinfect the (b)(4) following installation of the (b)(4). The (b)(4) may be used for up to (b)(4) prior to (b)(4).
+During production of (b)(4) injection, batch (b)(4), on line (b)(4):
+o Operators reached their upper body (e.g., head and shoulders) over an open transfer hose while executing an aseptic connection in the extended ISO 5 area.
+o Operators left RABS (b)(4) on opposing sides of the production line open, exposing sections of the vial conveyor to ISO 7 conditions for at least (b)(4). During this time, the operator opened a nearby cleanroom (b)(4) into an ISO 7 corridor, creating an unnecessary heightened risk of exposing the ISO 5 area to lower quality air.
+
+Furthermore, you configured Line (b)(4) similarly, creating significant risks associated with the non-RABS sections of the line and excessive exposure of the line to multiple personnel during setup.
+Inadequate Process Simulation
+Your process simulations failed to adequately evaluate critical interventions performed during aseptic manufacturing. For example, your firm failed to include all critical interventions in the line (b)(4) process simulation requalification, such as the aseptic connection of the (b)(4) used in bulk (b)(4) of (b)(4). You manufactured at least (b)(4) batches of (b)(4) injection since the (b)(4) requalification of this intervention.
+Your response includes changes to line disinfection procedures following setup and interventions, use of sterile-to-sterile connectors for the aseptic connection under the extended ISO 5 areas, and training for aseptic processing operators. Your response also includes updated process simulations, historical data, and asserts a lack of product impact from the (b)(4) due to line clearance. However, your response does not sufficiently acknowledge equipment design flaws, nor commit to extensive operational redesign.
+See FDA’s guidance document Sterile Drug Products Produced by Aseptic Processing - Current Good Manufacturing Practice to help you meet the CGMP requirements when manufacturing sterile drugs using aseptic processing at https://www.fda.gov/media/71026/download.
+In response to this letter, provide:
+Your systematic plan to assure adherence to appropriate aseptic practices, cleanroom behavior, and written procedures including, but not limited to, an independent assessment of the following with accompanying CAPA:
+o Suitability of actual practices based on extensive retrospective review and prospective observation of aseptic processing operations
+o Deficiencies in production management oversight, and identification of specific improvements to ensure effective and routine supervisory oversight for all batches
+o Frequency and depth of quality unit oversight (e.g., audits, ad hoc, daily interactions) of aseptic processing and its support operations
+o Adequacy of written procedures and operational ergonomics
+o The risk assessment should also evaluate how poor aseptic technique and cleanroom behavior may have affected the quality and sterility of your drugs.
+Assessment of the frequency of your (b)(4) disinfection program of the RABS interior and implementation of appropriate CAPA. The assessment should include but not be limited to:
+o Frequency (e.g., daily, weekly, after each batch)
+o Sufficiency of application
+o How performed (i.e., manual or automated)
+A comprehensive, independent review of your process simulation (media fill) program to ensure accurate simulations of commercial aseptic manufacturing operations, including but not limited to appropriate incorporation of worst-case conditions.
+
+Repeat Violations at Multiple Sites
+FDA cited similar CGMP violations related to poor aseptic practices and aseptic processing line design inadequacies at other facilities in your company’s network. Eugia Pharma Specialities Ltd. Units II (FEI 3009883410) and III (FEI 3008461619) were inspected from November 3 to 14, 2025, and January 27 to February 6, 2026, respectively. Both of these facilities are classified as Official Action Indicated and are in unacceptable CGMP status. These repeated failures at multiple sites demonstrate that management oversight and control over the manufacture of drugs are inadequate.
+Your executive management remains responsible for fully resolving all deficiencies and ensuring ongoing CGMP compliance. You should immediately and comprehensively assess your company’s global manufacturing operations to ensure that systems, processes, and the products manufactured conform to FDA requirements.
+Conclusion
+As previously stated, you are responsible for investigating and determining the root causes of any violations and implementing corrective and preventative measures to ensure future and sustained compliance so that these violations and any others do not occur.
+FDA may withhold approval of new applications or supplements listing your firm as a drug manufacturer until any violations are completely addressed and we confirm your compliance with CGMP. We may re-inspect to verify that you have completed corrective actions to any violations.
+Failure to address any violations may also result in the FDA refusing admission of articles manufactured at Eugia Pharma Specialities Ltd., Kolthur Village, into the United States under section 801(a)(3) of the FD&C Act, 21 U.S.C. 381(a)(3). Articles under this authority that appear to be adulterated may be detained or refused admission, in that the methods and controls used in their manufacture do not appear to conform to CGMP within the meaning of section 501(a)(2)(B) of the FD&C Act, 21 U.S.C. 351(a)(2)(B).
+Send your written response to CDER-OC-OMQ-Communications@fda.hhs.gov within fifteen (15) business days of receipt of this letter1. Identify your written response with FEI 3011960448 and ATTN: Compliance Officer Matthew Dionne, Pharm.D., in the letter or in the subject line of the email.
+If you have information that you believe demonstrates that your products are not in violation of the FD&C Act and FDA regulations, include that information for our consideration.
+If you are considering an action that is likely to lead to a disruption in the supply of drugs produced at your facility, FDA requests that you contact CDER’s Drug Shortages Staff immediately, at drugshortages@fda.hhs.gov, so that FDA can work with you on the most effective way to bring your operations into compliance with the law. Contacting the Drug Shortages Staff also allows you to meet any obligations you may have to report discontinuances or interruptions in your drug manufacture under 21 U.S.C. 356C(b). This also allows FDA to consider, as soon as possible, what actions, if any, may be needed to avoid shortages and protect the health of patients who depend on your products.
+FDA posts warning letters to www.FDA.gov.
+Sincerely,
+/S/
+Francis Godwin
+Director
+Office of Manufacturing Quality
+Office of Compliance
+Center for Drug Evaluation and Research
+U.S. Food and Drug Administration
+________________
+1 Under program enhancements for the Generic Drug User Fee Amendments (GDUFA) reauthorization for fiscal years (FYs) 2023-2027, also known as the GDUFA III Commitment Letter, your facility may be eligible for a Post-Warning Letter Meeting to obtain preliminary feedback from FDA on the adequacy and completeness of your corrective action plans.
+cc:
+Eugia US LLC
+United States Agent
+usagent@eugiaus.com
+Ch. V. V. Satyanarayana
+Associate Vice President – Operations (Unit Head)
+Eugia Pharma Specialities Ltd.
+Unit-1, Sy. No. 550, 551, & 552
+Kolthur Village, Shameerpet Mandal
+Medchal-Malkajgiri District
+Telangana, 500101 India
+(b)(4)

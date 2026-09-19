@@ -1,0 +1,28 @@
+{
+  "fixture": "fixtures/flax-more-corporation-722845-05122026.txt",
+  "options": {
+    "seedFromFacility": false
+  },
+  "letter_type": "food_supplement",
+  "notes": "Human Foods Program dietary-supplement CGMP letter (21 CFR Part 111): shared-equipment residue/allergen cross-contact risk, missing product specifications, and incomplete master manufacturing records. Product identities are redacted as (b)(4) throughout. contamination_present is true because an actual accumulation of dietary supplement residue (allergen cross-contact risk) was physically observed in the hopper seams, not merely a hypothetical risk.",
+  "expected": {
+    "company": "Flax & More Corporation",
+    "fei": null,
+    "date": "2026-05-12",
+    "issuing_office": "Human Foods Program",
+    "location_contains": "Cutler Bay, FL",
+    "organisms": [],
+    "products": [],
+    "product_redacted": true,
+    "document_type": "warning_letter",
+    "is_sterile_product": false,
+    "violation_categories": [
+      "CGMP",
+      "adulteration"
+    ],
+    "contamination_present": true,
+    "linked_to_complaints": false,
+    "recall_concern": false
+  },
+  "split": "dev"
+}
