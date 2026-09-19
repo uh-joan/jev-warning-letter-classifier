@@ -6,3 +6,6 @@ dist/
 .cache/
 eval/.cache/
 eval/last-report.json
+
+# OMC local orchestration state (machine-specific, not for publication)
+.omc/

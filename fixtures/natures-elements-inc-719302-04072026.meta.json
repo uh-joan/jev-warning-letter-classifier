@@ -1,7 +1,7 @@
 {
   "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/natures-elements-inc-719302-04072026",
   "slug": "natures-elements-inc-719302-04072026",
-  "company": "Nature’s Elements, Inc.",
+  "company": "Nature\u2019s Elements, Inc.",
   "marcs_cms": "719302",
   "issue_date": "2026-04-07",
   "reference": null,
@@ -12,11 +12,10 @@
   "recipient": [
     "Richard Zul",
     "President",
-    "Nature’s Elements, Inc.",
+    "Nature\u2019s Elements, Inc.",
     "1556 Ocean Ave Ste 11",
     "Bohemia, NY 11716",
-    "United States",
-    "info@natureselements.net"
+    "United States"
   ],
   "issuing_office": "Human Foods Program",
   "fetched_at": "2026-09-19T09:31:01.701Z"

@@ -1,7 +1,7 @@
 {
   "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/gasco-industrial-corporation-647393-02172023",
   "slug": "gasco-industrial-corporation-647393-02172023",
-  "company": "Gascó Industrial Corporation",
+  "company": "Gasc\u00f3 Industrial Corporation",
   "marcs_cms": "647393",
   "issue_date": "2023-02-17",
   "reference": null,
@@ -12,11 +12,10 @@
   "recipient": [
     "Mr. Dan Bigman",
     "CEO",
-    "Gascó Industrial Corporation",
-    "Rincón Industrial Park Calle A, Lote 3",
+    "Gasc\u00f3 Industrial Corporation",
+    "Rinc\u00f3n Industrial Park Calle A, Lote 3",
     "Gurabo 00778-2037",
-    "Puerto Rico",
-    "dbigman@gascoindustrial.com"
+    "Puerto Rico"
   ],
   "issuing_office": "Division of Pharmaceutical Quality Operations II",
   "fetched_at": "2026-09-19T09:46:56.268Z"

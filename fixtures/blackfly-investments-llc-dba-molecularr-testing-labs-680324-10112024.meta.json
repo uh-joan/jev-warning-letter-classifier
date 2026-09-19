@@ -1,7 +1,7 @@
 {
   "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/blackfly-investments-llc-dba-molecularr-testing-labs-680324-10112024",
   "slug": "blackfly-investments-llc-dba-molecularr-testing-labs-680324-10112024",
-  "company": "Blackfly Investments, LLC dba Molecular® Testing Labs",
+  "company": "Blackfly Investments, LLC dba Molecular\u00ae Testing Labs",
   "marcs_cms": "680324",
   "issue_date": "2024-10-11",
   "reference": "CBER 24-680324",
@@ -12,12 +12,10 @@
   "recipient": [
     "Adam Blackwell",
     "Co-Founder and Head of New Product Development and Laboratory Production",
-    "Blackfly Investments, LLC dba Molecular® Testing Labs",
+    "Blackfly Investments, LLC dba Molecular\u00ae Testing Labs",
     "14401 SE 1st Street",
     "Vancouver, WA 98684",
-    "United States",
-    "info@moleculartestinglabs.com",
-    "adam@moleculartestinglabs.com"
+    "United States"
   ],
   "issuing_office": "Center for Biologics Evaluation and Research (CBER)",
   "fetched_at": "2026-09-19T09:48:31.674Z"
