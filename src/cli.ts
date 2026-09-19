@@ -141,11 +141,21 @@ function digest(r: WarningLetter): string {
     : "no";
   lines.push(`Sterile: ${r.is_sterile_product ? "yes" : "no"}   Contamination: ${contam}   Recall: ${r.recall_concern ? "yes" : "no"}`);
 
-  // Review routing — the uncertain calls, with their exact certainties
+  // Review routing — foreground the meaningful signals (violations, drug choice,
+  // document type). The per-product-candidate flags are mostly enumeration noise
+  // in the uncertain band, so collapse them into a count; the full list stays in
+  // --json's review[].
   if (r.review.length) {
+    const productFlags = r.review.filter((f) => f.field.startsWith("product:"));
+    const signalFlags = r.review.filter((f) => !f.field.startsWith("product:"));
     lines.push("");
     lines.push("⚠ Needs human review:");
-    for (const f of r.review) lines.push(`  - ${f.field}  (${fmtPct(f.certainty)})  ${f.reason}`);
+    for (const f of signalFlags)
+      lines.push(`  - ${f.field}  (${fmtPct(f.certainty)})  ${f.reason}`);
+    if (productFlags.length)
+      lines.push(
+        `  - ${productFlags.length} product candidate${productFlags.length === 1 ? "" : "s"} in the uncertain band [30–70%] — see --json for the list`,
+      );
   }
 
   return lines.join("\n");
