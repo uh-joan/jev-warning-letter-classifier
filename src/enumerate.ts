@@ -63,7 +63,7 @@ const clean = (s: string) => s.replace(/\s+/g, " ").replace(/[.,;:'"()]+$/, "").
  * acceptable loss for the precision gained.
  */
 const PROSE =
-  /\b(for|on|in|at|by|from|as|to|with|these|this|that|which|can|pose|sale|use[ds]?|their|your|our|has|have|are|is|be|been|will|not|any|all|other|such|including|namely|section|sections|studied|explored|investigated|introduc\w*|deliver\w*|violat\w*|market\w*|sell|sold|distribut\w*|manufactur\w*|intended|expected|contain\w*|potential|effects?|impact|influence|modulat\w*|stimulat\w*|reduc\w*|risks?|unapproved|new|adulterat\w*|misbrand\w*|crumbly)\b/i;
+  /\b(for|on|in|at|by|from|as|to|with|these|this|that|which|can|pose|sale|use[ds]?|their|your|our|has|have|are|is|be|been|will|not|such|including|namely|section|sections|studied|explored|investigated|introduc\w*|deliver\w*|violat\w*|market\w*|sell|sold|distribut\w*|manufactur\w*|intended|expected|contain\w*|potential|effects?|impact|influence|modulat\w*|stimulat\w*|reduc\w*|risks?|unapproved|adulterat\w*|misbrand\w*|crumbly)\b/i;
 
 /** Bare excipients / solvents — components, not the finished drug product. */
 const EXCIPIENT =
@@ -133,6 +133,14 @@ export function enumerateProductCandidates(text: string): Candidate[] {
   //    (ZIIP, ROODRA, 2CP, CRP-20H, GLP-1), optionally with a following token.
   for (const m of text.matchAll(/\b([A-Z][a-z]+(?:[A-Z][A-Za-z0-9]*|[0-9][A-Za-z0-9.]*)+)\b/g))
     push(m[1]!, m.index!, 2, "camel");
+  // ALL-CAPS prefix + lowercase suffix brand ("ASGFluid", "SXFluid").
+  for (const m of text.matchAll(/\b([A-Z]{2,}[a-z][A-Za-z0-9]*)\b/g)) push(m[1]!, m.index!, 2, "capscamel");
+  // Lowercase-start intra-case brand tokens ("i-STAT", "cTnI"), optionally with
+  // following Title/number words ("i-STAT cTnI Test").
+  for (const m of text.matchAll(
+    /\b([a-z]{1,3}-?[A-Z][A-Za-z0-9]+(?:[ -][A-Z0-9][A-Za-z0-9]*){0,3})\b/g,
+  ))
+    push(m[1]!, m.index!, 2, "lc-brand");
   for (const m of text.matchAll(/\b([A-Z0-9][A-Z0-9+]{1,}(?:[ -][A-Z0-9][A-Za-z0-9.+-]*){0,3})\b/g)) {
     if (/[A-Z]/.test(m[1]!) && !STOP.test(m[1]!)) push(m[1]!, m.index!, 2, "caps");
   }
