@@ -31,6 +31,14 @@ one code path and avoids three copies of the input/output logic.
 
 > The rest of this doc assumes that layering: **CLI core → skill wrapper → (optional) MCP.**
 
+> **✅ Decision (chosen):** target is the **published npm CLI** ("anywhere /
+> teammates"). So Form **C is the product**: a real `bin`
+> (`npx classify-warning-letter <url|path>`) published to npm, and the skill
+> (Form A) is a thin `SKILL.md` that runs `npx classify-warning-letter@latest`
+> so it works **outside this repo**, on any teammate's machine. This means the
+> package must stop being `"private": true`, gain a `bin`, and be built/shipped
+> as an installable command (see §7, Phase 1 & 3). MCP (Form B) stays optional.
+
 ---
 
 ## 2. The one real refactor: a unified input resolver
@@ -164,9 +172,8 @@ The digest is where the **probabilities** we just added to the README shine — 
 
 ## 6. Open decisions (need your call)
 
-1. **Delivery target:** repo-local skill (works here now) vs. published npm CLI
-   vs. OMC/plugin skill (works everywhere) vs. MCP server (other AIs). Which
-   audience matters first?
+1. ~~**Delivery target:**~~ ✅ **RESOLVED — published npm CLI** ("anywhere /
+   teammates"). The skill wraps `npx classify-warning-letter@latest`.
 2. **Output default:** human digest or raw JSON as the skill's default?
 3. **PDF support:** in scope now, or a later milestone?
 4. **Non-FDA letters:** best-effort classify, or refuse anything that isn't an
