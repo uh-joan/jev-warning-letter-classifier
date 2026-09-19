@@ -39,6 +39,17 @@ export interface ProductMention {
   is_subject: boolean;
   /** Jev's P(subject); null when the question was not asked. */
   subject_probability: number | null;
+  /** P(subject) fell in the uncertain band [0.30, 0.70] — a person should confirm. */
+  needs_review: boolean;
+}
+
+/** A field whose Jev answer is uncertain enough to route to a human (see review.ts). */
+export interface ReviewFlag {
+  field: string;
+  kind: "noul" | "choice" | "score";
+  value: string | number | boolean | null;
+  certainty: number;
+  reason: string;
 }
 
 export type ViolationCategory =
@@ -126,6 +137,11 @@ export interface WarningLetter {
   redaction: RedactionSummary;
   /** Legal citations mapped to a violation taxonomy — deterministic. */
   citations: CitationSummary;
+
+  /** True if any field is uncertain enough to warrant human review. */
+  needs_review: boolean;
+  /** The specific uncertain fields, with the probability/confidence that flagged each. */
+  review: ReviewFlag[];
 
   /** Full raw probability/confidence detail from Jev, for auditing. */
   _jev: unknown;

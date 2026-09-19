@@ -8,6 +8,7 @@
 
 import { lookup } from "./drug-kb.js";
 import { subjectKey, crossReferenceLeads, type JevResult } from "./classify.js";
+import { noulUncertain, choiceUncertain, type ReviewFlag } from "./review.js";
 import type {
   Candidate,
   ExtractedCandidates,
@@ -51,6 +52,7 @@ export function assemble(
         kind: (c.payload?.kind as string | undefined) ?? null,
         is_subject: P(p),
         subject_probability: p == null ? null : Number(p.toFixed(3)),
+        needs_review: p != null && noulUncertain(p),
       };
     })
     .sort((x, y) => (y.subject_probability ?? 0) - (x.subject_probability ?? 0));
@@ -104,6 +106,50 @@ export function assemble(
   if (P(a.has_aseptic_violation.probability)) violations.push("aseptic_processing");
   if (P(a.has_env_monitoring_violation.probability)) violations.push("environmental_monitoring");
 
+  // --- Uncertainty routing (consistency_noul + confidence-routing) ---
+  const review: ReviewFlag[] = [];
+  const signalNouls: [string, number][] = [
+    ["is_sterile_product", a.is_sterile_product.probability],
+    ["has_cgmp_violation", a.has_cgmp_violation.probability],
+    ["has_aseptic_violation", a.has_aseptic_violation.probability],
+    ["has_env_monitoring_violation", a.has_env_monitoring_violation.probability],
+    ["has_contamination", a.has_contamination.probability],
+    ["contamination_linked_to_complaints", a.contamination_linked_to_complaints.probability],
+    ["has_recall_concern", a.has_recall_concern.probability],
+  ];
+  for (const [field, p] of signalNouls) {
+    if (noulUncertain(p))
+      review.push({ field, kind: "noul", value: P(p), certainty: Number(p.toFixed(3)), reason: "probability in the uncertain band [0.30, 0.70]" });
+  }
+  for (const prod of products) {
+    if (prod.needs_review)
+      review.push({
+        field: `product:${prod.name}`,
+        kind: "noul",
+        value: prod.is_subject,
+        certainty: prod.subject_probability ?? 0,
+        reason: "subject probability in the uncertain band [0.30, 0.70]",
+      });
+  }
+  // The drug selection is a Choice: gate on its confidence, but only when a real
+  // product was in play (a redacted letter legitimately resolves to null).
+  if (chosenName != null && choiceUncertain(a.drug_candidate.confidence))
+    review.push({
+      field: "drug",
+      kind: "choice",
+      value: chosenName,
+      certainty: Number((a.drug_candidate.confidence ?? 0).toFixed(3)),
+      reason: `drug selection confidence below ${0.65}`,
+    });
+  if (choiceUncertain(a.document_type.confidence))
+    review.push({
+      field: "document_type",
+      kind: "choice",
+      value: a.document_type.choice,
+      certainty: Number((a.document_type.confidence ?? 0).toFixed(3)),
+      reason: `document_type confidence below ${0.65}`,
+    });
+
   return {
     document_type: a.document_type.choice as WarningLetter["document_type"],
     regulator: "FDA",
@@ -147,6 +193,9 @@ export function assemble(
 
     redaction: cands.redaction,
     citations: cands.citations,
+
+    needs_review: review.length > 0,
+    review,
 
     _jev: {
       confidence: conf,

@@ -112,6 +112,21 @@ export interface JevResult {
  * @param text     Full warning-letter text (state).
  * @param cands    Extracted candidates (drug/indication choice sets come from here).
  */
+/**
+ * jev-1.13 allows 32k tokens for state + the longest question, and its accuracy
+ * falls as state grows with irrelevant detail (jaggedness #5). Warning letters
+ * run ~8k tokens, but guard the tail: keep the head (header + violations, where
+ * the subject products live) at a safe budget. ~3.5 chars/token, kept conservative.
+ */
+const STATE_CHAR_BUDGET = 90_000;
+function boundLetter(text: string): string {
+  if (text.length <= STATE_CHAR_BUDGET) return text;
+  return (
+    text.slice(0, STATE_CHAR_BUDGET) +
+    "\n\n[letter truncated for length; deterministic extraction already ran on the full text]"
+  );
+}
+
 export async function classifyWithJev(
   text: string,
   cands: ExtractedCandidates,
@@ -250,7 +265,7 @@ export async function classifyWithJev(
           String(c.payload?.name),
         ),
       },
-      warning_letter: text,
+      warning_letter: boundLetter(text),
     },
     questions: questions as never,
   });
